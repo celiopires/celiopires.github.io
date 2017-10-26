@@ -1,0 +1,396 @@
+/*
+###########################################
+###########################################
+#########      FONTS      #################
+*/
+@import 'https://fonts.googleapis.com/css?family=Work+Sans:300,600';
+/*
+###########################################
+###########################################
+#########      GENERIC      ###############
+*/
+body {
+	position: relative;
+	overflow: hidden;
+	overflow: auto;
+	padding: 0;
+	margin: 0;
+	line-height: 1.5;
+	background-color: #ffffff;
+	color: #000;
+	font-family: "Work Sans", sans-serif;
+}
+canvas {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 50px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	z-index: -10;
+}
+img {
+	width: 100%;
+	vertical-align: top;
+}
+a {
+	color: #fc6058;
+	padding: 0 5px;
+	text-decoration: none;
+}
+a:hover {
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+ul, ol, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*
+###########################################
+###########################################
+#########      COLORS      ################
+*/
+.red { 
+	background-color: #EF6F6C; 
+}
+.green {  
+	background-color: #DEF4C6;
+}
+.blue {  
+	background-color: #58A4B0;
+}
+.yellow {  
+	background-color: #F2C57C;
+}
+/*
+###########################################
+###########################################
+#########      MAIN STYLES      ###########
+*/
+.container.intro {
+	margin-top: 2%;
+}
+.container.intro h4 {
+	font-size: 26px;
+	font-weight: 300;
+}
+.container.intro h4 span {
+	font-size: 16px;
+	width: 100%;
+	display: block;
+	color: #999;
+}
+.container .featured-projects li {
+	width: 49%;
+	display: inline-block;
+}
+.container .featured-projects li a span {
+	display: block;
+	font-size: 22px;
+	margin: 15px 0;
+	color: #000;
+	font-weight: 600;
+}
+.container .featured-projects h3 {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.4;
+	color: #000;
+}
+.container .featured-projects h3:first-of-type {
+	margin-bottom: 20px;
+}
+.header {
+	height: 60px;
+	background-color: #ffffff;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.header,
+.container {
+	width: 100%;
+	max-width: 1100px;
+	margin: 20px auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.tab {
+	font-size: 14px;
+	color: #999;
+	font-weight: 300;
+}
+.container h6 {
+	font-size: 14px;
+	color: #999;
+	font-weight: 300;
+}
+.container h1,
+.container h2 {
+	font-size: 34px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 40px;
+	letter-spacing: -2.5px;
+}
+.container p {
+	margin-bottom: 80px;
+}
+.container p,
+.container h3 {
+	font-size: 22px;
+	color: #555;
+	line-height: 1.4;
+	font-weight: 300;
+}
+@media all and (min-width: 768px) {
+	.container h1,
+	.container h2 {
+		font-size: 3.2rem;
+		font-weight: 600;
+	}
+	.container p,
+	.container h3 {
+		max-width: 70%;
+	}
+}
+.container h3:first-of-type {
+	margin-bottom: 80px;
+}
+.container ol {
+	width: 100%;
+	max-width: 1004px;
+	margin: 0 auto;
+	display: block;
+}
+.container li {
+	display: inline-block;
+	vertical-align: text-top;
+}
+.works {
+	width: 100%;
+	margin: 40px 0;
+}
+.works ol {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.works ol li {
+	display: block;
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #f1f1f1;
+	margin-bottom: 40px;
+}
+@media all and (min-width: 480px) and (max-width: 767px) {
+	.works ol li {
+		display: inline-block;
+		width: 39%;
+	    margin: 0 20px;
+	}
+}
+/*.works ol li .album {
+	width: 100%;
+}*/
+.works .media {
+	overflow: hidden;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	border: 2px solid black;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+.works .media img {
+	display: inline-block;
+	width: 70%;
+	max-width: 100%;
+	margin-right: 60px;
+	display: block;
+}
+/*@media all and (min-width: 400px) and (max-width: 767px) {
+	.works .media img {
+		max-width: 360px;
+		margin: 0 auto;
+	}
+}
+@media all and (min-width: 768px) and (max-width: 1000px) {
+	.works .media img {
+		max-width: 280px;
+		display: inline-block;
+	}
+}
+@media all and (min-width: 1000px) {
+	.works .media img {
+		max-width: 360px;
+		display: inline-block;
+	}
+}*/
+.works ol li .description {
+	display: inline-block;
+	max-width: 65%;
+	margin-bottom: 40px;
+}
+@media all and (min-width: 768px) {
+	.works ol li .description {
+		max-width: 50%;
+	}
+}
+.works ol li .description h3 {
+	font-size: 1.5rem;
+	color: #000000;
+	margin: 0;
+}
+.works ol li .description p {
+	margin: 0;
+	font-size: 1rem;
+}
+.works ol li a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.works ol li a:hover {
+	background-color: rgba(0,0,0,0.08);
+}
+.works .description h3 {
+	font-size: 22px;
+	line-height: 1.4;
+	font-weight: 600;
+}
+/*
+###########################################
+###########################################
+#########   FIRST BLOCK    ################
+*/
+.container ol.first-block {
+	margin-bottom: 60px;
+}
+.container ol.first-block li img {
+	margin-bottom: 20px;
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+	.container ol.first-block li:first-child img:first-of-type {
+		width: 40%;
+		margin-right: 20px;
+	}
+	.container ol.first-block li:first-child img:last-of-type {
+		width: 55%;
+	}
+}
+@media all and (min-width: 768px) {
+	.container ol.first-block li:nth-child(1) {
+		max-width: 56.5%;
+		margin-right: 20px;
+	}
+	.container ol.first-block li:nth-child(2) {
+		max-width: 40%;
+	}
+}
+/*
+###########################################
+###########################################
+#########   SECOND BLOCK   ################
+*/
+.container ol.second-block {
+	margin-bottom: 0;
+}
+.container ol.second-block li {
+	margin-bottom: 20px;
+}
+.container ol.second-block li:nth-child(2) img {
+	margin-bottom: 20px;
+}
+@media all and (min-width: 480px) {
+	.container ol.second-block li:nth-child(1) {
+		max-width: 33%;
+		margin-right: 15px;
+	}
+	.container ol.second-block li:nth-child(2) {
+		max-width: 62%;
+	}
+	.container ol.second-block li:nth-child(2) img:nth-child(1) {
+		margin-bottom: 20px;
+	}
+	.container ol.second-block li:nth-child(2) img:nth-child(2) {
+		max-width: 35%;
+		margin-right: 20px;
+	}
+	.container ol.second-block li:nth-child(2) img:nth-child(3) {
+		max-width: 51%;
+	}
+}
+@media all and (min-width: 768px) {
+	.container ol.second-block li:nth-child(1) {
+		max-width: 31.9%;
+		margin-right: 15px;
+	}
+	.container ol.second-block li:nth-child(2) {
+		max-width: 65.3%;
+	}
+	.container ol.second-block li:nth-child(2) img:nth-child(3) {
+		max-width: 60%;
+	}
+}
+@media all and (min-width: 1024px) {
+	.container ol.second-block li:nth-child(1) {
+		max-width: 31.8%;
+	}
+	.container ol.second-block li:nth-child(2) {
+		max-width: 65.9%;
+	}
+}
+/*
+###########################################
+###########################################
+#########   THIRD BLOCK   ################
+*/
+.container ol.third-block {
+	margin-bottom: 80px;
+}
+/*
+###########################################
+###########################################
+#########    TOOLS   ################
+*/
+.container ol.tools {
+	margin-bottom: 80px;
+}
+.container ol.tools li {
+	max-width: 13%;
+	padding: 5px;
+}
+.container ol.tools li span {
+	text-align: center;
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+	vertical-align: bottom;
+}
+/*
+###########################################
+###########################################
+#########    FOOTER   ################
+*/
+.goodbye {
+	width: 100%;
+}
+.goodbye ul {
+	margin-top: 40px;
+}
+.goodbye ul li {
+	display: inline-block;
+}
