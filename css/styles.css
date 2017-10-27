@@ -45,6 +45,7 @@ a:hover {
 	-moz-opacity:0.5;
 	-khtml-opacity: 0.5;
 	opacity: 0.5;
+	color: #fc6058;
 }
 ul, ol, li {
 	list-style: none;
@@ -73,60 +74,34 @@ ul, ol, li {
 ###########################################
 #########      MAIN STYLES      ###########
 */
-.container.intro {
-	margin-top: 2%;
-}
-.container.intro h4 {
-	font-size: 26px;
-	font-weight: 300;
-}
-.container.intro h4 span {
-	font-size: 16px;
-	width: 100%;
-	display: block;
-	color: #999;
-}
-.container .featured-projects li {
-	width: 49%;
-	display: inline-block;
-}
-.container .featured-projects li a span {
-	display: block;
-	font-size: 22px;
-	margin: 15px 0;
-	color: #000;
-	font-weight: 600;
-}
-.container .featured-projects h3 {
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 1.4;
-	color: #000;
-}
-.container .featured-projects h3:first-of-type {
-	margin-bottom: 20px;
-}
 .header {
-	height: 60px;
-	background-color: #ffffff;
-	position: sticky;
-	top: 0;
-	left: 0;
-	right: 0;
+	height: 80px;
+	margin-bottom: 60px;
 }
 .header,
-.container {
+.container,
+.goodbye {
 	width: 100%;
 	max-width: 1100px;
-	margin: 20px auto;
+	margin: 0 auto;
 	padding-left: 20px;
 	padding-right: 20px;
 	box-sizing: border-box;
 }
-.tab {
-	font-size: 14px;
+.tab,
+a.home {
+	font-family: "Arial", sans-serif;
+	font-size: 1rem;
 	color: #999;
-	font-weight: 300;
+	letter-spacing: 1px;
+}
+a.home {
+	display: block;
+	padding-top: 25px;
+	color: #fc6058;
+}
+.container .intro {
+	margin-bottom: 60px;
 }
 .container h6 {
 	font-size: 14px;
@@ -135,11 +110,23 @@ ul, ol, li {
 }
 .container h1,
 .container h2 {
-	font-size: 34px;
+	font-size: 1.5rem;
 	font-weight: 600;
 	line-height: 1.2;
 	margin-bottom: 40px;
-	letter-spacing: -2.5px;
+	letter-spacing: -1px;
+}
+.container h2 a::after {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/external-link.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-bottom: 3px;
 }
 .container p {
 	margin-bottom: 80px;
@@ -154,8 +141,9 @@ ul, ol, li {
 @media all and (min-width: 768px) {
 	.container h1,
 	.container h2 {
-		font-size: 3.2rem;
+		font-size: 2.3rem;
 		font-weight: 600;
+		letter-spacing: -1.5px;
 	}
 	.container p,
 	.container h3 {
@@ -177,7 +165,7 @@ ul, ol, li {
 }
 .works {
 	width: 100%;
-	margin: 40px 0;
+	margin: 20px 0 80px 0;
 }
 .works ol {
 	width: 100%;
@@ -190,86 +178,128 @@ ul, ol, li {
 	width: 100%;
 	position: relative;
 	border-bottom: 1px solid #f1f1f1;
-	margin-bottom: 40px;
+	padding-top: 30px;
+    padding-bottom: 20px;
 }
-@media all and (min-width: 480px) and (max-width: 767px) {
-	.works ol li {
-		display: inline-block;
-		width: 39%;
-	    margin: 0 20px;
-	}
-}
-/*.works ol li .album {
-	width: 100%;
-}*/
 .works .media {
 	overflow: hidden;
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
-	border: 2px solid black;
+	width: 80px;
+	height: 80px;
 	display: inline-block;
+	margin-right: 19px;
+	border-radius: 50%;
+	border: 4px solid #dddddd;
 	vertical-align: top;
-	margin-right: 10px;
+}
+@media all and (min-width: 768px) {
+	.works .media {
+		width: 120px;
+		height: 120px;
+		transition-duration: 0.4s;
+		transition-property: border;
+	}
 }
 .works .media img {
 	display: inline-block;
-	width: 70%;
-	max-width: 100%;
+	width: 100%;
 	margin-right: 60px;
 	display: block;
 }
-/*@media all and (min-width: 400px) and (max-width: 767px) {
-	.works .media img {
-		max-width: 360px;
-		margin: 0 auto;
-	}
-}
-@media all and (min-width: 768px) and (max-width: 1000px) {
-	.works .media img {
-		max-width: 280px;
-		display: inline-block;
-	}
-}
-@media all and (min-width: 1000px) {
-	.works .media img {
-		max-width: 360px;
-		display: inline-block;
-	}
-}*/
-.works ol li .description {
+.works .description {
 	display: inline-block;
-	max-width: 65%;
-	margin-bottom: 40px;
+	width: 60%;
+	margin-bottom: 20px;
+	vertical-align: top;
 }
-@media all and (min-width: 768px) {
-	.works ol li .description {
-		max-width: 50%;
-	}
-}
-.works ol li .description h3 {
-	font-size: 1.5rem;
+.works .description h3 {
+	font-size: 1.3rem;
+	font-weight: bold;
 	color: #000000;
 	margin: 0;
 }
-.works ol li .description p {
-	margin: 0;
-	font-size: 1rem;
+@media all and (min-width: 768px) {
+	.works .description h3 {
+		font-size: 1.8rem;
+		max-width: 100%;
+		margin-bottom: 5px;
+	}
 }
-.works ol li a {
+.works .description p {
+	margin: 0 0 20px 0;
+	font-size: 1rem;
+	max-width: 100%;
+}
+@media all and (min-width: 768px) {
+	.works .description p {
+		font-size: 1.2rem;
+	}
+}
+.works li a {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	z-index: 1;
 }
-.works ol li a:hover {
-	background-color: rgba(0,0,0,0.08);
+.works .button {
+	position: relative;
+	display: inline-block;
+	color: #fc6058;
+	margin-bottom: 20px;
+    vertical-align: text-bottom;
+    padding: 10px 20px;
+    transition-duration: 0.4s;
+    transition-property: border, color;
+    border-radius: 40px;
+    background-color: #ffffff;
+    border: 4px solid transparent;
+    z-index: 0;
 }
-.works .description h3 {
-	font-size: 22px;
-	line-height: 1.4;
-	font-weight: 600;
+@media all and (max-width: 768px) {
+	.works .button {
+		border-color: #fc6058;
+	}
+}
+.works .button span {
+	font-weight: bold;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	z-index: 0;
+}
+
+@media all and (min-width: 768px) {
+	.works .button {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+}
+.works .button::after {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 10px solid #fc6058;
+    margin-left: 10px;
+}
+@media all and (min-width: 1000px) {
+	.works li:hover {
+		cursor: pointer;
+	}
+	.works li:hover .button {
+		color: #fc6058;
+		border-color: #fc6058;
+	}
+	.works li:hover .media {
+		border: 4px solid #fc6058;
+	}
+	.works li:hover .button::after {
+		border-left-color: #fc6058;
+	}
 }
 /*
 ###########################################
