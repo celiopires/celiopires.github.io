@@ -182,14 +182,14 @@ a.about-header:hover {
 	margin-bottom: 60px;
 	color: #F3F3F4;
 }
-@media all and (min-width: 1000px) {
+/*@media all and (min-width: 1000px) {
 	.container .mini-about .tab,
 	.container .works .tab {
 		position: absolute;
 		top: 0;
 		right: 0;
 	}
-}
+}*/
 .container .mini-about h3:first-of-type {
     margin-bottom: 0;
 }
@@ -222,7 +222,7 @@ a.about-header:hover {
 		max-width: 800px;
 	}
 }
-.container h2 a::after {
+.container h3 a::after {
 	content: "";
 	display: inline-block;
 	width: 16px;
@@ -340,16 +340,13 @@ a.about-header:hover {
 }
 .works .description p {
 	margin: 0;
-	font-size: 1rem;
-	font-family: "Arial", sans-serif;
-	font-weight: 100;
+	font-size: 1.2rem;
 	letter-spacing: 0;
 	color: #97989E;
 }
 @media all and (min-width: 768px) {
 	.works .description p {
 		margin: 0 0 20px 0;
-		font-size: 1.2rem;
 		width: 100%;
 		max-width: 100%;
 	}
