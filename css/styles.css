@@ -123,8 +123,7 @@ header {
 }
 a.home {
 	font-family: "Arial", sans-serif;
-	font-size: 1rem;
-	letter-spacing: 1px;
+	font-size: 1.2rem;
 	color: #30313d;
 	display: inline-block; 
 	padding-top: 25px;
@@ -148,6 +147,26 @@ a.about-header:hover {
 	opacity: 1;
 	color: #E07A5F;
 }
+.container h1 {
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1.2;
+}
+@media all and (min-width: 768px) {
+	.container h1 {
+		font-size: 3.5rem;
+	}
+}
+.container h2.section-title {
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #cccccc;
+}
+@media all and (min-width: 768px) {
+	.container h2.section-title {
+		font-size: 3.5rem;
+	}
+}
 .intro h1 {
 	font-size: 1.6rem;
 	font-weight: 600;
@@ -168,28 +187,21 @@ a.about-header:hover {
 	.intro h1 {
 		max-width: 1160px;
 		font-size: 3.5rem;
-		padding-left: 40px;
-		padding-right: 40px;
+		padding-right: 0;
+		padding-left: 0;
 	}
 }
 .intro + .container {
 	margin-top: -20px;
 }
 .container .mini-about {
+	font-family: "Arial", sans-serif;
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 60px;
 	color: #F3F3F4;
 }
-/*@media all and (min-width: 1000px) {
-	.container .mini-about .tab,
-	.container .works .tab {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
-}*/
 .container .mini-about h3:first-of-type {
     margin-bottom: 0;
 }
@@ -201,6 +213,7 @@ a.about-header:hover {
 }
 @media (min-width: 768px){
 	.container .mini-about h3 {
+		font-size: 1.5rem;
 		max-width: 70%;
 	}
 }
@@ -239,6 +252,7 @@ a.about-header:hover {
 }
 .container p,
 .container h3 {
+	font-family: "Arial", sans-serif;
 	font-size: 22px;
 	color: #555;
 	line-height: 1.4;
@@ -339,6 +353,7 @@ a.about-header:hover {
 	}
 }
 .works .description p {
+	font-family: "Arial", sans-serif;
 	margin: 0;
 	font-size: 1.2rem;
 	letter-spacing: 0;
