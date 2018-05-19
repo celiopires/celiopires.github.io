@@ -1,0 +1,46 @@
+body {
+  position: relative;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Hind", sans-serif;
+}
+
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  z-index: -10;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+a {
+  color: #EF6F6C;
+  padding: 0 5px;
+  text-decoration: none;
+  &:hover {
+    filter: alpha(opacity = 80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+}
+
+ul, ol, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

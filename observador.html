@@ -11,42 +11,54 @@
 <body>
 	<header>
 		<div id="header" class="header">
-			<a class="home" href="/">Célio Pires</a>
-			<a class="about-header" href="about.html">About</a>
+			<div class="header__nav">
+				<a class="home" href="/">Célio Pires</a>
+				<a class="about__header" href="about.html">About</a>
+			</div>
 		</div>
 	</header>
 	<div class="container">
-		<h1>Observador</h1>
-		<h3><a href="http://observador.pt" target="_blank">Observador</a> is a news page. Shares the latest stories using a clear language in multiple formats targeting Portuguese speaking people around the world. Its core runs on Wordpress and another powerful open source technologies giving it an incredible flexibility to quickly achieve product needs. In less than a year won the award for the Best news media website in the country and after a few more awards was mentioned by the Wordpress community as "A case study around the world" for its very impressive architecture.</h3>
-		
-		<ol class="first-block">
-			<li><img class="blue" src="img/obs/obs-detail1.png" alt="Detailed article Desktop"><img class="yellow" src="img/obs/obs-detail2.png" alt="Detailed article Tablet"></li>
-			<li><img class="blue" src="img/obs/obs-detail3.png" alt="Detailed article Mobile"></li>
-		</ol>
-		
-		<h2 class="section-title">Design</h2>
-		<p>At the top of the most viewed webpages in the country, Observador is a very ambitious Portuguese News page. Went very fast to the top and came up with a variety of fresh new ideas and different formats. Design was based on a 12 column layout for mobile and a 24 column for desktop.</p> 
+		<div id="intro__header" class="container__intro">
+			<div class="intro__header">
+				<h1 class="bolder">Observador</h1>
 
-		<ol class="second-block">
-			<li><img class="yellow" src="img/obs/obs-detail4.png" alt="Opinion block"></li>
-			<li><img class="blue" src="img/obs/obs-detail5.png" alt="Article Title"><img class="blue" src="img/obs/obs-detail6.png" alt="Article image"><img class="red" src="img/obs/obs-detail7.png" alt="Section block"></li>
-		</ol>
-		<ol class="third-block">
-			<li><img class="yellow" src="img/obs/obs-detail8.png" alt="Video homepage"></li>
-		</ol>
+				<p><a href="" target="_blank">Observador</a> is a fully digital online news publication. Observador was launched in 2014 and was since then recognised by many as a case study for its impressive technical architecture, responsiveness, user experience across devices and last but not the least by its clean design which was the key to attract new and younger audiences.</p>
 
-		<h2 class="section-title">Tools</h2>
-		<p>The working environment needed to be as fast as possible. We were a really small team with a huge responsability of taking our project to another level. Sketch became the main tool for doing fast and high fidelity prototypes in the year of 2014. Fortunately this software has got a lot of improvments.</p> 
+				<p><a href="http://observador.pt" target="_blank">Observador</a> is a news page. Shares the latest stories using a clear language in multiple formats targeting Portuguese speaking people around the world. Its core runs on Wordpress and another powerful open source technologies giving it an incredible flexibility to quickly achieve product needs. In less than a year won the award for the Best news media website in the country and after a few more awards was mentioned by the Wordpress community as "A case study around the world" for its very impressive architecture.</p>
+				<div class="container__media">
+					<img src="img/obs/obs-detail1-example.png" alt="Detailed article Desktop">
+					<p class="media__description">Fig 1. Desktop and mobile versions of an article showcasing direct and indirect hierarchies</p>
+				</div>
+				<h1 class="bolder">Design</h1>
+				<p>At the top of the most viewed webpages in the country, Observador is a very ambitious Portuguese News page. Went very fast to the top and came up with a variety of fresh new ideas and different formats. Design was based on a 12 column layout for mobile and a 24 column for desktop.</p>
+				<img src="img/obs/obs-detail-grid.png" alt="Detailed article Tablet">
+				<img src="img/obs/obs-detail3.png" alt="Detailed article Tablet">
+<!-- 				<ol class="first-block">
+					<li>
+					<img class="blue" src="img/obs/obs-detail1.png" alt="Detailed article Desktop">
+					<img class="yellow" src="img/obs/obs-detail2.png" alt="Detailed article Tablet">
+					</li>
+					<li>
+					<img class="blue" src="img/obs/obs-detail3.png" alt="Detailed article Mobile">
+					</li>
+				</ol> -->
+			</div>
+			<div class="intro__body">
+				<h2 class="bolder">Design</h2>
+				<p>At the top of the most viewed webpages in the country, Observador is a very ambitious Portuguese News page. Went very fast to the top and came up with a variety of fresh new ideas and different formats. Design was based on a 12 column layout for mobile and a 24 column for desktop.</p> 
 
-		<ol class="tools">
-			<li><img src="img/tools/sketch.png" alt="Sketch"><span>Sketch</span></li>
-			<li><img src="img/tools/invision.png" alt="invision"><span>Invison</span></li>
-			<li><img src="img/tools/grunt.png" alt="Origami"><span>Grunt</span></li>
-			<li><img src="img/tools/github.png" alt="Git"><span>Github</span></li>
-			<li><img src="img/tools/wordpress.png" alt="HTML5"><span>Wordpress</span></li>
-			<li><img src="img/tools/sass.png" alt="SASS"><span>Sass</span></li>
-		</ol>
+				<h2 class="bolder">Tools</h2>
+				<p>The working environment needed to be as fast as possible. We were a really small team with a huge responsability of taking our project to another level. Sketch became the main tool for doing fast and high fidelity prototypes in the year of 2014. Fortunately this software has got a lot of improvments.</p> 
 
+				<!-- <ol class="tools">
+					<li><img src="img/tools/sketch.png" alt="Sketch"><span>Sketch</span></li>
+					<li><img src="img/tools/invision.png" alt="invision"><span>Invison</span></li>
+					<li><img src="img/tools/grunt.png" alt="Origami"><span>Grunt</span></li>
+					<li><img src="img/tools/github.png" alt="Git"><span>Github</span></li>
+					<li><img src="img/tools/wordpress.png" alt="HTML5"><span>Wordpress</span></li>
+					<li><img src="img/tools/sass.png" alt="SASS"><span>Sass</span></li>
+				</ol> -->
+		</div>
 		<footer>
 			<div class="goodbye">
 				<ul>
@@ -55,13 +67,13 @@
 					<li><a href="https://instagram.com/celiows">Instagram</a></li>
 					<li><a href="https://dribbble.com/celiows">Dribbble</a></li>
 					<li><a href="https://codepen.io/celio/">Codepen</a></li>
-					<li><a href="https://jsfiddle.net/user/celio/fiddles">JsFiddle</a></li>				
+					<li><a href="https://jsfiddle.net/user/celio/fiddles">JsFiddle</a></li>		
 				</ul>
 				<h6>Célio Pires 2017</h6>
 			</div>
 		</footer>
 	</div>
-
+	
 	<script src="js/scripts.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

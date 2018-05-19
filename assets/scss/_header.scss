@@ -1,0 +1,44 @@
+header {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto 60px auto;
+  z-index: 1;
+  &.fixed {
+    background-color: #ffffff;
+  }
+  .header__nav {
+    line-height: 1;
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
+
+a {
+  &.home {
+    display: inline-block;
+    padding: 25px 0;
+    font-size: 1.2rem;
+    color: #565656;
+    text-transform: none;
+  }
+  &.about__header {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    width: 50px;
+    padding: 25px 0;
+    font-size: 1rem;
+    color: #565656;
+    text-transform: none;
+  }
+}
