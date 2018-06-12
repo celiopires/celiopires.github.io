@@ -1,0 +1,169 @@
+// CONTAINER HEADER
+
+//Main styles
+
+#intro__header {
+  display: block;
+}
+
+.container__intro {
+  .intro__header {
+  position: relative;
+  }
+  .intro__header ol {
+    margin-bottom: 40px;
+    li {
+      list-style: square inside;
+      h4 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        vertical-align: middle;
+        display: inline;
+        color: $_dark;
+      }
+    }
+  }
+}
+
+// HEADER INTRO BOTTOM
+
+.intro__header--bottom {
+  position: relative;
+  margin: 200px auto 200px auto;
+  max-width: 940px;
+  h1, p {
+    padding-left: 0;
+  }
+  > p {
+    margin-bottom: 30px;
+  }
+}
+
+.container .container__intro .intro__header--bottom {
+  h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+  p {
+    font-weight: 300;
+    color: $_light-dark;
+  }
+  .more__button {
+    font-size: 1.6rem;
+  }
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    &:hover ~ h1 {
+      text-decoration: underline;
+    }
+    &:hover ~ .more__button {
+      border: 2px solid $_blue;
+      padding: 20px 40px;
+      color: $_light;
+      background-color: $_blue;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
+      &::after {
+        background-image: url(../../images/arrow-right-light.svg);
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .container .container__intro .intro__header--bottom {
+    h1, p {
+      max-width: 80%;
+    }
+  }
+}
+
+// SPECIFIC FOR EL ESPANOL
+
+.container.ee .container__intro .intro__header {
+	position: relative;
+	width: 110%;
+	max-width: 150vw;
+	min-height: 100vh;
+	@include horizontal-gradient($_dark, $_medium-dark);
+	padding: 60px;
+	margin-bottom: 100px;
+	margin-left: -65px;
+	box-sizing: border-box;
+	.intro__header--shelfs {
+		max-width: 940px;
+		margin: 60px auto;
+		.top__shelf {
+			display: inline-block;
+			width: 100%;
+			vertical-align: middle;
+			color: $_light;
+			h1 {
+				font-size: 4rem;
+				margin-bottom: 0;
+			}
+			h2 {
+				font-size: 1.2rem;
+				color: $_grey;
+				em {
+					font-size: 2rem;
+					font-style: italic;
+					display: block;
+					margin-bottom: 10px;
+					color: $_medium-grey;
+				}
+			}
+		}
+/* 		.bottom__shelf {
+			position: relative;
+			display: inline-block;
+			width: 48%;
+			vertical-align: middle;
+			img {
+				display: block;
+				width: 100%;
+				max-width: 250px;
+				margin: 0 auto;
+				@include box-shadow(-30px, 30px, 90px, rgba(0,0,0,0.25));
+			}
+		} */
+	}
+	.intro__header--bio {
+		max-width: 940px;
+		margin: 0 auto;
+		p {
+			color: $_medium-grey;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -13,7 +13,7 @@ header {
   margin: 0 auto 60px auto;
   z-index: 1;
   &.fixed {
-    background-color: #ffffff;
+    background-color: $_light;
   }
   .header__nav {
     line-height: 1;
@@ -28,7 +28,7 @@ a {
     display: inline-block;
     padding: 25px 0;
     font-size: 1.2rem;
-    color: #565656;
+    color: $_light-dark;
     text-transform: none;
   }
   &.about__header {
@@ -38,7 +38,7 @@ a {
     width: 50px;
     padding: 25px 0;
     font-size: 1rem;
-    color: #565656;
+    color: $_light-dark;
     text-transform: none;
   }
 }

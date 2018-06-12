@@ -1,0 +1,38 @@
+// Default styles for more button
+.more__button {
+  cursor: pointer;
+  color: $_blue;
+  padding: 20px 0;
+  display: inline-block;
+  border-radius: 50px;
+  vertical-align: middle;
+  border: 2px solid transparent;
+  background-color: $_light;
+  -webkit-transition: all .1s ease-out;
+  -moz-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+  &::after {
+    content: "";
+    width: 47.5px;
+    height: 21px;
+    background-image: none;
+    background-position: center;
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  &:hover {
+    border: 2px solid $_blue;
+    padding: 20px 40px;
+    color: $_light;
+    background-color: $_blue;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
+    &::after {
+      background-image: url(../../images/arrow-right-light.svg);
+    }
+  }
+}
+
+// Exceptions

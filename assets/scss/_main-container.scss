@@ -15,61 +15,18 @@
   }
 }
 
-/*
-###########################################
-###########################################
-#########    CONTAINER__INTRO   ################
-*/
-
-#intro__header {
-  display: block;
-}
+// CONTAINER__INTRO
 
 @media all and (min-width: 768px) {
   .container .container__intro {
     .intro__header, .intro__body {
-      margin: 200px auto 0 auto;
+      margin: 0 auto;
       max-width: 940px;
     }
   }
 }
 
 .container {
-  .container__intro {
-    .intro__header ol {
-      margin-bottom: 40px;
-      li {
-        list-style: square inside;
-        h4 {
-          font-size: 2.5rem;
-          line-height: 1.2;
-          vertical-align: middle;
-          display: inline;
-          color: #000000;
-        }
-      }
-    }
-    .intro__body ol li {
-      list-style: circle;
-      color: #000000;
-    }
-    .intro__header .design-stages-list {
-      p {
-        margin-bottom: 0;
-      }
-      ol {
-        font-family: "Hind", sans-serif;
-        font-weight: 300;
-        font-size: 1.6rem;
-        margin-bottom: 60px;
-        padding-left: 20px;
-        padding-right: 20px;
-        li {
-          list-style: none;
-        }
-      }
-    }
-  }
   .container__works {
     margin-bottom: 200px;
     .works__header {
@@ -107,8 +64,31 @@
           border-radius: 20px;
           box-sizing: border-box;
           vertical-align: top;
-          background-color: #ffffff;
-          border: 1px solid #cccccc;
+          background-color: $_light;
+          border: 1px solid $_border;
+          a {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            -webkit-transition: background-color .4s ease-out;
+            -moz-transition: background-color .4s ease-out;
+            -o-transition: background-color .4s ease-out;
+            transition: background-color .4s ease-out;
+            &:hover + .description > h4 {
+              text-decoration: underline;
+            }
+            &:hover + .description .more__button {
+              background-color: $_blue;
+              color: $_light;
+              padding: 20px 40px;
+              box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+              &::after {
+                background-image: url(../../images/arrow-right-light.svg);
+              }
+            }
+          }
         }
         .works__featured--full {
           position: relative;
@@ -117,15 +97,8 @@
           border-radius: 20px;
           box-sizing: border-box;
           vertical-align: top;
-          background-color: #ffffff;
-          border: 1px solid #cccccc;
-        }
-        a {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
+          background-color: $_light;
+          border: 1px solid $_border;
         }
         .description {
           margin: 80px 40px 80px 40px;
@@ -135,23 +108,8 @@
             padding-right: 0;
             margin-bottom: 0;
           }
-          .more__button {
-            font-size: .7rem;
-            font-weight: 700;
-            color: #4A4A4A;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            -webkit-transition: box-shadow 0.3s ease-in-out;
-            transition: box-shadow 3s ease-in-out;
-          }
-        }
-        &:hover .description .more__button {
-          color: #111111;
-          text-decoration: underline;
-        }
-        .description {
           h6 {
-            color: #000000;
+            color: $_dark;
             font-size: 2rem;
             margin-bottom: 40px;
           }
@@ -163,6 +121,7 @@
             padding-left: 0;
             padding-right: 0;
             font-size: 1.2rem;
+            color: $_light-dark;
           }
         }
       }
@@ -170,11 +129,7 @@
   }
 }
 
-/*
-###########################################
-###########################################
-#########    CONTAINER__WORKS   ################
-*/
+// CONTAINER__WORKS
 
 @media all and (min-width: 768px) {
   .container .container__works .works__body li {
@@ -193,26 +148,18 @@
   }
 }
 
-/*
-###########################################
-###########################################
-#########    CONTAINER__MEDIA   ################
-*/
+// CONTAINER__MEDIA
 
 .container__media {
   margin: 0 auto 60px auto;
   .media__description {
     margin-top: 10px;
     font-size: 0.8rem;
-    color: #00000087;
+    color: $_dark;
   }
 }
 
-/*
-###########################################
-###########################################
-#########    CONTAINER__ABOUT   ################
-*/
+// CONTAINER__ABOUT
 
 .container .container__about {
   position: relative;
@@ -221,39 +168,41 @@
   margin: 0 auto;
   margin-bottom: 200px;
   color: #F3F3F4;
-  h3 {
-    &:first-of-type {
-      margin-bottom: 0;
+  .thumbnail {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 250px;
+    img {
+      border-radius: 20px;
     }
-    font-size: 22px;
-    color: #555;
+  }
+  p {
+    font-size: 1.2rem;
+    color: $_light-dark;
+  }
+
+  .more__button {
+    color: $_light;
+    padding: 20px 40px;
+    border: 2px solid transparent;
+    background-color: $_blue;
+    &::after {
+      background-image: none;
+      width: auto;
+      height: auto;
+      margin: 0;
+    }
+  }
+  @media all and (min-width: 768px) {
+    p {
+      max-width: 60%;
+      margin: 0;
+    }
   }
 }
 
-@media all and (min-width: 768px) {
-  .container__about p {
-    max-width: 60%;
-    margin: 0;
-  }
-  .container .container__about h5 {
-    /*max-width: 60%;*/
-    font-size: 2.5rem;
-    color: #000000;
-  }
-}
-
-@media (min-width: 768px) {
-  .container .container__about h3 {
-    font-size: 1.5rem;
-    max-width: 60%;
-  }
-}
-
-/*
-###########################################
-###########################################
-#########   DEFORMATIONS   ################
-*/
+// DEFORMATIONS
 
 .gap {
   letter-spacing: 2rem;
@@ -280,7 +229,7 @@
     right: 0;
     width: 100%;
     height: 1px;
-    background-color: #CCCCCC;
+    background-color: $_border;
     z-index: -1;
   }
   &::after {
@@ -291,7 +240,7 @@
     left: 0;
     width: 220px;
     height: 20px;
-    background-color: #ffffff;
+    background-color: $_light;
     z-index: -1;
   }
 }
@@ -305,29 +254,51 @@
   font-size: 3.5rem;
 }
 
-.intro__header--bottom {
-  margin: 200px auto 200px auto;
-  max-width: 940px;
-  h1, p {
-    padding-left: 0;
-  }
+.side__text {
+  margin-right: 300px;
 }
 
-.container .container__intro .intro__header--bottom {
-  h1 {
-    font-weight: 700;
-    font-size: 4rem;
-    line-height: 1.2;
-  }
-  p {
-    font-weight: 300;
-  }
-}
-
-@media all and (min-width: 1024px) {
-  .container .container__intro .intro__header--bottom {
-    h1, p {
-      max-width: 80%;
+.intro__body {
+  .media {
+    position: relative;
+    margin-bottom: 60px;
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    span {
+      font-size: 0.8rem;
+      color: $_light-dark;
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
