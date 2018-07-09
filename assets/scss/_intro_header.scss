@@ -2,13 +2,13 @@
 
 //Main styles
 
-#intro__header {
+#introHeader {
   display: block;
 }
 
 .container__intro {
   .intro__header {
-  position: relative;
+  	position: relative;
   }
   .intro__header ol {
     margin-bottom: 40px;
@@ -85,18 +85,31 @@
 }
 
 // SPECIFIC FOR EL ESPANOL
-
-.container.ee .container__intro .intro__header {
+.container.ee .container__intro .intro__header,
+.container.obs .container__intro .intro__header {
 	position: relative;
 	width: 110%;
 	max-width: 150vw;
-	min-height: 100vh;
-	@include horizontal-gradient($_dark, $_medium-dark);
 	padding: 60px;
 	margin-bottom: 100px;
 	margin-left: -65px;
 	box-sizing: border-box;
-	.intro__header--shelfs {
+	.intro__header--bio {
+		max-width: 940px;
+		margin: 0 auto;
+		p {
+			color: $_dark;
+		}
+	}
+}
+
+.container.ee .container__intro .intro__header {
+	min-height: 100vh;
+	@include horizontal-gradient($_dark, $_medium-dark);
+}
+
+.container.ee .container__intro .intro__header {
+	.intro__header__shelfs {
 		max-width: 940px;
 		margin: 60px auto;
 		.top__shelf {
@@ -110,40 +123,51 @@
 			}
 			h2 {
 				font-size: 1.2rem;
-				color: $_grey;
+				color: $_light;
 				em {
 					font-size: 2rem;
 					font-style: italic;
 					display: block;
 					margin-bottom: 10px;
-					color: $_medium-grey;
+					color: $_light;
 				}
 			}
-		}
-/* 		.bottom__shelf {
-			position: relative;
-			display: inline-block;
-			width: 48%;
-			vertical-align: middle;
-			img {
-				display: block;
-				width: 100%;
-				max-width: 250px;
-				margin: 0 auto;
-				@include box-shadow(-30px, 30px, 90px, rgba(0,0,0,0.25));
-			}
-		} */
-	}
-	.intro__header--bio {
-		max-width: 940px;
-		margin: 0 auto;
-		p {
-			color: $_medium-grey;
 		}
 	}
 }
 
+// SPECIFIC FOR OBSERVADOR
 
+.container.obs {
+	.container__intro .intro__header__shelfs {
+		max-width: 940px;
+		margin: 60px auto;
+		.top__shelf {
+			h1 {
+				font-size: 4rem;
+				margin-bottom: 0;
+			}
+			h2 {
+				font-size: 1.2rem;
+				color: $_medium-grey;
+				em {
+					font-size: 2rem;
+					font-style: italic;
+					display: block;
+					margin-bottom: 20px;
+					color: $_medium-dark;
+				}
+			}
+		}
+		.bottom__shelf {
+			.holding-1 {
+				max-width: 940px;
+				margin: 0 auto;
+				display: block;
+			}
+		}
+	}
+}
 
 
 
