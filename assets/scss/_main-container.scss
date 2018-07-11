@@ -3,9 +3,13 @@
   position: relative;
   width: 100%;
   margin: 80px auto 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0;
+  padding-right: 0;
   box-sizing: border-box;
+  @media all and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -48,7 +52,11 @@
     .works__body {
       ol {
         max-width: 940px;
-        margin: 0 auto;
+        margin-right: 20px;
+        margin-left: 20px;
+        @media all and (min-width: 768px) {
+          margin: 0 auto;
+        }
       }
       li {
         &:first-of-type {
@@ -56,7 +64,11 @@
         }
         .works__featured {
           &:first-of-type {
-            margin-right: 20px;
+            margin-bottom: 20px;
+            @media all and (min-width: 768px) {
+              margin-bottom: 0;
+              margin-right: 20px;
+            }
           }
           position: relative;
           display: inline-block;
@@ -72,20 +84,23 @@
             right: 0;
             bottom: 0;
             left: 0;
-            -webkit-transition: background-color .4s ease-out;
-            -moz-transition: background-color .4s ease-out;
-            -o-transition: background-color .4s ease-out;
-            transition: background-color .4s ease-out;
-            &:hover + .description > h4 {
-              text-decoration: underline;
-            }
-            &:hover + .description .more__button {
-              background-color: $_blue;
-              color: $_light;
-              padding: 20px 40px;
-              box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
-              &::after {
-                background-image: url(../../images/arrow-right-light.svg);
+            @media all and (min-width: 768px) {
+              -webkit-transition: background-color .4s ease-out;
+              -moz-transition: background-color .4s ease-out;
+              -o-transition: background-color .4s ease-out;
+              transition: background-color .4s ease-out;
+              &:hover + .description > h4 {
+                text-decoration: underline;
+              }
+              &:hover ~ .description .more__button {
+                border: 2px solid $_blue;
+                padding: 20px 40px;
+                color: $_light;
+                background-color: $_blue;
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
+                &::after {
+                  background-image: url(../../images/arrow-right-light.svg);
+                }
               }
             }
           }
@@ -101,12 +116,18 @@
           border: 1px solid $_border;
         }
         .description {
-          margin: 80px 40px 80px 40px;
+          margin: 20px;
+          @media all and (min-width: 768px) {
+            margin: 80px 40px 80px 40px;
+          }
           h4 {
-            font-size: 3.2rem;
+            font-size: 1.8rem;
             padding-left: 0;
             padding-right: 0;
             margin-bottom: 0;
+            @media all and (min-width: 768px) {
+              font-size: 3.2rem;
+            }
           }
           h6 {
             color: $_dark;
@@ -120,7 +141,7 @@
             max-width: 100%;
             padding-left: 0;
             padding-right: 0;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: $_light-dark;
           }
         }
@@ -135,7 +156,7 @@
   .container .container__works .works__body li {
     .works__featured {
       display: inline-block;
-      width: 48.7%;
+      width: 48%;
     }
     .works__featured--full {
       display: inline-block;
@@ -169,10 +190,14 @@
   margin-bottom: 200px;
   color: #F3F3F4;
   .thumbnail {
-    position: absolute;
-    top: 100px;
-    right: 0;
-    width: 250px;
+    width: 200px;
+    margin: 0 auto 40px auto;
+    @media all and (min-width: 768px) {
+      position: absolute;
+      top: 100px;
+      right: 0;
+      width: 250px;
+    }
     img {
       border-radius: 20px;
     }
@@ -187,6 +212,11 @@
     padding: 20px 40px;
     border: 2px solid transparent;
     background-color: $_blue;
+    @media all and (max-width: 768px) {
+      border-radius: 50px;
+      max-width: 135px;
+      margin-left: 20px;
+    }
     &::after {
       background-image: none;
       width: auto;
@@ -214,34 +244,40 @@
   font-size: .9rem;
   font-weight: 700;
   color: #4A4A4A;
-  margin: 0 0 80px 0;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  @media all and (min-width: 768px) {
+    margin-left: 0;
+  }
 }
 
-.label {
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 8px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 1px;
-    background-color: $_border;
-    z-index: -1;
-  }
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 220px;
-    height: 20px;
-    background-color: $_light;
-    z-index: -1;
+@media all and (min-width: 768px) {
+  .label {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $_border;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 20px;
+      background-color: $_light;
+      z-index: -1;
+    }
   }
 }
 
@@ -251,7 +287,10 @@
 
 .bolder {
   font-weight: 900;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  @media all and (min-width: 768px) {
+    font-size: 3.5rem;
+  }
 }
 
 .side__text {

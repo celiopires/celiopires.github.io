@@ -8,6 +8,17 @@
 
 // Body
 .intro__body {
+	h1 {
+		font-size: 1.2rem;
+		@media all and (min-width: 768px) {
+			font-size: 1.6rem;
+		}
+	}
+	p {
+		@media all and (max-width: 768px) {
+			font-size: 1.2rem;
+		}
+	}
 	.holder {
 		margin-bottom: 100px;
 		> * {
@@ -37,8 +48,12 @@
 		margin-bottom: 100px;
 		> img {
 			display: block;
-			width: 41%;
+			width: 80%;
+			max-width: 300px;
 			margin: 0 auto;
+			@media all and (min-width: 768px) {
+				width: 41%;
+			}
 		}
 	}
 	ol li {

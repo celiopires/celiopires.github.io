@@ -30,10 +30,13 @@ a {
     font-size: 1.2rem;
     color: $_light-dark;
     text-transform: none;
+    @media all and (max-width: 1024px) {
+      margin-left: 20px;
+    }
   }
   &.about__header {
     position: absolute;
-    top: 8px;
+    top: 0;
     right: 20px;
     width: 50px;
     padding: 25px 0;
