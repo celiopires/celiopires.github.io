@@ -1,0 +1,47 @@
+header {
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto 60px auto;
+  z-index: 1;
+  &.fixed {
+    background-color: $_light;
+  }
+  .header__nav {
+    line-height: 1;
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
+
+a {
+  &.home {
+    display: inline-block;
+    padding: 25px 0;
+    font-size: 1.2rem;
+    color: $_light-dark;
+    text-transform: none;
+    @media all and (max-width: 1024px) {
+      margin-left: 20px;
+    }
+  }
+  &.about__header {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 50px;
+    padding: 25px 0;
+    font-size: 1rem;
+    color: $_light-dark;
+    text-transform: none;
+  }
+}

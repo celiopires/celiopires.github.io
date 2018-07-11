@@ -1,0 +1,51 @@
+// Dedault color for background
+$_light: #FFFFFF;
+
+// Default colors for texts
+$_dark: #11131B;
+$_medium-dark: #26282F;
+$_light-dark: #67686D;
+
+// Greys
+$_grey: #5D606D;
+$_medium-grey: #9CA0AF;
+$_light-grey: #DCDEE5;
+
+// Default color for links
+$_link: #23C9FF;
+
+// Borders
+$_border: #CCCCCC;
+
+// Blues
+$_blue: #23C9FF;
+$_blue-dark: #1A93BA;
+
+// Color boxes
+/* $_red: #EF6F6C;
+$_green: #DEF4C6;
+$_greenish: #58A4B0;
+$_yellow: #F2C57C; */
+
+// GRADIENTS
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+  background-color: $from;
+  background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+  background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+  background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+  background: -ms-linear-gradient(left, $from 0%, $to $stop);
+  background: linear-gradient(to right, $from 0%, $to $stop);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+
+@mixin vertical-gradient($from, $to, $stop: 100%) {
+  background-color: $from;
+  background-image: -moz-linear-gradient(bottom, $from 0%, $to $stop);
+  background-image: -webkit-gradient(linear, bottom, top, color-stop(0%, $from), color-stop($stop, $to));
+  background-image: -webkit-linear-gradient(bottom, $from 0%, $to $stop);
+  background-image: -o-linear-gradient(bottom, $from 0%, $to $stop);
+  background: -ms-linear-gradient(bottom, $from 0%, $to $stop);
+  background: linear-gradient(to top, $from 0%, $to $stop);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
