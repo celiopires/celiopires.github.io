@@ -56,6 +56,33 @@
 			}
 		}
 	}
+	.holding-4 {
+		margin-bottom: 100px;
+		ol {
+			@media all and (max-width: 768px) {
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+			li {
+				display: block;
+				max-width: 100%;
+				@media all and (min-width: 480px) {
+					max-width: 480px;
+					margin: 0 auto 100px auto;
+				}
+				@media all and (min-width: 768px) {
+					display: inline-block;
+					max-width: 40%;
+					margin: 30px;
+				}
+				@media all and (min-width: 1024px) {
+					display: inline-block;
+					max-width: 36%;
+					margin: 60px;
+				}
+			}
+		}
+	}
 	ol li {
 		list-style: circle;
 		color: $_dark;
