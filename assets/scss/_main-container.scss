@@ -81,14 +81,22 @@
           border-radius: 20px;
           box-sizing: border-box;
           vertical-align: top;
-          background-color: $_light;
-          border: 1px solid $_border;
+          background-color: transparent;
+          border: 1px solid $_dark;
+          -webkit-transition: background-color .2s ease-out;
+          -moz-transition: background-color .2s ease-out;
+          -o-transition: background-color .2s ease-out;
+          transition: background-color .2s ease-out;
+          &:hover {
+            background-color: rgba(0,0,0,.05);
+          }
           a {
             position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
+            color: $_light;
             @media all and (min-width: 768px) {
               -webkit-transition: background-color .4s ease-out;
               -moz-transition: background-color .4s ease-out;
@@ -108,6 +116,12 @@
                 }
               }
             }
+          }
+          .description .more__button {
+              color: $_dark;
+              &::after {
+                background-image: url(../../images/arrow-right-dark.svg);
+              }
           }
         }
         .works__featured--full {
@@ -189,7 +203,15 @@
     .experiments__body {
       //background-color: blue;
       ol li {
-        border-bottom: 1px solid $_border;
+        border-bottom: 1px solid $_dark;
+        padding: 0 20px;
+        -webkit-transition: background-color .2s ease-out;
+        -moz-transition: background-color .2s ease-out;
+        -o-transition: background-color .2s ease-out;
+        transition: background-color .2s ease-out;
+        &:hover {
+          background-color: rgba(0,0,0,.05);
+        }
         .experiments__featured {
           position: relative;
           padding: 40px 0;
@@ -204,8 +226,10 @@
           }
           .more__button {
             position: absolute;
-            right: 0;
+            right: 30px;
+            top: 30px;
             &::after {
+              margin-left: 0;
               background-image: url(../../images/arrow-right-dark.svg);
             }
           }
@@ -242,24 +266,11 @@
   margin: 0 auto;
   margin-bottom: 200px;
   color: #F3F3F4;
-  .thumbnail {
-    width: 200px;
-    margin: 0 auto 40px auto;
-    @media all and (min-width: 768px) {
-      position: absolute;
-      top: 100px;
-      right: 0;
-      width: 250px;
-    }
-    img {
-      border-radius: 20px;
-    }
-  }
   p {
+    margin-bottom: 20px;
     font-size: 1.2rem;
     color: $_light-dark;
   }
-
   .more__button {
     color: $_light;
     padding: 20px 40px;
@@ -274,12 +285,6 @@
       background-image: none;
       width: auto;
       height: auto;
-      margin: 0;
-    }
-  }
-  @media all and (min-width: 768px) {
-    p {
-      max-width: 60%;
       margin: 0;
     }
   }
@@ -348,21 +353,6 @@
 
 .side__text {
   margin-right: 300px;
-}
-
-.intro__body {
-  .media {
-    position: relative;
-    margin-bottom: 60px;
-    img {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-    span {
-      font-size: 0.8rem;
-      color: $_light-dark;
-    }
-  }
 }
 
 

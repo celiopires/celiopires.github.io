@@ -8,7 +8,7 @@
     border-radius: 50px;
     vertical-align: middle;
     border: 2px solid transparent;
-    background-color: $_light;
+    background-color: transparent;
     -webkit-transition: all .1s ease-out;
     -moz-transition: all .1s ease-out;
     -o-transition: all .1s ease-out;
@@ -24,7 +24,7 @@
       vertical-align: middle;
       margin-left: 20px;
     }
-    &:hover {
+/*     &:hover {
       border: 2px solid $_blue;
       padding: 20px 40px;
       color: $_light;
@@ -33,7 +33,7 @@
       &::after {
         background-image: url(../../images/arrow-right-light.svg);
       }
-    }
+    } */
   }
 }
 

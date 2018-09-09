@@ -26,6 +26,78 @@
 			@include box-shadow(-10px, 10px, 30px, rgba(0,0,0,0.08));
 		}
 	}
+	.holding-1--full {
+		margin-bottom: 60px;
+		img {
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		span {
+		  font-size: 0.8rem;
+		  color: $_light-dark;
+		}
+	}
+	.holding-1 {
+		margin-bottom: 100px;
+		> img {
+			display: block;
+			width: 80%;
+			max-width: 300px;
+			margin: 0 auto;
+			@media all and (min-width: 768px) {
+				width: 41%;
+			}
+		}
+		&.fit {
+			margin-bottom: 200px;
+			> img {
+				display: block;
+				width: 80%;
+				max-width: 300px;
+				margin: 0 auto;
+				@media all and (min-width: 768px) {
+					width: 80%;
+					max-width: none;
+				}
+			}
+		}
+		&.grey {
+			background-color: $_light-grey;
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+	}
+	.holding-2 {
+		margin-bottom: 100px;
+		ol {
+			@media all and (max-width: 768px) {
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+			li {
+				display: block;
+				max-width: 100%;
+				margin-bottom: 10px;
+				@media all and (min-width: 480px) {
+					max-width: 480px;
+					margin: 0 auto 100px auto;
+				}
+				@media all and (min-width: 768px) {
+					display: inline-block;
+					max-width: 40%;
+					margin: 30px;
+				}
+				@media all and (min-width: 1024px) {
+					max-width: 45%;
+					margin: 10px 20px;
+				}
+			}
+		}
+		span {
+		  font-size: 0.8rem;
+		  color: $_light-dark;
+		}
+	}
 	.holding-3 {
 		margin-bottom: 100px;
 		> * {
@@ -41,18 +113,6 @@
 			}
 			&:last-child {
 				margin-right: 0;
-			}
-		}
-	}
-	.holding-1 {
-		margin-bottom: 100px;
-		> img {
-			display: block;
-			width: 80%;
-			max-width: 300px;
-			margin: 0 auto;
-			@media all and (min-width: 768px) {
-				width: 41%;
 			}
 		}
 	}
@@ -84,6 +144,30 @@
 			}
 		}
 	}
+	&.half {
+		position: relative;
+		p {
+			@media all and (min-width: 1024px) {
+				max-width: 60%;
+			}
+		}
+		.holding-1--full {
+			@media all and (min-width: 1024px) {
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 35%;
+				img {
+					width: 100%;
+					margin-bottom: 10px;
+				}
+			}
+			span {
+			  font-size: 0.8rem;
+			  color: $_light-dark;
+			}
+		}
+	}
 	ol li {
 		list-style: circle;
 		color: $_dark;
@@ -91,6 +175,30 @@
 
 	.design-stages-list {
 		margin-bottom: 100px;
+		&.half {
+			position: relative;
+			p {
+				@media all and (min-width: 1024px) {
+					max-width: 60%;
+				}
+			}
+			.holding-1--full {
+				@media all and (min-width: 1024px) {
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 35%;
+					img {
+						width: 100%;
+						margin-bottom: 10px;
+					}
+				}
+				span {
+				  font-size: 0.8rem;
+				  color: $_light-dark;
+				}
+			}
+		}
 		ol {
 			font-family: "Hind", sans-serif;
 			font-weight: 300;

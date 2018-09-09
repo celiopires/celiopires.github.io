@@ -27,6 +27,10 @@ $_green: #DEF4C6;
 $_greenish: #58A4B0;
 $_yellow: #F2C57C; */
 
+$_orange-ee: #FFF7E5;
+$_blue-obs: #E5F4FF;
+$_red-taglicious: #FFE5E5;
+
 // GRADIENTS
 @mixin horizontal-gradient($from, $to, $stop: 100%) {
   background-color: $from;
