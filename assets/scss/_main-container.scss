@@ -32,7 +32,10 @@
 
 .container {
   .container__works {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
+    @media all and (min-width: 1024px) {
+      margin-bottom: 200px;
+    }
     .works__header {
       @media all and (min-width: 1024px) {
         max-width: 940px;
@@ -40,8 +43,11 @@
       }
       span {
         color: #4A4A4A;
-        width: 100%;
+        width: auto;
         display: block;
+        @media all and (min-width: 1024px) {
+          width: 100%;
+        }
       }
       h3 {
         text-align: center;
@@ -191,7 +197,10 @@
 
 .container {
   .container__experiments {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
+    @media all and (min-width: 1024px) {
+      margin-bottom: 200px;
+    }
     .experiments__header,
     .experiments__body {
       max-width: 940px;
@@ -226,18 +235,40 @@
           }
           .more__button {
             position: absolute;
-            right: 30px;
-            top: 30px;
+            right: 0px;
+            top: 25px;
+            display: inline-block;
+            border-radius: 50px;
+            vertical-align: middle;
+            border: 2px solid transparent;
+            background-color: transparent;
+            -webkit-transition: all .1s ease-out;
+            -moz-transition: all .1s ease-out;
+            -o-transition: all .1s ease-out;
+            transition: all .1s ease-out;
             &::after {
-              margin-left: 0;
+              content: "";
+              width: 47.5px;
+              height: 21px;
+              background-image: none;
+              background-position: center;
+              background-size: 100%;
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 20px;
               background-image: url(../../images/arrow-right-dark.svg);
             }
           }
           .description {
             display: inline-block;
             h4 {
-              font-size: 2rem;
+              font-size: 1.5rem;
               margin-bottom: 0;
+              padding-left: 0;
+              @media all and (min-width: 768px) {
+                font-size: 2rem;
+                padding-left: 20px;
+              }
             }
           }
         }
