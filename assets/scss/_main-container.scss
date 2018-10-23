@@ -92,14 +92,6 @@
           border-right: 1px solid $_light-grey;
           border-bottom: 1px solid $_dark;
           border-left: 1px solid $_light-grey;
-          -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0);
-          -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0);
-          box-shadow: 0px 10px 20px 0px rgba(0,0,0,0);
-          &:hover {
-            -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,.09);
-            -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,.09);
-            box-shadow: 0px 5px 10px 0px rgba(0,0,0,.09);
-          }
           a {
             position: absolute;
             top: 0;
