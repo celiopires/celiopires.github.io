@@ -88,13 +88,17 @@
           box-sizing: border-box;
           vertical-align: top;
           background-color: transparent;
-          border: 1px solid $_dark;
-          -webkit-transition: background-color .2s ease-out;
-          -moz-transition: background-color .2s ease-out;
-          -o-transition: background-color .2s ease-out;
-          transition: background-color .2s ease-out;
+          border-top: 1px solid $_light-grey;
+          border-right: 1px solid $_light-grey;
+          border-bottom: 1px solid $_dark;
+          border-left: 1px solid $_light-grey;
+          -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0);
+          -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0);
+          box-shadow: 0px 10px 20px 0px rgba(0,0,0,0);
           &:hover {
-            background-color: rgba(0,0,0,.02);
+            -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,.09);
+            -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,.09);
+            box-shadow: 0px 5px 10px 0px rgba(0,0,0,.09);
           }
           a {
             position: absolute;
@@ -129,9 +133,6 @@
                 background-image: url(../../images/arrow-right-dark.svg);
               }
           }
-        }
-        .works__featured--full {
-
         }
         .description {
           margin: 20px;
@@ -211,15 +212,38 @@
     }
     .experiments__body {
       //background-color: blue;
-      ol li {
+      ol {
+        @media all and (max-width: 768px) {
+          margin: 0 20px;
+        }
+      }
+      li {
+        border-top: 1px solid $_light-grey;
+        border-right: 1px solid $_light-grey;
         border-bottom: 1px solid $_dark;
+        border-left: 1px solid $_light-grey;
         padding: 0 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
         -webkit-transition: background-color .2s ease-out;
         -moz-transition: background-color .2s ease-out;
         -o-transition: background-color .2s ease-out;
         transition: background-color .2s ease-out;
-        &:hover {
-          background-color: rgba(0,0,0,.05);
+        @media all and (min-width: 1024px) {
+          &:hover {
+            .experiments__featured {
+              .description h4.bolder {
+                text-decoration: underline;
+              }
+              .more__button {
+                padding: 20px;
+                background-color: $_blue;
+                &::after {
+                  background-image: url(../../images/arrow-right-light.svg);
+                }
+              }
+            }
+          }
         }
         .experiments__featured {
           position: relative;
@@ -235,7 +259,7 @@
           }
           .more__button {
             position: absolute;
-            right: 0px;
+            right: 0;
             top: 25px;
             display: inline-block;
             border-radius: 50px;
@@ -246,6 +270,10 @@
             -moz-transition: all .1s ease-out;
             -o-transition: all .1s ease-out;
             transition: all .1s ease-out;
+            @media all and (min-width: 768px) {
+              right: 20px;
+              top: 30px;
+            }
             &::after {
               content: "";
               width: 47.5px;
@@ -255,12 +283,12 @@
               background-size: 100%;
               display: inline-block;
               vertical-align: middle;
-              margin-left: 20px;
+              margin-left: 0;
               background-image: url(../../images/arrow-right-dark.svg);
             }
           }
           .description {
-            display: inline-block;
+            display: inline-block; 
             h4 {
               font-size: 1.5rem;
               margin-bottom: 0;
