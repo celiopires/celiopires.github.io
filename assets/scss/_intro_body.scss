@@ -23,7 +23,6 @@
 		margin-bottom: 100px;
 		> * {
 			margin-bottom: 60px;
-			@include box-shadow(-10px, 10px, 30px, rgba(0,0,0,0.08));
 		}
 	}
 	.holding-1--full {
@@ -116,7 +115,6 @@
 			width: 30%;
 			margin: 20px;
 			vertical-align: top;
-			@include box-shadow(-10px, 10px, 30px, rgba(0,0,0,0.02));
 			border: 1px solid #EAEAEA;
 			border-radius: 10px;
 			&:first-child {
