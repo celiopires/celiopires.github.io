@@ -11,23 +11,25 @@ function yScroll() {
 
 window.addEventListener("scroll", yScroll);
 
+// Starting the fun
+var letters = [];
+var letter = "A";
 
-/*function setup() {
-	var w = document.getElementById('intro__header').offsetWidth;
-	var h = document.getElementById('intro__header').offsetHeight;
-
-	var c = createCanvas(w, h);
-	c.parent('intro__header');
-	
-	var letters = [];
-	var word = "A";
-
-	for (var i = 0; i<30; i++){
-		letters.push(new Letters());
-	}
+function setup() {
+    var cnv = createCanvas(innerWidth, innerHeight-100);
+    cnv.id('heroShowcase');
+    cnv.class('hero');
+    cnv.style('position','absolute'); 
+    cnv.style('top', '0');
+    cnv.style('right', '0');
+    cnv.style('left', '0');
+    cnv.parent('heroStand');
+  for (var i = 0; i<30; i++){
+    letters.push(new Letters());
+  }
 }
 function draw() {
-  background(0);
+  background(255);
   for (var i=0; i<letters.length; i++){
     letters[i].display();
     letters[i].move();
@@ -37,7 +39,7 @@ function draw() {
 function Letters() {
   this.x = random(windowWidth);
   this.y = random(windowHeight);
-  this.speed = 1;
+  this.speed = 0.5;
   
   this.move = function() {
     this.x += random(-this.speed, this.speed);
@@ -45,7 +47,7 @@ function Letters() {
   };
   
   this.display = function() {
-    fill(255);
-    text(word, this.x, this.y, 100, 100);
+    fill(150);
+    text(letter, this.x, this.y, 100, 100);
   };
-}*/
+}
