@@ -92,7 +92,7 @@
           border-radius: 20px;
           box-sizing: border-box;
           vertical-align: top;
-          background-color: transparent;
+          background-color: $_light;
           border-top: 1px solid $_light-grey;
           border-right: 1px solid $_light-grey;
           border-bottom: 1px solid $_dark;
@@ -203,6 +203,7 @@
     .experiments__body {
       max-width: 940px;
       margin: 0 auto;
+      background-color: $_light;
     }
     .experiments__body {
       //background-color: blue;
