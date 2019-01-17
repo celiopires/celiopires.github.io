@@ -37,11 +37,14 @@ a {
   &.about__header {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
     width: 50px;
     padding: 25px 0;
     font-size: 1rem;
     color: $_light-dark;
     text-transform: none;
+    @media all and (min-width: 768px) {
+      right: 10px;
+    }
   }
 }
