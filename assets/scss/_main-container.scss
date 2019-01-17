@@ -93,10 +93,10 @@
           box-sizing: border-box;
           vertical-align: top;
           background-color: $_light;
-          border-top: 1px solid $_light-grey;
-          border-right: 1px solid $_light-grey;
-          border-bottom: 1px solid $_dark;
-          border-left: 1px solid $_light-grey;
+          border: 1px solid $_light-grey;
+          &:hover {
+            border: 1px solid $_light-dark;            
+          }
           a {
             position: absolute;
             top: 0;
@@ -206,17 +206,13 @@
       background-color: $_light;
     }
     .experiments__body {
-      //background-color: blue;
       ol {
         @media all and (max-width: 768px) {
           margin: 0 20px;
         }
       }
       li {
-        border-top: 1px solid $_light-grey;
-        border-right: 1px solid $_light-grey;
-        border-bottom: 1px solid $_dark;
-        border-left: 1px solid $_light-grey;
+        border: 1px solid $_light-grey;
         padding: 0 20px;
         border-radius: 20px;
         margin-bottom: 20px;
@@ -226,16 +222,10 @@
         transition: background-color .2s ease-out;
         @media all and (min-width: 1024px) {
           &:hover {
+            border: 1px solid $_light-dark;
             .experiments__featured {
               .description h4.bolder {
                 text-decoration: underline;
-              }
-              .more__button {
-                padding: 20px;
-                background-color: $_blue;
-                &::after {
-                  background-image: url(../../assets/images/arrow-right-light.svg);
-                }
               }
             }
           }
