@@ -12,6 +12,7 @@ function yScroll() {
 window.addEventListener("scroll", yScroll);
 
 // Starting the fun
+/*
 var bubbles = [];
 
 function setup() {
@@ -65,4 +66,4 @@ function Bubbles() {
     fill(255,255,255);
     rect(this.x, this.y, 20, 20);
   };
-}
+} */

@@ -55,7 +55,7 @@
 	line-height: 1.2;
 	margin-bottom: 40px;
 	@media all and (min-width: 768px) {
-		font-size: 4rem;
+		font-size: 8rem;
 	}
   }
   p {
@@ -96,8 +96,8 @@
 
 @media all and (min-width: 1024px) {
   .container .container__intro .intro__header--bottom {
-	h1, p {
-	  max-width: 80%;
+	p {
+	  max-width: 70%;
 	}
   }
 }
