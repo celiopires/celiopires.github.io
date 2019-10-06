@@ -26,42 +26,25 @@
 }
 
 // HEADER INTRO BOTTOM
-
-.intro__header--bottom {
-  // position: relative;
-  // margin: 100px auto;
-  // max-width: 940px;
-  // @media all and (min-width: 768px) {
-	// margin: 200px auto;
-	// font-size: 4rem;
-  // }
-}
-
 .container .container__intro .intro__header--bottom {
 	max-width: 704px;
 	margin: 160px auto 240px auto;
-
-	.serif.title__large-2 {
+	.title__large-2,
+	.paragraph__medium-2,
+	.paragraph__small-3 {
 		text-align: center;
 	}
-	.sans.paragraph__medium-2 {
-		text-align: center;
+	.paragraph__small-3::after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 32px;
+		height: 32px;
+		background-image: url("../images/arrow-right-dark.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-left: 32px;
 	}
-  .more__button {
-	font-size: 1.6rem;
-		@media all and (max-width: 768px) {
-			margin-left: 20px;
-			font-size: 1.2rem;
-		}
-  }
-  a {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: block;
-  }
 }
 
 // SPECIFIC FOR EL ESPANOL
@@ -92,11 +75,6 @@
 		}
 	}
 }
-
-/* .container.ee .container__intro .intro__header {
-	min-height: 100vh;
-	@include horizontal-gradient($_dark, $_medium-dark);
-} */
 
 .container.obs .container__intro .intro__header,
 .container.ee .container__intro .intro__header {
@@ -150,7 +128,6 @@
 }
 
 // SPECIFIC FOR OBSERVADOR
-
 .container.obs {
 	.intro__header--bio {
 		p {
