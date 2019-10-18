@@ -4,7 +4,7 @@ body {
   padding: 0;
   margin: 0;
   line-height: 1.5;
-  background-color: $_light;
+  background-color: $_white;
   color: $_dark;
   font-family: "Hind", sans-serif;
   box-sizing: border-box;
@@ -47,30 +47,42 @@ ul, ol, li {
 }
 
 // Intervals
+// Variables
+$_int-xxs: 4px;
+$_int-xs: 8px;
+$_int-s: 12px;
+$_int-m: 16px;
+$_int-l: 24px;
+$_int-xl: 32px;
+$_int-xxl: 40px;
+$_int-xxxl: 60px;
+$_int-ultra: 80px;
+
+// Defaults
 .int-xxs {
-  margin-bottom: 4px
+  margin-bottom: $_int-xxs;
 }
 .int-xs {
-  margin-bottom: 8px
+  margin-bottom: $_int-xs;
 }
 .int-s {
-  margin-bottom: 12px
+  margin-bottom: $_int-s;
 }
 .int-m {
-  margin-bottom: 16px
+  margin-bottom: $_int-m;
 }
 .int-l {
-  margin-bottom: 24px
+  margin-bottom: $_int-l;
 }
 .int-xl {
-  margin-bottom: 32px
+  margin-bottom: $_int-xl;
 }
 .int-xxl {
-  margin-bottom: 40px
+  margin-bottom: $_int-xxl;
 }
 .int-xxxl {
-  margin-bottom: 60px
+  margin-bottom: $_int-xxxl;
 }
 .int-ultra {
-  margin-bottom: 80px
+  margin-bottom: $_int-ultra;
 }

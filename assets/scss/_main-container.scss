@@ -41,7 +41,7 @@
     @media all and (min-width: 1024px) {
       margin-bottom: 200px;
     }
-    .works__header {
+    .section__header {
       @media all and (min-width: 1024px) {
         max-width: 940px;
         margin: 0 auto;
@@ -65,85 +65,44 @@
     .works__body {
       ol {
         max-width: 940px;
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: $_int-m;
+        margin-left: $_int-m;
+        margin-bottom: $_int-xxl;
         @media all and (min-width: 768px) {
           margin: 0 auto;
         }
       }
       li {
-        &:first-of-type {
-          margin-bottom: 18px;
-        }
+        margin-bottom: $_int-xxl;
         .works__featured {
-          &:first-of-type {
-            margin-bottom: 20px;
-            @media all and (min-width: 768px) {
-              margin-bottom: 0;
-              margin-right: 20px;
-            }
-          }
+          margin-bottom: $_int-xxl;
         }
         .works__featured,
         .works__featured--full {
           position: relative;
           display: inline-block;
           width: 100%;
-          border-radius: 20px;
+          border-radius: 8px;
           box-sizing: border-box;
           vertical-align: top;
-          background-color: $_light;
+          background-color: $_white;
           border: 1px solid $_light-grey;
-          &:hover {
-            border: 1px solid $_light-dark;            
-          }
           a {
             position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
-            color: $_light;
-            @media all and (min-width: 768px) {
-              -webkit-transition: background-color .4s ease-out;
-              -moz-transition: background-color .4s ease-out;
-              -o-transition: background-color .4s ease-out;
-              transition: background-color .4s ease-out;
-              &:hover + .description > h4 {
-                text-decoration: underline;
-              }
-              &:hover ~ .description .more__button {
-                border: 2px solid $_blue;
-                padding: 20px 40px;
-                color: $_light;
-                background-color: $_blue;
-                box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
-                &::after {
-                  background-image: url(../../assets/images/arrow-right-light.svg);
-                }
-              }
-            }
           }
-          .description .more__button {
-              color: $_dark;
-              &::after {
-                background-image: url(../../assets/images/arrow-right-dark.svg);
-              }
+          .title__medium-2,
+          .paragraph__small-3 {
+            margin-bottom: $_int-m;
           }
         }
         .description {
           margin: 20px;
           @media all and (min-width: 768px) {
-            margin: 80px 40px 80px 40px;
-          }
-          h4 {
-            font-size: 1.8rem;
-            padding-left: 0;
-            padding-right: 0;
-            margin-bottom: 0;
-            @media all and (min-width: 768px) {
-              font-size: 3.2rem;
-            }
+            margin: $_int-xxl;
           }
           h6 {
             color: $_dark;
@@ -167,20 +126,26 @@
 }
 
 // CONTAINER__WORKS
-
 @media all and (min-width: 768px) {
   .container .container__works .works__body li {
+    box-sizing: border-box;
     .works__featured {
+      position: relative;
       display: inline-block;
-      width: 48.2%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      width: 46.8%;
+    }
+    .works__featured:first-child {
+      margin-right: $_int-xxl/2;
+    }
+    .works__featured:last-child {
+      margin-left: $_int-xxl/2;
     }
     .works__featured--full {
       display: inline-block;
       width: 100%;
-    }
-    .works__featured, .works__featured--full {
-      position: relative;
-      display: inline-block;
     }
   }
 }
@@ -188,7 +153,7 @@
   .container .container__works .works__body li {
     .works__featured {
       display: inline-block;
-      width: 48.7%;
+      width: 47.6%;
     }
   }
 }
@@ -203,7 +168,7 @@
     .experiments__body {
       max-width: 940px;
       margin: 0 auto;
-      background-color: $_light;
+      background-color: $_white;
     }
     .experiments__body {
       ol {
@@ -316,7 +281,7 @@
     color: $_light-dark;
   }
   .more__button {
-    color: $_light;
+    color: $_white;
     padding: 20px 40px;
     border: 2px solid transparent;
     background-color: $_blue;
@@ -377,7 +342,7 @@
       left: 0;
       width: 220px;
       height: 20px;
-      background-color: $_light;
+      background-color: $_white;
       z-index: -1;
     }
   }

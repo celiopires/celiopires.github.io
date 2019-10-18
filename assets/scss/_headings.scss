@@ -10,11 +10,6 @@ $_bold: 700;
 // Headings
 h1, h2, h3, h4, h5, h6, p {
   font-family: "Hind", sans-serif;
-  font-weight: $_regular;
-  line-height: 1.5;
-  margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -62,6 +57,7 @@ p {
   font-family: 'Source Serif Pro', serif;
   font-weight: $_bold;
   color: $_dark;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -97,6 +93,7 @@ p {
 .paragraph__small-2,
 .paragraph__small-1 {
   font-family: 'Hind', sans-serif;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
