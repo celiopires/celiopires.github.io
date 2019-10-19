@@ -1,0 +1,42 @@
+// Root
+$_default: 4px;
+
+// Intervals
+$_int-xxs: $_default; //----- 4
+$_int-xs: $_default*2; //---- 8
+$_int-s: $_default*3; //----- 12
+$_int-m: $_default*4; //----- 16
+$_int-l: $_default*6; //----- 24
+$_int-xl: $_default*8; //---- 32
+$_int-xxl: $_default*10; //-- 40
+$_int-xxxl: $_default*15; //- 60
+$_int-ultra: $_default*20; // 80
+
+// Defaults
+.int-xxs {
+  margin-bottom: $_int-xxs;
+}
+.int-xs {
+  margin-bottom: $_int-xs;
+}
+.int-s {
+  margin-bottom: $_int-s;
+}
+.int-m {
+  margin-bottom: $_int-m;
+}
+.int-l {
+  margin-bottom: $_int-l;
+}
+.int-xl {
+  margin-bottom: $_int-xl;
+}
+.int-xxl {
+  margin-bottom: $_int-xxl;
+}
+.int-xxxl {
+  margin-bottom: $_int-xxxl;
+}
+.int-ultra {
+  margin-bottom: $_int-ultra;
+}

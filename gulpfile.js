@@ -9,7 +9,7 @@ var sass = require('gulp-sass');
 
 // css
 gulp.task('sass', function() {
-    return gulp.src('assets/scss/*.scss')
+    return gulp.src('assets/scss/**/*.scss')
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -19,7 +19,7 @@ gulp.task('sass', function() {
 
 // watch
 gulp.task('watch', function() {
-    gulp.watch('assets/scss/*.scss', ['sass']);
+    gulp.watch('assets/scss/**/*.scss', ['sass']);
 });
 
 // Default Task

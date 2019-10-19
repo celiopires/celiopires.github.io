@@ -1,8 +1,9 @@
 // IMPORT
-@import "colors.scss";
-@import "headings.scss";
-@import "layout.scss";
-@import "buttons.scss";
+@import "common/intervals.scss";
+@import "common/colors.scss";
+@import "common/headings.scss";
+@import "common/layout.scss";
+@import "common/buttons.scss";
 
 // HEADER
 @import "header.scss";

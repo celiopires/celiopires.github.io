@@ -1,7 +1,6 @@
 // CONTAINER HEADER
 
 //Main styles
-
 #introHeader {
   display: block;
 }
@@ -11,16 +10,9 @@
 	position: relative;
   }
   .intro__header ol {
-	margin-bottom: 40px;
+	margin-bottom: $_int-xxl;
 	li {
 	  list-style: square inside;
-	  h4 {
-		font-size: 2.5rem;
-		line-height: 1.2;
-		vertical-align: middle;
-		display: inline;
-		color: $_dark;
-	  }
 	}
   }
 }
@@ -28,7 +20,14 @@
 // HEADER INTRO BOTTOM
 .container .container__intro .intro__header--bottom {
 	max-width: 704px;
-	margin: 160px auto 240px auto;
+	margin: $_int-ultra*2 auto;
+	.title__large-2 {
+		margin-bottom: $_int-m;
+	}
+	.paragraph__medium-2 {
+		padding: 0 $_int-m;
+		margin-bottom: $_int-xl;
+	}
 	.title__large-2,
 	.paragraph__medium-2,
 	.paragraph__small-3 {
@@ -65,98 +64,11 @@
 	}
 }
 
-.container.ee .container__intro .intro__header {
-	.intro__header--bio {
-		p {
-			color: $_medium-dark;
-			@media all and (max-width: 768px) {
-				font-size: 1.2rem;
-			}
-		}
-	}
-}
-
-.container.obs .container__intro .intro__header,
-.container.ee .container__intro .intro__header {
-	.intro__header__shelfs {
-		max-width: 940px;
-		margin: 40px auto;
-		@media all and (min-width: 768px) {
-			margin: 60px auto;
-		}
-		.top__shelf {
-			display: inline-block;
-			width: 100%;
-			vertical-align: middle;
-			color: $_dark;
-			h1 {
-				font-size: 2.5rem;
-				margin-bottom: 0;
-				@media all and (min-width: 768px) {
-					font-size: 4rem;
-				}
-			}
-			h2 {
-				font-size: 1rem;
-				@media all and (min-width: 768px) {
-					font-size: 1.2rem;
-				}
-				em {
-					font-size: 1.3rem;
-					font-style: italic;
-					display: block;
-					margin-bottom: 10px;
-					@media all and (min-width: 768px) {
-						font-size: 2rem;
-					}
-				}
-			}
-		}
-	}
-}
-
-.container.ee .container__intro .intro__header {
-	.top__shelf {
-		color: $_dark;
-		h2 {
-			color: $_medium-grey;
-			em {
-				color: $_medium-dark;
-			}
-		}
-	}
-}
-
 // SPECIFIC FOR OBSERVADOR
 .container.obs {
-	.intro__header--bio {
-		p {
-			@media all and (max-width: 768px) {
-				font-size: 1.2rem;
-			}
-		}
-	}
 	.container__intro .intro__header__shelfs {
 		max-width: 940px;
 		margin: 60px auto;
-		.top__shelf {
-			h1 {
-				font-size: 4rem;
-				margin-bottom: 0;
-				color: $_dark;
-			}
-			h2 {
-				font-size: 1.2rem;
-				color: $_medium-grey;
-				em {
-					font-size: 2rem;
-					font-style: italic;
-					display: block;
-					margin-bottom: 20px;
-					color: $_medium-dark;
-				}
-			}
-		}
 		.bottom__shelf {
 			.holding-1 {
 				max-width: 940px;

@@ -15,30 +15,6 @@ h1, h2, h3, h4, h5, h6, p {
   text-rendering: optimizeLegibility;
 }
 
-// h1 {
-//   font-size: 3.5rem;
-// }
-
-// h2 {
-//   font-size: 3rem;
-// }
-
-// h3 {
-//   font-size: 2.5rem;
-// }
-
-// h4 {
-//   font-size: 2rem;
-// }
-
-// h5 {
-//   font-size: 1.5rem;
-// }
-
-// h6 {
-//   font-size: 1.2rem;
-// }
-
 p {
   font-size: 1.1rem;
   color: #111111;
@@ -64,23 +40,31 @@ p {
 }
 
 .title__large-2 {
-  font-size: 80px;
-  line-height: 92px;
+  font-size: $_int-xxl + $_int-xs;
+  line-height: $_int-xxxl;
+  @media all and (min-width: 768px) {
+    font-size: $_int-ultra;
+    line-height: $_int-ultra + $_int-s;
+  }
 }
 
 .title__large-1 {
-  font-size: 60px;
-  line-height: 72px;
+  font-size: $_int-xxl;
+  line-height: $_int-xxl + $_int-s;
+  @media all and (min-width: 768px) {
+    font-size: $_int-xxxl;
+    line-height: $_int-xxxl + $_int-s;
+  }
 }
 
 .title__medium-2 {
-  font-size: 34px;
-  line-height: 44px;
+  font-size: $_int-xl + $_int-xxs/2;
+  line-height: $_int-xxl + $_int-xxs;
 }
 
 .title__medium-1 {
-  font-size: 26px;
-  line-height: 36px;
+  font-size: $_int-l + $_int-xxs/2;
+  line-height: $_int-xl + $_int-xxs;;
 }
 
 // SANS SERIF FONT
@@ -100,57 +84,69 @@ p {
 }
 
 .paragraph__large-2 {
-  font-size: 80px;
-  line-height: 92px;
+  font-size: $_int-xxl + $_int-xs;
+  line-height: $_int-xxxl;
   font-weight: $_bold;
   color: $_dark;
+  @media all and (min-width: 768px) {
+    font-size: $_int-xl + $_int-xxs/2;
+    line-height: $_int-xxl + $_int-xxs;
+  }
 }
 
 .paragraph__large-1 {
-  font-size: 60px;
-  line-height: 72px;
+  font-size: $_int-xxl;
+  line-height: $_int-xxl + $_int-s;
   font-weight: $_bold;
   color: $_dark;
 }
 
 .paragraph__medium-3 {
-  font-size: 34px;
-  line-height: 44px;
+  font-size: $_int-xl + $_int-xxs/2;
+  line-height: $_int-xxl + $_int-xxs;
   font-weight: $_bold;
   color: $_dark;
 }
 
 .paragraph__medium-2 {
-  font-size: 34px;
-  line-height: 40px;
+  font-size: $_int-l;
+  line-height: $_int-xl;
   font-weight: $_light;
   color: $_dark;
+  @media all and (min-width: 768px) {
+    font-size: $_int-xl + $_int-xxs/2;
+    line-height: $_int-xxl;
+  }
 }
 
 .paragraph__medium-1 {
-  font-size: 26px;
-  line-height: 36px;
+  font-size: $_int-m + $_int-xxs/2;
+  line-height: $_int-xl;
   font-weight: $_light;
   color: $_dark;
+  @media all and (min-width: 768px) {
+    font-size: $_int-l + $_int-xxs/2;
+    line-height: $_int-xl + $_int-xxs;
+  }
 }
 
 .paragraph__small-3 {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: $_int-m + $_int-xxs/2;
+  line-height: $_int-l + $_int-xxs/2;
   font-weight: $_regular;
   color: $_dark;
 }
 
 .paragraph__small-2 {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: $_int-m;
+  line-height: $_int-l - $_int-xxs/2;
   font-weight: $_regular;
   color: $_dark;
 }
 
 .paragraph__small-1 {
-  font-size: 12px;
-  line-height: 18px;
+  font-size: $_int-s;
+  line-height: $_int-m + $_int-xxs/2;
   font-weight: $_regular;
   color: $_dark;
 }
