@@ -36,33 +36,33 @@
 .container {
   .container__box {
     max-width: 940px;
-    margin: 0 auto $_int-ultra auto;
+    margin: 0 auto $_int-80 auto;
     @media all and (min-width: 1024px) {
-      margin: 0 auto $_int-ultra*2 auto;
+      margin: 0 auto $_int-80*2 auto;
     }
     .box__header {
-      margin-left: $_int-m;
-      margin-right: $_int-m;
+      margin-left: $_int-16;
+      margin-right: $_int-16;
       .title__large-1 {
-        margin-bottom: $_int-m;
+        margin-bottom: $_int-16;
       }
       .paragraph__medium-1 {
-        margin-bottom: $_int-xxl;
+        margin-bottom: $_int-40;
       }
     }
     .box__body {
       ol {
-        margin-right: $_int-m;
-        margin-left: $_int-m;
-        margin-bottom: $_int-xxl;
+        margin-right: $_int-16;
+        margin-left: $_int-16;
+        margin-bottom: $_int-40;
         @media all and (min-width: 768px) {
           margin: 0 auto;
         }
       }
       li {
-        margin-bottom: $_int-xxl;
+        margin-bottom: $_int-40;
         .works__featured {
-          margin-bottom: $_int-xxl;
+          margin-bottom: $_int-40;
         }
         .works__featured,
         .works__featured--full {
@@ -83,16 +83,48 @@
           }
           .title__medium-2,
           .paragraph__small-3 {
-            margin-bottom: $_int-m;
+            margin-bottom: $_int-16;
           }
         }
         .description {
-          margin: $_int-xxl $_int-m;
+          margin: $_int-40 $_int-16;
           @media all and (min-width: 768px) {
-            margin: $_int-xxl;
+            margin: $_int-40;
           }
         }
       }
+    }
+    // HOLDING VERTICAL PICTURES
+    .picture__center {
+      margin-bottom: 100px;
+      > img {
+        display: block;
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+        @media all and (min-width: 768px) {
+          width: 41%;
+        }
+      }
+    }
+    .picture__full-width {
+      .holding-1--full {
+        margin-bottom: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        img {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+        span {
+          display: block;
+          font-size: 0.8rem;
+          color: $_light-dark;
+        }
+      }
+    }
+    .picture__half-screen {
+
     }
   }
 }
@@ -110,10 +142,10 @@
       width: 46.8%;
     }
     .works__featured:first-child {
-      margin-right: $_int-xxl/2;
+      margin-right: $_int-40/2;
     }
     .works__featured:last-child {
-      margin-left: $_int-xxl/2;
+      margin-left: $_int-40/2;
     }
     .works__featured--full {
       display: inline-block;

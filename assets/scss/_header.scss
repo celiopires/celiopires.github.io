@@ -23,15 +23,15 @@ header {
     ol {
       position: absolute;
       right: 0;
-      top: $_int-l + $_int-xxs;
+      top: $_int-24 + $_int-4;
       li {
         position: relative;
         display: inline-block;
-        margin-left: $_int-xs;
-        margin-right: $_int-xs;
+        margin-left: $_int-8;
+        margin-right: $_int-8;
         @media all and (min-width: 768px) {
-          margin-left: $_int-m;
-          margin-right: $_int-m;
+          margin-left: $_int-16;
+          margin-right: $_int-16;
         }
       }
     }
@@ -41,14 +41,14 @@ header {
 a {
   &.home {
     display: inline-block;
-    padding: $_int-l + $_int-xxs 0;
-    margin-left: $_int-m;
+    padding: $_int-24 + $_int-4 0;
+    margin-left: $_int-16;
     @media all and (max-width: 1024px) {
-      margin-left: $_int-l;
+      margin-left: $_int-24;
     }
   }
   &.about__header {
-    padding: $_int-l 0;
+    padding: $_int-24 0;
     @media all and (min-width: 768px) {
       right: 10px;
     }

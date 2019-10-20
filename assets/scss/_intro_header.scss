@@ -10,7 +10,7 @@
 	position: relative;
   }
   .intro__header ol {
-	margin-bottom: $_int-xxl;
+	margin-bottom: $_int-40;
 	li {
 	  list-style: square inside;
 	}
@@ -20,13 +20,13 @@
 // HEADER INTRO BOTTOM
 .container .container__intro .intro__header--bottom {
 	max-width: 704px;
-	margin: $_int-ultra*2 auto;
+	margin: $_int-80*2 auto;
 	.title__large-2 {
-		margin-bottom: $_int-m;
+		margin-bottom: $_int-16;
 	}
 	.paragraph__medium-2 {
-		padding: 0 $_int-m;
-		margin-bottom: $_int-xl;
+		padding: 0 $_int-16;
+		margin-bottom: $_int-32;
 	}
 	.title__large-2,
 	.paragraph__medium-2,

@@ -6,12 +6,12 @@
     text-align: center;
     li {
       display: inline-block;
-      margin-right: $_int-m;
-      margin-left: $_int-m;
+      margin-right: $_int-16;
+      margin-left: $_int-16;
     }
   }
   .paragraph__small-1 {
     text-align: center;
-    margin: $_int-l auto;
+    margin: $_int-24 auto;
   }
 }
