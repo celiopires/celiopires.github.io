@@ -11,9 +11,9 @@
   }
   .intro__header ol {
 	margin-bottom: $_int-40;
-	li {
-	  list-style: square inside;
-	}
+		li {
+			list-style: square inside;
+		}
   }
 }
 
@@ -43,6 +43,18 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		margin-left: 32px;
+	}
+	.picture__center {
+		margin: $_int-80 auto;
+		> img {
+			display: block;
+			width: 80%;
+			max-width: 300px;
+			margin: 0 auto;
+			@media all and (min-width: 768px) {
+				max-width: 400px;
+			}
+		}
 	}
 }
 

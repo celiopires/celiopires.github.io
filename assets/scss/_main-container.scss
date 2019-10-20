@@ -40,6 +40,7 @@
     @media all and (min-width: 1024px) {
       margin: 0 auto $_int-80*2 auto;
     }
+    // BOX HEAD - TITLES AND INTROS
     .box__header {
       margin-left: $_int-16;
       margin-right: $_int-16;
@@ -49,8 +50,26 @@
       .paragraph__medium-1 {
         margin-bottom: $_int-40;
       }
+      .title__medium-2 {
+        margin-bottom: $_int-16;
+      }
+      .picture__center {
+        margin-bottom: $_int-80;
+        > img {
+          display: block;
+          width: 80%;
+          max-width: 300px;
+          margin: 0 auto;
+          @media all and (min-width: 768px) {
+            width: 500px;
+          }
+        }
+      }
     }
+    // BOX BODY - CONTENT
     .box__body {
+      margin-left: $_int-16;
+      margin-right: $_int-16;
       ol {
         margin-right: $_int-16;
         margin-left: $_int-16;
@@ -93,38 +112,34 @@
           }
         }
       }
-    }
-    // HOLDING VERTICAL PICTURES
-    .picture__center {
-      margin-bottom: 100px;
-      > img {
-        display: block;
-        width: 80%;
-        max-width: 300px;
-        margin: 0 auto;
-        @media all and (min-width: 768px) {
-          width: 41%;
-        }
+      .paragraph__medium-1 {
+        margin-bottom: $_int-32;
       }
-    }
-    .picture__full-width {
       .holding-1--full {
-        margin-bottom: 60px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: $_int-80 0;
         img {
           width: 100%;
-          margin-bottom: 10px;
         }
         span {
+          margin-top: $_int-16;
+        }
+        .paragraph__small-3 {
           display: block;
-          font-size: 0.8rem;
-          color: $_light-dark;
+          margin-top: $_int-16;
         }
       }
-    }
-    .picture__half-screen {
-
+      .picture__center {
+        margin: $_int-80 $_int-16;
+        > img {
+          display: block;
+          width: 80%;
+          max-width: 300px;
+          margin: 0 auto;
+          @media all and (min-width: 768px) {
+            width: 500px;
+          }
+        }
+      }
     }
   }
 }
@@ -139,7 +154,7 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      width: 46.8%;
+      width: 46.6%;
     }
     .works__featured:first-child {
       margin-right: $_int-40/2;
@@ -157,7 +172,7 @@
   .container .container__box .box__body li {
     .works__featured {
       display: inline-block;
-      width: 47.6%;
+      width: 47.5%;
     }
   }
 }
