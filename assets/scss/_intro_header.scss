@@ -56,6 +56,12 @@
 			}
 		}
 	}
+	.picture__center {
+		max-width: 375px;
+		> img {
+			box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.05);
+		}
+	}
 }
 
 // SPECIFIC FOR EL ESPANOL

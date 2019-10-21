@@ -12,48 +12,59 @@
 	<header>
 		<div id="header" class="header">
 			<div class="header__nav">
-				<a class="home" href="/">Célio Pires</a>
-				<a class="about__header" href="about.html">About</a>
+				<a class="home paragraph__small-3" href="/">Célio</a>
+				<ol>
+					<li><a class="about__header paragraph__small-3" href="about.html">About</a></li>
+					<li><a class="about__header paragraph__small-3" href="projects.html">Projects</a></li>
+					<li><a class="about__header paragraph__small-3" href="index.html#contact">Contact</a></li>
+				</ol>
 			</div>
 		</div>
 	</header>
-	<div class="container ee">
-		<div id="introHeader" class="container__intro">
-			<div class="intro__header">
-				<div class="intro__header__shelfs">
-					<div class="top__shelf">
-						<h1>Taglicious</h1>
-						<h2><em>Create high-quality videos in seconds</em> Supported by Google News</h2>
-					</div>
-				</div>
-				<div class="intro__header--bio">
-					<p>Short videos generated automatically from El Español’s media content. Every published history is stored, indexed and identified by a tag or a keyword, to facilitate search and discoverability. Taglicious will fetch those tags looking for any type of media then it will combine them with sound and animated text. Rather than spending money on a big budget production, journalists can now, with just a few clicks, generate high quality videos in seconds. </p>
+	<div class="container">
+		<div id="intro__header" class="container__intro">
+			<div class="intro__header--bottom">
+				<h1 class="title__large-2">Taglicious</h1>
+				<p class="paragraph__medium-2"><em>Create high-quality videos in seconds</em> Supported by Google News</p>
+			</div>
+		</div>
+		<div class="container__box">
+			<div class="box__header">
+				<h2 class="title__large-1">Bio</h2>
+			</div>
+			<div class="box__body">
+				<p class="paragraph__medium-1">Short videos generated automatically from El Español’s media content. Every published history is stored, indexed and identified by a tag or a keyword, to facilitate search and discoverability. Taglicious will fetch those tags looking for any type of media then it will combine them with sound and animated text. Rather than spending money on a big budget production, journalists can now, with just a few clicks, generate high quality videos in seconds. </p>
+				<div class="holding-1--full">
 					<img src="assets/images/taglicious/taglicious.png" alt="">
 				</div>
 			</div>
-
-			<div class="intro__body">				
-				
-				<p>The way we consume information is continuously being reinvented. New technologies, devices, experiences are being improved every day. Video content is king. It is an attractive, versatile and extremely sharable medium to reach a large number of people from all audiences. This format will definitely enrich histories with great multimedia content, which will improve engagement and time on page.</p>
+		</div>
+		<div class="container__box">
+			<div class="box__body">
+				<p class="paragraph__medium-1">The way we consume information is continuously being reinvented. New technologies, devices, experiences are being improved every day. Video content is king. It is an attractive, versatile and extremely sharable medium to reach a large number of people from all audiences. This format will definitely enrich histories with great multimedia content, which will improve engagement and time on page.</p>
 			</div>
-
-			<footer>
-				<div class="goodbye">
-					<ul>
-						<li><a target="_blank" href="https://linkedin.com/in/celiopires">Linkedin</a></li>
-						<li><a target="_blank" href="https://dribbble.com/celiows">Dribbble</a></li>
-						<li><a target="_blank" href="https://codepen.io/celio/">Codepen</a></li>
-						<li><a target="_blank" href="https://jsfiddle.net/user/celio/fiddles">JsFiddle</a></li>				
-						<li><a target="_blank" href="https://twitter.com/celiows">Twitter</a></li>
-						<li><a target="_blank" href="https://instagram.com/celiows">Instagram</a></li>
-					</ul>
-					<h6>Célio Pires 2019</h6>
-				</div>
-			</footer>
 		</div>
 	</div>
-	
+
+	<footer>
+		<div class="container__box">
+			<div class="goodbye">
+				<ul>
+					<li><a class="paragraph__small-3" target="_blank" href="https://linkedin.com/in/celiopires">Linkedin</a></li>
+					<li><a class="paragraph__small-3" target="_blank" href="https://dribbble.com/celiows">Dribbble</a></li>
+					<li><a class="paragraph__small-3" target="_blank" href="https://codepen.io/celio/">Codepen</a></li>
+					<li><a class="paragraph__small-3" target="_blank" href="https://jsfiddle.net/user/celio/fiddles">JsFiddle</a></li>				
+					<li><a class="paragraph__small-3" target="_blank" href="https://twitter.com/celiows">Twitter</a></li>
+					<li><a class="paragraph__small-3" target="_blank" href="https://instagram.com/celiows">Instagram</a></li>
+				</ul>
+				<div class="paragraph__small-1">Made with ❤️ in Portugal - Célio Pires 2019</div>
+			</div>
+		</div>
+	</footer>
+
 	<script src="assets/js/scripts.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
