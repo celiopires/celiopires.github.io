@@ -1,0 +1,42 @@
+// Root
+$_default: 4px;
+
+// Intervals
+$_int-4: $_default; //--------- 4
+$_int-8: $_default*2; //------- 8
+$_int-12: $_default*3; //------ 12
+$_int-16: $_default*4; //------ 16
+$_int-24: $_default*6; //------ 24
+$_int-32: $_default*8; //------ 32
+$_int-40: $_default*10; //----- 40
+$_int-60: $_default*15; //----- 60
+$_int-80: $_default*20; //----- 80
+
+// Defaults
+.int-4 {
+  margin-bottom: $_int-4; //----- 4 xxs
+}
+.int-8 {
+  margin-bottom: $_int-8; //----- 8 xs
+}
+.int-12 {
+  margin-bottom: $_int-12; //----- 12 s
+}
+.int-16 {
+  margin-bottom: $_int-16; //----- 16 m
+}
+.int-24 {
+  margin-bottom: $_int-24; //----- 24 l
+}
+.int-32 {
+  margin-bottom: $_int-32; //----- 32 xl
+}
+.int-40 {
+  margin-bottom: $_int-40; //----- 40 xxl
+}
+.int-60 {
+  margin-bottom: $_int-60; //----- 60 xxxl
+}
+.int-80 {
+  margin-bottom: $_int-80; //----- 80 ultra
+}

@@ -1,24 +1,7 @@
 // CONTAINER INTRO BODY
 
-// Colored boxes
-/* .color__box--1 { background-color: $_yellow; }
-.color__box--2 { background-color: $_green; }
-.color__box--3 { background-color: $_blue; }
-.color__box--4 { background-color: $_yellow; } */
-
-// Body
+// BODY
 .intro__body {
-	h1 {
-		font-size: 1.2rem;
-		@media all and (min-width: 768px) {
-			font-size: 1.6rem;
-		}
-	}
-	p {
-		@media all and (max-width: 768px) {
-			font-size: 1.2rem;
-		}
-	}
 	.holder {
 		margin-bottom: 100px;
 		> * {
@@ -210,7 +193,7 @@
 		}
 		ol {
 			font-family: "Hind", sans-serif;
-			font-weight: 300;
+			font-weight: $_light;
 			font-size: 1.6rem;
 			margin-bottom: 60px;
 			padding-left: 20px;

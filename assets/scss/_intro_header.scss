@@ -1,7 +1,6 @@
 // CONTAINER HEADER
 
 //Main styles
-
 #introHeader {
   display: block;
 }
@@ -11,95 +10,58 @@
 	position: relative;
   }
   .intro__header ol {
-	margin-bottom: 40px;
-	li {
-	  list-style: square inside;
-	  h4 {
-		font-size: 2.5rem;
-		line-height: 1.2;
-		vertical-align: middle;
-		display: inline;
-		color: $_dark;
-	  }
-	}
+	margin-bottom: $_int-40;
+		li {
+			list-style: square inside;
+		}
   }
 }
 
 // HEADER INTRO BOTTOM
-
-.intro__header--bottom {
-  position: relative;
-  margin: 100px auto;
-  max-width: 940px;
-  @media all and (min-width: 768px) {
-	margin: 200px auto;
-	font-size: 4rem;
-  }
-  h1, p {
-	@media all and (min-width: 768px) {
-		padding-left: 0;
-	}
-  }
-  > p {
-	margin-bottom: 30px;
-	@media all and (max-width: 768px) {
-		font-size: 1.4rem;
-	}
-  }
-}
-
 .container .container__intro .intro__header--bottom {
-  h1 {
-	font-weight: 700;
-	font-size: 2rem;
-	line-height: 1.2;
-	margin-bottom: 40px;
-	@media all and (min-width: 768px) {
-		font-size: 8rem;
+	max-width: 704px;
+	margin: $_int-80*2 auto;
+	.title__large-2 {
+		margin-bottom: $_int-16;
 	}
-  }
-  p {
-	font-weight: 300;
-	color: $_light-dark;
-  }
-  .more__button {
-	font-size: 1.6rem;
-	@media all and (max-width: 768px) {
-		margin-left: 20px;
-		font-size: 1.2rem;
+	.paragraph__medium-2 {
+		padding: 0 $_int-16;
+		margin-bottom: $_int-32;
 	}
-  }
-  a {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	display: block;
-	@media all and (min-width: 768px) {
-		&:hover ~ h1 {
-			text-decoration: underline;
-		}
-		&:hover ~ .more__button {
-			border: 2px solid $_blue;
-			padding: 20px 40px;
-			color: $_light;
-			background-color: $_blue;
-			box-shadow: 5px 5px 10px rgba(0,0,0,0.05);
-			&::after {
-				background-image: url(../../assets/images/arrow-right-light.svg);
+	.title__large-2,
+	.paragraph__medium-2,
+	.paragraph__small-3 {
+		text-align: center;
+	}
+	.paragraph__small-3::after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		width: 32px;
+		height: 32px;
+		background-image: url("../images/arrow-right-dark.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-left: 32px;
+	}
+	.picture__center {
+		margin: $_int-80 auto;
+		> img {
+			display: block;
+			width: 80%;
+			max-width: 300px;
+			margin: 0 auto;
+			@media all and (min-width: 768px) {
+				max-width: 400px;
 			}
 		}
 	}
-  }
-}
-
-@media all and (min-width: 1024px) {
-  .container .container__intro .intro__header--bottom {
-	p {
-	  max-width: 70%;
+	.picture__center {
+		max-width: 375px;
+		> img {
+			box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.05);
+		}
 	}
-  }
 }
 
 // SPECIFIC FOR EL ESPANOL
@@ -120,104 +82,11 @@
 	}
 }
 
-.container.ee .container__intro .intro__header {
-	.intro__header--bio {
-		p {
-			color: $_medium-dark;
-			@media all and (max-width: 768px) {
-				font-size: 1.2rem;
-			}
-		}
-	}
-}
-
-/* .container.ee .container__intro .intro__header {
-	min-height: 100vh;
-	@include horizontal-gradient($_dark, $_medium-dark);
-} */
-
-.container.obs .container__intro .intro__header,
-.container.ee .container__intro .intro__header {
-	.intro__header__shelfs {
-		max-width: 940px;
-		margin: 40px auto;
-		@media all and (min-width: 768px) {
-			margin: 60px auto;
-		}
-		.top__shelf {
-			display: inline-block;
-			width: 100%;
-			vertical-align: middle;
-			color: $_dark;
-			h1 {
-				font-size: 2.5rem;
-				margin-bottom: 0;
-				@media all and (min-width: 768px) {
-					font-size: 4rem;
-				}
-			}
-			h2 {
-				font-size: 1rem;
-				@media all and (min-width: 768px) {
-					font-size: 1.2rem;
-				}
-				em {
-					font-size: 1.3rem;
-					font-style: italic;
-					display: block;
-					margin-bottom: 10px;
-					@media all and (min-width: 768px) {
-						font-size: 2rem;
-					}
-				}
-			}
-		}
-	}
-}
-
-.container.ee .container__intro .intro__header {
-	.top__shelf {
-		color: $_dark;
-		h2 {
-			color: $_medium-grey;
-			em {
-				color: $_medium-dark;
-			}
-		}
-	}
-}
-
 // SPECIFIC FOR OBSERVADOR
-
 .container.obs {
-	.intro__header--bio {
-		p {
-			@media all and (max-width: 768px) {
-				font-size: 1.2rem;
-			}
-		}
-	}
 	.container__intro .intro__header__shelfs {
 		max-width: 940px;
 		margin: 60px auto;
-		.top__shelf {
-			h1 {
-				font-size: 4rem;
-				margin-bottom: 0;
-				color: $_dark;
-			}
-			h2 {
-				font-size: 1.2rem;
-				color: $_medium-grey;
-				em {
-					font-size: 2rem;
-					font-style: italic;
-					display: block;
-					margin-bottom: 20px;
-					color: $_medium-dark;
-				}
-			}
-		}
 		.bottom__shelf {
 			.holding-1 {
 				max-width: 940px;
