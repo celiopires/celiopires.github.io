@@ -38,9 +38,11 @@ Thumbs.db
 
 # Folders #
 ######################
-node_modules/*
+node_modules/
 
 # Other #
 ######################
 package-lock.json
 package.json
+config.rb
+headings.html
