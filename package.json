@@ -4,16 +4,16 @@
   "description": "celiopires portfolio",
   "main": "index.html",
   "dependencies": {
-    "gulp": "^3.8.11",
     "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.2.3",
     "gulp-watch": "^5.0.1",
     "pug": "^2.0.3"
   },
   "devDependencies": {
-    "grunt": "^1.0.4",
+    "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0",
     "gulp-plumber": "^1.2.0",
+    "gulp-rev": "^9.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-update-version": "^1.0.2"
