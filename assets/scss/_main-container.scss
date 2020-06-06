@@ -70,12 +70,14 @@
     .box__body {
       margin-left: $_int-16;
       margin-right: $_int-16;
+      
       ol {
         margin-bottom: $_int-40;
         @media all and (min-width: 768px) {
           margin: 0 auto;
         }
       }
+
       li {
         margin-bottom: $_int-40;
         .works__featured {
