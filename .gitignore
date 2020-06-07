@@ -45,4 +45,5 @@ node_modules/
 package-lock.json
 package.json
 config.rb
+*.rb
 headings.html
