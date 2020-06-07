@@ -24,6 +24,8 @@
 *.sql
 *.sqlite
 *.git
+*.gitignore
+.gitignore
 
 # OS generated files #
 ######################
