@@ -24,7 +24,7 @@
 	.title__large-2 {
 		margin-bottom: $_int-32;
 	}
-	.paragraph__medium-2 {
+	.font__medium-2 {
 		padding: 0 $_int-16;
 		margin-bottom: $_int-32;
 		@media all and (min-width: 768px) {
@@ -32,11 +32,11 @@
 		}
 	}
 	.title__large-2,
-	.paragraph__medium-2,
-	.paragraph__small-3 {
+	.font__medium-2,
+	.font__small-3 {
 		text-align: center;
 	}
-	.paragraph__small-3::after {
+	.font__small-3::after {
 		content: "";
 		display: inline-block;
 		vertical-align: middle;
