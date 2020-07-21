@@ -44,14 +44,15 @@
     .box__header {
       margin-left: $_int-16;
       margin-right: $_int-16;
-      .title__large-1 {
+      margin-bottom: $_int-40;
+      .font__large-1 {
         margin-bottom: $_int-16;
       }
       .font__medium-1 {
         margin-bottom: $_int-40;
       }
-      .title__medium-2 {
-        margin-bottom: $_int-16;
+      .font__medium-3 {
+        margin-bottom: $_int-8;
       }
       .picture__center {
         margin-bottom: $_int-80;
@@ -70,6 +71,11 @@
     .box__body {
       margin-left: $_int-16;
       margin-right: $_int-16;
+
+      &.skills li {
+        display: inline-block;
+        vertical-align: middle;
+      }
       
       ol {
         margin-bottom: $_int-40;
@@ -79,7 +85,7 @@
       }
 
       li {
-        margin-bottom: $_int-40;
+        //margin-bottom: $_int-40;
         .works__featured {
           margin-bottom: $_int-40;
         }
@@ -93,16 +99,57 @@
           vertical-align: top;
           background-color: $_white;
           border: 1px solid $_dark-grey;
+          transition: background-color ease-out .2s;
+          -webkit-transition: background-color ease-out .2s;
+          -moz-transition: background-color ease-out .2s;
           a {
             position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
+            transition: all ease-out .2s;
+            -webkit-transition: all ease-out .2s;
+            -moz-transition: all ease-out .2s;
+            &::after {
+              content: '';
+              display: block;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              padding: 16px;
+              margin: 24px;
+              background-color: transparent;
+              background-image: url(../../assets/images/arrow-right-dark.svg);
+              background-repeat: no-repeat;
+              background-size: 50%;
+              background-position: center;
+              border: 2px solid transparent;
+              width: 58px;
+              height: 21px;
+              border-radius: 50px;
+              transition: all ease-out .2s;
+              -webkit-transition: all ease-out .2s;
+              -moz-transition: all ease-out .2s;
+              transition-delay: .01s;
+              &:hover {
+                background-color: $_dark;
+                border: 2px solid $_medium-grey;
+                background-image: url(../../assets/images/arrow-right-light.svg);
+              }
+            }
+            &:hover {
+              &::after { 
+                background-color: $_dark-grey;
+                border: 2px solid $_medium-grey;
+                background-image: url(../../assets/images/arrow-right-dark.svg);
+              }
+            }
           }
-          .title__medium-2,
-          .font__small-3 {
-            margin-bottom: $_int-8;
+          @media all and (min-width: 768px) {
+            &:hover {
+              background-color: $_medium-grey;
+            }
           }
         }
         .description {
@@ -110,9 +157,22 @@
           @media all and (min-width: 768px) {
             margin: $_int-40;
           }
+          .font__medium-2,
+          .font__small-1,
+          .font__small-2 {
+            margin-bottom: $_int-8;
+          }
+          .font__medium-2 {
+            color: $_dark;
+            font-weight: bold;
+          }
+          .font__small-1,
+          .font__small-2 {
+            color: $_light-dark;
+          }
         }
       }
-      .font__medium-1 {
+      .font__medium-2 {
         margin-bottom: $_int-32;
       }
       .holding-1--full {

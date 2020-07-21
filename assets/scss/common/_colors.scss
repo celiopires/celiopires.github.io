@@ -5,7 +5,7 @@ $_white: #FFFFFF;
 $_black: #080808; // Global Background
 $_dark: #12100E; // Component Background
 //$_medium-dark: #26282F;
-$_light-dark: #171412;
+$_light-dark: #2A2726;
 
 // Greys
 $_grey: #5D606D;
@@ -26,7 +26,7 @@ $_red-taglicious: #FFE5E5;
 $_link: #A3CEF1;
 
 // Borders
-$_border: $_light-grey;
+$_border: rgba(207,207,207,.5);
 
 // GRADIENTS
 @mixin horizontal-gradient($from, $to, $stop: 100%) {

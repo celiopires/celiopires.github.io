@@ -21,31 +21,29 @@
 .container .container__intro .intro__header--bottom {
 	max-width: 704px;
 	margin: $_int-80*2 auto;
-	.title__large-2 {
+	.font__large-1 {
 		margin-bottom: $_int-32;
 	}
-	.font__medium-2 {
+	.font__medium-1 {
 		padding: 0 $_int-16;
-		margin-bottom: $_int-32;
+		margin-bottom: $_int-40;
 		@media all and (min-width: 768px) {
 			line-height: 44px;
 		}
 	}
-	.title__large-2,
-	.font__medium-2,
-	.font__small-3 {
+	.font__large-1,
+	.font__medium-1,
+	.font__small-1 {
 		text-align: center;
 	}
-	.font__small-3::after {
-		content: "";
-		display: inline-block;
-		vertical-align: middle;
-		width: 32px;
-		height: 32px;
-		background-image: url("../images/arrow-right-dark.svg");
-		background-repeat: no-repeat;
-		background-position: center;
-		margin-left: 32px;
+	.more__button {
+		margin: 0 auto;
+		width: 104px;
+		.font__small-1 {
+			color: $_white;
+			font-weight: $_bold;
+			text-transform: uppercase;
+		}
 	}
 	.picture__center {
 		margin: $_int-80 auto;

@@ -23,16 +23,20 @@ header {
     margin: 0 auto;
     ol {
       position: absolute;
-      right: 0;
+      right: 14px;
       top: $_int-24 + $_int-4;
       li {
         position: relative;
         display: inline-block;
-        margin-left: $_int-8;
-        margin-right: $_int-8;
         @media all and (min-width: 768px) {
-          margin-left: $_int-16;
-          margin-right: $_int-16;
+        }
+        a {
+          padding-left: $_int-8;
+          padding-right: $_int-8;
+          transition: all ease-out .2s;
+          -webkit-transition: all ease-out .2s;
+          -moz-transition: all ease-out .2s;
+          cursor: pointer;
         }
       }
     }
@@ -56,6 +60,9 @@ a {
     text-transform: uppercase;
     @media all and (min-width: 768px) {
       right: 10px;
+      &:hover {
+        background-color: #2A2726;
+     }
     }
   }
 }

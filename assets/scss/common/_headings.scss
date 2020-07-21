@@ -25,15 +25,15 @@ p {
 }
 
 // SANS SERIF FONT
-.font__large-2,
 .font__large-1,
-.font__medium-4,
-.font__medium-3,
-.font__medium-2,
+.font__large-2,
 .font__medium-1,
-.font__small-3,
+.font__medium-2,
+.font__medium-3,
+.font__medium-4,
+.font__small-1,
 .font__small-2,
-.font__small-1 {
+.font__small-3 {
   font-family: 'Hind', sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -43,22 +43,23 @@ p {
 
 // Font Large
 
+
 .font__large-1 {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: $_bold;
+  color: $_white;
+  @media all and (min-width: 768px) {
+    font-size: 80px;
+    line-height: 96px;
+  }
+}
+
+.font__large-2 {
   font-size: 60px;
   line-height: 76px;
   font-weight: $_bold;
   color: $_white;
-}
-
-.font__large-2 {
-  font-size: 80px;
-  line-height: 76px;
-  font-weight: $_bold;
-  color: $_white;
-  @media all and (min-width: 768px) {
-    font-size: 34px;
-    line-height: 44px;
-  }
 }
 
 // Font Medium
@@ -75,13 +76,13 @@ p {
 }
 
 .font__medium-2 {
-  font-size: 34px;
-  line-height: 44px;
-  font-weight: $_bold;
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: $_light;
   color: $_white;
   @media all and (min-width: 768px) {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 34px;
+    line-height: 44px;
   }
 }
 
