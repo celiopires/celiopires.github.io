@@ -11,58 +11,103 @@
   }
   .intro__header ol {
 	margin-bottom: $_int-40;
-		li {
-			list-style: square inside;
-		}
+	li {
+		list-style: square inside;
+	}
   }
 }
 
 // HEADER INTRO BOTTOM
 .container .container__intro .intro__header--bottom {
-	max-width: 704px;
-	margin: $_int-80*2 auto;
+	max-width: 904px;
+	margin: 140px auto;
+	padding: 0 16px;
 	.font__large-1 {
-		margin-bottom: $_int-32;
+		margin-bottom: $_int-24;
+		text-align: center;
 	}
-	.font__medium-1 {
-		padding: 0 $_int-16;
+	.font__medium-2 {
 		margin-bottom: $_int-40;
+		text-align: center;
 		@media all and (min-width: 768px) {
 			line-height: 44px;
 		}
 	}
-	.font__large-1,
-	.font__medium-1,
-	.font__small-1 {
-		text-align: center;
-	}
 	.more__button {
 		margin: 0 auto;
 		width: 104px;
+		text-align: center;
 		.font__small-1 {
 			color: $_white;
 			font-weight: $_bold;
 			text-transform: uppercase;
 		}
 	}
-	.picture__center {
-		margin: $_int-80 auto;
-		> img {
-			display: block;
-			width: 80%;
-			max-width: 300px;
-			margin: 0 auto;
+	// TEXT ON SECONDARY PAGES
+	&.half__contained {
+		.font__large-2 {
+			text-align: left;
+		}
+		.font__medium-3 {
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			margin-right: $_int-80;
+			margin-top: $_int-24;
+			text-align: left;
+		}
+	}
+
+	// TEXT AND IMAGE SIDE BY SIDE
+	.half__intro {
+		width: 100%;
+		display: inline-block;
+		.font__medium-3 {
+			display: inline-block;
+			vertical-align: top;
+			width: 100%;
+			margin-top: $_int-24;
+			margin-right: $_int-80;
+			margin-bottom: $_int-80;
+			text-align: left;
 			@media all and (min-width: 768px) {
-				max-width: 400px;
+				width: 58%;
+				margin-bottom: 0;
+			}
+		}
+		.picture__right {
+			display: block;
+			max-width: 70%;
+			margin: $_int-24 auto 0 auto;
+			@media all and (min-width: 768px) {
+				display: inline-block;
+				max-width: 30%;
+			}
+			> img {
+				display: block;
+				@media all and (min-width: 768px) {
+				}
 			}
 		}
 	}
-	.picture__center {
-		max-width: 375px;
-		> img {
-			box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.05);
-		}
-	}
+	// .picture__center {
+	// 	margin: $_int-80 auto;
+	// 	> img {
+	// 		display: block;
+	// 		width: 80%;
+	// 		max-width: 300px;
+	// 		margin: 0 auto;
+	// 		@media all and (min-width: 768px) {
+	// 			max-width: 400px;
+	// 		}
+	// 	}
+	// }
+	// .picture__center {
+	// 	max-width: 375px;
+	// 	> img {
+	// 		box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.05);
+	// 	}
+	// }
 }
 
 // SPECIFIC FOR EL ESPANOL
@@ -94,6 +139,19 @@
 				margin: 0 auto;
 				display: block;
 			}
+		}
+	}
+}
+
+// ROLE INDUSTRY
+.container .container__intro .intro__header--bottom {
+	.role__industry {
+		margin-top: 32px;
+		margin-bottom: 40px;
+		.font__small-1 {
+			border-bottom: 1px solid $_border;
+			padding-bottom: 32px;
+			line-height: 1.8;
 		}
 	}
 }
