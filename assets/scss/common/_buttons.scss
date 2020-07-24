@@ -1,30 +1,30 @@
-// Default styles for more button
+// More button
+
 .more__button {
-  cursor: pointer;
-  color: $_blue;
-  padding: 20px 0;
+  background-color: $_light-dark;
+  border: 2px solid $_light-dark;
+  border-radius: 50px;
+  padding: 30px 32px;
+  display: block;
   @media all and (min-width: 768px) {
-    display: inline-block;
-    border-radius: 50px;
-    vertical-align: middle;
-    border: 2px solid transparent;
-    background-color: transparent;
-    -webkit-transition: all .1s ease-out;
-    -moz-transition: all .1s ease-out;
-    -o-transition: all .1s ease-out;
-    transition: all .1s ease-out;
-    &::after {
-      content: "";
-      width: 47.5px;
-      height: 21px;
-      background-image: none;
-      background-position: center;
-      background-size: 100%;
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 20px;
+    transition: border ease-out .2s;
+    -webkit-transition: border ease-out .2s;
+    -moz-transition: border ease-out .2s;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+      border-color: $_border;
     }
   }
 }
 
-// Exceptions
+
+// Skills
+
+.skill {
+  margin: 0 16px 24px 0;
+  background-color: transparent;
+  padding: 22px 40px;
+  border: 2px solid $_dark-grey;
+  border-radius: 50px;
+}

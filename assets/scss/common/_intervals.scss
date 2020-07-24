@@ -11,6 +11,7 @@ $_int-32: $_default*8; //------ 32
 $_int-40: $_default*10; //----- 40
 $_int-60: $_default*15; //----- 60
 $_int-80: $_default*20; //----- 80
+$_int-100: $_default*25; //----- 100
 
 // Defaults
 .int-4 {
@@ -39,4 +40,7 @@ $_int-80: $_default*20; //----- 80
 }
 .int-80 {
   margin-bottom: $_int-80; //----- 80 ultra
+}
+.int-100 {
+  margin-bottom: $_int-100; //----- 100 ultra xl
 }

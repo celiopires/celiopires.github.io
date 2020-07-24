@@ -1,5 +1,4 @@
 // Importing fonts
-@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,700&display=swap');
 
 //WEIGHTS
@@ -17,7 +16,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 p {
   font-size: 1.1rem;
-  color: #111111;
+  color: $_dark;
   margin-bottom: 60px;
   font-weight: $_light;
   @media all and (min-width: 768px) {
@@ -25,57 +24,16 @@ p {
   }
 }
 
-// SERIF FONT
-.title__large-2,
-.title__large-1,
-.title__medium-2,
-.title__medium-1 {
-  font-family: 'Source Serif Pro', serif;
-  font-weight: $_bold;
-  color: $_dark;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
-
-.title__large-2 {
-  font-size: $_int-40 + $_int-8;
-  line-height: $_int-60;
-  @media all and (min-width: 768px) {
-    font-size: $_int-80;
-    line-height: $_int-80 + $_int-12;
-  }
-}
-
-.title__large-1 {
-  font-size: $_int-40;
-  line-height: $_int-40 + $_int-12;
-  @media all and (min-width: 768px) {
-    font-size: $_int-60;
-    line-height: $_int-60 + $_int-12;
-  }
-}
-
-.title__medium-2 {
-  font-size: $_int-32 + $_int-4/2;
-  line-height: $_int-40 + $_int-4;
-}
-
-.title__medium-1 {
-  font-size: $_int-24 + $_int-4/2;
-  line-height: $_int-32 + $_int-4;;
-}
-
 // SANS SERIF FONT
-.paragraph__large-2,
-.paragraph__large-1,
-.paragraph__medium-3,
-.paragraph__medium-2,
-.paragraph__medium-1,
-.paragraph__small-3,
-.paragraph__small-2,
-.paragraph__small-1 {
+.font__large-1,
+.font__large-2,
+.font__medium-1,
+.font__medium-2,
+.font__medium-3,
+.font__medium-4,
+.font__small-1,
+.font__small-2,
+.font__small-3 {
   font-family: 'Hind', sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -83,70 +41,84 @@ p {
   text-rendering: optimizeLegibility;
 }
 
-.paragraph__large-2 {
-  font-size: $_int-40 + $_int-8;
-  line-height: $_int-60;
+// Font Large
+
+
+.font__large-1 {
+  font-size: 34px;
+  line-height: 44px;
   font-weight: $_bold;
-  color: $_dark;
+  color: $_white;
   @media all and (min-width: 768px) {
-    font-size: $_int-32 + $_int-4/2;
-    line-height: $_int-40 + $_int-4;
+    font-size: 80px;
+    line-height: 96px;
   }
 }
 
-.paragraph__large-1 {
-  font-size: $_int-40;
-  line-height: $_int-40 + $_int-12;
+.font__large-2 {
+  font-size: 60px;
+  line-height: 76px;
   font-weight: $_bold;
-  color: $_dark;
+  color: $_white;
 }
 
-.paragraph__medium-3 {
-  font-size: $_int-32 + $_int-4/2;
-  line-height: $_int-40 + $_int-4;
-  font-weight: $_bold;
-  color: $_dark;
-}
+// Font Medium
 
-.paragraph__medium-2 {
-  font-size: $_int-24;
-  line-height: $_int-32;
+.font__medium-1 {
+  font-size: 34px;
+  line-height: 44px;
   font-weight: $_light;
-  color: $_dark;
+  color: $_white;
   @media all and (min-width: 768px) {
-    font-size: $_int-32 + $_int-4/2;
-    line-height: $_int-40;
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 
-.paragraph__medium-1 {
-  font-size: $_int-16 + $_int-4/2;
-  line-height: $_int-32;
+.font__medium-2 {
+  font-size: 26px;
+  line-height: 36px;
   font-weight: $_light;
-  color: $_dark;
+  color: $_white;
   @media all and (min-width: 768px) {
-    font-size: $_int-24 + $_int-4/2;
-    line-height: $_int-32 + $_int-4;
+    font-size: 34px;
+    line-height: 44px;
   }
 }
 
-.paragraph__small-3 {
-  font-size: $_int-16 + $_int-4/2;
-  line-height: $_int-24 + $_int-4/2;
-  font-weight: $_regular;
-  color: $_dark;
+.font__medium-3 {
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: $_light;
+  color: $_white;
 }
 
-.paragraph__small-2 {
-  font-size: $_int-16;
-  line-height: $_int-24 - $_int-4/2;
-  font-weight: $_regular;
-  color: $_dark;
+.font__medium-4 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: $_bold;
+  color: $_white;
 }
 
-.paragraph__small-1 {
-  font-size: $_int-12;
-  line-height: $_int-16 + $_int-4/2;
+// Font Small
+
+.font__small-1 {
+  font-size: 18px;
+  line-height: 26px;
   font-weight: $_regular;
-  color: $_dark;
+  color: $_dark-grey;
+}
+
+.font__small-2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: $_regular;
+  color: $_dark-grey;
+}
+
+.font__small-3 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: $_regular;
+  color: $_dark-grey;
 }

@@ -12,26 +12,31 @@ header {
   height: 80px;
   margin: 0;
   z-index: 1;
+  background-color: $_dark;
   &.fixed {
-    background-color: $_white;
+    background-color: $_dark;
   }
   .header__nav {
     line-height: 1;
     position: relative;
-    max-width: 940px;
+    // max-width: 940px;
     margin: 0 auto;
     ol {
       position: absolute;
-      right: 0;
+      right: 14px;
       top: $_int-24 + $_int-4;
       li {
         position: relative;
         display: inline-block;
-        margin-left: $_int-8;
-        margin-right: $_int-8;
         @media all and (min-width: 768px) {
-          margin-left: $_int-16;
-          margin-right: $_int-16;
+        }
+        a {
+          padding-left: $_int-8;
+          padding-right: $_int-8;
+          transition: all ease-out .2s;
+          -webkit-transition: all ease-out .2s;
+          -moz-transition: all ease-out .2s;
+          cursor: pointer;
         }
       }
     }
@@ -41,16 +46,23 @@ header {
 a {
   &.home {
     display: inline-block;
-    padding: $_int-24 + $_int-4 0;
+    padding: 28px 0;
     margin-left: $_int-16;
+    font-weight: $_bold;
+    text-transform: uppercase;
     @media all and (max-width: 1024px) {
       margin-left: $_int-24;
     }
   }
   &.about__header {
     padding: $_int-24 0;
+    font-weight: $_light;
+    text-transform: uppercase;
     @media all and (min-width: 768px) {
       right: 10px;
+      &:hover {
+        background-color: #2A2726;
+     }
     }
   }
 }

@@ -1,29 +1,32 @@
-// Dedault color for background
+// Whites
 $_white: #FFFFFF;
 
-// Default colors for texts
-$_dark: #10131B;
-$_medium-dark: #26282F;
-$_light-dark: #67686D;
+// Darks
+$_black: #080808; // Global Background
+$_dark: #12100E; // Component Background
+//$_medium-dark: #26282F;
+$_light-dark: #2A2726;
 
 // Greys
 $_grey: #5D606D;
-$_medium-grey: #9CA0AF;
-$_light-grey: #DCDEE5;
-
-// Default color for links
-$_link: #001cb7;
-
-// Borders
-$_border: #CCCCCC;
+$_light-grey: #F5F5F5;
+$_medium-grey: #EBEBEB;
+$_dark-grey: #CFCFCE;
 
 // Blues
-$_blue: rgb(76, 85, 88);
-$_blue-dark: #1A93BA;
+$_blue: #A3CEF1;
+$_blue-dark: #2878B8;
 
+//Oranges
 $_orange-ee: #FFF7E5;
 $_blue-obs: #E5F4FF;
 $_red-taglicious: #FFE5E5;
+
+// Default color for links
+$_link: #A3CEF1;
+
+// Borders
+$_border: rgba(207,207,207,.5);
 
 // GRADIENTS
 @mixin horizontal-gradient($from, $to, $stop: 100%) {
