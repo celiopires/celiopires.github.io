@@ -20,17 +20,23 @@
 // HEADER INTRO BOTTOM
 .container .container__intro .intro__header--bottom {
 	max-width: 904px;
-	margin: 140px auto;
+	margin: 0 auto 80px auto;
 	padding: 0 16px;
+	@media all and (min-width: 768px) {
+		margin: 80px auto;
+	}
 	.font__large-1 {
 		margin-bottom: $_int-24;
 		text-align: center;
 	}
-	.font__medium-2 {
+	.font__medium-3 {
 		margin-bottom: $_int-40;
 		text-align: center;
 		@media all and (min-width: 768px) {
 			line-height: 44px;
+			max-width: 60%;
+			margin-right: auto;
+			margin-left: auto;
 		}
 	}
 	.more__button {
@@ -52,7 +58,6 @@
 			display: inline-block;
 			vertical-align: top;
 			width: 100%;
-			margin-right: $_int-80;
 			margin-top: $_int-24;
 			text-align: left;
 		}
@@ -67,20 +72,21 @@
 			vertical-align: top;
 			width: 100%;
 			margin-top: $_int-24;
-			margin-right: $_int-80;
 			margin-bottom: $_int-80;
+			margin-right: $_int-80;
 			text-align: left;
 			@media all and (min-width: 768px) {
-				width: 58%;
+				width: 57%;
 				margin-bottom: 0;
 			}
 		}
 		.picture__right {
 			display: block;
-			max-width: 70%;
-			margin: $_int-24 auto 0 auto;
+			max-width: 41%;
+			margin: 0 auto;
 			@media all and (min-width: 768px) {
 				display: inline-block;
+				margin-top: 24px;
 				max-width: 30%;
 			}
 			> img {
