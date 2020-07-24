@@ -116,38 +116,40 @@
             transition: all ease-out .2s;
             -webkit-transition: all ease-out .2s;
             -moz-transition: all ease-out .2s;
-            &::after {
-              content: '';
-              display: block;
-              position: absolute;
-              right: 0;
-              bottom: 0;
-              padding: 16px;
-              margin: 24px;
-              background-color: transparent;
-              background-image: url(../../assets/images/arrow-right-dark.svg);
-              background-repeat: no-repeat;
-              background-size: 50%;
-              background-position: center;
-              border: 2px solid transparent;
-              width: 58px;
-              height: 21px;
-              border-radius: 50px;
-              transition: all ease-out .2s;
-              -webkit-transition: all ease-out .2s;
-              -moz-transition: all ease-out .2s;
-              transition-delay: .01s;
-              &:hover {
-                background-color: $_dark;
-                border: 2px solid $_medium-grey;
-                background-image: url(../../assets/images/arrow-right-light.svg);
-              }
-            }
-            &:hover {
-              &::after { 
-                background-color: $_dark-grey;
-                border: 2px solid $_medium-grey;
+            @media all and (min-width: 768px) {
+              &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 16px;
+                margin: 24px;
+                background-color: transparent;
                 background-image: url(../../assets/images/arrow-right-dark.svg);
+                background-repeat: no-repeat;
+                background-size: 50%;
+                background-position: center;
+                border: 2px solid transparent;
+                width: 58px;
+                height: 21px;
+                border-radius: 50px;
+                transition: all ease-out .2s;
+                -webkit-transition: all ease-out .2s;
+                -moz-transition: all ease-out .2s;
+                transition-delay: .01s;
+                &:hover {
+                  background-color: $_dark;
+                  border: 2px solid $_medium-grey;
+                  background-image: url(../../assets/images/arrow-right-light.svg);
+                }
+              }
+              &:hover {
+                &::after { 
+                  background-color: $_dark-grey;
+                  border: 2px solid $_medium-grey;
+                  background-image: url(../../assets/images/arrow-right-dark.svg);
+                }
               }
             }
           }
