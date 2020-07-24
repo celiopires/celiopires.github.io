@@ -45,8 +45,8 @@ p {
 
 
 .font__large-1 {
-  font-size: 34px;
-  line-height: 44px;
+  font-size: 60px;
+  line-height: 76px;
   font-weight: $_bold;
   color: $_white;
   @media all and (min-width: 768px) {
@@ -56,10 +56,14 @@ p {
 }
 
 .font__large-2 {
-  font-size: 60px;
-  line-height: 76px;
+  font-size: 40px;
+  line-height: 56px;
   font-weight: $_bold;
   color: $_white;
+  @media all and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 76px;
+  }
 }
 
 // Font Medium

@@ -4,18 +4,15 @@ header {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 80px;
   margin: 0;
   z-index: 1;
   background-color: $_dark;
-  &.fixed {
-    background-color: $_dark;
-  }
+  // &.fixed {
+  //   background-color: $_dark;
+  // }
   .header__nav {
     line-height: 1;
     position: relative;
@@ -62,7 +59,7 @@ a {
       right: 10px;
       &:hover {
         background-color: #2A2726;
-     }
+      }
     }
   }
 }
