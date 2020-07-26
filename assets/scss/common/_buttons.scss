@@ -33,3 +33,34 @@
       padding: 22px 40px;
   }
 }
+
+
+// EXTERNAL SOURCE
+
+.external__source {
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    margin-right: 12px;;
+    background-image: url(../images/arrow-large-light.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.link__external {
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    margin-right: 12px;;
+    background-image: url(../images/arrow-link.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}

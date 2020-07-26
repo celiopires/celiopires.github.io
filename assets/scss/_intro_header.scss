@@ -73,11 +73,11 @@
 			width: 100%;
 			margin-top: $_int-24;
 			margin-bottom: $_int-80;
-			margin-right: $_int-80;
 			text-align: left;
 			@media all and (min-width: 768px) {
 				width: 57%;
 				margin-bottom: 0;
+				margin-right: $_int-80;
 			}
 		}
 		.picture__right {

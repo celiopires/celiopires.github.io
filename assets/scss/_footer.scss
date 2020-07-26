@@ -2,15 +2,16 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  padding: 80px 0;
   ul {
     text-align: center;
     li {
       display: inline-block;
       margin: 12px 32px;
-      @media all and (min-width: 768px) {
-        margin-right: $_int-16;
-        margin-left: $_int-16;
-    }
+        @media all and (min-width: 768px) {
+          margin-right: $_int-16;
+          margin-left: $_int-16;
+      }
     }
   }
   .font__small-3 {
