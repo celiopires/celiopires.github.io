@@ -34,7 +34,6 @@
   }
 }
 
-
 // EXTERNAL SOURCE
 
 .external__source {
@@ -62,5 +61,21 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+  }
+}
+
+// LANDING - ABOUT SECTION
+.internal__source {
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background-image: url(../images/arrow-right-light.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
   }
 }

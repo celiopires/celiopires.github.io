@@ -59,6 +59,12 @@
       .font__medium-4 {
         margin-bottom: $_int-16;
       }
+      .font__small-1 {
+        max-width: 100%;
+        @media all and (min-width: 768px) {
+          max-width: 75%;
+        }
+      }
       .picture__center {
         margin-bottom: $_int-80;
         > img {

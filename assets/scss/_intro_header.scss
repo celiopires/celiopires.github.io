@@ -49,6 +49,25 @@
 			text-transform: uppercase;
 		}
 	}
+
+	// LANDING LEFT ALIGNED
+	&.landing {
+		margin: 80px auto 120px auto;
+		@media all and (min-width: 768px) {
+			margin: 180px auto 220px auto;
+		}
+		.font__large-1 {
+			text-align: left;
+		}
+		.font__medium-3 {
+			text-align: left;
+			@media all and (min-width: 768px) {
+				max-width: 80%;
+				margin: 0;
+			}
+		}
+	}
+
 	// TEXT ON SECONDARY PAGES
 	&.half__contained {
 		.font__large-2 {
@@ -93,57 +112,6 @@
 				display: block;
 				@media all and (min-width: 768px) {
 				}
-			}
-		}
-	}
-	// .picture__center {
-	// 	margin: $_int-80 auto;
-	// 	> img {
-	// 		display: block;
-	// 		width: 80%;
-	// 		max-width: 300px;
-	// 		margin: 0 auto;
-	// 		@media all and (min-width: 768px) {
-	// 			max-width: 400px;
-	// 		}
-	// 	}
-	// }
-	// .picture__center {
-	// 	max-width: 375px;
-	// 	> img {
-	// 		box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.05);
-	// 	}
-	// }
-}
-
-// SPECIFIC FOR EL ESPANOL
-.container.ee .container__intro .intro__header,
-.container.obs .container__intro .intro__header {
-	position: relative;
-	width: 100%;
-	max-width: none;
-	padding: 0;
-	margin-bottom: 20px;
-	box-sizing: border-box;
-	@media all and (min-width: 768px) {
-		padding: 10px;
-	}
-	.intro__header--bio {
-		max-width: 940px;
-		margin: 0 auto;
-	}
-}
-
-// SPECIFIC FOR OBSERVADOR
-.container.obs {
-	.container__intro .intro__header__shelfs {
-		max-width: 940px;
-		margin: 60px auto;
-		.bottom__shelf {
-			.holding-1 {
-				max-width: 940px;
-				margin: 0 auto;
-				display: block;
 			}
 		}
 	}
