@@ -270,5 +270,10 @@
       width: 49.2%;
       display: inline-block;
     }
+    >img {
+      display: block;
+      max-width: 50%;
+      margin: 0 auto;
+    }
   }
 }
