@@ -52,9 +52,20 @@
 
 	// LANDING LEFT ALIGNED
 	&.landing {
+		position: relative;
 		margin: 80px auto 120px auto;
 		@media all and (min-width: 768px) {
-			margin: 180px auto 220px auto;
+			margin: 180px auto 420px auto;
+			&::after {
+				content: url("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif");
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 200px;
+				z-index: -1;
+				opacity: .4;
+			}
 		}
 		.font__large-1 {
 			text-align: left;
@@ -64,7 +75,13 @@
 			@media all and (min-width: 768px) {
 				max-width: 80%;
 				margin: 0;
+				margin-bottom: 24px;
 			}
+		}
+		.font__small-1 {
+
+			text-transform: uppercase;
+			font-weight: 500;
 		}
 	}
 
