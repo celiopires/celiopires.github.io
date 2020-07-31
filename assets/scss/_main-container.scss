@@ -96,8 +96,7 @@
       }
 
       li {
-        box-sizing: border-box;
-        
+        box-sizing: border-box;        
         .works__featured {
           margin-bottom: $_int-40;
         }
@@ -106,11 +105,9 @@
           position: relative;
           display: inline-block;
           width: 100%;
-          border-radius: 8px;
           box-sizing: border-box;
           vertical-align: top;
           background-color: $_white;
-          border: 1px solid $_dark-grey;
           transition: background-color ease-out .2s;
           -webkit-transition: background-color ease-out .2s;
           -moz-transition: background-color ease-out .2s;
@@ -153,16 +150,16 @@
               }
               &:hover {
                 &::after { 
-                  background-color: $_dark-grey;
+                  background-color: $_dark;
                   border: 2px solid $_medium-grey;
-                  background-image: url(../../assets/images/arrow-right-dark.svg);
+                  background-image: url(../../assets/images/arrow-right-light.svg);
                 }
               }
             }
           }
           @media all and (min-width: 768px) {
             &:hover {
-              background-color: $_medium-grey;
+              background-color: $_light-grey;
             }
           }
         }
@@ -265,7 +262,6 @@
     width: 100%;
     display: block;
     margin-bottom: $_int-80;
-    vertical-align: top;
     @media all and (min-width: 768px) {
       width: 49.2%;
       display: inline-block;
