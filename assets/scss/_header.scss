@@ -10,13 +10,9 @@ header {
   margin: 0;
   z-index: 1;
   background-color: $_dark;
-  // &.fixed {
-  //   background-color: $_dark;
-  // }
   .header__nav {
     line-height: 1;
     position: relative;
-    // max-width: 940px;
     margin: 0 auto;
     ol {
       position: absolute;
@@ -52,13 +48,23 @@ a {
     }
   }
   &.about__header {
+    position: relative;
     padding: $_int-24 0;
     font-weight: $_light;
     text-transform: uppercase;
     @media all and (min-width: 768px) {
       right: 10px;
       &:hover {
-        background-color: #2A2726;
+        background-color: transparent;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 1px;
+          background-color: $_dark-grey;
+        }
       }
     }
   }
