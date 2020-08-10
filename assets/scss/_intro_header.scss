@@ -55,16 +55,15 @@
 		position: relative;
 		margin: 80px auto 120px auto;
 		@media all and (min-width: 768px) {
-			margin: 180px auto 420px auto;
+			margin: 180px auto 320px auto;
 			&::after {
-				content: url("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif");
+				content: url("../images/about/celio-intro.png");
 				display: block;
 				position: absolute;
 				top: 0;
 				right: 0;
 				height: 200px;
 				z-index: -1;
-				opacity: .4;
 			}
 		}
 		.font__large-1 {
