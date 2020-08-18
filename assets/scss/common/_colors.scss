@@ -26,7 +26,7 @@ $_red-taglicious: #FFE5E5;
 $_link: #A3CEF1;
 
 // Borders
-$_border: rgba(207,207,207,.5);
+$_border: rgba(207,207,207,.3);
 
 // GRADIENTS
 @mixin horizontal-gradient($from, $to, $stop: 100%) {

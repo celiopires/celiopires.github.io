@@ -78,9 +78,12 @@
 			}
 		}
 		.font__small-1 {
-
-			text-transform: uppercase;
-			font-weight: 500;
+			color: $_link;
+			.internal__source {
+				&::after {
+					background-image: none;
+				}
+			}
 		}
 	}
 
