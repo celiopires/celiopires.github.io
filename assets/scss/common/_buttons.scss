@@ -40,9 +40,10 @@
   &::after {
     content: '';
     display: inline-block;
-    width: 24px;
-    height: 16px;
-    margin-right: 12px;;
+    width: 11px;
+    height: 11px;
+    margin-right: 8px;
+    margin-bottom: -2px;
     background-image: url(../images/arrow-large-light.svg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -54,9 +55,11 @@
   &::after {
     content: '';
     display: inline-block;
-    width: 24px;
-    height: 16px;
-    margin-right: 12px;;
+    width: 13px;
+    height: 11px;
+    margin-right: 0px;
+    margin-left: -2px;
+    margin-bottom: -2px;
     background-image: url(../images/arrow-link.svg);
     background-repeat: no-repeat;
     background-size: contain;
