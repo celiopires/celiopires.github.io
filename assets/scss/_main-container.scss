@@ -110,18 +110,20 @@
           box-sizing: border-box;
           vertical-align: top;
           background-color: $_dark;
-          transition: padding ease-in-out .4s;
-          -webkit-transition: padding ease-in-out .4s;
-          -moz-transition: padding ease-in-out .4s;
+          transition: all ease-in-out .2s;
+          -webkit-transition: all ease-in-out .2s;
+          -moz-transition: all ease-in-out .2s;
+          z-index: 0;
           a {
             position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
-            transition: all ease-in-out .4s;
-            -webkit-transition: all ease-in-out .4s;
-            -moz-transition: all ease-in-out .4s;
+            transition: all ease-in-out .1s;
+            -webkit-transition: all ease-in-out .1s;
+            -moz-transition: all ease-in-out .1s;
+            z-index: 9;
             @media all and (min-width: 768px) {
               &::after {
                 content: '';
@@ -145,15 +147,13 @@
           }
           @media all and (min-width: 768px) {
             &:hover {
-              background-color: $_light-dark;
-              .description * {
-                padding-left: 30px;
+              background-color: $_light-dark-opacity;
+              .description > * {
+                transition: transform ease-in-out .2s;
+                -webkit-transition: transform ease-in-out .2s;
+                -moz-transition: transform ease-in-out .2s;
+                transform: translateX(40px);
               }
-              // transition: all ease-in-out .2s;
-              // -webkit-transition: all ease-in-out .2s;
-              // -moz-transition: all ease-in-out .2s;
-              // transition-delay: .01s;
-              // background-color: $_light-dark;
             }
           }
         }
@@ -171,9 +171,11 @@
             color: $_light;
             font-weight: bold;
           }
-          .font__small-1,
+          .font__small-1 {
+            color: $_light-grey;
+          }
           .font__small-2 {
-            color: $_dark-grey;
+            color: $_grey;
           }
         }
       }
@@ -259,6 +261,7 @@
     @media all and (min-width: 768px) {
       width: 49.2%;
       display: inline-block;
+      vertical-align: top;
     }
     >img {
       display: block;
