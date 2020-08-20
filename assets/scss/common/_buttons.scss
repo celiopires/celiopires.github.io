@@ -24,9 +24,9 @@
 
 .skill {
   margin: 0 8px 8px 0;
-  background-color: $_light-dark;
+  background-color: $_black;
   padding: 7px 10px;
-  border: 2px solid transparent;
+  border: 2px solid $_border;
   border-radius: 50px;
   @media all and (min-width: 768px) {
       margin: 0 16px 24px 0;

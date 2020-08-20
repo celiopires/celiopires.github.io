@@ -78,10 +78,10 @@
 			}
 		}
 		.font__small-1 {
-			color: $_dark-grey;
+			color: $_medium-grey;
 			.internal__source {
 				&::after {
-					background-image: none;
+					opacity: .6;
 				}
 			}
 		}
