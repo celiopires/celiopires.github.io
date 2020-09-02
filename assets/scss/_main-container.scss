@@ -46,7 +46,10 @@
     .box__header {
       margin-left: $_int-16;
       margin-right: $_int-16;
-      margin-bottom: $_int-40;
+      margin-bottom: $_int-16;
+      @media all and (min-width: 1024px) {
+        margin-bottom: $_int-40;
+      }
       .font__large-1 {
         margin-bottom: $_int-16;
       }
@@ -85,7 +88,10 @@
       margin-left: $_int-16;
       margin-right: $_int-16;
       &.skills {
-        margin-top: $_int-80;
+        margin-top: $_int-40;
+        @media all and (min-width: 768px) {
+          margin-top: $_int-80;
+        }
       }
       
       &.skills li {
@@ -171,7 +177,7 @@
           }
         }
         .description {
-          margin: $_int-40 $_int-16;
+          margin: $_int-16 0;
           @media all and (min-width: 768px) {
             margin: $_int-40 0;
           }
