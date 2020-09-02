@@ -32,10 +32,47 @@ header {
           &.active + .dropdownMenu {
             display: block;
             position: absolute;
+            padding: $_int-8;
+            border-radius: 8px;
             color: $_white;
             background-color: $_light-dark;
+            left: -40px;
+            top: 32px;
+            &::before {
+              content: "";
+              width: 0; 
+              height: 0; 
+              border-left: 15px solid transparent;
+              border-right: 15px solid transparent;
+              border-bottom: 15px solid $_light-dark;
+              position: absolute;
+              top: -12px;
+              left: 54px;
+            }
             li {
               display: block;
+              .font__small-1 {
+                width: 100%;
+                display: inline-block;
+                padding: $_int-8 $_int-40 $_int-8 $_int-8;
+                vertical-align: middle;
+                &::after {
+                  content: "";
+                  display: inline-block;
+                  width: 24px;
+                  height: 16px;
+                  margin-left: $_int-8;
+                  vertical-align: unset;
+                  position: absolute;
+                  right: 10px;
+                }
+                // &:hover::after {
+                //   background-image: url(../images/arrow-right-light.svg);
+                //   background-repeat: no-repeat;
+                //   background-size: contain;
+                //   background-position: bottom;
+                // }
+              }
             }
           }
         }
