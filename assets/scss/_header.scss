@@ -22,9 +22,7 @@ header {
       li {
         position: relative;
         display: inline-block;
-        @media all and (min-width: 768px) {
-        }
-        a {
+        a, span {
           padding-left: $_int-8;
           padding-right: $_int-8;
           transition: all ease-out .2s;
@@ -36,6 +34,7 @@ header {
           //   display: inline-block;
           //   margin-left: $_int-16;
           // }
+
         }
       }
     }

@@ -1,3 +1,16 @@
+.dropdown {
+  cursor: pointer;
+  &.active + .dropdownMenu {
+    display: block;
+  }
+}
+
+.dropdownMenu {
+  cursor: pointer;
+  display: none;;
+}
+
+
 .container {
   position: relative;
   width: 100%;

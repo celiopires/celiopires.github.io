@@ -1,3 +1,4 @@
+// HEADER
 var pageTop, yPos;
 
 function yScroll() {
@@ -10,6 +11,45 @@ function yScroll() {
 }
 
 window.addEventListener("scroll", yScroll);
+
+// PROJETCS DROPDOWN
+var selectBtn = document.getElementsByClassName('dropdown'),
+    dropdownMenu = document.getElementsByClassName('dropdownMenu');
+
+for (i = 0; i < selectBtn.length; i++) {
+    selectBtn[i].onclick = function() {
+        if(this.className.indexOf('active') > -1){
+            for (j = 0; j < selectBtn.length; j++) {
+                removeClass(selectBtn[j], 'active')
+            }
+        } else {
+            addClass(this, 'active');            
+        }               
+    };
+}
+
+window.addEventListener('click', function(event){
+    for (i = 0; i < selectBtn.length; i++) {
+        if (event.target != selectBtn[i].children[0]){
+            removeClass(selectBtn[i], 'active');
+        }
+    }
+});
+function addClass(el, classToToggle) {
+    var classN = el.className
+    if(classN.indexOf(classToToggle) < 1){
+        el.className = classN + " " + classToToggle;
+    }
+}
+function removeClass(el, classToToggle) {
+    var classN = el.className;
+    if(classN.indexOf(classToToggle) > -1){
+        el.className =  classN.replace(" " + classToToggle, '');
+	}
+}
+
+
+
 
 // Starting the fun
 /*
