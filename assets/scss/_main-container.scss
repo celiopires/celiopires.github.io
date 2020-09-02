@@ -24,6 +24,14 @@
   display: inline-block;
 }
 
+.hero-path {
+  .hero-path-wrapper {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+  }
+}
+
 // CONTAINER__INTRO
 @media all and (min-width: 768px) {
   .container .container__intro {
@@ -121,7 +129,7 @@
           width: 100%;
           box-sizing: border-box;
           vertical-align: top;
-          background-color: $_dark;
+          background-color: transparent;
           border-top-right-radius: 40px;
           border-bottom-right-radius: 40px;
           transition: all ease-in-out .1s;
