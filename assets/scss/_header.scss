@@ -22,6 +22,27 @@ header {
       li {
         position: relative;
         display: inline-block;
+        .dropdown {
+          cursor: pointer;
+          &.font__small-2::after{
+            content: "sdf";
+            color: red;
+            display: inline-block;
+          }
+          &.active + .dropdownMenu {
+            display: block;
+            position: absolute;
+            color: $_white;
+            background-color: $_light-dark;
+            li {
+              display: block;
+            }
+          }
+        }
+        .dropdownMenu {
+          cursor: pointer;
+          display: none;
+        }
         a, span {
           padding-left: $_int-8;
           padding-right: $_int-8;
@@ -33,15 +54,14 @@ header {
           //   content: "•";
           //   display: inline-block;
           //   margin-left: $_int-16;
-          // }
-
+          // }          
         }
       }
     }
   }
 }
 
-a {
+a, span {
   &.home {
     display: inline-block;
     padding: 28px 0;
