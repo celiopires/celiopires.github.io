@@ -13,11 +13,13 @@ function yScroll() {
 window.addEventListener("scroll", yScroll);
 
 // PROJETCS DROPDOWN
+
+/*
 var selectBtn = document.getElementsByClassName('dropdown'),
     dropdownMenu = document.getElementsByClassName('dropdownMenu');
 
 for (i = 0; i < selectBtn.length; i++) {
-    selectBtn[i].onclick = function() {
+    selectBtn[i].focus = function() {
         if(this.className.indexOf('active') > -1){
             for (j = 0; j < selectBtn.length; j++) {
                 removeClass(selectBtn[j], 'active')
@@ -46,7 +48,7 @@ function removeClass(el, classToToggle) {
     if(classN.indexOf(classToToggle) > -1){
         el.className =  classN.replace(" " + classToToggle, '');
 	}
-}
+}*/
 
 
 

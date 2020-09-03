@@ -27,8 +27,8 @@ img {
   vertical-align: top;
 }
 
-a, span {
-  color: $_white;
+a {
+  color: $_link;
   text-decoration: none;
   cursor: pointer;
   &:hover {
