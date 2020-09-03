@@ -22,7 +22,39 @@ header {
       li {
         position: relative;
         display: inline-block;
-        @media all and (min-width: 768px) {
+        .dropdown {
+          cursor: pointer;
+          @media all and (min-width: 768px) {
+            &.active + .dropdownMenu,
+            &:hover .dropdownMenu {
+              display: block;
+              position: absolute;
+              padding: $_int-8 $_int-16;
+              border-radius: 8px;
+              color: $_white;
+              background-color: $_dark;
+              left: -40px;
+              top: 20px;
+              li {
+                display: block;
+                .font__small-1 {
+                  width: 100%;
+                  display: inline-block;
+                  padding: $_int-8 $_int-40 $_int-8 $_int-8;
+                  vertical-align: middle;
+                }
+              }
+            }
+          }
+          @media all and (min-width: 768px) {
+            &:hover .font__small-2 {
+              opacity: .7;
+            }
+          }
+        }
+        .dropdownMenu {
+          cursor: pointer;
+          display: none;
         }
         a {
           padding-left: $_int-8;
@@ -30,12 +62,7 @@ header {
           transition: all ease-out .2s;
           -webkit-transition: all ease-out .2s;
           -moz-transition: all ease-out .2s;
-          cursor: pointer;
-          // &::after {
-          //   content: "•";
-          //   display: inline-block;
-          //   margin-left: $_int-16;
-          // }
+          cursor: pointer;    
         }
       }
     }
