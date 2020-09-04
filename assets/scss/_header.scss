@@ -33,7 +33,9 @@ header {
               border-radius: 8px;
               color: $_light-grey;
               left: -18px;
-              top: 20px;
+              top: 28px;
+              background-color: $_light-dark-opacity;
+              border: 1px solid $_light-dark;
               li {
                 display: block;
                 border-bottom: 1px solid $_light-dark;
@@ -64,6 +66,9 @@ header {
                       filter: invert(60%) saturate(2148%) hue-rotate(346deg) brightness(104%) contrast(97%);
                     }
                   }
+                }
+                &:last-child {
+                  border-bottom-color: transparent;
                 }
               }
             }
