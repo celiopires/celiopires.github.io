@@ -29,46 +29,31 @@ header {
             &:hover .dropdownMenu {
               display: block;
               position: absolute;
-              padding: $_int-8 $_int-16;
+              padding: $_int-8;
               border-radius: 8px;
               color: $_light-grey;
               left: -18px;
               top: 28px;
-              background-color: $_light-dark-opacity;
+              background-color: $_dark;
               border: 1px solid $_light-dark;
               li {
                 display: block;
-                border-bottom: 1px solid $_light-dark;
+                //border-bottom: 1px solid $_light-dark;
                 .font__small-1 {
                   width: 100%;
                   display: inline-block;
-                  padding: $_int-8/2 $_int-40 $_int-8/2 0;
+                  padding: $_int-8 $_int-40 $_int-8 $_int-16;
                   vertical-align: middle;
                   font-weight: 700;
                   font-size: 14px;
                   text-transform: uppercase;
-                  &:hover::after {
-                    filter: invert(0%);
-                  }
-                  @media all and (min-width: 768px) {
-                    &::after {
-                      content: "";
-                      display: inline-block;
-                      width: 20px;
-                      height: 12px;
-                      position: absolute;
-                      right: 0;
-                      top: 9px;
-                      background-image: url(../images/arrow-right-light.svg);
-                      background-repeat: no-repeat;
-                      background-size: contain;
-                      background-position: center;
-                      filter: invert(60%) saturate(2148%) hue-rotate(346deg) brightness(104%) contrast(97%);
-                    }
-                  }
+                  box-sizing: border-box;
                 }
                 &:last-child {
                   border-bottom-color: transparent;
+                }
+                &:hover {
+                  background-color: $_light-dark-opacity;
                 }
               }
             }
