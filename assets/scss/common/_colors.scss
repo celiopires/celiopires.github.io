@@ -6,7 +6,6 @@ $_black: #080808; // Global Background
 $_dark: #12100E; // Component Background
 //$_medium-dark: #26282F;
 $_light-dark: #2A2726;
-$_light-dark-opacity: #2a27266c;
 
 // Greys
 $_grey: #5D606D;
@@ -27,8 +26,13 @@ $_red-taglicious: #FFE5E5;
 // Default color for links
 $_link: #A3CEF1;
 
-// Borders
+// BORDERS
 $_border: rgba(207,207,207,.3);
+
+// OPACITIES
+$_dark-opacity: rgba(0,0,0,.2);
+$_white-opacity: rgba(255,255,255,.2);
+$_light-dark-opacity: #2a27266c;
 
 // GRADIENTS
 @mixin horizontal-gradient($from, $to, $stop: 100%) {

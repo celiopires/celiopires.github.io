@@ -29,23 +29,21 @@ header {
             &:hover .dropdownMenu {
               display: block;
               position: absolute;
-              padding: $_int-8;
-              border-radius: 8px;
+              border-radius: 4px;
               color: $_light-grey;
-              left: -18px;
-              top: 28px;
-              background-color: $_dark;
-              border: 1px solid $_light-dark;
+              left: -10px;
+              top: 42px;
+              background-color: $_light-dark;
               li {
                 display: block;
-                //border-bottom: 1px solid $_light-dark;
                 .font__small-1 {
                   width: 100%;
                   display: inline-block;
-                  padding: $_int-8 $_int-40 $_int-8 $_int-16;
+                  padding: $_int-8 72px $_int-8 $_int-16;
                   vertical-align: middle;
                   font-weight: 700;
                   font-size: 14px;
+                  color: $_white;
                   text-transform: uppercase;
                   box-sizing: border-box;
                 }
@@ -53,14 +51,14 @@ header {
                   border-bottom-color: transparent;
                 }
                 &:hover {
-                  background-color: $_light-dark-opacity;
+                  background-color: $_dark-opacity;
                 }
               }
             }
           }
           @media all and (min-width: 768px) {
-            &:hover .font__small-2 {
-              opacity: .7;
+            &:hover .about__header {
+              background-color: $_light-dark;
             }
           }
         }
@@ -74,7 +72,11 @@ header {
           transition: all ease-out .2s;
           -webkit-transition: all ease-out .2s;
           -moz-transition: all ease-out .2s;
-          cursor: pointer;    
+          cursor: pointer;
+          @media all and (min-width: 768px) {
+            padding-left: $_int-16;
+            padding-right: $_int-16;
+          }
         }
       }
     }
@@ -103,7 +105,7 @@ a {
     @media all and (min-width: 768px) {
       right: 10px;
       &:hover {
-        background-color: transparent;
+        background-color: $_light-dark;
       }
     }
   }
