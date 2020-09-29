@@ -5,7 +5,8 @@ var plumber = require('gulp-plumber');
 //var pug = require('gulp-pug');
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
-// var rev = require('gulp-rev');
+var rev = require('gulp-rev');
+var revRewrite = require('gulp-rev-rewrite');
 
 // css
 gulp.task('sass', function() {
@@ -22,15 +23,23 @@ gulp.task('watch', function() {
     gulp.watch('assets/scss/**/*.scss', ['sass']);
 });
 
-// // Rebuild cache
-// gulp.task('rev', function() {
-// 	gulp.src(['assets/css/*.css'])
-// 		.pipe(gulp.dest('build/assets'))  // Copy original assets to build dir
-// 		.pipe(rev())
-// 		// .pipe(gulp.dest('build/assets'))  // Write rev'd assets to build dir
-// 		// .pipe(rev.manifest())
-// 		// .pipe(gulp.dest('build/assets'))  // Write manifest to build dir
-// });
+// Adding hash to the file name
+gulp.task('rev', function() {
+    gulp.src('assets/css/*.css')
+        .pipe(gulp.dest('assets/css')) // Add the generated hash file to the packaging directory
+        .pipe(rev())
+        .pipe(gulp.dest('assets/css'))// write rev'd assets to build dir
+        .pipe(rev.manifest('css-rev.json'))
+        .pipe(gulp.dest('assets/css'))   // Add map mapping files to the packaging directory
+});
+
+// Rewriting html url
+gulp.task('revRewrite', function() {
+    const cssManifest = gulp.src('assets/css/css-rev.json'); //Get the css mapping file
+    return gulp.src('./*.html')
+      .pipe(revRewrite({manifest: cssManifest})) // Replace the referenced css with a version number name
+      .pipe(gulp.dest(''))
+  });
 
 // Default Task
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'watch', 'rev', 'revRewrite']);
