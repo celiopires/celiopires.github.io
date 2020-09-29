@@ -42,4 +42,5 @@ gulp.task('revRewrite', function() {
   });
 
 // Default Task
-gulp.task('default', ['sass', 'watch', 'rev', 'revRewrite']);
+// gulp.task('default', ['sass', 'watch', 'rev', 'revRewrite']);
+gulp.task('default', ['sass', 'watch']);
