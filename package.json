@@ -5,13 +5,14 @@
   "main": "index.html",
   "dependencies": {
     "gulp-pug": "^4.0.1",
-    "gulp-rename": "^1.2.3",
+    "gulp-rename": "^1.4.0",
     "gulp-rev-rewrite": "^3.0.3",
     "gulp-watch": "^5.0.1",
     "pug": "^2.0.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.3.0",
     "gulp-compass": "^2.1.0",
     "gulp-plumber": "^1.2.0",
     "gulp-rev": "^9.0.0",
