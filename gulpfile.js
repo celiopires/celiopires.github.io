@@ -13,7 +13,7 @@ gulp.task('sass', function() {
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
-    //.pipe(sourcemaps.write())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('assets/css'));
 });
 
@@ -25,9 +25,9 @@ gulp.task('watch', function() {
 // CSS MINIFY
 gulp.task('minify-css', function() {
     return gulp.src('assets/css/*.css')
-    .pipe(sourcemaps.init())
+    //.pipe(sourcemaps.init())
     .pipe(cleanCSS())
-    .pipe(sourcemaps.write())
+    //.pipe(sourcemaps.write())
     .pipe(rename('styles.min.css'))
     .pipe(gulp.dest('assets/css/'));
   });
