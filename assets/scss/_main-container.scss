@@ -12,13 +12,6 @@
   }
 }
 
-@media all and (min-width: 768px) {
-  .container {
-    padding-left: 40px; 
-    padding-right: 40px;
-  }
-}
-
 #heroStand {
   position: relative;
   display: inline-block;
@@ -58,9 +51,6 @@
       margin-left: $_int-16;
       margin-right: $_int-16;
       margin-bottom: $_int-16;
-      @media all and (min-width: 1024px) {
-        margin-bottom: $_int-40;
-      }
       .font__large-1 {
         margin-bottom: $_int-16;
       }
@@ -75,11 +65,21 @@
         }
       }
       .font__medium-4 {
-        color: $_light;
         margin-bottom: $_int-16;
       }
       .font__small-1 {
         max-width: 100%;
+        @media all and (min-width: 768px) {
+          max-width: 75%;
+          color: $_dark-grey;
+        }
+      }
+      .font__small-2 {
+        max-width: 100%;
+        text-transform: uppercase;
+        margin-bottom: $_int-16;
+        font-weight: bold;
+        color: $_dark-grey;
         @media all and (min-width: 768px) {
           max-width: 75%;
         }

@@ -43,9 +43,12 @@ header {
                   vertical-align: middle;
                   font-weight: 700;
                   font-size: 14px;
-                  color: $_white;
+                  color: $_medium-grey;
                   text-transform: uppercase;
                   box-sizing: border-box;
+                  &:hover {
+                    color: $_white;
+                  }
                 }
                 &:last-child {
                   border-bottom-color: transparent;
@@ -100,12 +103,13 @@ a {
     padding: $_int-24 0;
     font-weight: $_bold;
     font-size: 14px;
-    color: $_light-grey;
+    color: $_medium-grey;
     text-transform: uppercase;
     @media all and (min-width: 768px) {
       right: 10px;
       &:hover {
         background-color: $_light-dark;
+        color: $_white;
       }
     }
   }
