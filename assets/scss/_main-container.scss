@@ -46,6 +46,10 @@
     @media all and (min-width: 1024px) {
       margin: 0 auto $_int-80*2 auto;
     }
+    & a.font__small-1 {
+      display: block;
+      padding-top: 32px;
+    }
     // BOX HEADER - TITLES AND INTROS
     .box__header {
       margin-left: $_int-16;
@@ -69,9 +73,11 @@
       }
       .font__small-1 {
         max-width: 100%;
+        margin-bottom: $_int-32;
         @media all and (min-width: 768px) {
           max-width: 75%;
           color: $_dark-grey;
+          margin-bottom: $_int-40;
         }
       }
       .font__small-2 {
@@ -102,15 +108,79 @@
       margin-left: $_int-16;
       margin-right: $_int-16;
       &.skills {
-        margin-top: $_int-40;
-        @media all and (min-width: 768px) {
-          margin-top: $_int-80;
+        // margin-top: $_int-40;
+        // @media all and (min-width: 768px) {
+        //   margin-top: $_int-80;
+        // }
+        & li {
+          width: 100%;
+          display: inline-block;
+          vertical-align: top;
+          @media all and (min-width: 768px) {
+            max-width: 47%;
+            margin-right: $_int-16;
+          }
         }
-      }
-      
-      &.skills li {
-        display: inline-block;
-        vertical-align: middle;
+        .skill {
+          width: 100%;
+          padding-top: $_int-16;
+          padding-bottom: $_int-16;
+          .label {
+            .label-symbol {
+              display: inline-block;
+              vertical-align: top;
+              margin-right: $_int-16;
+              img {
+                width: 24px;
+                height: 24px;
+              }
+            }
+            .font__small-1 {
+              width: 48%;
+              display: inline-block;
+              vertical-align: top;
+            }
+          }
+          .skill-rate {
+            width: 48%;
+            display: block;
+            vertical-align: top;
+            .rating-1,
+            .rating-2,
+            .rating-3,
+            .rating-4,
+            .rating-5 {
+              position: absolute;
+              top: 20px;
+              right: 8px;
+              width: 94px;
+              height: 16px;
+              display: block;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: center;
+              opacity: .6;
+              @media all and (min-width: 768px) {
+                right: $_int-32;
+              }
+            }
+            .rating-1 {
+              background-image: url("../images/common/skill-rating/rating-1.svg");
+            }
+            .rating-2 {
+              background-image: url("../images/common/skill-rating/rating-2.svg");
+            }
+            .rating-3 {
+              background-image: url("../images/common/skill-rating/rating-3.svg");
+            }
+            .rating-4 {
+              background-image: url("../images/common/skill-rating/rating-4.svg");
+            }
+            .rating-5 {
+              background-image: url("../images/common/skill-rating/rating-5.svg");
+            }
+          }
+        }
       }
       ol {
         margin-bottom: $_int-40;
@@ -150,9 +220,6 @@
             right: 0;
             bottom: 0;
             left: 0;
-            // transition: background-color ease-in-out .3s;
-            // -webkit-transition: background-color ease-in-out .3s;
-            // -moz-transition: background-color ease-in-out .3s;
             z-index: 9;
             @media all and (min-width: 768px) {
               &::after {
@@ -172,9 +239,6 @@
                 width: 58px;
                 height: 21px;
                 border-radius: 50px;
-                // transition: all ease-in-out .3s;
-                // -webkit-transition: all ease-in-out .3s;
-                // -moz-transition: all ease-in-out .3s;
               }
             }
             @media all and (min-width: 768px) {
