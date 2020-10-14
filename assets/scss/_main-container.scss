@@ -73,9 +73,11 @@
       }
       .font__small-1 {
         max-width: 100%;
+        margin-bottom: $_int-32;
         @media all and (min-width: 768px) {
           max-width: 75%;
           color: $_dark-grey;
+          margin-bottom: $_int-40;
         }
       }
       .font__small-2 {
@@ -157,6 +159,7 @@
               background-size: 100%;
               background-repeat: no-repeat;
               background-position: center;
+              opacity: .6;
               @media all and (min-width: 768px) {
                 right: $_int-32;
               }
