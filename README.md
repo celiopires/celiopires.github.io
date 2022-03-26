@@ -1,11 +1,14 @@
-# Célio Pires • Product Desginer 
-Born and raised in Portugal 🇵🇹 • Design systems and code at heart ❤️
+# Célio Pires • Product Designer
 
-Skilled in UX, user interaction, product strategy, UI and lately developing better ways to design, scale and maintain Design Systems. 
+Born and raised in Portugal 🇵🇹 • Design systems at heart ❤️
+
+Skilled in UX, user interaction, product strategy, UI and lately developing better ways to design, scale and maintain Design Systems.
 
 ##### Work experience
-- [celiopires.github.io](http://celiopires.github.io/)
+
+- [celiopires.com](https://celiopires.com)
 
 ##### Social
+
 - [Linkedin](https://www.linkedin.com/in/celiopires/)
 - [Twitter](https://twitter.com/celiows)
