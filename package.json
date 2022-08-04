@@ -1,27 +1,8 @@
 {
-  "name": "celiopires",
+  "name": "celiopires.github.io",
   "version": "1.0.0",
-  "description": "celiopires portfolio",
+  "description": "Born and raised in Portugal 🇵🇹 • Design systems at heart ❤️",
   "main": "index.html",
-  "dependencies": {
-    "gulp-pug": "^4.0.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-rev-rewrite": "^3.0.3",
-    "gulp-watch": "^5.0.1",
-    "pug": "^2.0.3"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-compass": "^2.1.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-rev": "^9.0.0",
-    "gulp-rev-dist-clean": "^3.0.1",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-update-version": "^1.0.2",
-    "object-assign": "^4.1.1"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,10 +10,19 @@
     "type": "git",
     "url": "git+https://github.com/celiopires/celiopires.github.io.git"
   },
-  "author": "Célio Pires",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/celiopires/celiopires.github.io/issues"
   },
-  "homepage": "https://github.com/celiopires/celiopires.github.io#readme"
+  "homepage": "https://github.com/celiopires/celiopires.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^4.3.11",
+    "sass": "^1.54.2"
+  }
 }
