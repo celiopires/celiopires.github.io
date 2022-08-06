@@ -14,10 +14,16 @@ header {
     line-height: 1;
     position: relative;
     margin: 0 auto;
-    max-width: 940px;
+    max-width: 100%;
+    @media all and (min-width: 1024px) {
+      padding-left: $_int-32;
+    }
     ol {
       position: absolute;
       right: 14px;
+      @media all and (min-width: 1024px) {
+        right: $_int-32;
+      }
       top: $_int-24 + $_int-4;
       li {
         position: relative;
