@@ -38,16 +38,6 @@
 			margin-left: auto;
 		}
 	}
-	.more__button {
-		margin: 0 auto;
-		width: 104px;
-		text-align: center;
-		.font__small-1 {
-			color: $_white;
-			font-weight: $_bold;
-			text-transform: uppercase;
-		}
-	}
 
 	// LANDING LEFT ALIGNED
 	&.landing {
@@ -70,6 +60,7 @@
 		}
 		.font__medium-3 {
 			text-align: left;
+			color: $_text-secondary;
 			@media all and (min-width: 768px) {
 				max-width: 80%;
 				margin: 0;
@@ -77,10 +68,10 @@
 			}
 		}
 		.font__small-1 {
-			color: $_neutral08;
+			color: $_text-secondary;
 			.internal__source {
 				&::after {
-					opacity: .6;
+					color: $_text-secondary;
 				}
 			}
 		}
@@ -111,6 +102,7 @@
 			margin-top: $_int-24;
 			margin-bottom: $_int-80;
 			text-align: left;
+			color: $_text-secondary;
 			@media all and (min-width: 768px) {
 				width: 57%;
 				margin-bottom: 0;

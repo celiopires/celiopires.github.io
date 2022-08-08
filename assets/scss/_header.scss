@@ -36,10 +36,10 @@ header {
               display: block;
               position: absolute;
               border-radius: 4px;
-              color: $_neutral08;
+              color: $_text-primary;
               left: -10px;
               top: 42px;
-              background-color: $_neutral09;
+              background-color: $_background-secondary;
               li {
                 display: block;
                 .font__small-1 {
@@ -49,25 +49,25 @@ header {
                   vertical-align: middle;
                   font-weight: 700;
                   font-size: 14px;
-                  color: $_neutral04;
+                  color: $_text-tertiary;
                   text-transform: uppercase;
                   box-sizing: border-box;
                   &:hover {
-                    color: $_white;
+                    color: $_text-primary;
                   }
                 }
                 &:last-child {
                   border-bottom-color: transparent;
                 }
                 &:hover {
-                  background-color: $_neutral09;
+                  background-color: $_background-tertiary;
                 }
               }
             }
           }
           @media all and (min-width: 768px) {
             &:hover .about__header {
-              background-color: $_neutral08;
+              background-color: $_background-secondary;
             }
           }
         }
@@ -98,7 +98,7 @@ a {
     padding: 28px 0;
     margin-left: $_int-16;
     font-weight: $_bold;
-    color: $_white;
+    color: $_text-primary;
     text-transform: uppercase;
     @media all and (max-width: 1024px) {
       margin-left: $_int-24;
@@ -109,13 +109,13 @@ a {
     padding: $_int-24 0;
     font-weight: $_bold;
     font-size: 14px;
-    color: $_neutral05;
+    color:$_text-primary;
     text-transform: uppercase;
     @media all and (min-width: 768px) {
       right: 10px;
       &:hover {
-        background-color: $_neutral08;
-        color: $_white;
+        background-color: $_background-tertiary;
+        color: $_text-primary;
       }
     }
   }

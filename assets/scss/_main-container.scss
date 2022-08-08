@@ -48,7 +48,7 @@
     }
     & a.font__small-1 {
       display: block;
-      color: $_neutral08;
+      color: $_text-secondary;
       padding-top: 32px;
     }
     // BOX HEADER - TITLES AND INTROS
@@ -67,7 +67,7 @@
       }
       .font__medium-3 {
         margin-bottom: $_int-32;
-        color: $_neutral08;
+        color: $_text-primary;
         @media all and (min-width: 768px) {
           font-size: $_int-40;
         }
@@ -80,7 +80,7 @@
         margin-bottom: $_int-32;
         @media all and (min-width: 768px) {
           max-width: 75%;
-          color: $_neutral09;
+          color: $_text-secondary;
           margin-bottom: $_int-40;
         }
       }
@@ -89,7 +89,7 @@
         text-transform: uppercase;
         margin-bottom: $_int-16;
         font-weight: bold;
-        color: $_neutral09;
+        color: $_text-primary;
         @media all and (min-width: 768px) {
           max-width: 75%;
         }
@@ -111,6 +111,9 @@
     .box__body {
       margin-left: $_int-16;
       margin-right: $_int-16;
+      p {
+        color: $_text-secondary;
+      }
       &.skills {
         & li {
           width: 100%;
@@ -128,7 +131,6 @@
           .label {
             .label-symbol {
               display: inline-block;
-              vertical-align: top;
               margin-right: $_int-16;
               img {
                 width: 24px;
@@ -203,7 +205,7 @@
                   background-repeat: no-repeat;
                   background-size: 50%;
                   background-position: center;
-                  background-color: $_black;
+                  background-color: $_background-secondary;
                   transform: rotate(-5deg);
                   opacity: 0.05;
                   z-index: -1;
@@ -226,7 +228,7 @@
                   background-repeat: no-repeat;
                   background-size: 80%;
                   background-position: center;
-                  background-color: $_black;
+                  background-color: $_background-primary;
                   transform: rotate(5deg);
                   opacity: 0.05;
                   z-index: -1;
@@ -249,7 +251,7 @@
                   background-repeat: no-repeat;
                   background-size: 90%;
                   background-position: center;
-                  background-color: $_black;
+                  background-color: $_background-primary;
                   transform: rotate(-10deg);
                   opacity: 0.05;
                   z-index: -1;
@@ -274,7 +276,7 @@
                   background-repeat: no-repeat;
                   background-size: 100vh;
                   background-position: center;
-                  background-color: $_black;
+                  background-color: $_background-primary;
                   transform: rotate(-15deg);
                   opacity: 0.05;
                   z-index: -1;
@@ -356,14 +358,14 @@
               margin-bottom: $_int-8;
             }
             .font__medium-2 {
-              color: $_neutral01;
+              color: $_text-primary;
               font-weight: bold;
             }
             .font__small-1 {
-              color: $_neutral01;
+              color: $_text-secondary;
             }
             .font__small-2 {
-              color: $_neutral01;
+              color: $_text-secondary;
             }
           }
         }
