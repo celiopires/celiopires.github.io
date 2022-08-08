@@ -19,7 +19,6 @@
 		span {
 			display: block;
 			font-size: 0.8rem;
-			color: $_light-dark;
 		}
 	}
 	.holding-1 {
@@ -47,7 +46,6 @@
 			}
 		}
 		&.grey {
-			background-color: $_light-grey;
 			padding-top: 60px;
 			padding-bottom: 60px;
 		}
@@ -81,7 +79,6 @@
 		span {
 		display: block;
 		font-size: 0.8rem;
-		color: $_light-dark;
 		line-height: 1.5;
 		margin-left: 20px;
 		margin-right: 20px;
@@ -156,13 +153,12 @@
 			}
 			span {
 			  font-size: 0.8rem;
-			  color: $_light-dark;
 			}
 		}
 	}
 	ol li {
 		list-style: circle;
-		color: $_dark;
+		color: $_neutral09;
 	}
 
 	.design-stages-list {
@@ -187,7 +183,6 @@
 				}
 				span {
 				  font-size: 0.8rem;
-				  color: $_light-dark;
 				}
 			}
 		}

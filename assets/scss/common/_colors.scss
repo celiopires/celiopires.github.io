@@ -1,38 +1,26 @@
-// Whites
+/* White */
 $_white: #FFFFFF;
 
-// Darks
+/* Black */
 $_black: #020202; // Global Background
-$_dark: #0f0f0f; // Component Background
-//$_medium-dark: #26282F;
-$_light-dark: #2A2726;
 
-// Greys
-$_grey: #5D606D;
-$_light-grey: #F5F5F5;
-$_medium-grey: #9E9E9E;
-$_dark-grey: #CFCFCE;
-$_darkest-grey: #616161;
+/* Neutrals */
+$_neutral01: #EFEFEF;
+$_neutral02: #DFDFDF;
+$_neutral03: #B1B1B1;
+$_neutral04: #939394;
+$_neutral05: #69696A;
+$_neutral06: #404141;
+$_neutral07: #282929;
+$_neutral08: #1D1E1F;
+$_neutral09: #121415;
 
-// Blues
-$_blue: #A3CEF1;
-$_blue-dark: #2878B8;
-
-//Oranges
-$_orange-ee: #FFF7E5;
-$_blue-obs: #E5F4FF;
-$_red-taglicious: #FFE5E5;
-
-// Default color for links
-$_link: #A3CEF1;
-
-// BORDERS
-$_border: rgba(207,207,207,.3);
-
-// OPACITIES
-$_dark-opacity: rgba(0,0,0,.1);
-$_white-opacity: rgba(255,255,255,.2);
-$_light-dark-opacity: #2a27266c;
+/* Blue */
+$_blue01: #A7D6F8;
+$_blue02: #57ACDE;
+$_blue03: #407EA3;
+$_blue04: #29526A;
+$_blue05: #182F3E;
 
 // GRADIENTS
 @mixin horizontal-gradient($from, $to, $stop: 100%) {
@@ -43,16 +31,5 @@ $_light-dark-opacity: #2a27266c;
   background-image: -o-linear-gradient(left, $from 0%, $to $stop);
   background: -ms-linear-gradient(left, $from 0%, $to $stop);
   background: linear-gradient(to right, $from 0%, $to $stop);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
-}
-
-@mixin vertical-gradient($from, $to, $stop: 100%) {
-  background-color: $from;
-  background-image: -moz-linear-gradient(bottom, $from 0%, $to $stop);
-  background-image: -webkit-gradient(linear, bottom, top, color-stop(0%, $from), color-stop($stop, $to));
-  background-image: -webkit-linear-gradient(bottom, $from 0%, $to $stop);
-  background-image: -o-linear-gradient(bottom, $from 0%, $to $stop);
-  background: -ms-linear-gradient(bottom, $from 0%, $to $stop);
-  background: linear-gradient(to top, $from 0%, $to $stop);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
 }

@@ -1,25 +1,3 @@
-// More button
-
-.more__button {
-  background-color: $_light-dark;
-  border: 2px solid $_light-dark;
-  border-radius: 50px;
-  padding: 18px 22px;
-  display: block;
-  @media all and (min-width: 768px) {
-    padding: 30px 32px;
-    transition: border ease-out .2s;
-    -webkit-transition: border ease-out .2s;
-    -moz-transition: border ease-out .2s;
-    cursor: pointer;
-    &:hover {
-      opacity: 1;
-      border-color: $_border;
-    }
-  }
-}
-
-
 // Skills
 
 .skill {

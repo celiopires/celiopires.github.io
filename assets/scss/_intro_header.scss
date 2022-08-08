@@ -77,7 +77,7 @@
 			}
 		}
 		.font__small-1 {
-			color: $_medium-grey;
+			color: $_neutral08;
 			.internal__source {
 				&::after {
 					opacity: .6;
@@ -131,19 +131,6 @@
 				@media all and (min-width: 768px) {
 				}
 			}
-		}
-	}
-}
-
-// ROLE INDUSTRY
-.container .container__intro .intro__header--bottom {
-	.role__industry {
-		margin-top: 32px;
-		margin-bottom: 40px;
-		.font__small-1 {
-			border-bottom: 1px solid $_border;
-			padding-bottom: 32px;
-			line-height: 1.8;
 		}
 	}
 }

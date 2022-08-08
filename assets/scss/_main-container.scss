@@ -48,7 +48,7 @@
     }
     & a.font__small-1 {
       display: block;
-      color: $_medium-grey;
+      color: $_neutral08;
       padding-top: 32px;
     }
     // BOX HEADER - TITLES AND INTROS
@@ -67,7 +67,7 @@
       }
       .font__medium-3 {
         margin-bottom: $_int-32;
-        color: $_medium-grey;
+        color: $_neutral08;
         @media all and (min-width: 768px) {
           font-size: $_int-40;
         }
@@ -80,7 +80,7 @@
         margin-bottom: $_int-32;
         @media all and (min-width: 768px) {
           max-width: 75%;
-          color: $_dark-grey;
+          color: $_neutral09;
           margin-bottom: $_int-40;
         }
       }
@@ -89,7 +89,7 @@
         text-transform: uppercase;
         margin-bottom: $_int-16;
         font-weight: bold;
-        color: $_dark-grey;
+        color: $_neutral09;
         @media all and (min-width: 768px) {
           max-width: 75%;
         }
@@ -356,14 +356,14 @@
               margin-bottom: $_int-8;
             }
             .font__medium-2 {
-              color: $_light;
+              color: $_neutral01;
               font-weight: bold;
             }
             .font__small-1 {
-              color: $_light-grey;
+              color: $_neutral01;
             }
             .font__small-2 {
-              color: $_medium-grey;
+              color: $_neutral01;
             }
           }
         }

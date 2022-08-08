@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 p {
   font-size: 1.1rem;
-  color: $_dark;
+  color: $_neutral09;
   margin-bottom: 60px;
   font-weight: $_light;
   @media all and (min-width: 768px) {
@@ -110,19 +110,19 @@ p {
   font-size: 18px;
   line-height: 26px;
   font-weight: $_regular;
-  color: $_dark-grey;
+  color: $_neutral09;
 }
 
 .font__small-2 {
   font-size: 16px;
   line-height: 22px;
   font-weight: $_regular;
-  color: $_dark-grey;
+  color: $_neutral09;
 }
 
 .font__small-3 {
   font-size: 12px;
   line-height: 18px;
   font-weight: $_regular;
-  color: $_dark-grey;
+  color: $_neutral09;
 }
