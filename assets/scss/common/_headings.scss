@@ -1,5 +1,4 @@
-// Importing fonts
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400,700&display=swap');
+/* Importing Fonts */
 
 //WEIGHTS
 $_light: 300;
@@ -19,6 +18,7 @@ p {
   color: $_text-primary;
   margin-bottom: 60px;
   font-weight: $_light;
+  font-family: 'Hind', sans-serif;
   @media all and (min-width: 768px) {
     font-size: 1.6rem;
   }
@@ -41,9 +41,24 @@ p {
   text-rendering: optimizeLegibility;
 }
 
+// SANS SERIF FONT TITLES
+.title__large-1 {
+  font-family: 'varentgroteskbold';
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-size: 60px;
+  line-height: 76px;
+  font-weight: $_bold;
+  color: $_text-primary;
+  @media all and (min-width: 768px) {
+    font-size: 100px;
+    line-height: 1.8;
+  }
+}
+
 // Font Large
-
-
 .font__large-1 {
   font-size: 60px;
   line-height: 76px;
