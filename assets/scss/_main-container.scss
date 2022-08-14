@@ -80,7 +80,7 @@
         margin-bottom: $_int-32;
         @media all and (min-width: 768px) {
           max-width: 75%;
-          color: $_text-secondary;
+          color: $_text-primary;
           margin-bottom: $_int-40;
         }
       }
@@ -113,6 +113,7 @@
       margin-right: $_int-16;
       p {
         color: $_text-secondary;
+        margin-bottom: $_int-16;
       }
       &.skills {
         & li {

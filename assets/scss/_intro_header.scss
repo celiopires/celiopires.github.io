@@ -61,9 +61,9 @@
 		}
 		.font__medium-3 {
 			text-align: left;
-			color: $_text-secondary;
+			color: $_text-primary;
 			@media all and (min-width: 768px) {
-				max-width: 80%;
+				max-width: 60%;
 				margin: 0;
 				margin-bottom: 24px;
 			}
