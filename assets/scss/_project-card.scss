@@ -1,0 +1,72 @@
+body {
+    counter-reset: sectionNum;
+}
+
+/* PROJECT CARDS */
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 24px 0px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: red;
+    margin-bottom: 10px;
+    .card-number {
+        counter-increment: sectionNum;
+        background-color: purple;
+        &::before {
+            content: '0' counter(sectionNum);
+            display: block;
+            font-weight: 700;
+            font-size: 3em;
+        }
+    }
+    .card-item {
+        display: flex;
+        align-items: flex-start;
+        align-self: stretch;
+        flex-direction: column;
+        justify-content: center;
+        background-color: green;
+        .card-item {
+            .card-item-title {
+
+            }
+            .card-item-location {
+    
+            }
+        }
+    }
+    .card-description {
+        background-color: yellow;
+
+    }
+    .card-icon {
+        background-color: orange;
+        @media all and (min-width: 768px) {
+            &::after {
+              content: '';
+              display: flex;
+              align-items: center;
+              padding: 16px;
+              margin: 24px;
+              background-color: transparent;
+              background-image: url(../../assets/images/arrow-right-light.svg);
+              background-repeat: no-repeat;
+              background-size: 100%;
+              background-position: center;
+              border: 2px solid transparent;
+              border-radius: 50px;
+            }
+          }
+            @media all and (min-width: 768px) {
+            &:hover::after {
+                background-image: url(../../assets/images/arrow-right-dark.svg);
+                background-color: $_white;
+            }
+        }
+    }
+}
