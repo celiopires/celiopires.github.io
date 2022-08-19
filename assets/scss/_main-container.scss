@@ -372,9 +372,9 @@
         }
       }
 
-      .font__medium-2 {
-        margin-bottom: $_int-32;
-      }
+      // .font__medium-2 {
+      //   margin-bottom: $_int-32;
+      // }
       .holding-1--full {
         margin: $_int-80 0;
         img {
@@ -401,6 +401,11 @@
         }
       }
     }
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: $_background-tertiary;
   }
 }
 
