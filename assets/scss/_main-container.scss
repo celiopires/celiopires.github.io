@@ -12,11 +12,7 @@
   }
 }
 
-#heroStand {
-  position: relative;
-  display: inline-block;
-}
-
+// SVG background
 .hero-path {
   .hero-path-wrapper {
     width: 100%;
@@ -53,6 +49,10 @@
     }
     // BOX HEADER - TITLES AND INTROS
     .box__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: stretch;
       margin-left: $_int-16;
       margin-right: $_int-16;
       margin-bottom: $_int-16;
@@ -80,7 +80,8 @@
         margin-bottom: $_int-32;
         @media all and (min-width: 768px) {
           max-width: 75%;
-          color: $_text-primary;
+          color: $_text-secondary;
+          text-align: center;
           margin-bottom: $_int-40;
         }
       }
@@ -111,270 +112,54 @@
     .box__body {
       margin-left: $_int-16;
       margin-right: $_int-16;
+      // @media all and (min-width: 1024px) {
+      //   ol.selected-projects {
+      //     li:nth-child(1) {
+      //       &:hover {
+      //         &::after {
+      //           content: '';
+      //           position: fixed;
+      //           width: 100%;
+      //           height: 100vh;
+      //           top: 0;
+      //           left: 0;
+      //           background-image: url(../../assets/images/novum/tuenti-open.gif);
+      //           background-repeat: no-repeat;
+      //           background-size: 50%;
+      //           background-position: center;
+      //           background-color: $_background-secondary;
+      //           transform: rotate(-5deg);
+      //           opacity: 0.05;
+      //           z-index: -1;
+      //         }
+      //       }
+      //     }
+      //     li:nth-child(2) {
+      //       &:hover {
+      //         &::after {
+      //           content: '';
+      //           position: fixed;
+      //           width: 100%;
+      //           height: 100vh;
+      //           top: 0;
+      //           left: 0;
+      //           background-image: url(../../assets/images/novum/tuenti-open.gif);
+      //           background-repeat: no-repeat;
+      //           background-size: 50%;
+      //           background-position: center;
+      //           background-color: $_background-secondary;
+      //           transform: rotate(-5deg);
+      //           opacity: 0.05;
+      //           z-index: -1;
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
       p {
         color: $_text-secondary;
         margin-bottom: $_int-16;
       }
-      &.skills {
-        & li {
-          width: 100%;
-          display: inline-block;
-          vertical-align: top;
-          @media all and (min-width: 768px) {
-            max-width: 47%;
-            margin-right: $_int-16;
-          }
-        }
-        .skill {
-          width: 100%;
-          padding-top: $_int-16;
-          padding-bottom: $_int-16;
-          .label {
-            .label-symbol {
-              display: inline-block;
-              margin-right: $_int-16;
-              img {
-                width: 24px;
-                height: 24px;
-              }
-            }
-            .font__small-1 {
-              width: 48%;
-              display: inline-block;
-              vertical-align: top;
-            }
-          }
-          .skill-rate {
-            width: 48%;
-            display: block;
-            vertical-align: top;
-            .rating-1,
-            .rating-2,
-            .rating-3,
-            .rating-4,
-            .rating-5 {
-              position: absolute;
-              top: 20px;
-              right: 8px;
-              width: 94px;
-              height: 16px;
-              display: block;
-              background-size: 100%;
-              background-repeat: no-repeat;
-              background-position: center;
-              opacity: .6;
-              @media all and (min-width: 768px) {
-                right: $_int-32;
-              }
-            }
-            .rating-1 {
-              background-image: url("../images/common/skill-rating/rating-1.svg");
-            }
-            .rating-2 {
-              background-image: url("../images/common/skill-rating/rating-2.svg");
-            }
-            .rating-3 {
-              background-image: url("../images/common/skill-rating/rating-3.svg");
-            }
-            .rating-4 {
-              background-image: url("../images/common/skill-rating/rating-4.svg");
-            }
-            .rating-5 {
-              background-image: url("../images/common/skill-rating/rating-5.svg");
-            }
-          }
-        }
-      }
-      ol {
-        margin-bottom: $_int-40;
-        @media all and (min-width: 768px) {
-          margin: 0 auto;
-        }
-        &.selected__projects {
-          //telefonica
-          li:nth-child(1) {
-            @media all and (min-width: 1024px) {
-              &:hover {
-                &::after {
-                  content: '';
-                  position: fixed;
-                  width: 100%;
-                  height: 100vh;
-                  top: 0;
-                  left: 0;
-                  background-image: url(../../assets/images/novum/tuenti-open.gif);
-                  background-repeat: no-repeat;
-                  background-size: 50%;
-                  background-position: center;
-                  background-color: $_background-secondary;
-                  transform: rotate(-5deg);
-                  opacity: 0.05;
-                  z-index: -1;
-                }
-              }
-            }
-          }
-          // el español
-          li:nth-child(2) {
-            @media all and (min-width: 1024px) {
-              &:hover {
-                &::after {
-                  content: '';
-                  position: fixed;
-                  width: 100%;
-                  height: 100vh;
-                  top: 0;
-                  left: 0;
-                  background-image: url(../../assets/images/ee/history-preview-desktop-mix.png);
-                  background-repeat: no-repeat;
-                  background-size: 80%;
-                  background-position: center;
-                  background-color: $_background-primary;
-                  transform: rotate(5deg);
-                  opacity: 0.05;
-                  z-index: -1;
-                }
-              }
-            }
-          }
-          //observador
-          li:nth-child(3) {
-            @media all and (min-width: 1024px) {
-              &:hover {
-                &::after {
-                  content: '';
-                  position: fixed;
-                  width: 100%;
-                  height: 100vh;
-                  top: 0;
-                  left: 0;
-                  background-image: url(../../assets/images/obs/obs-detail0.png);
-                  background-repeat: no-repeat;
-                  background-size: 90%;
-                  background-position: center;
-                  background-color: $_background-primary;
-                  transform: rotate(-10deg);
-                  opacity: 0.05;
-                  z-index: -1;
-                }
-              }
-            }
-          }
-        }
-        &.other__projects {
-          //telefonica
-          li:nth-child(1) {
-            @media all and (min-width: 1024px) {
-              &:hover {
-                &::after {
-                  content: '';
-                  position: fixed;
-                  width: 100vw;
-                  height: 100vh;
-                  top: 0;
-                  left: 0;
-                  background-image: url(../../assets/images/taglicious/taglicious.png);
-                  background-repeat: no-repeat;
-                  background-size: 100vh;
-                  background-position: center;
-                  background-color: $_background-primary;
-                  transform: rotate(-15deg);
-                  opacity: 0.05;
-                  z-index: -1;
-                }
-              }
-            }
-          }
-        }
-        li {
-          position: relative;
-          box-sizing: border-box;        
-          .works__featured {
-            margin-bottom: $_int-40;
-          }
-          .works__featured,
-          .works__featured--full {
-            position: relative;
-            display: inline-block;
-            width: 100%;
-            box-sizing: border-box;
-            vertical-align: top;
-            background-color: transparent;
-            border-top-right-radius: 40px;
-            border-bottom-right-radius: 40px;
-            z-index: 0;
-            &:hover {
-              .description .font__medium-2 {
-                text-decoration: underline;
-              }
-            }
-            a {
-              position: absolute;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              left: 0;
-              z-index: 9;
-              @media all and (min-width: 768px) {
-                &::after {
-                  content: '';
-                  display: block;
-                  position: absolute;
-                  right: 0;
-                  bottom: 0;
-                  padding: 16px;
-                  margin: 24px;
-                  background-color: transparent;
-                  background-image: url(../../assets/images/arrow-right-light.svg);
-                  background-repeat: no-repeat;
-                  background-size: 50%;
-                  background-position: center;
-                  border: 2px solid transparent;
-                  width: 58px;
-                  height: 21px;
-                  border-radius: 50px;
-                }
-              }
-              @media all and (min-width: 768px) {
-                &:hover::after {
-                  background-image: url(../../assets/images/arrow-right-dark.svg);
-                  background-color: $_white;
-                }
-              }
-            }
-            @media all and (min-width: 768px) {
-              &:hover {
-                @include horizontal-gradient(#00000c00, #2a27266c);
-              }
-            }
-          }
-          .description {
-            margin: $_int-16 0;
-            @media all and (min-width: 768px) {
-              margin: $_int-40 0;
-            }
-            .font__medium-2,
-            .font__small-1,
-            .font__small-2 {
-              margin-bottom: $_int-8;
-            }
-            .font__medium-2 {
-              color: $_text-primary;
-              font-weight: bold;
-            }
-            .font__small-1 {
-              color: $_text-secondary;
-            }
-            .font__small-2 {
-              color: $_text-secondary;
-            }
-          }
-        }
-      }
-
-      // .font__medium-2 {
-      //   margin-bottom: $_int-32;
-      // }
       .holding-1--full {
         margin: $_int-80 0;
         img {
@@ -409,41 +194,7 @@
   }
 }
 
-// CONTAINER BOX
-@media all and (min-width: 768px) {
-  .container .container__box .box__body li {
-    box-sizing: border-box;
-    .works__featured {
-      position: relative;
-      display: inline-block;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      width: 46.6%;
-    }
-    .works__featured:first-child {
-      margin-right: $_int-24;
-    }
-    .works__featured:last-child {
-      margin-left: $_int-24;
-    }
-    .works__featured--full {
-      display: inline-block;
-      width: 100%;
-    }
-  }
-}
-@media all and (min-width: 1024px) {
-  .container .container__box .box__body li {
-    .works__featured {
-      display: inline-block;
-      width: 47.5%;
-    }
-  }
-}
-
 // PARAGRAPH BOX
-
 .container .container__box .paragraph__box--1col {
   margin-bottom: $_int-80;
   width: 100%;
