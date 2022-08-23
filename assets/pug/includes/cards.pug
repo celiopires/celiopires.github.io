@@ -1,0 +1,15 @@
+//- Declaration
+mixin cards(href, title, location, description)
+    .card
+        a(href=href)
+        .card-number
+        .card-details
+            .card-item
+                .card-item-title
+                    h6.font__medium-2=title
+                .card-item-location
+                    h6.font__small-2=location
+            .card-areas
+                h6.font__small-2=description
+        .card-icon
+        .divider
