@@ -47,7 +47,7 @@
       padding: $_int-40 0;
       li {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: stretch;
         padding: $_int-16 0;
         border-bottom: 1px solid $_background-secondary;
@@ -56,6 +56,9 @@
         }
         div {
           width: 100%;
+          &.font__medium-2 {
+            color: $_text-primary;
+          }
         }
       }
     }
