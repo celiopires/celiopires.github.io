@@ -7,13 +7,13 @@
 
 .container__intro {
   .intro__header {
-	position: relative;
-  }
-  .intro__header ol {
-	margin-bottom: $_int-40;
-	li {
-		list-style: square inside;
-	}
+	  position: relative;
+    ol {
+      margin-bottom: $_int-40;
+      li {
+        list-style: square inside;
+      }
+    }
   }
 }
 
@@ -38,7 +38,28 @@
 			margin-left: auto;
 		}
 	}
-	
+
+  // Role Industry
+  .role__industry {
+    ol {
+      display: flex;
+      flex-direction: column;
+      padding: $_int-40 0;
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        padding: $_int-16 0;
+        border-bottom: 1px solid $_background-secondary;
+        &.font__small-2 {
+          color: $_text-secondary;
+        }
+        div {
+          width: 100%;
+        }
+      }
+    }
+  }
 
 	// LANDING LEFT ALIGNED
 	&.landing {
