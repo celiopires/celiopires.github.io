@@ -1,6 +1,9 @@
 body {
     counter-reset: counterSection;
 }
+.selected-projects ol {
+  backdrop-filter: blur(4px);
+}
 
 /* PROJECT CARDS */
 .card {
@@ -18,7 +21,6 @@ body {
         flex-direction: row;
         align-items: center;
         align-content: center;
-
         /*Animation*/
         -webkit-transition-duration: 0.2s;
         transition-duration: 0.2s;
@@ -32,16 +34,6 @@ body {
             -webkit-transform: scale(1.008);
             -ms-transform: scale(1.008);
             transform: scale(1.008);
-            background-color: $_background-primary;
-
-            // &::before {
-            //   content: "";
-            //   position: absolute;
-            //   width: 100%;
-            //   height: 100%;
-            //   z-index: -1;
-            // }
-
             .card-number::before {
                 color: $_text-primary;
             }
