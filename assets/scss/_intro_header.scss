@@ -39,9 +39,9 @@
 		}
 	}
   .font__extra-large-1 {
+    padding-bottom: 80px;
     @media all and (min-width: 768px) {
-      border-bottom: 1px solid $_background-secondary;
-      padding-bottom: $_int-40;
+      padding-bottom: 104px;
     }
   }
 
