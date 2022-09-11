@@ -208,25 +208,31 @@
     ol {
       display: flex;
       flex-direction: column;
+      gap: $_int-16;
       padding: $_int-40 0;
       margin-bottom: $_int-80;
       @media all and (min-width: 768px) {
         flex-direction: row;
+        // border-bottom: 1px solid $_background-tertiary;
       }
       li {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: stretch;
+        gap: $_int-8;
         width: 100%;
-        border-bottom: 1px solid $_background-secondary;
         @media all and (min-width: 768px) {
           border-bottom: 0px;
         }
-        .font__small-2 {
-          color: $_text-tertiary;
+        div {
+          width: 100%;
+          @media all and (min-width: 768px) {
+            width: auto;
+          }
         }
-        .font__small-1 {
-          color: $_text-primary;
+        > div:first-child {
+          text-transform: uppercase;
+          font-weight: bold;
         }
       }
     }
