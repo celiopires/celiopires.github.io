@@ -98,19 +98,20 @@ a {
     padding: 28px 0;
     margin-left: $_int-16;
     font-weight: $_bold;
-    color: $_text-primary;
+    color: $_text-secondary;
     text-transform: uppercase;
     @media all and (max-width: 1024px) {
       margin-left: $_int-24;
     }
   }
+  &:hover {
+    color: $_text-primary;
+    opacity: 1;
+  }
   &.about__header {
     position: relative;
     padding: $_int-24 0;
-    font-weight: $_bold;
-    font-size: 14px;
-    color:$_text-primary;
-    text-transform: uppercase;
+    color:$_text-secondary;
     @media all and (min-width: 768px) {
       right: 10px;
       &:hover {

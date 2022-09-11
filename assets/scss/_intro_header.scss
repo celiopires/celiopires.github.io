@@ -7,13 +7,13 @@
 
 .container__intro {
   .intro__header {
-	position: relative;
-  }
-  .intro__header ol {
-	margin-bottom: $_int-40;
-	li {
-		list-style: square inside;
-	}
+	  position: relative;
+    ol {
+      margin-bottom: $_int-40;
+      li {
+        list-style: square inside;
+      }
+    }
   }
 }
 
@@ -23,14 +23,14 @@
 	margin: 0 auto 80px auto;
 	padding: 0 16px;
 	@media all and (min-width: 768px) {
-		margin: 80px auto;
+    margin: 0 auto 20vh auto;
 	}
 	.font__large-1 {
 		margin-bottom: $_int-24;
 		text-align: center;
 	}
 	.font__medium-3 {
-		margin-bottom: $_int-40;
+		margin-bottom: 10vh;
 		text-align: center;
 		@media all and (min-width: 768px) {
 			max-width: 60%;
@@ -38,7 +38,39 @@
 			margin-left: auto;
 		}
 	}
-	
+  .font__extra-large-1 {
+    text-align: center;
+  }
+  .picture__cover {
+    display: flex;
+    align-items: center;
+    > img {
+      display: block;
+      max-width: 70%;
+      margin: 0 auto;
+      @media all and (min-width: 768px) {
+        display: inline-block;
+        margin-top: 24px;
+        max-width: 40%;
+      }
+    }
+  }
+
+  // .picture__right {
+  //   display: block;
+  //   max-width: 41%;
+  //   margin: 0 auto;
+  //   @media all and (min-width: 768px) {
+  //     display: inline-block;
+  //     margin-top: 24px;
+  //     max-width: 30%;
+  //   }
+  //   > img {
+  //     display: block;
+  //     @media all and (min-width: 768px) {
+  //     }
+  //   }
+  // }
 
 	// LANDING LEFT ALIGNED
 	&.landing {
@@ -96,19 +128,6 @@
 	.half__intro {
 		width: 100%;
 		display: inline-block;
-		.font__medium-3 {
-			display: inline-block;
-			vertical-align: top;
-			width: 100%;
-			margin-top: $_int-24;
-			margin-bottom: $_int-80;
-			text-align: left;
-			color: $_text-primary;
-			@media all and (min-width: 768px) {
-				width: 57%;
-				margin-bottom: 0;
-				margin-right: $_int-80;
-			}
 		}
 		.picture__right {
 			display: block;
@@ -126,7 +145,6 @@
 			}
 		}
 	}
-}
 
 // HEADER FULL WIDTH
 .container .container__full-width {
@@ -140,19 +158,4 @@
 		left: 0;
 		right: 0;
 	}
-}
-
-// HEADER FULL WIDTH NOVUM
-#novum {
-	position: fixed;
-	width: 100%;
-	height: 50vh;
-	display: block;
-	background-image: url("https://images.unsplash.com/photo-1659948782691-369ce33c44d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540&q=80");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
-	top: 0;
-	left: 0;
-	z-index: -1;
 }

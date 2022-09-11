@@ -25,6 +25,7 @@ p {
 }
 
 // SANS SERIF FONT
+.font__extra-large-1,
 .font__large-1,
 .font__large-2,
 .font__medium-1,
@@ -39,6 +40,18 @@ p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+// Font Extra Large
+.font__extra-large-1 {
+  font-size: 60px;
+  line-height: 76px;
+  font-weight: $_bold;
+  color: $_text-primary;
+  @media all and (min-width: 768px) {
+    font-size: 104px;
+    line-height: 1.4;
+  }
 }
 
 // Font Large

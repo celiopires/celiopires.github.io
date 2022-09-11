@@ -1,0 +1,53 @@
+doctype html
+html
+	head
+		- const pageTitle = "Taglicious"
+		include includes/head
+	body
+		include includes/nav
+		.container
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Timeframe
+								div.font__small-3 2017
+							li
+								div.font__small-3 Industry
+								div.font__small-3 Media, Communication, Digital news
+					h1.font__extra-large-1 Taglicious
+			.container__box
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 The challenge
+					.box__body
+						p.font__small-1
+							| The way we consume information is continuously being reinvented. New technologies, devices, experiences are being improved every day. Video content is king. It is an attractive, versatile and extremely sharable medium to reach a large number of people from all audiences. This format will definitely enrich histories with great multimedia content, which will improve engagement and time on page.
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 The project
+					.box__body
+						p.font__small-1
+							| Short videos generated automatically from El Español’s media content. Every published history is stored, indexed and identified by a tag or a keyword, to facilitate search and discoverability. Taglicious will fetch those tags looking for any type of media then it will combine them with sound and animated text. Rather than spending money on a big budget production, journalists can now, with just a few clicks, generate high quality videos in seconds.
+						.holding-1--full
+							img(src='assets/images/taglicious/taglicious.png' alt='Some mockups showcaisng some of the screens presented to the Google News Initiative jury')
+							span.font__small-3 Some mockups showcaisng some of the screens presented to the Google News Initiative jury
+				.paragraph__box--2col
+					.paragraph_box--1
+						.box__header-small
+							h2.font__small-2 Awards
+						.box__body
+							p.font__small-1
+								| This project was
+								a(href="https://newsinitiative.withgoogle.com/dnifund/dni-projects/taglicious-round-4/", target="_blank", rel="noopener noreferrer") funded 
+								| by the Google News initiative
+					.paragraph_box--2
+						.box__header-small
+							h2.font__small-2 Press
+						.box__body
+							p.font__small-1
+								a(href='https://www.elespanol.com/invertia/medios/20171213/269223346_0.html' target='_blank' rel='noopener noreferrer')
+									| "Google apuesta por el proyecto de innovación de El Español ..." 
+									span.link__external
+		include includes/footer
