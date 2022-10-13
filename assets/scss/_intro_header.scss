@@ -38,6 +38,15 @@
 			margin-left: auto;
 		}
 	}
+	.font__medium-2 {
+		margin-bottom: 10vh;
+		text-align: center;
+		@media all and (min-width: 768px) {
+			max-width: 70%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
   .font__extra-large-1 {
     text-align: center;
   }
