@@ -46,7 +46,11 @@
 	.font__medium-1 {
 		margin-bottom: $_int-16;
 		text-align: left;
+		font-size: 18px;
+    line-height: 26px;
 		@media all and (min-width: 768px) {
+			font-size: 26px;
+			line-height: 36px;
 			margin-bottom: 10vh;
 			max-width: 68%;
 			margin-right: auto;
@@ -59,6 +63,7 @@
   .picture__cover {
     display: flex;
     align-items: center;
+		margin-top: 32px;
     > img {
       display: block;
       max-width: 70%;
