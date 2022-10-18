@@ -224,8 +224,11 @@
         align-items: stretch;
         gap: $_int-8;
         width: 100%;
+        border-bottom: 1px solid $_background-tertiary;
+        padding-bottom: 18px;
         @media all and (min-width: 768px) {
           border-bottom: 0px;
+          padding-bottom: 0px;
         }
         div {
           width: 100%;
