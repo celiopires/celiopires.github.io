@@ -10,17 +10,18 @@ body {
     width: 100%;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: flex-start;
-    padding: 80px 0px;
+    padding: 16px 0px;
     gap: $_int-24;
     @media all and (min-width: 768px) {
         flex-direction: row;
         align-items: center;
         align-content: center;
+        padding: 80px 0px;
         /*Animation*/
         -webkit-transition-duration: 0.2s;
         transition-duration: 0.2s;
@@ -53,11 +54,16 @@ body {
     }
     .card-number {
         counter-increment: counterSection;
-        width: 180px;
+        width: 40px;
+        width: 40px;
+        @media all and (min-width: 768px) {
+            width: 180px;
+        }
         &::before {
             content: '0' counter(counterSection);
             display: block;
             font-family: "Hind", sans-serif;
+            width: 180px;
             font-size: 34px;
             line-height: 44px;
             font-weight: 100;

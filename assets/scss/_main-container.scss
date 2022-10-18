@@ -61,6 +61,10 @@
       }
       .font__large-2 {
         margin-bottom: $_int-24;
+        width: 100%;
+        @media all and (min-width: 768px) {
+          width: auto;
+        }
       }
       .font__medium-1 {
         margin-bottom: $_int-40;
@@ -213,7 +217,6 @@
       margin-bottom: $_int-80;
       @media all and (min-width: 768px) {
         flex-direction: row;
-        // border-bottom: 1px solid $_background-tertiary;
       }
       li {
         display: flex;
