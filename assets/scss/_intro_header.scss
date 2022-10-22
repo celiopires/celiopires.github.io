@@ -34,6 +34,7 @@
 		text-align: center;
     font-size: 18px;
     line-height: 26px;
+		color: $_text-secondary;
 		@media all and (min-width: 768px) {
 			margin-bottom: 10vh;
 			max-width: 85%;
@@ -96,7 +97,7 @@
 				top: 0;
 				right: 0;
 				height: 100%;
-				width: 330px;
+				width: 230px;
 				background-image: url("../images/about/celio-photo-circular.png");
 				background-size: 100%;
 				opacity: .8;
@@ -116,7 +117,7 @@
 		}
 		.font__medium-3 {
 			text-align: left;
-			color: $_text-primary;
+			color: $_text-secondary;
 			@media all and (min-width: 768px) {
 				max-width: 55%;
 				margin: 0;
