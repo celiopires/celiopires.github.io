@@ -40,7 +40,7 @@
     max-width: 940px;
     margin: 0 auto $_int-80 auto;
     @media all and (min-width: 1024px) {
-      margin: 0 auto $_int-80*2 auto;
+      margin: 0 auto 320px auto;
     }
     & a.font__small-1 {
       display: block;
@@ -62,7 +62,7 @@
         margin-bottom: 0;
         padding-bottom: $_int-80;
         align-items: center;
-        border-bottom: 8px solid $_background-tertiary;
+        border-bottom: 1px solid rgba(64,65,65,.2);
       }
       .font__large-1 {
         margin-bottom: $_int-16;
