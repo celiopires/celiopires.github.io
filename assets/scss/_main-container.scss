@@ -56,12 +56,24 @@
       margin-left: $_int-16;
       margin-right: $_int-16;
       margin-bottom: $_int-16;
+      @media all and (min-width: 768px) {
+        flex-direction: row;
+        gap: $_int-80;
+        margin-bottom: 0;
+        padding-bottom: $_int-80;
+        align-items: center;
+        border-bottom: 8px solid $_background-tertiary;
+      }
       .font__large-1 {
         margin-bottom: $_int-16;
       }
       .font__large-2 {
         margin-bottom: $_int-24;
         width: 100%;
+        @media all and (min-width: 768px) {
+          margin-bottom: 0;
+          white-space: nowrap;
+        }
       }
       .font__medium-1 {
         margin-bottom: $_int-40;
@@ -79,11 +91,11 @@
       .font__small-1 {
         width: 100%;
         margin-bottom: $_int-32;
+        color: $_text-secondary;
         @media all and (min-width: 768px) {
           max-width: 70%;
-          color: $_text-secondary;
           text-align: left;
-          margin-bottom: $_int-40;
+          margin-bottom: 0;
         }
       }
       .font__small-2 {
