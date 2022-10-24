@@ -22,7 +22,7 @@ body {
         align-items: center;
         align-content: center;
         padding: 80px 0px;
-        border-bottom: 1px solid $_background-tertiary;
+        border-bottom: 1px solid rgba($color: $_background-tertiary, $alpha: 0.2);
         /*Animation*/
         -webkit-transition-duration: 0.2s;
         transition-duration: 0.2s;
