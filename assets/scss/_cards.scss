@@ -22,7 +22,7 @@ body {
         align-items: center;
         align-content: center;
         padding: 80px 0px;
-        border-bottom: 1px solid rgba($color: $_background-tertiary, $alpha: 0.2);
+        border-bottom: 2px solid rgba($color: $_background-tertiary, $alpha: 0.4);
         /*Animation*/
         -webkit-transition-duration: 0.2s;
         transition-duration: 0.2s;
@@ -62,7 +62,8 @@ body {
             width: 48px;
             font-size: 38px;
             font-weight: 100;
-            color: $_text-tertiary;
+            text-align: center;
+            color: $_text-secondary;
             letter-spacing: 2px;
             padding-top: 4px;
             @media all and (min-width: 768px) {
@@ -117,10 +118,9 @@ body {
         flex-direction: row;
         justify-content: flex-start;
         z-index: -1;
-        @media all and (min-width: 768px) {
-            width: 180px;
-            justify-content: flex-end;                
-        }
+        padding: $_int-16;
+        border-radius: 4px;
+        background-color: rgba(255,255,255,.04);
         &::after {
             content: '';
             width: 48px;
