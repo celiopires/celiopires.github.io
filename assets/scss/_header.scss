@@ -1,15 +1,21 @@
 header {
   position: relative;
   z-index: 1;
+  mix-blend-mode: difference;
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   height: 80px;
   margin: 0;
   z-index: 1;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.01);
+  // backdrop-filter: blur(8px);
+  // -webkit-backdrop-filter: blur(8px);
   .header__nav {
     line-height: 1;
     position: relative;
@@ -100,6 +106,7 @@ a {
     font-weight: $_bold;
     color: $_text-secondary;
     text-transform: uppercase;
+    mix-blend-mode: difference;
     @media all and (max-width: 1024px) {
       margin-left: $_int-24;
     }

@@ -364,3 +364,26 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
+
+.hero-section {
+  height: 100vh;
+  &.telefonica {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    background-image: url("../images/telefonica/tuenti-hero-image.png");
+  }
+}
+
+.gallery-showcase {
+  height: 10vh;
+  width: 100%;
+  background-color: red;
+  ol {
+    li {
+
+    }
+  } 
+}

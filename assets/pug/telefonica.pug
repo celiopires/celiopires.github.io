@@ -5,8 +5,7 @@ html
 		include includes/head
 	body
 		include includes/nav
-		.hero-section
-			img(src='assets/ElEspanol.png' alt='test')
+		.hero-section.telefonica
 		.container
 			// Intro Header
 			#intro__header.container__intro
@@ -61,7 +60,19 @@ html
 				.paragraph__box--1col
 					.box__header-small
 						h2.font__small-2 Overview
-					.box__body
-						.picture__center
-							img(src='assets/images/telefonica/tuenti-open.gif' alt='Demonstration of how Tuenti behaves. This app is fully packed with Telefonica components.')
+				.box__body
+					.gallery-showcase
+						ol
+							li
+								img(src="assets/images/telefonica/tuenti-open.gif", alt="")
+							li
+								img(src="assets/images/telefonica/tuenti-open.gif", alt="")
+							li
+								img(src="assets/images/telefonica/tuenti-open.gif", alt="")
+							li
+								img(src="assets/images/telefonica/tuenti-open.gif", alt="")
+							li
+								img(src="assets/images/telefonica/tuenti-open.gif", alt="")
+					.picture__center
+						img(src='assets/images/telefonica/tuenti-open.gif' alt='Demonstration of how Tuenti behaves. This app is fully packed with Telefonica components.')
 		include includes/footer
