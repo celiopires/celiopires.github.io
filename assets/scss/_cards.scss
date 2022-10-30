@@ -39,8 +39,8 @@ body {
             .card-number::before {
                 color: $_text-primary;
             }
-            .card-icon::after {
-                background-color: $_text-primary;
+            .card-icon .icon-color {
+                stroke: $_text-primary;
             }
         }
     }
@@ -60,7 +60,7 @@ body {
             display: block;
             font-family: "Hind", sans-serif;
             width: 48px;
-            font-size: 38px;
+            font-size: 24px;
             font-weight: 100;
             text-align: center;
             color: $_text-secondary;
@@ -119,26 +119,29 @@ body {
         justify-content: flex-start;
         z-index: -1;
         padding: $_int-16;
-        border-radius: 4px;
+        border-radius: 100px;
         background-color: rgba(255,255,255,.04);
-        &::after {
-            content: '';
-            width: 48px;
-            height: 21px;
-            display: inline-block;
-            -webkit-mask-size: cover;
-            mask-size: cover;
-            -webkit-mask-image: url(../../assets/images/arrow-right-light.svg);
-            mask-image: url(../../assets/images/arrow-right-light.svg);
-            background-color: $_text-tertiary;
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position: center;
+        .icon-color {
+            stroke: $_text-tertiary;
         }
+        // &::after {
+        //     content: '';
+        //     width: 24px;
+        //     height: 24px;
+        //     // display: inline-block;
+        //     // background: url(../../assets/images/chevron-right.svg);
+        //     // -webkit-mask-size: cover;
+        //     // mask-size: cover;
+        //     // -webkit-mask-image: url(../../assets/images/chevron-right.svg);
+        //     // mask-image: url(../../assets/images/chevron-right.svg);
+        //     // background-color: $_text-tertiary;
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        //     background-size: 24px 24px;
+        // }
         @media all and (min-width: 768px) {
             &:hover::after {
-                background-image: url(../../assets/images/arrow-right-dark.svg);
-                background-color: $_white;
+               stroke:red;
             }
         }
     }
