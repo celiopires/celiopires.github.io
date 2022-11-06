@@ -360,9 +360,12 @@
 
 .glass {
   background: rgba(0, 0, 0, 0.01);
-  padding: 32px 32px 0 32px;
+  padding: 32px 0 32px 0;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  @media all and (min-width: 768px) {
+    padding: 32px 32px 0 32px;
+  }
 }
 
 .hero-section {
