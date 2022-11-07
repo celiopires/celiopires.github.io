@@ -1,7 +1,21 @@
-window.scrollTo({
-  top: 500,
-  behavior: 'smooth'
-});
+// get the full URL
+// var pathArray = window.location.pathname;
+
+// var newPathname = "";
+// for (i = 0; i < pathArray.length; i++) {
+//   newPathname += "/";
+//   newPathname += pathArray[i];
+// }
+
+// if(pathArray === '/telefonica.html'){
+// 	window.scrollTo({
+// 		top: 500,
+// 		behavior: 'smooth'
+// 	});
+// } else {
+// 	console.log("Not working");
+// }
+
 
 
 // var anchor = document.querySelector('#intro__header');

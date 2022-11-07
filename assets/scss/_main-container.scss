@@ -56,24 +56,19 @@
       margin-left: $_int-16;
       margin-right: $_int-16;
       margin-bottom: $_int-16;
-      padding-bottom: $_int-80;
+      padding-bottom: 0;
       gap: $_int-16;
-      border-bottom: 1px solid rgba(64,65,65,.4);
-      // @media all and (min-width: 768px) {
-      //   flex-direction: row;
-      //   gap: $_int-80;
-      //   margin-bottom: 0;
-      //   align-items: center;
-      //   border-bottom: 1px solid rgba(64,65,65,.2);
-      // }
+      @media all and (min-width: 768px) {
+        padding-bottom: $_int-80;
+      }
       .font__large-1 {
         margin-bottom: $_int-16;
       }
       .font__large-2 {
-        margin-bottom: $_int-24;
+        margin-bottom: 0;
         width: 100%;
         @media all and (min-width: 768px) {
-          margin-bottom: 0;
+          max-width: 45%;
           white-space: nowrap;
         }
       }
@@ -92,7 +87,7 @@
       }
       .font__small-1 {
         width: 100%;
-        margin-bottom: $_int-32;
+        margin-bottom: $_int-16;
         color: $_text-secondary;
         @media all and (min-width: 768px) {
           max-width: 70%;
@@ -358,12 +353,13 @@
   }
 }
 
-.glass {
-  background: rgba(0, 0, 0, 0.01);
-  padding: 32px 32px 0 32px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
+// .glass {
+//   background: $_background-secondary;
+//   padding: 56px 0 32px 0;
+//   @media all and (min-width: 768px) {
+//     padding: 80px 32px 0 32px;
+//   }
+// }
 
 .hero-section {
   height: 100vh;

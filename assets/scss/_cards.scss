@@ -15,14 +15,18 @@ body {
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: flex-start;
-    padding: 16px 0px;
-    gap: $_int-24;
+    padding: $_int-32 0;
+    gap: $_int-16;
+    margin-bottom: 8px;
+    border-radius: 16px;
+    /* DIV sizing */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
     @media all and (min-width: 768px) {
         flex-direction: row;
         align-items: center;
         align-content: center;
-        padding: 80px 0px;
-        border-bottom: 2px solid rgba($color: $_background-tertiary, $alpha: 0.4);
         /*Animation*/
         -webkit-transition-duration: 0.2s;
         transition-duration: 0.2s;
@@ -59,15 +63,14 @@ body {
             content: '0' counter(counterSection);
             display: block;
             font-family: "Hind", sans-serif;
-            width: 48px;
+            width: 32px;
             font-size: 24px;
             font-weight: 100;
-            text-align: center;
+            text-align: left;
             color: $_text-secondary;
             letter-spacing: 2px;
-            padding-top: 4px;
             @media all and (min-width: 768px) {
-                padding-top: 0;
+                width: 48px;
             }
         }
     }
@@ -107,6 +110,10 @@ body {
             }
             .font__small-2 {
                 color: $_text-primary;
+                font-size: 13px;
+                @media all and (min-width: 768px) {
+                    font-size: 16px;
+                }
             }
             .font__small-3 {
                 color: $_text-secondary;
@@ -117,32 +124,20 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        z-index: -1;
-        padding: $_int-16;
-        border-radius: 100px;
-        background-color: rgba(255,255,255,.04);
+        z-index: 1;
+        @media all and (min-width: 768px) {
+            padding: $_int-16;
+            border-radius: 100px;
+            background-color: rgba(255,255,255,.04);
+        }
         .icon-color {
             stroke: $_text-tertiary;
+            fill: none;
         }
-        // &::after {
-        //     content: '';
-        //     width: 24px;
-        //     height: 24px;
-        //     // display: inline-block;
-        //     // background: url(../../assets/images/chevron-right.svg);
-        //     // -webkit-mask-size: cover;
-        //     // mask-size: cover;
-        //     // -webkit-mask-image: url(../../assets/images/chevron-right.svg);
-        //     // mask-image: url(../../assets/images/chevron-right.svg);
-        //     // background-color: $_text-tertiary;
-        //     background-repeat: no-repeat;
-        //     background-position: center;
-        //     background-size: 24px 24px;
+        // @media all and (min-width: 768px) {
+        //     &:hover::after {
+        //        stroke:red;
+        //     }
         // }
-        @media all and (min-width: 768px) {
-            &:hover::after {
-               stroke:red;
-            }
-        }
     }
 }
