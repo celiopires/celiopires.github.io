@@ -13,7 +13,7 @@
 // 		behavior: 'smooth'
 // 	});
 // } else {
-// 	console.log("😢😢😢😢");
+// 	console.log("Not working");
 // }
 
 
