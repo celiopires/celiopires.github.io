@@ -1,5 +1,5 @@
 // get the full URL
-var pathArray = window.location.pathname;
+// var pathArray = window.location.pathname;
 
 // var newPathname = "";
 // for (i = 0; i < pathArray.length; i++) {
@@ -7,14 +7,14 @@ var pathArray = window.location.pathname;
 //   newPathname += pathArray[i];
 // }
 
-if(pathArray === '/telefonica.html'){
-	window.scrollTo({
-		top: 500,
-		behavior: 'smooth'
-	});
-} else {
-	console.log("😢😢😢😢");
-}
+// if(pathArray === '/telefonica.html'){
+// 	window.scrollTo({
+// 		top: 500,
+// 		behavior: 'smooth'
+// 	});
+// } else {
+// 	console.log("😢😢😢😢");
+// }
 
 
 
