@@ -5,7 +5,8 @@ html
 		include includes/head
 	body
 		include includes/nav
-		#telefonica.hero-section.telefonica
+		//- #telefonica.hero-section.telefonica
+		#telefonica.telefonica
 		.container
 			// Intro Header
 			#intro__header.container__intro
@@ -25,8 +26,8 @@ html
 					p.font__medium-3
 						| This project, which has its headquarters in Madrid's city center, was in charge of implementing an ambitious strategy to develop, execute, and maintain a strong design system to improve consistency among various Telco brands. 
 						| I was part of the Tuenti team.
-					.picture__cover
-						img(src='assets/images/telefonica/telefonica_apps.png' alt='Telefonica is supporting this apps to scale.')
+					//- .picture__cover
+					//- 	img(src='assets/images/telefonica/telefonica_apps.png' alt='Telefonica is supporting this apps to scale.')
 			.container__box
 				.paragraph__box--2col
 					.paragraph_box--1
@@ -41,7 +42,6 @@ html
 						.box__body
 							p.font__small-1
 								| Telefónica's Design system is user-centric, mobile first, scalable and with a clear vision of what goals to achieve in the future. To scale the product ecosystem there was a need to centralize all the global decisions in a core team focused on giving all the guidelines to build new components, features and experiences.
-
 				.paragraph__box--1col
 					.box__header-small
 						h2.font__small-2 Design process
@@ -60,19 +60,22 @@ html
 				.paragraph__box--1col
 					.box__header-small
 						h2.font__small-2 Overview
-				.box__body
-					.gallery-showcase
-						ol
-							li
-								img(src="assets/images/telefonica/tuenti-open.gif", alt="")
-							li
-								img(src="assets/images/telefonica/tuenti-open.gif", alt="")
-							li
-								img(src="assets/images/telefonica/tuenti-open.gif", alt="")
-							li
-								img(src="assets/images/telefonica/tuenti-open.gif", alt="")
-							li
-								img(src="assets/images/telefonica/tuenti-open.gif", alt="")
+					.box__body
+						.picture__center
+							img(src="assets/images/telefonica/tuenti-open.gif", alt="")
+				//- .box__body
+				//- 	.gallery-showcase
+				//- 		ol
+				//- 			li
+				//- 				img(src="assets/images/telefonica/tuenti-open.gif", alt="")
+				//- 			li
+				//- 				img(src="assets/images/telefonica/tuenti-open.gif", alt="")
+				//- 			li
+				//- 				img(src="assets/images/telefonica/tuenti-open.gif", alt="")
+				//- 			li
+				//- 				img(src="assets/images/telefonica/tuenti-open.gif", alt="")
+				//- 			li
+				//- 				img(src="assets/images/telefonica/tuenti-open.gif", alt="")
 					.picture__center
 						img(src='assets/images/telefonica/tuenti-open.gif' alt='Demonstration of how Tuenti behaves. This app is fully packed with Telefonica components.')
 		include includes/footer
