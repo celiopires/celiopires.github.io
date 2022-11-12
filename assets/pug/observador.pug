@@ -4,27 +4,7 @@ html
 		- const pageTitle = "Observador"
 		include includes/head
 	body
-		header
-			#header.header
-				.header__nav
-					a.home.font__small-1(href='/') Célio
-					ol
-						li
-							a.about__header.font__small-2(href='about.html') About
-						li
-							.dropdown
-								a.about__header.font__small-2(href='projects.html') Projects
-								ul.dropdownMenu
-									li
-										a.font__small-1(href='telefonica.html') Telefónica
-									li
-										a.font__small-1(href='elespanol.html') El Español
-									li
-										a.font__small-1(href='observador.html') Observador
-									li
-										a.font__small-1(href='taglicious.html') Taglicious
-						li
-							a.about__header.font__small-2(href='contact.html') Contact
+		include includes/nav
 		.container
 			#intro__header.container__intro
 				.intro__header--bottom
