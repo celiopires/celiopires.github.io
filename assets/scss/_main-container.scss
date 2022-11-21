@@ -153,18 +153,6 @@
       .font__medium-4 {
         color: $_text-secondary;
       }
-      .picture__center {
-        margin-bottom: $_int-80;
-        > img {
-          display: block;
-          width: 80%;
-          max-width: 300px;
-          margin: 0 auto;
-          @media all and (min-width: 768px) {
-            width: 500px;
-          }
-        }
-      }
     }
     // BOX BODY - CONTENT
     .box__body {
@@ -178,18 +166,6 @@
         margin: $_int-80 0;
         img {
           width: 100%;
-        }
-      }
-      .picture__center {
-        margin: $_int-80 $_int-16;
-        > img {
-          display: block;
-          width: 80%;
-          max-width: 300px;
-          margin: 0 auto;
-          @media all and (min-width: 768px) {
-            width: 500px;
-          }
         }
       }
     }
