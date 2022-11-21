@@ -105,18 +105,6 @@
           max-width: 75%;
         }
       }
-      .picture__center {
-        margin-bottom: $_int-80;
-        > img {
-          display: block;
-          width: 80%;
-          max-width: 300px;
-          margin: 0 auto;
-          @media all and (min-width: 768px) {
-            width: 500px;
-          }
-        }
-      }
     }
     .box__header-small {
       display: flex;
@@ -191,13 +179,6 @@
         img {
           width: 100%;
         }
-        span {
-          margin-top: $_int-16;
-        }
-        .font__small-3 {
-          display: block;
-          margin-top: $_int-16;
-        }
       }
       .picture__center {
         margin: $_int-80 $_int-16;
@@ -253,6 +234,18 @@
     width: 100%;
     height: 1px;
     background-color: $_background-tertiary;
+    margin-bottom: $_int-8;
+  }
+  .caption {
+    display: flex;
+    align-items: center;
+    gap: $_int-8;
+    svg {
+      fill: $_text-tertiary;
+    }
+    .font__small-3 {
+      color: $_text-tertiary;
+    }
   }
 }
 
