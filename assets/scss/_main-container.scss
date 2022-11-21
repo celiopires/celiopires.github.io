@@ -212,17 +212,6 @@
     background-color: $_background-tertiary;
     margin-bottom: $_int-8;
   }
-  .caption {
-    display: flex;
-    align-items: center;
-    gap: $_int-8;
-    svg {
-      fill: $_text-tertiary;
-    }
-    .font__small-3 {
-      color: $_text-tertiary;
-    }
-  }
 }
 
 // PARAGRAPH BOX
