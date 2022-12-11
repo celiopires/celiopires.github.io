@@ -44,14 +44,11 @@
 			line-height: 36px;
 		}
 	}
-	.font__medium-1 {
+	.font__small-1 {
 		margin-bottom: $_int-16;
 		text-align: left;
-		font-size: 18px;
-    line-height: 26px;
+		color: $_text-secondary;
 		@media all and (min-width: 768px) {
-			font-size: 26px;
-			line-height: 36px;
 			margin-bottom: 10vh;
 			max-width: 68%;
 			margin-right: auto;
@@ -79,17 +76,26 @@
 				background-image: url("../images/about/celio-photo-circular.png");
 				background-size: 100%;
 				background-repeat: no-repeat;
+				&:hover {
+					opacity: 0.8;
+				}
 			}
 			.description {
 				display: flex;
 				flex-direction: column;
 				gap: $_int-8;
-				.font__small-2 {
+				.font__small-1 {
 					text-align: left;
 					color: $_text-secondary;
 					@media all and (min-width: 768px) {
-						max-width: 55%;
+						max-width: 70%;
 						margin: 0;
+					}
+					a {
+						color: $_text-secondary;
+						&:hover {
+							color: $_text-primary;
+						}
 					}
 				}
 				.font__small-3 {
