@@ -76,6 +76,11 @@ ul, ol, li {
       display: flex;
       align-items: center;
       gap: $_int-8;
+      margin-top: $_int-16;
+      margin-bottom: $_int-16;
+      padding-left: $_int-16;
+      padding-right: $_int-16;
+      text-align: center;
       svg {
         fill: $_text-tertiary;
       }

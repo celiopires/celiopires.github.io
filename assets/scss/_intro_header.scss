@@ -66,48 +66,44 @@
 	&.landing {
 		position: relative;
 		margin: 80px auto 120px auto;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: transform;
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
 		@media all and (min-width: 768px) {
 			margin: 180px auto 320px auto;
-			&::after {
-				content: '';
-				display: block;
-				position: absolute;
-				top: 0;
-				right: 0;
-				height: 100%;
-				width: 230px;
+		}
+		.quick__overview {
+			display: flex;
+			align-items: center;
+			gap: $_int-24;
+			.pic {
+				height: 72px;
+				width: 72px;
 				background-image: url("../images/about/celio-photo-circular.png");
 				background-size: 100%;
-				opacity: .8;
 				background-repeat: no-repeat;
-				background-position-x: right;
-				background-position-y: center;
-				z-index: -1;
 			}
-      &:hover {
-        -webkit-transform: scale(1.01);
-        -ms-transform: scale(1.01);
-        transform: scale(1.01);
-      }
+			.description {
+				display: flex;
+				flex-direction: column;
+				gap: $_int-8;
+				.font__small-2 {
+					text-align: left;
+					color: $_text-secondary;
+					@media all and (min-width: 768px) {
+						max-width: 55%;
+						margin: 0;
+					}
+				}
+				.font__small-3 {
+					color: $_text-secondary;
+					@media all and (min-width: 768px) {
+						&:hover {
+							color: $_text-primary;
+						}
+					}
+				}
+			}
 		}
 		.font__large-1 {
 			text-align: left;
-		}
-		.font__medium-3 {
-			text-align: left;
-			color: $_text-secondary;
-			@media all and (min-width: 768px) {
-				max-width: 55%;
-				margin: 0;
-				margin-bottom: 24px;
-			}
 		}
 		.font__small-1 {
 			color: $_text-secondary;
