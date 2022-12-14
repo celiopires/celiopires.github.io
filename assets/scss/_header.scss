@@ -118,7 +118,7 @@ a {
   &.about__header {
     position: relative;
     padding: $_int-24 0;
-    color:$_text-secondary;
+    color: $_text-secondary;
     @media all and (min-width: 768px) {
       right: 10px;
       &:hover {
