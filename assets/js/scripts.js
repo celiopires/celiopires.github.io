@@ -4,8 +4,11 @@ var modal = document.getElementById('modal');
 // Get the button that opens the modal
 var btn = document.getElementById("modalBtn");
 
-// Get the <span> element that closes the modal
+// Get the div that closes the modal
 var closeModal = document.getElementById("closeModal");
+
+// Get the div that closes the modal
+var overlayModal = document.getElementById("overlayModal");
 
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
@@ -17,7 +20,10 @@ closeModal.onclick = function() {
   modal.style.display = "none";
 }
 
-
+// When the user clicks on <span> (x), close the modal
+overlayModal.onclick = function() {
+  modal.style.display = "none";
+}
 
 
 // get the full URL
