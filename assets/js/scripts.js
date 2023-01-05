@@ -1,3 +1,8 @@
+// AUTO-UPDATE COPYRIGHT YEAR
+document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+
+// MODAL 
+
 // Get the modal
 var modal = document.getElementById('modal');
 
