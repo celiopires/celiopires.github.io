@@ -115,9 +115,22 @@
 				}
 				.font__small-3 {
 					color: $_text-secondary;
+					display: flex;
+					align-items: center;
+					gap: $_int-8;
 					@media all and (min-width: 768px) {
 						&:hover {
 							color: $_text-primary;
+						}
+					}
+					.card-icon {
+						width: 16px;
+						height: 16px;
+						line-height: 1;
+						border-radius: 100px;
+						.icon-color {
+							stroke: #69696a;
+    					fill: none;
 						}
 					}
 				}
