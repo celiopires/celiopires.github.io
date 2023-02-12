@@ -117,10 +117,15 @@
 					color: $_text-secondary;
 					display: flex;
 					align-items: center;
-					gap: $_int-8;
+					gap: $_int-4;
 					@media all and (min-width: 768px) {
 						&:hover {
 							color: $_text-primary;
+							.card-icon {
+								.icon-color {
+									stroke: $_text-primary;
+								}
+							}
 						}
 					}
 					.card-icon {
