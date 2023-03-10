@@ -8,7 +8,7 @@
   @media all and (min-width: 768px) {
     padding-left: 20px;
     padding-right: 20px;
-    margin: 15vh auto 0 auto;
+    //margin: 15vh auto 0 auto;
   }
 }
 
@@ -180,7 +180,7 @@
       flex-direction: column;
       gap: $_int-16;
       padding: $_int-40 0;
-      margin-bottom: $_int-80;
+      //margin-bottom: $_int-80;
       @media all and (min-width: 768px) {
         flex-direction: row;
       }
@@ -195,6 +195,13 @@
         @media all and (min-width: 768px) {
           border-bottom: 0px;
           padding-bottom: 0px;
+          &:nth-child(2) {
+            place-content: center;
+          }
+          &:nth-child(3) {
+            place-content: flex-end;
+            text-align: right;
+          }
         }
         div {
           width: 100%;
