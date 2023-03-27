@@ -20,9 +20,9 @@ body {
     margin-bottom: 8px;
     border-radius: 16px;
     /* DIV sizing */
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     @media all and (min-width: 768px) {
         flex-direction: row;
         align-items: center;
@@ -140,5 +140,32 @@ body {
         //        stroke:red;
         //     }
         // }
+    }
+}
+
+.other-work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        align-items: stretch;
+        justify-content: center;
+        .card-special {
+            // padding: 24px 40px;
+            // border: 1px solid $_text-tertiary;
+            // border-radius: 4px;
+            // width: 100%;
+            .card-details {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: stretch;
+            }
+        }
     }
 }
