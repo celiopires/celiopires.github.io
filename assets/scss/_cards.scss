@@ -1,8 +1,21 @@
 body {
     counter-reset: counterSection;
 }
-.selected-projects ol {
-    backdrop-filter: blur(4px);
+
+.selected-projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    & > * {
+        flex: 1 1 33%;
+    }
+}
+
+.portfolio-card {
+    .thumbnail {
+        overflow: hidden;
+        border-radius: 24px;
+    }
 }
 
 /* PROJECT CARDS */
@@ -58,33 +71,13 @@ body {
         left: 0;
         z-index: 2;
     }
-    .card-number {
-        counter-increment: counterSection;
-        &::before {
-            content: '0' counter(counterSection);
-            display: block;
-            font-family: "Hind", sans-serif;
-            width: 32px;
-            font-size: 24px;
-            font-weight: 100;
-            text-align: left;
-            color: $_text-secondary;
-            letter-spacing: 2px;
-            @media all and (min-width: 768px) {
-                width: 48px;
-            }
-        }
-    }
     .card-details {
         display: flex;
-        align-items: center;
+        align-items: start;
         align-self: stretch;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         width: 100%;
-        @media all and (min-width: 768px) {
-            flex-direction: row;
-        }
         .card-item {
             display: flex;
             flex-direction: column;
@@ -169,3 +162,5 @@ body {
         }
     }
 }
+
+/* PROJECT CARDS */
