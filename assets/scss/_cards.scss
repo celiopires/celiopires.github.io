@@ -13,8 +13,12 @@ body {
 
 .portfolio-card {
     .thumbnail {
+        position: relative;
         overflow: hidden;
         border-radius: 24px;
+        img {
+            background-color: aliceblue;
+        }
     }
 }
 
