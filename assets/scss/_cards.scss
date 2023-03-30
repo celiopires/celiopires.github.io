@@ -16,8 +16,12 @@ body {
         position: relative;
         overflow: hidden;
         border-radius: 24px;
+        margin: 0;
+        padding: 0;
         img {
             background-color: aliceblue;
+            margin: -4px;
+            padding: 0;
         }
     }
 }
