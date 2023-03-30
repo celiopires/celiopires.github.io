@@ -23,15 +23,14 @@ html
 			// Selected Projects
 			.container__box
 				//- BOX HEADER
-				.box__header
-					h3.font__large-2 Selected Projects
-					p.font__small-1
-						| This section shows how wonderful products are made from great ideas. 
-						| I focused on human computer interaction, user experience, and product design.
-				//- BOX BODY
+				//- .box__header
+				//- 	h3.font__large-2 Selected Projects
+				//- 	p.font__small-1
+				//- 		| This section shows how wonderful products are made from great ideas. 
+				//- 		| I focused on human computer interaction, user experience, and product design.
 				//- BOX BODY
 				.box__body
-					ol.selected-projects
+					ol
 						li
 							.card
 								a(href='metallicus.html')
@@ -132,6 +131,18 @@ html
 										.card-areas
 											h6.font__small-2 Founder - Product utilities
 											h6.font__small-3 Lisbon, Portugal
+									.card-icon
+										include includes/icons/icon-external-link
+							li
+								.card
+									a(href='https://commons.so//', target="_blank")
+									.card-details
+										.card-item
+											.card-item-title
+												h6.font__medium-2 Commons
+										.card-areas
+											h6.font__small-2 Product Design
+											h6.font__small-3 Lisbon, Portugal + Los Angeles, USA
 									.card-icon
 										include includes/icons/icon-external-link
 							li
