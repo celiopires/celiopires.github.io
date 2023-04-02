@@ -5,9 +5,38 @@ body {
 .selected-projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 80px;
+    gap: 40px;
+    @media all and (min-width: 768px) {
+        gap: 80px;
+    }
     & > * {
-        flex: 1 1 33%;
+        flex: 1 1 30%;
+    }
+    @media all and (min-width: 768px) {
+        &:nth-child(3) {        
+            flex: 1 1 26%;
+        }
+        &:nth-child(4) {
+            flex: 1 1 26%;
+        }
+        &:nth-child(5) {
+            flex: 1 1 26%;
+        }
+    }
+}
+
+.other-work {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    @media all and (min-width: 768px) {
+        gap: 80px;
+    }
+    & > * {
+        flex: 1 1 10em;
+    }
+    & > :nth-child(1) {
+        flex: 1 1 100%;
     }
 }
 
@@ -15,7 +44,7 @@ body {
     .thumbnail {
         position: relative;
         overflow: hidden;
-        border-radius: 24px;
+        border-radius: 8px;
         margin: 0;
         padding: 0;
         &::before {
@@ -48,7 +77,6 @@ body {
             background-color: aliceblue;
             margin: -4px;
             padding: 0;
-            border-radius: 24px;
             outline: 0;
         }
     }
@@ -104,6 +132,9 @@ body {
     gap: $_int-16;
     margin-bottom: 8px;
     border-radius: 16px;
+    @media all and (min-width: 768px) {
+        gap: $_int-8;
+    }
     /* DIV sizing */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -191,11 +222,13 @@ body {
         }
     }
     .card-icon {
+        width: 16px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         z-index: 1;
         @media all and (min-width: 768px) {
+            width: 24px;
             padding: $_int-16;
             border-radius: 100px;
             background-color: rgba(255,255,255,.04);
@@ -207,27 +240,27 @@ body {
     }
 }
 
-.other-work {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 16px;
-    li {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: stretch;
-        align-items: stretch;
-        justify-content: center;
-        .card-special {
-            .card-details {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: stretch;
-            }
-        }
-    }
-}
+// .other-work {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     gap: 16px;
+//     li {
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: nowrap;
+//         align-content: stretch;
+//         align-items: stretch;
+//         justify-content: center;
+//         .card-special {
+//             .card-details {
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: space-between;
+//                 align-items: stretch;
+//             }
+//         }
+//     }
+// }
 
 /* PROJECT CARDS */
