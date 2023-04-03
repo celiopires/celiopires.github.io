@@ -7,10 +7,14 @@
     text-align: center;
     li {
       display: inline-block;
-      margin: 12px 32px;
-        @media all and (min-width: 768px) {
+      margin: 12px;
+      @media all and (min-width: 768px) {
+          margin: 12px 32px;
           margin-right: $_int-16;
           margin-left: $_int-16;
+      }
+      .external__source {
+        margin-left: $_int-8;
       }
     }
   }
