@@ -2,26 +2,33 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding: 80px 0;
+  padding: 80px 32px;
   ul {
     text-align: center;
     li {
       display: inline-block;
-      margin: 12px;
+      margin: 8px;
       @media all and (min-width: 768px) {
-          margin: 12px 32px;
-          margin-right: $_int-16;
-          margin-left: $_int-16;
+          margin: 12px 8px;
+      }
+      .font__small-1 {
+        font-size: 14px;
+        color: $_text-tertiary;
+        @media all and (min-width: 768px) {
+          font-size: 18px;
+        }
       }
       .external__source {
-        margin-left: $_int-8;
+        margin-left: $_int-4;
+        opacity: 0.5;
       }
     }
   }
   .font__small-3 {
     text-align: center;
     margin: $_int-32 auto;
-    color: $_text-secondary;
+    color: $_text-tertiary;
+    opacity: 0.8;
   }
   & .linkedin__box {
     padding-top: $_int-16;

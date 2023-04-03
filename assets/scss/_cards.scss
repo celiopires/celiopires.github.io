@@ -5,9 +5,9 @@ body {
 .selected-projects {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: $_int-24;
     @media all and (min-width: 768px) {
-        gap: 80px;
+        gap: $_int-80;
     }
     & > * {
         flex: 1 1 30%;
@@ -192,8 +192,14 @@ body {
                     font-weight: 800;
                 }
                 .font__medium-3 {
+                    font-size: 18px;
+                    line-height: 1;
                     color: $_text-primary;
                     font-weight: 800;
+                    @media all and (min-width: 768px) {
+                        font-size: 26px;
+                        line-height: 36px;
+                    }
                 }
                 .font__small-3 {
                     color: $_text-tertiary;
@@ -227,7 +233,9 @@ body {
         flex-direction: row;
         justify-content: flex-start;
         z-index: 1;
+        display: none;
         @media all and (min-width: 768px) {
+            display: block;
             width: 24px;
             padding: $_int-16;
             border-radius: 100px;
