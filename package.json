@@ -20,7 +20,10 @@
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-robots": "^2.0.4",
     "gulp-sass": "^5.1.0",
+    "gulp-save": "^1.3.0",
+    "gulp-sitemap": "^8.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-watch": "^4.3.11",
     "sass": "^1.54.2"
