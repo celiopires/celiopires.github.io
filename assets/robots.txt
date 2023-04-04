@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://celiopires.com
+
+# Sitemaps
+Sitemap: https://celiopires.com/sitemap.xml # Index sitemap
