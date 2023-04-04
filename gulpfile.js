@@ -1,6 +1,14 @@
 // gulp
+const gulp = require("gulp");
 const {src, dest, watch} = require("gulp");
+
 const pug = require("gulp-pug");
+
+const sass = require("gulp-sass")(require("sass"));
+const sourcemaps = require("gulp-sourcemaps");
+
+const sitemap = require('gulp-sitemap');
+const save = require('gulp-save');
 
 // HTML
 function html() {
@@ -11,10 +19,22 @@ function html() {
 
 exports.html = html;
 
-// SASS
-const sass = require("gulp-sass")(require("sass"));
-const sourcemaps = require("gulp-sourcemaps");
+// SITEMAPS
+function sitemapxml() {
+    gulp.src('*.html', {
+        read: false
+      })
+      .pipe(save('before-sitemap'))
+      .pipe(sitemap({
+              siteUrl: 'https://celiopires.com'
+      }))
+      .pipe(gulp.dest('./'))
+      .pipe(save.restore('before-sitemap')) 
+}
 
+exports.sitemapxml = sitemapxml;
+
+// SASS
 function css() {
     return src("assets/scss/**/*.scss")
     .pipe(sourcemaps.init())
@@ -25,12 +45,13 @@ function css() {
 
 exports.css = css;
 
+
 // Watch files
 module.exports.default = function () {
     watch("assets/scss/**/*.scss", css);
     watch("assets/pug/**/*.pug", html);
+    watch("*.html", sitemapxml);
 }
-
 
 // var gulp        = require('gulp'),
 //     watch       = require('gulp-watch'),
