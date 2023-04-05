@@ -136,21 +136,10 @@
 					&:hover {
 						color: $_text-primary;
 						.card-icon {
-							.icon-color {
-								stroke: $_text-primary;
-							}
 						}
 					}
 				}
 				.card-icon {
-					width: 16px;
-					height: 16px;
-					line-height: 1;
-					border-radius: 100px;
-					.icon-color {
-						stroke: #69696a;
-						fill: none;
-					}
 				}
 			}
 		}

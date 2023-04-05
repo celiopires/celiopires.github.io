@@ -74,7 +74,6 @@ body {
             background-position: left;
         }
         img {
-            background-color: aliceblue;
             margin: -4px;
             padding: 0;
             outline: 0;
@@ -91,14 +90,11 @@ body {
         transform: translateZ(0);
         &:hover {
             /*Animation*/
-            -webkit-transform: scale(1.008);
-            -ms-transform: scale(1.008);
-            transform: scale(1.008);
-            .card-number::before {
+            -webkit-transform: scale(1.001);
+            -ms-transform: scale(1.001);
+            transform: scale(1.001);
+            .card-icon {
                 color: $_text-primary;
-            }
-            .card-icon .icon-color {
-                stroke: $_text-primary;
             }
             &::after {
                 content: "";
@@ -110,9 +106,9 @@ body {
                 background-color: $_background-secondary;
                 z-index: -1;
                 border-radius: 24px;
-                -webkit-transform: scale(1.06);
-                -ms-transform: scale(1.06);
-                transform: scale(1.06);
+                -webkit-transform: scale(1.08);
+                -ms-transform: scale(1.08);
+                transform: scale(1.08);
             }
         }
     }
@@ -156,11 +152,7 @@ body {
             -webkit-transform: scale(1.008);
             -ms-transform: scale(1.008);
             transform: scale(1.008);
-            .card-number::before {
-                color: $_text-primary;
-            }
-            .card-icon .icon-color {
-                stroke: $_text-primary;
+            .card-icon {
             }
         }
     }
@@ -183,8 +175,8 @@ body {
         width: 100%;
         .card-item {
             display: flex;
-            flex-direction: column;
-            width: 100%;
+            flex-direction: row;
+            align-items: center;
             .card-item-title {
                 width: 100%;
                 .font__medium-2 {
@@ -234,16 +226,18 @@ body {
         justify-content: flex-start;
         z-index: 1;
         display: none;
+        color: $_neutral05;
+        font-size: 24px;
         @media all and (min-width: 768px) {
             display: block;
-            width: 24px;
-            padding: $_int-16;
-            border-radius: 100px;
-            background-color: rgba(255,255,255,.04);
+            padding: $_int-8;
         }
-        .icon-color {
-            stroke: $_text-tertiary;
-            fill: none;
+        > * {
+            width: 24px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
