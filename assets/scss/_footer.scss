@@ -2,12 +2,15 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding: 80px 32px;
+  padding: 80px 16px;
+  @media all and (min-width: 768px) {
+    padding: 80px 32px;
+  }
   ul {
     text-align: center;
     li {
       display: inline-block;
-      margin: 8px;
+      margin: 4px;
       @media all and (min-width: 768px) {
           margin: 12px 8px;
       }
@@ -16,11 +19,13 @@
         color: $_text-tertiary;
         @media all and (min-width: 768px) {
           font-size: 18px;
+          &:hover {
+            color: $_text-secondary;
+          }
         }
-      }
-      .external__source {
-        margin-left: $_int-4;
-        opacity: 0.5;
+        i {
+          padding: 0 4px;
+        }
       }
     }
   }
@@ -28,11 +33,5 @@
     text-align: center;
     margin: $_int-32 auto;
     color: $_text-tertiary;
-    opacity: 0.8;
-  }
-  & .linkedin__box {
-    padding-top: $_int-16;
-    padding-bottom: $_int-24;
-    text-align: center;
   }
 }
