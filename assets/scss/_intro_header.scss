@@ -133,13 +133,12 @@
 				align-items: center;
 				gap: $_int-4;
 				@media all and (min-width: 768px) {
+					font-size: $_int-16;
 					&:hover {
 						color: $_text-primary;
 						.card-icon {
 						}
 					}
-				}
-				.card-icon {
 				}
 			}
 		}
