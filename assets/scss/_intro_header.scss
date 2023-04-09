@@ -88,19 +88,19 @@
 	}
 	.quick__overview {
 		display: flex;
-		align-items: flex-start;
+		align-items: center;
+    flex-direction: column;
+		gap: 24px;
 		@media all and (min-width: 768px) {
-			align-items: center;
+			align-items: flex-start;
 		}
 		.pic {
-			height: 52px;
-			width: 52px;
+			height: 100px;
+			width: 100px;
 			background-image: url("../images/about/celio-photo-circular.png");
 			background-size: 100%;
 			background-repeat: no-repeat;
 			@media all and (min-width: 768px) {
-				height: 72px;
-				width: 72px;
 				&:hover {
 					opacity: 0.8;
 				}
@@ -111,14 +111,14 @@
 			flex-direction: column;
 			gap: $_int-8;
 			.font__small-1 {
-				text-align: left;
+				text-align: center;
 				color: $_text-secondary;
 				font-size: 18px;
-				line-height: 1.6;
+				line-height: 1.4;
 				@media all and (min-width: 768px) {
-					max-width: 70%;
+					text-align: left;
+					max-width: 65%;
 					margin: 0;
-					line-height: 26px;
 				}
 				a {
 					color: $_text-secondary;
@@ -136,20 +136,23 @@
 					font-size: $_int-16;
 					&:hover {
 						color: $_text-primary;
-						.card-icon {
-						}
 					}
 				}
 			}
 		}
 	}
 	.font__large-1 {
+		text-align: center;
+		font-size: 44px;
+		line-height: 1.4;
+		@media all and (min-width: 420px) {
 			text-align: left;
-			font-size: 36px;
-			line-height: 1.4;
-			@media all and (min-width: 768px) {
-				font-size: 90px;
-				line-height: 1.2;
+		}
+		@media all and (min-width: 768px) {
+			text-align: left;
+			font-size: 74px;
+			line-height: 1.2;
+			max-width: 80%;
 		}
 		.font__small-1 {
 			color: $_text-secondary;

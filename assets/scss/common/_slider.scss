@@ -25,7 +25,12 @@
 .ms-slider__word {
   display: block;
   line-height: 1.5em;
-  text-align: left;
+  text-align: center;
+  width: 100%;
+  @media all and (min-width: 768px) {
+    width: fit-content;
+    text-align: left;
+  }
 }
 
 @-webkit-keyframes wordSlider {
