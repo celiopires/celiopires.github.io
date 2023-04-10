@@ -19,14 +19,15 @@
 
 // HEADER INTRO BOTTOM
 .container .container__intro .intro__header--bottom {
-	max-width: 904px;
+	max-width: 420px;
 	margin: 0 auto 80px auto;
 	padding: 0 16px;
 	@media all and (min-width: 768px) {
+		max-width: 904px;
     margin: 0 auto 20vh auto;
 	}
 	.font__large-1 {
-		margin-bottom: $_int-24;
+		margin-bottom: $_int-40;
 		text-align: center;
 	}
 	.font__medium-3 {
@@ -92,6 +93,7 @@
     flex-direction: column;
 		gap: 24px;
 		@media all and (min-width: 768px) {
+			flex-direction: row;
 			align-items: flex-start;
 		}
 		.pic {
@@ -109,7 +111,12 @@
 		.description {
 			display: flex;
 			flex-direction: column;
-			gap: $_int-8;
+			gap: $_int-24;
+			padding-right: $_int-16;
+			padding-left: $_int-16;
+			@media all and (min-width: 768px) {
+				gap: $_int-8;
+			}
 			.font__small-1 {
 				text-align: center;
 				color: $_text-secondary;
@@ -128,12 +135,14 @@
 				}
 			}
 			.font__small-3 {
-				color: $_text-secondary;
 				display: flex;
 				align-items: center;
+				justify-content: center;
 				gap: $_int-4;
+				font-size: 18px;
+				color: $_text-secondary;
 				@media all and (min-width: 768px) {
-					font-size: $_int-16;
+					justify-content: flex-start;
 					&:hover {
 						color: $_text-primary;
 					}
@@ -145,12 +154,9 @@
 		text-align: center;
 		font-size: 44px;
 		line-height: 1.4;
-		@media all and (min-width: 420px) {
-			text-align: left;
-		}
 		@media all and (min-width: 768px) {
 			text-align: left;
-			font-size: 74px;
+			font-size: 62px;
 			line-height: 1.2;
 			max-width: 80%;
 		}
