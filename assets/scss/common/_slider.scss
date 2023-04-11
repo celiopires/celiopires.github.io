@@ -1,4 +1,4 @@
-.ms-slider {
+.slider {
   display: inline-block;
   height: 1.5em;
   overflow: hidden;
@@ -8,7 +8,7 @@
   mask-type: luminance;
   mask-mode: alpha;
 }
-.ms-slider__words {
+.slider__words {
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@
   -webkit-animation-duration: 7s;
           animation-duration: 7s;
 }
-.ms-slider__word {
+.slider__word {
   display: block;
   line-height: 1.5em;
   text-align: center;
