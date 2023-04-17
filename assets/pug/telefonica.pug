@@ -1,9 +1,20 @@
 doctype html
 html
 	head
-		- const pageTitle = "Telefónica - Célio Pires"
-		- const subject = "I was in charge of implementing an ambitious strategy to develop, execute, and maintain a strong design system to improve consistency among various Telco brands. My team was the Tuenti team."
-		- const image = "assets/images/telefonica/telefonica-1.png"
+		- const projectTitle = "Célio Pires - Telefónica"
+		- const projectDescription = "I was in charge of implementing an ambitious strategy to develop, execute, and maintain a strong design system to improve consistency among various Telco brands. My team was the Tuenti team."
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
 		include includes/head
 	body
 		include includes/nav

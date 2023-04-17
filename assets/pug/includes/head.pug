@@ -5,66 +5,100 @@ script.
 	gtag('js', new Date());
 	gtag('config', 'G-J6NQLY7PN6');
 
+// GLOBAL
 meta(http-equiv="content-language" content="en-US")
 meta(http-equiv="content-type" content="text/html")
 meta(charset="UTF-8")
 meta(name="viewport" content="width=device-width, initial-scale=1.0")
 meta(name="robots" content="max-image-preview:large")
 meta(name="rating" content="general")
-meta(rel="canonical" href="https://celiopires.com")
+meta(rel="canonical" href="https://celiopires.com/")
 meta(name="author" content="Célio Pires")
 link(rel="shortcut icon" type="image/png" href="assets/images/favicon.png")
 
-//- GLobal title and customized description for individual projects
-//- This is required for SEO purposes
+//- GLOBAL PAGE TITLE
 case pageTitle
 	when "defaultTitle"
 		- const defaultTitle="Célio Pires" 
 		title #{defaultTitle}
-		meta(name="title" content=defaultTitle)
-		meta(name="twitter:title" content=defaultTitle)
-		meta(property="og:title" content=defaultTitle)
 	default
 		title #{pageTitle}
-		meta(name="title" content=pageTitle)
-		meta(name="twitter:title" content=pageTitle)
-		meta(property="og:title" content=pageTitle)
 
-//- GLobal description and customized description for individual projects
-//- This is required for SEO purposes
-case subject
+//- GLOBAL PAGE DESCRIPTION
+case description
 	when "defaultDescription"
 		- const defaultDescription="Product designer passionate about technology and surely growing an obsession for creating, scaling and maintaining design systems." 
 		meta(name="description" content=defaultDescription)
-		meta(property="og:description" content=defaultDescription)
-		meta(name="twitter:description" content=defaultDescription)
 	default
-		meta(name="description" content=subject)
-		meta(property="og:description" content=subject)
-		meta(name="twitter:description" content=subject)
+		meta(name="description" content=description)
 
-//- GLobal Image and customized description for individual projects
-//- This is required for SEO purposes
+//- GLOBAL PAGE IMAGE
 case image
 	when "defaultImage"
-		- const defaultImage="assets/images/about/celio-photo-square.jpg" 
-		meta(name="twitter:image" content=defaultImage)
+		- const defaultImage="https://celiopires.com/assets/images/about/celio-photo-square.jpg" 
 		meta(name="image" property="og:image" content=defaultImage)
-		meta(property="og:image" content=defaultImage)
 	default
-		meta(name="twitter:image" content=image)
 		meta(name="image" property="og:image" content=image)
-		meta(property="og:image" content=image)
 
 
 // FACEBOOK
 meta(property="og:type" content="website")
-meta(property="og:site_name" content="Célio Pires")
+
+//- FACEBOOK PAGE TITLE
+case facebookTitle
+	when "defaultFacebookTitle"
+		- const defaultFacebookTitle="Célio Pires" 
+		meta(property="og:title" content=defaultFacebookTitle)
+	default
+		meta(property="og:title" content=facebookTitle)
+
+//- FACEBOOK PAGE DESCRIPTION
+case facebookDescription
+	when "defaultFacebookDescription"
+		- const defaultFacebookDescription="Product designer passionate about technology and surely growing an obsession for creating, scaling and maintaining design systems." 
+		meta(property="og:description" content=defaultFacebookDescription)
+	default
+		meta(property="og:description" content=facebookDescription)
+
+//- FACEBOOK PAGE TIMAGE
+case facebookImage
+	when "defaultFacebookImage"
+		- const defaultFacebookImage="https://celiopires.com/assets/images/about/celio-photo-square.jpg" 
+		meta(property="og:image" content=defaultFacebookImage)
+	default
+		meta(property="og:image" content=facebookImage)
+
 // Twitter
+meta(name="twitter:card" content="summary_large_image")
+
+//- TWITTER PAGE TITLE
+case twitterTitle
+	when "defaultTwitterTitle"
+		- const defaultTwitterTitle="Célio Pires" 
+		meta(property="og:title" content=defaultTwitterTitle)
+	default
+		meta(property="og:title" content=twitterTitle)
+
+//- TWITTER PAGE DESCRIPTION
+case twitterDescription
+	when "defaultTwitterDescription"
+		- const defaultTwitterDescription="Product designer passionate about technology and surely growing an obsession for creating, scaling and maintaining design systems." 
+		meta(property="og:description" content=defaultTwitterDescription)
+	default
+		meta(property="og:description" content=twitterDescription)
+
+//- TWITTER PAGE TIMAGE
+case twitterImage
+	when "defaultTwitterImage"
+		- const defaultTwitterImage="https://celiopires.com/assets/images/about/celio-photo-square.jpg" 
+		meta(property="og:image" content=defaultTwitterImage)
+	default
+		meta(property="og:image" content=twitterImage)
+
 meta(name="twitter:site" content="@celiows")
-meta(name="twitter:creator" content="@celiows")
+
 // Styles and JS
 meta(http-equiv="content-script-type" content="text/javascript")
 meta(http-equiv="content-style-type" content="text/css")
 link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css")
-link(rel="stylesheet" href="assets/css/styles.css?v=002.041")
+link(rel="stylesheet" href="assets/css/styles.css?v=002.042")

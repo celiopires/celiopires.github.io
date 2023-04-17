@@ -1,9 +1,20 @@
 doctype html
 html
 	head
-		- const pageTitle = "Clutch"
-		- const subject = "Clutch is a powerful visual product builder that blends the power of development tools with the speed and familiarity of design tools."
-		- const image = "assets/images/clutch/clutch03.jpg"
+		- const projectTitle = "Célio Pires - Clutch"
+		- const projectDescription = "Clutch is a powerful visual product builder that blends the power of development tools with the speed and familiarity of design tools."
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
 		include includes/head
 	body
 		include includes/nav
