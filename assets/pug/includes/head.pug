@@ -14,7 +14,7 @@ meta(name="robots" content="max-image-preview:large")
 meta(name="rating" content="general")
 meta(rel="canonical" href="https://celiopires.com/")
 meta(name="author" content="Célio Pires")
-link(rel="shortcut icon" type="image/png" href="assets/images/favicon.png")
+link(rel="shortcut icon" type="image/png" href="https://celiopires.com/assets/images/favicon.png")
 
 //- GLOBAL PAGE TITLE
 case pageTitle
@@ -33,13 +33,12 @@ case description
 		meta(name="description" content=description)
 
 //- GLOBAL PAGE IMAGE
-case image
-	when "defaultImage"
-		- const defaultImage="https://celiopires.com/assets/images/about/celio-photo-square.jpg" 
-		meta(name="image" property="og:image" content=defaultImage)
-	default
-		meta(name="image" property="og:image" content=image)
-
+//- case image
+//- 	when "defaultImage"
+//- 		- const defaultImage="https://celiopires.com/assets/images/about/celio-photo-square.jpg" 
+//- 		meta(name="image" property="og:image" content=defaultImage)
+//- 	default
+//- 		meta(name="image" property="og:image" content=image)
 
 // FACEBOOK
 meta(property="og:type" content="website")
