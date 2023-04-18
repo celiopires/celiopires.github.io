@@ -91,8 +91,9 @@
 		display: flex;
 		align-items: center;
     flex-direction: column;
-		gap: 24px;
+		gap: 40px;
 		@media all and (min-width: 768px) {
+			gap: 24px;
 			flex-direction: row;
 			align-items: flex-start;
 		}
@@ -114,8 +115,14 @@
 			gap: $_int-24;
 			padding-right: $_int-16;
 			padding-left: $_int-16;
+			@media all and (min-width: 375px) {
+				padding-right: $_int-40;
+				padding-left: $_int-40;
+			}
 			@media all and (min-width: 768px) {
 				gap: $_int-8;
+				padding-right: $_int-16;
+				padding-left: $_int-16;
 			}
 			.font__small-1 {
 				text-align: center;
@@ -152,8 +159,8 @@
 	}
 	.font__large-1 {
 		text-align: center;
-		font-size: 44px;
-		line-height: 1.4;
+		// font-size: 44px;
+		// line-height: 1.4;
 		@media all and (min-width: 768px) {
 			text-align: left;
 			font-size: 75px;

@@ -25,15 +25,9 @@
 .slider__word {
   display: block;
   line-height: 1.5em;
-  text-align: center;
+  text-align: left;
   width: 100%;
-  @media all and (min-width: 420px) {
-    text-align: left;
-  }
-  @media all and (min-width: 768px) {
-    width: fit-content;
-    text-align: left;
-  }
+  width: fit-content;
 }
 
 @-webkit-keyframes wordSlider {

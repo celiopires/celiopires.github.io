@@ -7,7 +7,7 @@ $_bold: 700;
 
 // Headings
 h1, h2, h3, h4, h5, h6, p {
-  font-family: "Hind", sans-serif;
+  font-family: "Hind", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -35,7 +35,7 @@ p {
 .font__small-1,
 .font__small-2,
 .font__small-3 {
-  font-family: 'Hind', sans-serif;
+  font-family: "Hind", Helvetica, Arial, sans-serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -44,8 +44,7 @@ p {
 
 // Font Extra Large
 .font__extra-large-1 {
-  font-size: 60px;
-  line-height: 76px;
+  font-size: 32px;
   font-weight: $_bold;
   color: $_text-primary;
   @media all and (min-width: 768px) {
@@ -56,8 +55,8 @@ p {
 
 // Font Large
 .font__large-1 {
-  font-size: 60px;
-  line-height: 76px;
+  font-size: 30px;
+  line-height: 1.2;
   font-weight: $_bold;
   color: $_text-primary;
   @media all and (min-width: 768px) {
@@ -67,8 +66,7 @@ p {
 }
 
 .font__large-2 {
-  font-size: 40px;
-  line-height: 56px;
+  font-size: 28px;
   font-weight: $_bold;
   color: $_text-primary;
   @media all and (min-width: 768px) {
@@ -80,8 +78,7 @@ p {
 // Font Medium
 
 .font__medium-1 {
-  font-size: 34px;
-  line-height: 44px;
+  font-size: 26px;
   font-weight: $_light;
   color: $_text-primary;
   @media all and (min-width: 768px) {
@@ -91,8 +88,7 @@ p {
 }
 
 .font__medium-2 {
-  font-size: 26px;
-  line-height: 36px;
+  font-size: 24px;
   font-weight: $_light;
   color: $_text-primary;
   @media all and (min-width: 768px) {
@@ -102,8 +98,7 @@ p {
 }
 
 .font__medium-3 {
-  font-size: 26px;
-  line-height: 36px;
+  font-size: 20px;
   font-weight: $_light;
   color: $_text-primary;
 }
