@@ -27,15 +27,11 @@ body {
 
 .other-work {
     display: flex;
-    flex-wrap: wrap;
     gap: 40px;
     @media all and (min-width: 768px) {
         gap: 80px;
     }
     & > * {
-        flex: 1 1 10em;
-    }
-    & > :nth-child(1) {
         flex: 1 1 100%;
     }
 }
@@ -44,7 +40,7 @@ body {
     .thumbnail {
         position: relative;
         overflow: hidden;
-        border-radius: 8px;
+        border-radius: 24px;
         margin: 0;
         padding: 0;
         &::before {
@@ -90,10 +86,11 @@ body {
         transform: translateZ(0);
         &:hover {
             /*Animation*/
-            -webkit-transform: scale(1.001);
-            -ms-transform: scale(1.001);
-            transform: scale(1.001);
+            -webkit-transform: scale(1.010);
+            -ms-transform: scale(1.010);
+            transform: scale(1.010);
             .card-icon {
+                display: block;
                 color: $_text-primary;
             }
             &::after {
@@ -114,6 +111,44 @@ body {
     }
 }
 
+.portfolio-card.other-work-project {
+    padding: 16px 0;
+    a {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: $_int-16;
+    }
+    .thumbnail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 104px;
+        height: 104px;
+    }
+    .card {
+        padding: 0;
+    }
+    .card .card-details {
+        align-items: center;
+    }
+    .card .card-details .card-areas {
+        @media all and (min-width: 768px) {
+            align-items: center;
+        }
+    }
+    .card .card-details .card-item .card-item-title .font__medium-3 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .card .card-details .card-item .card-icon {
+        font-size: 13px;
+    }
+    
+}
 /* PROJECT CARDS */
 .card {
     width: 100%;
@@ -124,9 +159,11 @@ body {
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: flex-start;
-    padding: $_int-32 0;
+    padding-top: $_int-24;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
     gap: $_int-16;
-    margin-bottom: 8px;
     border-radius: 16px;
     @media all and (min-width: 768px) {
         gap: $_int-8;
@@ -152,8 +189,6 @@ body {
             -webkit-transform: scale(1.008);
             -ms-transform: scale(1.008);
             transform: scale(1.008);
-            .card-icon {
-            }
         }
     }
     a {
@@ -174,6 +209,7 @@ body {
         justify-content: start;
         width: 100%;
         .card-item {
+            width: 100%;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -189,8 +225,8 @@ body {
                     color: $_text-primary;
                     font-weight: 800;
                     @media all and (min-width: 768px) {
-                        font-size: 26px;
-                        line-height: 36px;
+                        font-size: 22px;
+                        line-height: 28px;
                     }
                 }
                 .font__small-3 {
@@ -220,20 +256,21 @@ body {
         }
     }
     .card-icon {
-        width: 16px;
+        width: 42px;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         z-index: 1;
         display: none;
         color: $_neutral05;
         font-size: 24px;
+        background-color: $_background-tertiary;
+        border-radius: 56px;
         @media all and (min-width: 768px) {
-            display: block;
+            display: none;
             padding: $_int-8;
         }
         > * {
-            width: 24px;
             display: flex;
             align-content: center;
             justify-content: center;

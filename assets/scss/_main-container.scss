@@ -60,7 +60,7 @@
       gap: $_int-8;
       @media all and (min-width: 768px) {
         padding-bottom: $_int-80;
-        gap: $_int-16;
+        gap: 0;
       }
       .font__large-1 {
         margin-bottom: $_int-16;
@@ -171,6 +171,11 @@
           width: 100%;
         }
       }
+    }
+    .box__body.section-other-work {
+      display: flex;
+      flex-direction: column;
+      gap: $_int-40;
     }
   }
   // Role Industry
