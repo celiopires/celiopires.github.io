@@ -175,7 +175,10 @@
     .box__body.section-other-work {
       display: flex;
       flex-direction: column;
-      gap: $_int-40;
+      gap: 0;
+      @media all and (min-width: 768px) {
+        gap: $_int-40;
+      }
     }
   }
   // Role Industry

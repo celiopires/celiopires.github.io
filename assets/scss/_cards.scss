@@ -27,8 +27,10 @@ body {
 
 .other-work {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    gap: 0;
     @media all and (min-width: 768px) {
+        flex-direction: row;
         gap: 80px;
     }
     & > * {
@@ -115,11 +117,14 @@ body {
     padding: 16px 0;
     a {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-content: center;
         justify-content: center;
         align-items: center;
         gap: $_int-16;
+        @media all and (min-width: 768px) {
+            flex-direction: column;
+        }
     }
     .thumbnail {
         display: flex;
@@ -142,7 +147,11 @@ body {
     }
     .card .card-details .card-item .card-item-title .font__medium-3 {
         font-size: 18px;
-        text-align: center;
+        text-align: left;
+        @media all and (min-width: 768px) {
+            text-align: center;
+            align-items: center;
+        }
     }
     .card .card-details .card-item .card-icon {
         font-size: 13px;
