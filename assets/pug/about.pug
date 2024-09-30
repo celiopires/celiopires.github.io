@@ -1,8 +1,12 @@
 doctype html
 html
 	head
-		- const projectTitle = "About"
+		//- GLOBAL PAGE TITLE
+		- const pageSegment = "about"
+		- const projectTitle = "Célio Pires - About"
 		- const projectDescription = "Hi, I'm Célio. I love creating digital products, which is why I'm a Product Designer by choice. I have a healthy obsession with design systems, user experience, and keeping my design team in shape."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
 		//- GLOBAL META TAGS
 		- const pageTitle = projectTitle
 		- const description = projectDescription

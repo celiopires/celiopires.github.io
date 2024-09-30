@@ -4,6 +4,8 @@
   "description": "Born and raised in Portugal 🇵🇹 • Design systems at heart ❤️",
   "main": "index.html",
   "scripts": {
+    "start": "node server.js",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
