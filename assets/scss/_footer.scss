@@ -2,17 +2,17 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
-  padding: 80px 16px;
+  padding: $_int-80 $_int-16;
   @media all and (min-width: 768px) {
-    padding: 80px 32px;
+    padding: $_int-80 $_int-32;
   }
   ul {
     text-align: center;
     li {
       display: inline-block;
-      margin: 4px;
+      margin: $_int-4;
       @media all and (min-width: 768px) {
-          margin: 12px 8px;
+          margin: $_int-12 $_int-8;
       }
       .font__small-1 {
         font-size: 14px;
@@ -24,7 +24,7 @@
           }
         }
         i {
-          padding: 0 4px;
+          padding: 0 $_int-4;
         }
       }
     }

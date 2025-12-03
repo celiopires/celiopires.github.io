@@ -1,0 +1,155 @@
+doctype html
+html
+	head
+		- const pageSegment = "commons"
+		- const projectTitle = "Célio Pires - Commons"
+		- const projectDescription = "Commons is a voice-first collaboration platform designed to function as a private Clubhouse for professional teams. Reclaiming spontaneity in the distributed workplace."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include includes/head
+	body
+		include includes/nav
+		#Clutch.metallicus
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Role
+								div.font__small-3 Lead Product Designer
+							li
+								div.font__small-3 Timeframe
+								div.font__small-3 6 Months
+							li
+								div.font__small-3 Industry
+								div.font__small-3 Collaboration / Voice-first
+					h1.font__extra-large-1 Commons
+					p.font__medium-3
+						| Reclaiming spontaneity in the distributed workplace.
+					.picture__center--full-screen
+						img(src='assets/images/commons/commons-hero.jpg' alt='Commons - Voice-first collaboration platform interface')
+						.caption
+							.font__small-3 Commons - Voice-first collaboration platform interface
+				.container__box
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Context & Product Definition
+							.box__body
+								p.font__small-1
+									| Commons is a voice-first collaboration platform designed to function as a private "Clubhouse" for professional teams. It bridges the gap between the isolation of text-based chat and the fatigue of video conferencing. The goal was to recreate the "tap-on-the-shoulder" moment—enabling instant, low-friction voice communication for stand-ups, quick questions, and water-cooler moments without the rigid scheduling of a calendar block.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 My Role & Scope
+							.box__body
+								p.font__small-1
+									| As Lead Product Designer, I worked alongside founders (ex-Snap/Microsoft/Google), 1 PM, and 4 Engineers over a 6-month timeline. My key responsibilities included Discovery, User Research, Information Architecture, Interaction Design, Visual Design System, and Prototyping.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 The Challenge
+						.box__body
+							p.font__small-1
+								| The shift to remote work created a polarization in communication channels. Teams were forced to choose between asynchronous text (Slack/Email) which is low friction but lacks nuance, tone, and speed (typing is 7-10x slower than speaking), or synchronous video (Zoom/Google Meet) which offers high fidelity but high friction—requiring scheduling links and inducing "Zoom Fatigue" due to the performative nature of being on camera.
+								br
+								br
+								| Distributed teams lost the connective tissue of the office—the spontaneous, rapid-fire problem solving that happens between meetings. The user pain point was clear: there was no middle ground between these two extremes.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 The Solution
+						.box__body
+							p.font__small-1
+								| We designed Commons to be an "Audio-First, Low-Friction" environment. The solution allows users to see who is available and "tap to talk" instantly. By removing the requirement for video, we lowered the barrier to entry for conversation. By integrating deep into the existing workflow (Slack), we removed the friction of adoption.
+								br
+								br
+								| Key UX wins included Presence Awareness (visualizing the "office" to see who is active without checking a calendar), Frictionless Entry (one-click entry into rooms with no links or waiting rooms), and Contextual Collaboration (screen sharing and note-taking features that support the audio without demanding visual dominance).
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Design Process & Timeline
+						.box__body
+							p.font__small-1
+								| Phase 1: Discovery & Strategy - We conducted stakeholder interviews to align with founders on the "audio-first" vision and performed competitive analysis, auditing Clubhouse (social model) and Discord (gamer model) to adapt patterns for an enterprise context. A key insight emerged: professional users needed stronger boundaries than social users. "Always on" audio felt invasive; therefore, we pivoted to a "Push-to-Talk" or specific "Room-based" model.
+								br
+								br
+								| Phase 2: Information Architecture & User Flows - We designed a flat hierarchy to ensure users were never more than two clicks away from a conversation. The key flow was the "Tap-to-Talk" Loop: User receives Slack Notification → User clicks deep link → App opens directly into the audio room (bypassing lobbies) → User speaks.
+								br
+								br
+								| Phase 3: Wireframing & Iteration - We explored multiple modalities for the "Room" view. The challenge was how to represent a room visually when the primary medium is audio. Our solution focused on energetic avatars and "sound wave" visualizers to provide feedback on who is speaking, creating a sense of life in a static UI.
+								br
+								br
+								| Phase 4: Visual Design & System - We developed a design system focused on clarity and approachability. Typography choices prioritized high readability on small collaborative panels. The color palette used Electric Blue and Calm Grey strategically to indicate "Live" status vs. "Idle" status. Custom rounded iconography mimicked the friendly, less corporate vibe of the brand mission.
+					.paragraph__box--1col
+						.holding-1--full
+							.picture__center--full-screen
+								img(src='assets/images/commons/commons-feature-1.jpg' alt='Commons - Slack integration and deep linking')
+								.caption
+									.font__small-3 Commons - Slack integration and deep linking
+							.picture__center--full-screen
+								img(src='assets/images/commons/commons-feature-2.jpg' alt='Commons - Audio rooms interface with presence awareness')
+								.caption
+									.font__small-3 Commons - Audio rooms interface with presence awareness
+							.picture__center--full-screen
+								img(src='assets/images/commons/commons-feature-3.jpg' alt='Commons - Screen sharing and collaboration tools')
+								.caption
+									.font__small-3 Commons - Screen sharing and collaboration tools
+							.picture__center--full-screen
+								img(src='assets/images/commons/commons-feature-4.jpg' alt='Commons - Availability toggles and Do Not Disturb controls')
+								.caption
+									.font__small-3 Commons - Availability toggles and Do Not Disturb controls
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Main Features
+						.box__body
+							p.font__small-1
+								| Slack Integration: Single sign-on and deep linking to reduce onboarding friction.
+								br
+								br
+								| Audio Rooms: Persistent channels for "Water Cooler," "Stand-up," or "War Room" conversations.
+								br
+								br
+								| Screen Share & Notes: Collaboration tools that layer on top of audio for context without demanding visual dominance.
+								br
+								br
+								| Availability Toggles: Granular control over "Do Not Disturb" to prevent the system from becoming intrusive.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 App Architecture
+						.box__body
+							p.font__small-1
+								| The architecture focuses on a Hub-and-Spoke model:
+								br
+								br
+								| The Lobby (Hub): A dashboard showing all teammates, their status (In a meeting, Free, Busy), and active rooms. This provides the presence awareness that recreates the "office" feeling.
+								br
+								br
+								| The Room (Spoke): The active conversation interface where tools (screen share, notes) are accessed via a bottom sheet or sidebar. This keeps the audio-first experience uncluttered while making collaboration tools easily accessible when needed.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Impact & Results
+						.box__body
+							p.font__small-1
+								| Commons scaled to hundreds of teams including startups and enterprise clients. Average conversation length settled at ~4 minutes, validating the hypothesis that users wanted quick syncs rather than 30-minute blocks. Users who installed the Slack integration showed significantly higher retention, demonstrating that reducing friction at the point of adoption was critical to success.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 What I Learned
+						.box__body
+							p.font__small-1
+								| Designing for Invisible Interfaces: Designing for audio-first means the UI must support the conversation, not distract from it. This required a fundamental shift in thinking about what "good design" means when the primary interaction is invisible.
+								br
+								br
+								| The Psychology of "Interruptibility": I learned that the biggest barrier to remote communication isn't technology, it's social anxiety. The design had to reassure users that it was socially acceptable to interrupt a colleague. This meant creating clear visual cues about availability and making the act of joining a conversation feel as natural as tapping someone on the shoulder.
+		include includes/footer
+

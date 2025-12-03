@@ -2,12 +2,12 @@
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: $_int-16;
+  padding-right: $_int-16;
   box-sizing: border-box;
   @media all and (min-width: 768px) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: $_int-32;
+    padding-right: $_int-32;
     //margin: 15vh auto 0 auto;
   }
 }
@@ -40,12 +40,12 @@
     max-width: 940px;
     margin: 0 auto $_int-80 auto;
     @media all and (min-width: 1024px) {
-      margin: 0 auto 320px auto;
+      margin: 0 auto $_int-80 auto;
     }
     & a.font__small-1 {
       display: block;
       color: $_text-secondary;
-      padding-top: 32px;
+      padding-top: $_int-32;
     }
     // BOX HEADER - TITLES AND INTROS
     .box__header {
@@ -163,10 +163,13 @@
       margin-right: $_int-16;
       p {
         color: $_text-secondary;
-        margin-bottom: $_int-16;
+        // margin-bottom: $_int-16;
       }
       .holding-1--full {
-        margin: $_int-80 0;
+        margin: $_int-40 0;
+        @media all and (min-width: 768px) {
+          margin: $_int-80 0;
+        }
         img {
           width: 100%;
         }
@@ -183,26 +186,26 @@
   }
   // Role Industry
   .role__industry {
-    ol {
-      display: flex;
-      flex-direction: column;
-      gap: $_int-16;
-      padding: $_int-40 0;
-      //margin-bottom: $_int-80;
-      @media all and (min-width: 768px) {
-        flex-direction: row;
-      }
-      li {
+      ol {
         display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        gap: $_int-8;
-        width: 100%;
-        border-bottom: 1px solid $_background-tertiary;
-        padding-bottom: 18px;
+        flex-direction: column;
+        gap: $_int-16;
+        padding: $_int-24 0;
         @media all and (min-width: 768px) {
-          border-bottom: 0px;
-          padding-bottom: 0px;
+          padding: $_int-40 0;
+          flex-direction: row;
+        }
+        li {
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+          gap: $_int-8;
+          width: 100%;
+          border-bottom: 1px solid $_background-tertiary;
+          padding-bottom: $_int-16;
+          @media all and (min-width: 768px) {
+            border-bottom: 0px;
+            padding-bottom: 0px;
           &:nth-child(2) {
             place-content: center;
           }
@@ -228,27 +231,37 @@
     width: 100%;
     height: 1px;
     background-color: $_background-tertiary;
-    margin-bottom: $_int-8;
+    margin: $_int-16 0;
+    @media all and (min-width: 768px) {
+      margin: $_int-24 0;
+    }
   }
 }
 
 // PARAGRAPH BOX
 .container .container__box .paragraph__box--1col {
-  margin-bottom: $_int-80;
+  margin-bottom: $_int-40;
   width: 100%;
+  @media all and (min-width: 768px) {
+    margin-bottom: $_int-80;
+  }
 }
 
 .container .container__box .paragraph__box--2col {
-  margin: $_int-16 0;
+  margin: $_int-24 0;
+  @media all and (min-width: 768px) {
+    margin: $_int-40 0;
+  }
   .paragraph_box--1,
   .paragraph_box--2 {
     width: 100%;
     display: block;
-    margin-bottom: $_int-80;
+    margin-bottom: $_int-40;
     @media all and (min-width: 768px) {
       width: 49.2%;
       display: inline-block;
       vertical-align: top;
+      margin-bottom: $_int-80;
     }
     >img {
       display: block;
@@ -265,7 +278,7 @@
     align-items: center;
     align-content: center;
     white-space: nowrap;
-    gap: 40px;
+    gap: $_int-40;
     font-weight: 100;
     &::before{
       content: "";
@@ -281,7 +294,7 @@
     align-items: center;
     align-content: center;
     white-space: nowrap;
-    gap: 40px;
+    gap: $_int-40;
     &::before{
       content: "";
       display: inline-block;
@@ -303,7 +316,7 @@
     align-items: center;
     align-content: center;
     white-space: nowrap;
-    gap: 40px;
+    gap: $_int-40;
     &::after{
       content: "";
       display: inline-block;
@@ -318,7 +331,7 @@
     align-items: center;
     align-content: center;
     white-space: nowrap;
-    gap: 40px;
+    gap: $_int-40;
     &::before{
       content: "";
       display: inline-block;
@@ -353,9 +366,4 @@
   height: 10vh;
   width: 100%;
   background-color: red;
-  ol {
-    li {
-
-    }
-  } 
 }

@@ -19,7 +19,7 @@ header {
     }
     ol {
       position: absolute;
-      right: 14px;
+      right: $_int-16;
       @media all and (min-width: 1024px) {
         right: $_int-32;
         top: $_int-24 + $_int-4;
@@ -36,15 +36,15 @@ header {
               position: absolute;
               border-radius: 4px;
               color: $_text-primary;
-              left: -10px;
-              top: 42px;
+              left: -#{$_int-8};
+              top: $_int-40;
               background-color: $_background-secondary;
               li {
                 display: block;
                 .font__small-1 {
                   width: 100%;
                   display: inline-block;
-                  padding: $_int-8 72px $_int-8 $_int-16;
+                  padding: $_int-8 $_int-80 $_int-8 $_int-16;
                   vertical-align: middle;
                   font-weight: 700;
                   font-size: 14px;
@@ -91,7 +91,7 @@ header {
 a {
   &.home {
     display: inline-block;
-    padding: 28px 0;
+    padding: $_int-24 0;
     margin-left: $_int-16;
     font-weight: $_bold;
     color: $_text-secondary;
@@ -110,7 +110,7 @@ a {
     padding: $_int-24 0;
     color: $_text-secondary;
     @media all and (min-width: 768px) {
-      right: 10px;
+      right: $_int-8;
       &:hover {
         background-color: $_background-tertiary;
         color: $_text-primary;

@@ -32,8 +32,8 @@
 
 /* Modal Content/Box */
 .modal-content {
-  margin: 15% auto;
-  // padding: $_int-24 $_int-40;
+  margin: $_int-80 auto;
+  padding: $_int-24 $_int-40;
   max-width: 75%;
   background: $_background-primary;
   border-radius: 6px;
@@ -51,6 +51,6 @@
   color: $_text-primary;
   font-size: 16px;
   height: 48px;
-  padding: 0 20px;
+  padding: 0 $_int-24;
   cursor: pointer;
 }

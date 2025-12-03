@@ -71,7 +71,7 @@ body {
             background-position: left;
         }
         img {
-            margin: -4px;
+            margin: -#{$_int-4};
             padding: 0;
             outline: 0;
         }
@@ -230,7 +230,7 @@ body {
             @media all and (min-width: 768px) {
                 display: flex;
                 flex-direction: column;
-                gap: 4px;
+                gap: $_int-4;
                 margin-top: 0;
             }
             .font__small-2 {

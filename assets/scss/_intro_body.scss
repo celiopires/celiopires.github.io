@@ -3,18 +3,29 @@
 // BODY
 .intro__body {
 	.holder {
-		margin-bottom: 100px;
+		margin-bottom: $_int-60;
+		@media all and (min-width: 768px) {
+			margin-bottom: $_int-100;
+		}
 		> * {
-			margin-bottom: 60px;
+			margin-bottom: $_int-40;
+			@media all and (min-width: 768px) {
+				margin-bottom: $_int-60;
+			}
 		}
 	}
 	.holding-1--full {
-		margin-bottom: 60px;
-		margin-left: 20px;
-		margin-right: 20px;
+		margin-bottom: $_int-40;
+		margin-left: $_int-16;
+		margin-right: $_int-16;
+		@media all and (min-width: 768px) {
+			margin-bottom: $_int-60;
+			margin-left: 0;
+			margin-right: 0;
+		}
 		img {
 			width: 100%;
-			margin-bottom: 10px;
+			margin-bottom: $_int-8;
 		}
 		span {
 			display: block;
@@ -22,7 +33,10 @@
 		}
 	}
 	.holding-1 {
-		margin-bottom: 100px;
+		margin-bottom: $_int-60;
+		@media all and (min-width: 768px) {
+			margin-bottom: $_int-100;
+		}
 		> img {
 			display: block;
 			width: 80%;
@@ -33,7 +47,10 @@
 			}
 		}
 		&.fit {
-			margin-bottom: 200px;
+			margin-bottom: $_int-80;
+			@media all and (min-width: 768px) {
+				margin-bottom: $_int-100;
+			}
 			> img {
 				display: block;
 				width: 80%;
@@ -46,33 +63,43 @@
 			}
 		}
 		&.grey {
-			padding-top: 60px;
-			padding-bottom: 60px;
+			padding-top: $_int-40;
+			padding-bottom: $_int-40;
+			@media all and (min-width: 768px) {
+				padding-top: $_int-60;
+				padding-bottom: $_int-60;
+			}
 		}
 	}
 	.holding-2 {
-		margin-bottom: 100px;
+		margin-bottom: $_int-60;
+		@media all and (min-width: 768px) {
+			margin-bottom: $_int-100;
+		}
 		ol {
 			@media all and (max-width: 768px) {
-				margin-left: 20px;
-				margin-right: 20px;
+				margin-left: $_int-16;
+				margin-right: $_int-16;
 			}
 			li {
 				display: block;
 				max-width: 100%;
-				margin-bottom: 10px;
+				margin-bottom: $_int-8;
 				@media all and (min-width: 480px) {
 					max-width: 480px;
-					margin: 0 auto 100px auto;
+					margin: 0 auto $_int-60 auto;
+					@media all and (min-width: 768px) {
+						margin: 0 auto $_int-100 auto;
+					}
 				}
 				@media all and (min-width: 768px) {
 					display: inline-block;
 					max-width: 40%;
-					margin: 30px;
+					margin: $_int-24;
 				}
 				@media all and (min-width: 1024px) {
 					max-width: 45%;
-					margin: 10px 20px;
+					margin: $_int-16 $_int-24;
 				}
 			}
 		}
@@ -80,8 +107,8 @@
 		display: block;
 		font-size: 0.8rem;
 		line-height: 1.5;
-		margin-left: 20px;
-		margin-right: 20px;
+		margin-left: $_int-16;
+		margin-right: $_int-16;
 		  @media all and (min-width: 768px) {
 			margin-left: 0;
 			margin-right: 0;
@@ -89,11 +116,14 @@
 		}
 	}
 	.holding-3 {
-		margin-bottom: 100px;
+		margin-bottom: $_int-60;
+		@media all and (min-width: 768px) {
+			margin-bottom: $_int-100;
+		}
 		> * {
 			display: inline-block;
 			width: 30%;
-			margin: 20px;
+			margin: $_int-16;
 			vertical-align: top;
 			border: 1px solid #EAEAEA;
 			border-radius: 10px;
@@ -106,29 +136,35 @@
 		}
 	}
 	.holding-4 {
-		margin-bottom: 100px;
+		margin-bottom: $_int-60;
+		@media all and (min-width: 768px) {
+			margin-bottom: $_int-100;
+		}
 		ol {
 			@media all and (max-width: 768px) {
-				margin-left: 20px;
-				margin-right: 20px;
+				margin-left: $_int-16;
+				margin-right: $_int-16;
 			}
 			li {
 				display: block;
 				max-width: 100%;
-				margin-bottom: 60px;
+				margin-bottom: $_int-40;
 				@media all and (min-width: 480px) {
 					max-width: 480px;
-					margin: 0 auto 100px auto;
+					margin: 0 auto $_int-60 auto;
+					@media all and (min-width: 768px) {
+						margin: 0 auto $_int-100 auto;
+					}
 				}
 				@media all and (min-width: 768px) {
 					display: inline-block;
 					max-width: 40%;
-					margin: 30px;
+					margin: $_int-24;
 				}
 				@media all and (min-width: 1024px) {
 					display: inline-block;
 					max-width: 36%;
-					margin: 60px;
+					margin: $_int-60;
 				}
 			}
 		}
@@ -162,7 +198,10 @@
 	}
 
 	.design-stages-list {
-		margin-bottom: 100px;
+		margin-bottom: $_int-60;
+		@media all and (min-width: 768px) {
+			margin-bottom: $_int-100;
+		}
 		&.half {
 			position: relative;
 			p {
@@ -178,7 +217,7 @@
 					width: 35%;
 					img {
 						width: 100%;
-						margin-bottom: 10px;
+						margin-bottom: $_int-8;
 					}
 				}
 				span {
@@ -189,11 +228,15 @@
 		ol {
 			font-weight: $_light;
 			font-size: 1.6rem;
-			margin-bottom: 60px;
-			padding-left: 20px;
-			padding-right: 20px;
+			margin-bottom: $_int-40;
+			padding-left: $_int-16;
+			padding-right: $_int-16;
+			@media all and (min-width: 768px) {
+				margin-bottom: $_int-60;
+			}
 			@media all and (min-width: 1024px) {
 				padding-left: 0;
+				padding-right: 0;
 			}
 		}
 		li {

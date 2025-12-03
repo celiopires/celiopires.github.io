@@ -16,11 +16,12 @@ h1, h2, h3, h4, h5, h6, p {
 p {
   font-size: 1.1rem;
   color: $_text-primary;
-  margin-bottom: 60px;
+  margin-bottom: $_int-40;
   font-weight: $_light;
   font-family: 'Hind', sans-serif;
   @media all and (min-width: 768px) {
     font-size: 1.6rem;
+    margin-bottom: $_int-60;
   }
 }
 

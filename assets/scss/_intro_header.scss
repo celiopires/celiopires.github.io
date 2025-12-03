@@ -20,11 +20,11 @@
 // HEADER INTRO BOTTOM
 .container .container__intro .intro__header--bottom {
 	max-width: 420px;
-	margin: 0 auto 80px auto;
-	padding: 0 16px;
+	margin: 0 auto $_int-80 auto;
+	padding: 0 $_int-16;
 	@media all and (min-width: 768px) {
 		max-width: 904px;
-    margin: 0 auto 20vh auto;
+    margin: 0 auto $_int-80 auto;
 	}
 	.font__large-1 {
 		margin-bottom: $_int-40;
@@ -37,7 +37,7 @@
     line-height: 26px;
 		color: $_text-secondary;
 		@media all and (min-width: 768px) {
-			margin-bottom: 10vh;
+			margin-bottom: $_int-80;
 			max-width: 85%;
 			margin-right: auto;
 			margin-left: auto;
@@ -63,9 +63,9 @@
 	// LANDING LEFT ALIGNED
 	&.landing {
 		position: relative;
-		margin: 80px auto 120px auto;
+		margin: $_int-80 auto $_int-80 auto;
 		@media all and (min-width: 768px) {
-			margin: 180px auto 320px auto;
+			margin: 20vh auto 20vh auto;
 			animation: 0.8s anim-lineUp ease-out forwards;
 				
 			@keyframes anim-lineUp {
@@ -91,9 +91,9 @@
 		display: flex;
 		align-items: center;
     flex-direction: column;
-		gap: 40px;
+		gap: $_int-40;
 		@media all and (min-width: 768px) {
-			gap: 24px;
+			gap: $_int-24;
 			flex-direction: row;
 			align-items: flex-start;
 		}
@@ -202,7 +202,7 @@
 			margin: 0 auto;
 			@media all and (min-width: 768px) {
 				display: inline-block;
-				margin-top: 24px;
+				margin-top: $_int-24;
 				max-width: 30%;
 			}
 			> img {
