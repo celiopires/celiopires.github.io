@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "build": "gulp build",
+    "watch": "gulp",
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

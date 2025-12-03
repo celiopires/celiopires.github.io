@@ -21,7 +21,7 @@ exports.html = html;
 
 // SITEMAPS
 function sitemapxml() {
-    gulp.src('*.html', {
+    return gulp.src('*.html', {
         read: false
       })
       .pipe(save('before-sitemap'))
@@ -38,13 +38,19 @@ exports.sitemapxml = sitemapxml;
 function css() {
     return src("assets/scss/**/*.scss")
     .pipe(sourcemaps.init())
-    .pipe(sass.sync({outputStyle: "compressed"}).on("error", sass.logError))
+    .pipe(sass.sync({
+        outputStyle: "compressed",
+        silenceDeprecations: ["legacy-js-api"]
+    }).on("error", sass.logError))
     .pipe(sourcemaps.write())
     .pipe(dest("assets/css"));
 }
 
 exports.css = css;
 
+// Build task - compiles everything
+const build = gulp.series(html, css, sitemapxml);
+exports.build = build;
 
 // Watch files
 module.exports.default = function () {

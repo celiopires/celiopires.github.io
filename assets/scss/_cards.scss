@@ -157,13 +157,13 @@ body {
     padding-left: 0;
     gap: $_int-16;
     border-radius: 16px;
-    @media all and (min-width: 768px) {
-        gap: $_int-8;
-    }
     /* DIV sizing */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    @media all and (min-width: 768px) {
+        gap: $_int-8;
+    }
     @media all and (min-width: 768px) {
         flex-direction: row;
         align-items: center;
