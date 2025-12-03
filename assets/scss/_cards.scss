@@ -163,8 +163,6 @@ body {
     box-sizing: border-box;
     @media all and (min-width: 768px) {
         gap: $_int-8;
-    }
-    @media all and (min-width: 768px) {
         flex-direction: row;
         align-items: center;
         align-content: center;
