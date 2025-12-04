@@ -20,9 +20,9 @@ header {
     ol {
       position: absolute;
       right: $_int-16;
+      top: $_int-24 + $_int-4;
       @media all and (min-width: 1024px) {
         right: $_int-32;
-        top: $_int-24 + $_int-4;
       }
       li {
         position: relative;
