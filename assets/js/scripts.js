@@ -1,6 +1,40 @@
 // AUTO-UPDATE COPYRIGHT YEAR
 document.querySelector('#copyright-year').innerText = new Date().getFullYear();
 
+// HEADER SHOW/HIDE ON SCROLL
+(function() {
+  let lastScrollTop = 0;
+  const header = document.querySelector('header');
+  let ticking = false;
+
+  function updateHeader() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > 100) { // Only hide/show after scrolling past 100px
+      if (scrollTop > lastScrollTop) {
+        // Scrolling down - hide header
+        header.classList.add('header-hidden');
+      } else {
+        // Scrolling up - show header
+        header.classList.remove('header-hidden');
+      }
+    } else {
+      // Always show header at the top
+      header.classList.remove('header-hidden');
+    }
+    
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(updateHeader);
+      ticking = true;
+    }
+  });
+})();
+
 // MODAL 
 
 // Get the modal
