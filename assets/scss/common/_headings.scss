@@ -114,10 +114,14 @@ p {
 // Font Small
 
 .font__small-1 {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 20px;
+  line-height: 28px;
   font-weight: $_regular;
   color: $_text-primary;
+  @media all and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 .font__small-2 {

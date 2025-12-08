@@ -87,12 +87,12 @@ ul, ol, li {
   }
   &--full-screen {
     width: 100%;
-    margin-left: -#{$_int-16};
-    margin-right: -#{$_int-16};
-    @media all and (min-width: 768px) {
-      margin-left: -#{$_int-32};
-      margin-right: -#{$_int-32};
-    }
+    // margin-left: -#{$_int-16};
+    // margin-right: -#{$_int-16};
+    // @media all and (min-width: 768px) {
+    //   margin-left: -#{$_int-32};
+    //   margin-right: -#{$_int-32};
+    // }
     > img {
       display: block;
       width: 100%;

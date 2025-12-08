@@ -116,7 +116,7 @@
       justify-content: stretch;
       margin-left: $_int-16;
       margin-right: $_int-16;
-      margin-bottom: $_int-8;
+      padding-bottom: $_int-24;
       .font__large-1 {
         margin-bottom: $_int-16;
       }
@@ -135,10 +135,10 @@
       }
       .font__small-1 {
         max-width: 100%;
+        color: $_text-secondary;
         margin-bottom: $_int-32;
         @media all and (min-width: 768px) {
           max-width: 75%;
-          color: $_text-secondary;
           text-align: center;
           margin-bottom: $_int-40;
         }
@@ -146,7 +146,7 @@
       .font__small-2 {
         max-width: 100%;
         text-transform: uppercase;
-        margin-bottom: $_int-16;
+        // margin-bottom: $_int-16;
         font-weight: bold;
         color: $_text-primary;
         @media all and (min-width: 768px) {
@@ -240,33 +240,109 @@
 
 // PARAGRAPH BOX
 .container .container__box .paragraph__box--1col {
-  margin-bottom: $_int-40;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
   width: 100%;
+  border-top: 3px solid $_background-tertiary;
+  padding-top: $_int-40;
   @media all and (min-width: 768px) {
     margin-bottom: $_int-80;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: $_int-40;
+  }
+}
+
+.container .container__box .paragraph__box--1col > .box__header-small, 
+.container .container__box .paragraph__box--1col > .box__body {
+  width: 100%;
+  @media all and (min-width: 768px) {
+    max-width: 75%;
   }
 }
 
 .container .container__box .paragraph__box--2col {
-  margin: $_int-24 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  border-top: 3px solid $_background-tertiary;
+  padding-top: $_int-40;
+  padding-bottom: $_int-40;
+  gap: $_int-40;
   @media all and (min-width: 768px) {
-    margin: $_int-40 0;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: $_int-40;
   }
   .paragraph_box--1,
   .paragraph_box--2 {
     width: 100%;
     display: block;
-    margin-bottom: $_int-40;
     @media all and (min-width: 768px) {
       width: 49.2%;
       display: inline-block;
       vertical-align: top;
-      margin-bottom: $_int-80;
     }
     >img {
       display: block;
       max-width: 80%;
       margin: 0 auto;
+    }
+  }
+}
+
+.container .container__box .image__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: $_int-40;
+  margin-bottom: $_int-40;
+  gap: $_int-16;
+  @media all and (min-width: 768px) {
+    margin-top: $_int-80;
+    margin-bottom: $_int-80;
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+  .caption {
+    display: flex;
+    align-items: center;
+    gap: $_int-8;
+    margin-top: $_int-16;
+    margin-bottom: $_int-16;
+    padding-left: $_int-16;
+    padding-right: $_int-16;
+    text-align: center;
+    svg {
+      fill: $_text-tertiary;
+    }
+    .font__small-3 {
+      color: $_text-tertiary;
+      mix-blend-mode: difference;
+    }
+  }
+  // Mobile images - centered but not full width
+  &--mobile {
+    img {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+      border-radius: 8px;
+    }
+    // Special background for telefonica and elespanol projects
+    &.telefonica,
+    &.elespanol {
+      background: linear-gradient(160.3deg, #404141 7.87%, #121415 86.81%);
+      padding: $_int-16;
+      border-radius: 8px;
     }
   }
 }
