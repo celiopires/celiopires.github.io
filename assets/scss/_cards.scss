@@ -3,24 +3,23 @@ body {
 }
 
 .selected-projects {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: $_int-24;
+    
     @media all and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
         gap: $_int-80;
-    }
-    & > * {
-        flex: 1 1 30%;
-    }
-    @media all and (min-width: 768px) {
-        &:nth-child(3) {        
-            flex: 1 1 26%;
-        }
-        &:nth-child(4) {
-            flex: 1 1 26%;
-        }
-        &:nth-child(5) {
-            flex: 1 1 26%;
+        
+        // Feature first 2 projects - full width (span both columns)
+        // & > *:nth-child(1),
+        // & > *:nth-child(2) {
+        //     grid-column: span 2;
+        // }
+        
+        // Next 4 projects in 2-column grid (2x2)
+        & > *:nth-child(n + 3) {
+            grid-column: span 1;
         }
     }
 }
