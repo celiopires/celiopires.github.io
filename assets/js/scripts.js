@@ -1,5 +1,8 @@
 // AUTO-UPDATE COPYRIGHT YEAR
-document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+const copyrightYear = document.querySelector('#copyright-year');
+if (copyrightYear) {
+  copyrightYear.innerText = new Date().getFullYear();
+}
 
 // HEADER SHOW/HIDE ON SCROLL
 (function() {
@@ -36,30 +39,71 @@ document.querySelector('#copyright-year').innerText = new Date().getFullYear();
 })();
 
 // MODAL 
+(function() {
+  // Get the modal
+  var modal = document.getElementById('modal');
+  var btn = document.getElementById("modalBtn");
+  var closeModal = document.getElementById("closeModal");
+  var overlayModal = document.getElementById("overlayModal");
 
-// Get the modal
-var modal = document.getElementById('modal');
+  // Only set up modal handlers if modal elements exist
+  if (modal && btn) {
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+  }
 
-// Get the button that opens the modal
-var btn = document.getElementById("modalBtn");
+  if (modal && closeModal) {
+    closeModal.onclick = function() {
+      modal.style.display = "none";
+    }
+  }
 
-// Get the div that closes the modal
-var closeModal = document.getElementById("closeModal");
+  if (modal && overlayModal) {
+    overlayModal.onclick = function() {
+      modal.style.display = "none";
+    }
+  }
+})();
 
-// Get the div that closes the modal
-var overlayModal = document.getElementById("overlayModal");
-
-// When the user clicks on the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-closeModal.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks on <span> (x), close the modal
-overlayModal.onclick = function() {
-  modal.style.display = "none";
-}
+// DROPDOWN TOGGLE (CLICK INSTEAD OF HOVER)
+(function() {
+  function initDropdown() {
+    const dropdown = document.querySelector('.dropdown');
+    if (!dropdown) return;
+    
+    const dropdownLink = dropdown.querySelector('a.about__header');
+    if (!dropdownLink) return;
+    
+    // Toggle dropdown on click
+    dropdownLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      dropdown.classList.toggle('active');
+    });
+    
+    // Close dropdown when clicking on a menu item
+    const dropdownMenuItems = dropdown.querySelectorAll('.dropdownMenu a');
+    dropdownMenuItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+        dropdown.classList.remove('active');
+      });
+    });
+    
+    // Close dropdown when clicking outside (with a small delay to allow toggle to complete)
+    setTimeout(function() {
+      document.addEventListener('click', function(e) {
+        if (dropdown && !dropdown.contains(e.target)) {
+          dropdown.classList.remove('active');
+        }
+      });
+    }, 0);
+  }
+  
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDropdown);
+  } else {
+    initDropdown();
+  }
+})();

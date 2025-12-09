@@ -40,43 +40,43 @@ header {
         display: inline-block;
         .dropdown {
           cursor: pointer;
-          @media all and (min-width: 768px) {
-            &.active + .dropdownMenu,
-            &:hover .dropdownMenu {
-              display: block;
-              position: absolute;
-              border-radius: 4px;
-              color: $_text-primary;
+          &.active .dropdownMenu {
+            display: block;
+            position: absolute;
+            border-radius: 4px;
+            color: $_text-primary;
+            left: -#{$_int-8};
+            top: $_int-40;
+            background-color: $_background-secondary;
+            @media all and (min-width: 768px) {
               left: -#{$_int-8};
-              top: $_int-40;
-              background-color: $_background-secondary;
-              li {
-                display: block;
-                .font__small-1 {
-                  width: 100%;
-                  display: inline-block;
-                  padding: $_int-8 $_int-80 $_int-8 $_int-16;
-                  vertical-align: middle;
-                  font-weight: 700;
-                  font-size: 14px;
-                  color: $_text-tertiary;
-                  text-transform: uppercase;
-                  box-sizing: border-box;
-                  &:hover {
-                    color: $_text-primary;
-                  }
-                }
-                &:last-child {
-                  border-bottom-color: transparent;
-                }
+            }
+            li {
+              display: block;
+              .font__small-1 {
+                width: 100%;
+                display: inline-block;
+                padding: $_int-8 $_int-80 $_int-8 $_int-16;
+                vertical-align: middle;
+                font-weight: 700;
+                font-size: 14px;
+                color: $_text-tertiary;
+                text-transform: uppercase;
+                box-sizing: border-box;
                 &:hover {
-                  background-color: $_background-tertiary;
+                  color: $_text-primary;
                 }
+              }
+              &:last-child {
+                border-bottom-color: transparent;
+              }
+              &:hover {
+                background-color: $_background-tertiary;
               }
             }
           }
           @media all and (min-width: 768px) {
-            &:hover .about__header {
+            &.active .about__header {
               background-color: $_background-secondary;
             }
           }

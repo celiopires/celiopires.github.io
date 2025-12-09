@@ -3,7 +3,7 @@ html
 	head
 		- const pageSegment = "elespanol"
 		- const projectTitle = "Célio Pires - El Español"
-		- const projectDescription = "El Español is a 100% digital media company. The user centered Design, the unique user experiences across devices, being mobile first or even building responsive layouts, were definitely the right keys to successfully compete against bigger organisations."
+		- const projectDescription = "Building the design infrastructure for Spain's leading digital-native news platform."
 		//- CANONICAL
 		- const pageCanonical = `https://celiopires.com/${pageSegment}`
 		//- GLOBAL META TAGS
@@ -28,16 +28,16 @@ html
 						ol
 							li
 								div.font__small-3 Role
-								div.font__small-3 Product Designer
+								div.font__small-3 Hybrid Product Designer
 							li
-								div.font__small-3 Timeframe
-								div.font__small-3 2015 to 2018
+								div.font__small-3 Year
+								div.font__small-3 2015 - 2018
 							li
 								div.font__small-3 Industry
-								div.font__small-3 Media, Communication, Digital news
+								div.font__small-3 Media, Digital news
 					h1.font__extra-large-1 El Español
 					p.font__medium-3
-						| El Español is a 100% digital media company. The user centered Design, the unique user experiences across devices, being mobile first or even building responsive layouts, were definitely the right keys to successfully compete against bigger organisations. 
+						| Building the design infrastructure for Spain's leading digital-native news platform. 
 					.picture__center--full-screen.elespanol
 						img(src='assets/images/ee/elespanol-1.jpg' alt='El Español is a native digital news product. • El Español y su diversidad')
 						.caption
@@ -45,62 +45,78 @@ html
 			.container__box
 				.paragraph__box--1col
 					.box__header-small
-						h2.font__small-2 The challenge
+						h2.font__small-2 Project Overview
 					.box__body
 						p.font__small-1
-							| The reasons why people are choosing El Español as their main source 
-							| of information are diverse. Moving from other sources to a subscription 
-							| model news page means the user really wants to be informed and is 
-							| willing to pay for a high quality filter that guarantees access only 
-							| to the best content. Design is the trust, the identity, the interface but 
-							| essentially is the experience that will make the user enjoy every moment 
-							| or it will make him come back later. Design is the front door and it has 
-							| a lot to do here.
-							| You can see the Design process used 
-							span#modalBtn here.
-						include includes/modal
-				.paragraph__box--1col
-					.box__body
-						.picture__center--small.elespanol
-							img(src='assets/images/ee/mobile-overview.gif' alt='El Español is a native digital news product. • El Español y su diversidad')
-							.caption
-								.font__small-3 
-				.paragraph__box--1col
-					.box__header-small
-						h2.font__small-2 Design infrastructure
-					.box__body
-						p.font__small-1
-							| In 2015, the design team was too small for the amount of design requests. I started to find a strategy to optimise time and resources for better future in-house implementations. Found out that most of the already implemented user experiences and UI elements can be reused or re-implemented in a different use case. They might only differ by a heading or an icon added after or before the text label. I’ve seen here an opportunity to start collecting and documenting those elements to provide them later to designers, developers and the entire company. This was actually the starting point to start building the entire infrastructure that later became El Español’s design system.
-				.paragraph__box--2col
-					.paragraph_box--1
-						.box__header-small
-							h2.font__small-2 Information architecture
-						.box__body
-							p.font__small-1
-								| All the functional structure across the project is the single most important component of user experience. Everyone from designers to front-end engineers plan information architecture on a smaller scale to later implement it across larger systems. I was focused on the information architecture applied to the entire product, the design system and also the SASS files as well. Both teams, design and front-end were working side by side and I was doing both, code and design.
-					.paragraph_box--2
-						.box__header-small
-							h2.font__small-2 User experience
-						.box__body
-							p.font__small-1
-								| The quick feedback obtained during the lean UX process was used to measure and validate ideas and to enable a collaborative process between the entire team of developers, designers and product managers. This process was crucial to improve areas like user experience, product strategy and user interface. Some other departments like SEO and Data analysis were involved and definitely the key to obtain real data from current use cases.
+							| El Español is a 100% digital media outlet that disrupted the Spanish news market. As a native digital product, our competitive advantage against legacy newspapers relied entirely on user experience: speed, mobile-first responsiveness, and a premium reading interface.
 
 				.paragraph__box--1col
 					.box__header-small
-						h2.font__small-2 Tools
+						h2.font__small-2 Design a subscription-worthy experience
 					.box__body
 						p.font__small-1
-							| After joining El Español I gathered the courage to attempt always better tools for working. For that reason most of my research as a Designer evolves finding the best tools to improve my workflow. 
-							a(target='_blank' href='http://sketch.com/')
-								| Sketch 
-								span.link__external
-							|  is the main tool I use for lo-fi and recently hi-fi prototyping. It allows me to expand its functionalities by using plugins and it is extremely fast, cheap and easy to use. Interactions and experiences are made on 
-							a(href='https://origami.design/' target='_blank' rel='noopener noreferrer')
-								| Origami Studio 
-								span.link__external
-							|  and for less complex projects I use 
-							a(href='https://www.invisionapp.com/' target='_blank' rel='noopener noreferrer')
-								| Invision 
-								span.link__external
-							| . GIT, HTML and SASS are part of my daily tools too.
+							| Moving users from free readers to paid subscribers required an interface that communicated trust, quality and exclusivity.
+
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 My Role: Hybrid Product Designer
+					.box__body
+						p.font__small-1
+							| I operated as a true "Hybrid Designer," bridging the gap between the creative team and engineering. I didn't just hand off mockups; I integrated directly into the development workflow, writing code and managing repositories.
+
+				.paragraph__box--1col
+					.image__box.image__box--mobile.elespanol
+						img(src='assets/images/ee/mobile-overview.gif' alt='El Español is a native digital news product. • El Español y su diversidad')
+						.caption
+							.font__small-3 El Español - Mobile experience
+
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 The Challenge: Scaling Without Resources
+					.box__body
+						p.font__small-1
+							| In 2015, the design team was too small to handle the volume of daily news requests. We faced a bottleneck:
+						p.font__small-1
+							| - We were rebuilding the same UI elements (buttons, cards, headers) repeatedly.
+						p.font__small-1
+							| - Without a shared language, the "mobile-first" experience was fragmenting across devices.
+						p.font__small-1
+							| - The news cycle is instant. We needed a workflow that allowed us to ship features in minutes, not days.
+
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 The Solution
+					.box__body
+						p.font__small-1
+							| - I identified that most design requests were actually variations of existing patterns. This insight launched the company's first Design System.
+						p.font__small-1
+							| - 1. The Audit & Documentation I led the initiative to collect, standardize, and document all UI elements. We moved from designing unique pages to assembling pages from approved components.
+						p.font__small-1
+							| - 2. Architecture as Code (SASS) This is where I went beyond traditional design. I architected the SASS file structure to match the visual Information Architecture.
+						p.font__small-1
+							| - I wrote and managed the CSS/SASS code to ensure that the "Design System" wasn't just a Sketch file—it was live production code.
+						p.font__small-1
+							| - I worked side-by-side with frontend engineers in Git, ensuring the bridge between design intent and browser rendering was flawless.
+
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 UX Strategy: Lean & Data-Driven
+					.box__body
+						p.font__small-1
+							| We implemented a Lean UX process to validate ideas quickly.
+						p.font__small-1
+							| Collaborative Loops: Worked directly with SEO experts and Data Analysts to base design decisions on real traffic metrics.
+						p.font__small-1
+							| Rapid Prototyping: Used Sketch for high-fidelity UI and Origami Studio for complex interaction flows to test concepts before writing a single line of code.
+
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 Impact
+					.box__body
+						p.font__small-1
+							| - Drastically reduced "pixel-pushing" time, allowing the team to focus on feature strategy.
+						p.font__small-1
+							| - Established a single source of truth that lived in both the design tools and the codebase.
+						p.font__small-1
+							| - Built the infrastructure that allowed El Español to scale into one of the most read digital newspapers in Spain.
 		include includes/footer
