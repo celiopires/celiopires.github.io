@@ -48,6 +48,7 @@ header {
             left: -#{$_int-8};
             top: $_int-40;
             background-color: $_background-secondary;
+            white-space:nowrap;
             @media all and (min-width: 768px) {
               left: -#{$_int-8};
             }
@@ -56,12 +57,11 @@ header {
               .font__small-1 {
                 width: 100%;
                 display: inline-block;
-                padding: $_int-8 $_int-80 $_int-8 $_int-16;
+                padding: $_int-8 $_int-24 $_int-8 $_int-16;
                 vertical-align: middle;
-                font-weight: 700;
-                font-size: 14px;
+                font-weight: 500;
+                font-size: 16px;
                 color: $_text-tertiary;
-                text-transform: uppercase;
                 box-sizing: border-box;
                 &:hover {
                   color: $_text-primary;

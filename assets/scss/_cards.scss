@@ -11,15 +11,50 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: $_int-80;
         
-        // Feature first 2 projects - full width (span both columns)
-        // & > *:nth-child(1),
-        // & > *:nth-child(2) {
-        //     grid-column: span 2;
-        // }
-        
-        // Next 4 projects in 2-column grid (2x2)
-        & > *:nth-child(n + 3) {
+        // Feature first 4 projects - keep them at full size
+        & > *:nth-child(1),
+        & > *:nth-child(2),
+        & > *:nth-child(3),
+        & > *:nth-child(4) {
             grid-column: span 1;
+        }
+        
+        // Shrink projects starting from the 5th
+        & > *:nth-child(n + 5) {
+            grid-column: span 1;
+        }
+    }
+    
+    // Apply shrinking styles to portfolio cards starting from the 5th
+    & > .portfolio-card:nth-child(n + 5) {
+        @media all and (min-width: 768px) {
+            a {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                gap: $_int-16;
+            }
+            .thumbnail {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                width: 104px;
+                height: 104px;
+                flex-shrink: 0;
+            }
+            .card {
+                padding: 0;
+            }
+            .card .card-details .card-item .card-item-title .font__medium-3 {
+                font-size: 18px;
+                text-align: left;
+            }
+            .card .card-details .card-item .card-icon {
+                font-size: 13px;
+            }
         }
     }
 }
