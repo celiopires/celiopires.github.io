@@ -104,6 +104,7 @@
 			background-size: 100%;
 			background-repeat: no-repeat;
 			@media all and (min-width: 768px) {
+				margin-top: 10px;
 				&:hover {
 					opacity: 0.8;
 				}
@@ -123,6 +124,14 @@
 				gap: $_int-8;
 				padding-right: $_int-16;
 				padding-left: $_int-16;
+			}
+			.font__medium-3 {
+				@media all and (min-width: 768px) {
+					text-align: left;
+					margin-left: 0;
+					margin-right: 0;
+					margin-bottom: $_int-16;
+				}
 			}
 			.font__small-1 {
 				text-align: center;
