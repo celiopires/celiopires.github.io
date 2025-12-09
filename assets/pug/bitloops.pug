@@ -1,0 +1,145 @@
+doctype html
+html
+	head
+		- const pageSegment = "bitloops"
+		- const projectTitle = "Célio Pires - Bitloops"
+		- const projectDescription = "The co-pilot that bridges the gap between Figma and production-ready React code."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include includes/head
+	body
+		include includes/nav
+		#Bitloops.bitloops
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Role
+								div.font__small-3 Product Designer
+							li
+								div.font__small-3 Year
+								div.font__small-3 2024
+							li
+								div.font__small-3 Category
+								div.font__small-3 Developer Tools / Low-Code
+					h1.font__extra-large-1 Bitloops
+					p.font__medium-3
+						| The co-pilot that bridges the gap between Figma and production-ready React code.
+					.picture__center--full-screen
+						img(src='assets/images/bitloops/bitloops-hero.webp' alt='Bitloops - VS Code Extension interface')
+						.caption
+							.font__small-3 Bitloops - VS Code Extension interface
+				.container__box
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Context & Product Definition
+							.box__body
+								p.font__small-1
+									| Bitloops is a VS Code extension that instantly converts Figma designs, even messy, unstructured ones, into clean, responsive React components. It goes beyond simple code generation by automatically creating Storybook stories and Cypress tests.
+									br
+									br
+									| The Goal: To eliminate the repetitive grunt work of frontend development (slicing, CSS tweaking) and allow engineers to focus on logic and architecture. It empowers developers to treat Figma as a source of truth without requiring designers to change how they work.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 The Challenge (UX Analysis)
+							.box__body
+								p.font__small-1
+									| The industry suffers from a broken "Hand-off" process.
+									br
+									br
+									| - Designers rarely structure Figma files like code (autolayout is often broken or missing).
+									br
+									br
+									| - Existing tools (like Anima or Builder.io) require designers to work like developers. If the input isn't perfect, the output is "spaghetti code" that developers refuse to use.
+									br
+									br
+									| - Developers hate leaving their IDE (VS Code) to check a browser tool.
+									br
+									br
+									| - Developers were spending 40% of their time just translating pixels to CSS and writing boilerplate tests, rather than building features.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 The Solution
+						.box__body
+							p.font__small-1
+								| We pivoted away from a "No-Code" web platform and moved directly into the developer's habitat: The VS Code Extension. Instead of forcing designers to code, the workflow was designed to interpret the visual intent. The UX is built around "Trust but Verify", giving developers full control to inspect and modify the generated code before committing.
+								br
+								br
+								| Key UX Wins:
+								br
+								br
+								| - Native Integration: The UI lives inside the VS Code sidebar, respecting the developer's existing environment and theme.
+								br
+								br
+								| - The tool automatically detects messy Figma layers and virtually "cleans" them before generating code, meaning the user doesn't have to fix the design file first.
+								br
+								br
+								| - Bitloops doesn't just give HTML/CSS; it generates the ecosystem (Storybook + Cypress), which builds immense trust with senior engineers.
+					.image__box
+						img(src='assets/images/bitloops/bitloops-01.webp' alt='Bitloops image 1')
+						.caption
+							.font__small-3 Bitloops - Creating a new variant
+					.image__box
+						img(src='assets/images/bitloops/bitloops-02.webp' alt='Bitloops image 2')
+						.caption
+							.font__small-3 Bitloops - Handling dynamic content with components
+					.image__box
+						img(src='assets/images/bitloops/bitloops-03.webp' alt='Bitloops image 3')
+						.caption
+							.font__small-3 Bitloops - Add elements to projects
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 App Architecture
+						.box__body
+							p.font__small-1
+								| The architecture follows a Linear Pipeline Flow:
+								br
+								br
+								| .1 - Input Node: Figma URL / Frame Selection.
+								br
+								br
+								| .2 - Processing Layer: The "Black Box" where design tokens are extracted and normalized.
+								br
+								br
+								| .3 - Output Interface (VS Code):
+								br
+								br
+								| .4 - Renders the component live.
+								br
+								br
+								| .5 - Code Tab: Shows the React/TSX code (Editable).
+								br
+								br
+								| .6 - Test Tab: Shows the generated Cypress code.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Materials Used (UI & Design System)
+						.box__body
+							p.font__small-1
+								| Designing for Developers:
+								br
+								br
+								| Color Palette: "IDE Dark Mode." Backgrounds: Deep Gunmetal and Jet Black (to match VS Code default themes). Accents: Syntax-highlighting colors (Electric Blue for functions, Neon Green for strings, Amber for warnings).
+								br
+								br
+								| Typography: A pairing of Inter (Interface UI) and Fira Code (Code snippets). We used a dense type scale (11px - 13px) to maximize data density.
+								br
+								br
+								| Components: Custom "Code Snippet" cards, diff-view toggles (Before/After), and terminal-style status indicators.
+		include includes/footer
