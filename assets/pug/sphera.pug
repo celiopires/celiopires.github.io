@@ -1,0 +1,212 @@
+doctype html
+html
+	head
+		- const pageSegment = "sphera"
+		- const projectTitle = "Célio Pires - Sphera"
+		- const projectDescription = "Turning complex customer data into actionable ecommerce revenue using AI."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include includes/head
+	body
+		include includes/nav
+		#Sphera.sphera
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Role
+								div.font__small-3 Head of Product Design & UX
+							li
+								div.font__small-3 Year
+								div.font__small-3 2024
+							li
+								div.font__small-3 Industry
+								div.font__small-3 AI / Data Intelligence
+					h1.font__extra-large-1 Sphera
+					p.font__medium-3
+						| Turning complex customer data into actionable ecommerce revenue using AI.
+					.picture__center--full-screen
+						img(src='assets/images/sphera/sphera-01.webp' alt='Sphera - AI-powered ecommerce intelligence platform Web version')
+						.caption
+							.font__small-3 Sphera - AI-powered ecommerce intelligence platform Web version
+				.container__box
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Context & Product Definition
+							.box__body
+								p.font__small-1
+									| Sphera is an AI-powered intelligence platform designed for online retailers. It aggregates fragmented data from marketing channels (Meta, Google, TikTok) and store performance (Shopify, Magento) to provide a unified view of ROI.
+									br
+									br
+									| The Goal: To move ecommerce managers from "Analysis Paralysis" to "Actionable Strategy." By rebranding and redesigning the platform from the ground up, we aimed to democratize access to advanced data science, allowing non-technical merchants to optimize campaigns with a single click.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 My Role & Scope
+							.box__body
+								p.font__small-1
+									| Role: Head of Product Design & UX
+									br
+									br
+									| Focus: Rebranding (SQDL -> Sphera), End-to-End UX/UI, Data Visualization Strategy and Design System implementation.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 The Challenge (UX Analysis)
+						.box__body
+							p.font__small-1
+								| The original platform (SQDL) was powerful but technically overwhelming. Users were facing three core problems:
+								| Data Overload: Merchants were drowning in spreadsheets and raw numbers without understanding the story behind them.
+								br
+								br
+								| The "Black Box" Problem: Users didn't trust the AI recommendations because the interface didn't explain why a suggestion was made (e.g., "Why should I increase budget here?").
+								br
+								br
+								| Fragmented Workflows: Users had to switch between the platform and their ad managers to make changes.
+								br
+								br
+								| The User Pain Point: "I know I'm wasting money on ads, but I don't know which ones to turn off."
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 The Solution
+						.box__body
+							p.font__small-1
+								| Instead of just showing graphs, the interface focuses on Insights & Actions. We introduced "Explainable AI" patterns—UI elements that break down the logic behind a prediction in plain English, to build user trust.
+								br
+								br
+								| The "Overview" Dashboard: A prioritized feed of anomalies (e.g., "Ad spend spiked but sales didn't") rather than a generic wall of charts.
+								br
+								br
+								| Integrated write-access APIs so users can accept an AI recommendation (e.g., "Pause Campaign") directly within Sphera, closing the loop.
+					.picture__center--full-screen
+						img(src='assets/images/sphera/sphera-02.webp' alt='Sphera - AI-powered ecommerce intelligence platform Mobile version')
+						.caption
+							.font__small-3 Sphera - AI-powered ecommerce intelligence platform desktop version
+					.picture__center--full-screen
+						img(src='assets/images/sphera/sphera-05.webp' alt='Sphera - AI-powered ecommerce intelligence platform Mobile version')
+						.caption
+							.font__small-3 Sphera - Scores and Confidence levels
+					//- .paragraph__box--1col
+					//- 	.box__header-small
+					//- 		h2.font__small-2 Design Process & Timeline
+					//- 	.box__body
+					//- 		p.font__small-1
+					//- 			| From Abstract to Concrete
+					//- 			br
+					//- 			br
+					//- 			| Phase 1: Rebranding & Strategy
+					//- 			br
+					//- 			| Naming Transition: Managed the visual transition from SQDL (technical, acronym-heavy) to Sphera (holistic, global, encompassing).
+					//- 			br
+					//- 			br
+					//- 			| Visual Identity: Moved away from "developer dark mode" to a clean, light, and trustworthy aesthetic suitable for financial decisions.
+					//- 			br
+					//- 			br
+					//- 			| Phase 2: Information Architecture & Data Viz
+					//- 			br
+					//- 			| Metric Hierarchy: We categorized metrics into Primary (Revenue, ROAS) and Secondary (CTR, CPM) to prevent visual noise.
+					//- 			br
+					//- 			br
+					//- 			| Chart Library: I designed a custom charting system. We had to solve the challenge of displaying time-series data (performance over time) overlaid with discrete events (marketing changes).
+					//- 			br
+					//- 			br
+					//- 			| Phase 3: Wireframing & Prototyping
+					//- 			br
+					//- 			| Focused heavily on the "Insight Card" layout—how to present a problem, a cause, and a solution in a small UI component.
+					//- 			br
+					//- 			br
+					//- 			| Tested "Confidence Scores" (e.g., "We are 85% sure this will improve ROI") to see if it increased user adoption of AI suggestions.
+					//- 			br
+					//- 			br
+					//- 			| Phase 4: High Fidelity & Design System
+					//- 			br
+					//- 			| Built a rigorous system for the dashboard, specifically focusing on table design (sorting, filtering, bulk actions) which is the bread and butter of enterprise tools.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Main Features
+						.box__body
+							p.font__small-1
+								| - Real-time synchronization with Facebook Ads, Google Ads and e-commerce backends.
+								br
+								br
+								| - AI automatically clusters customers (e.g., "Whales," "Churn Risk," "Window Shoppers") for targeted campaigns.
+								br
+								br
+								| - Predictive modeling that estimates revenue for the upcoming month based on current trends.
+								br
+								br
+								| - An "Accept" button that instantly applies budget changes to live campaigns.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 App Architecture
+						.box__body
+							p.font__small-1
+								| The architecture is built on a Drill-Down Model:
+								br
+								br
+								| - The Overview (Surface): High-level health scores and critical alerts.
+								br
+								br
+								| - The Intelligence Layer (Analysis): Dedicated views for "Acquisition," "Retention," and "Product Performance."
+								br
+								br
+								| The Engine Room (Configuration): Granular settings for attribution models and data source integrations.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Materials Used (UI & Design System)
+						.box__body
+							p.font__small-1
+								| Color Palette:
+								br
+								| - Trustworthy Neutrals: Heavy use of whitespace and cool grays to let the data breathe (The platform was also dark-mode ready).
+								br
+								br
+								| - Created a categorical color palette ensuring that charts with 5+ variables remained distinct and color-blind accessible.
+								br
+								br
+								| - Soft Red (Negative trend) vs. Mint Green (Positive trend) used sparingly to draw attention.
+								br
+								br
+								| Typography:
+								br
+								| - Used tabular lining figures (monospaced numbers) within [Insert Font, e.g., Inter or Roboto Mono] to ensure financial data aligned perfectly in vertical columns.
+								br
+								br
+								| - "Insight Cards," Data Tables with sticky headers and interactive Line/Bar charts using a customized chart library.
+					.picture__center--full-screen
+						img(src='assets/images/sphera/sphera-04.webp' alt='Sphera - Components extracted from the payments flow')
+						.caption
+							.font__small-3 Sphera - Desktop components extracted from the payments flow
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 User Flows
+						.box__body
+							p.font__small-1
+								| .1 - User logs in and sees a "Critical Alert" on the Dashboard (e.g., "ROAS dropped below 2.0")
+								br
+								br
+								| .2 - User clicks the alert to open the Detail View
+								br
+								br
+								| .3 - Sphera displays the root cause: "Campaign B is targeting an exhausted audience."
+								br
+								br
+								| .4 - Sphera suggests: "Rotate Creative" or "Decrease Budget."
+								br
+								br
+								| .5 - User clicks "Apply Fix." The system confirms the change via API and marks the alert as resolved
+		include includes/footer
