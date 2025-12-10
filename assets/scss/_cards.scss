@@ -59,6 +59,27 @@ body {
     // }
 }
 
+// 4-column grid modifier for latest articles
+.selected-projects--grid-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $_int-24;
+    
+    @media all and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: $_int-32;
+    }
+    
+    @media all and (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: $_int-24;
+    }
+    .font__small-1 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
 .other-work {
     display: flex;
     flex-direction: column;

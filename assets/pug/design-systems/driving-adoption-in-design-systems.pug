@@ -1,0 +1,137 @@
+doctype html
+html
+	head
+		- const pageSegment = "design-systems/driving-adoption-in-design-systems"
+		- const projectTitle = "Célio Pires - Driving Adoption in Design Systems"
+		- const projectDescription = "Building a design system is one thing. Getting people to actually use it is another. Across projects like El Español, Telefónica, Commons, and Metallicus I saw the same pattern: great components, zero adoption, and chaos creeping back in."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include ../includes/head
+	body
+		include ../includes/nav
+		#DesignSystems.design-systems
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Author
+								div.font__small-3 Célio Pires
+							li
+								div.font__small-3 Published
+								div.font__small-3 2025
+							li
+								div.font__small-3 Category
+								div.font__small-3 Design Systems
+					h1.font__large-2 Driving adoption in design systems
+					p.font__medium-3
+						| Building a design system is one thing. Getting people to actually use it is another. Across projects like El Español, Telefónica, Commons, and Metallicus I saw the same pattern: great components, zero adoption, and chaos creeping back in.
+					.picture__center--full-screen
+						img(src='/assets/images/design-systems/driving-adoption-in-design-systems/ds-hero.webp' alt='Design Systems - Driving Adoption')
+						.caption
+							.font__small-3 Design Systems - Driving Adoption
+				.container__box
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Why adoption matters
+						.box__body
+							p.font__small-1
+								| Without adoption:
+								br
+								br
+								| • teams build their own versions
+								br
+								| • logic shifts from squad to squad
+								br
+								| • engineers patch things on the fly
+								br
+								| • reviews drag on
+								br
+								| • design debt piles up
+								br
+								br
+								| A system only works if people use it. Otherwise it's just a Figma file.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 My role
+						.box__body
+							p.font__small-1
+								| I didn't just build components. I made teams understand why the system mattered, how to use it, and how to keep it alive. Half my time was talking, half was designing.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 How I made it stick
+						.box__body
+							p.font__small-1
+								| Getting teams to actually use the system required a mix of strategy, communication, and persistence.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Getting buy-in
+						.box__body
+							p.font__small-1
+								| Show the cost of chaos: slow delivery, mismatched UI, more bugs. People adopt when they see the pain.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Engineering alignment
+						.box__body
+							p.font__small-1
+								| Loop in developers early, agree on naming and logic. Even without Storybook, the system mapped cleanly to code.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Rollout
+						.box__body
+							p.font__small-1
+								| Small teams: library + guide. Large teams: training, migration plan, feedback loop.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Handling resistance
+						.box__body
+							p.font__small-1
+								| "This doesn't fit my flow?" I reviewed, adjusted, or explained trade-offs. Most pushback is clarity, not intent.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Keeping it alive
+						.box__body
+							p.font__small-1
+								| Review new components, clean duplicates, audit usage, refactor when the product shifts. Simple, consistent care.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Impact
+						.box__body
+							p.font__small-1
+								| Teams shipped faster, UI mismatches dropped, less rework, cleaner code, happier designers and engineers.
+								br
+								br
+								| Sometimes bug counts went down.
+								br
+								br
+								| Sometimes the same buttons stopped being rebuilt three times a week.
+								br
+								br
+								| Sometimes both.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 What I learned
+						.box__body
+							p.font__small-1
+								| A design system isn't just components.
+								br
+								br
+								| It's alignment, trust, and adoption.
+								br
+								br
+								| The structure matters, but adoption is what makes a system real.
+		include ../includes/footer
