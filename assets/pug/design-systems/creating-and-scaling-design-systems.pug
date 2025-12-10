@@ -1,0 +1,325 @@
+doctype html
+html
+	head
+		- const pageSegment = "design-systems/creating-and-scaling-design-systems"
+		- const projectTitle = "Célio Pires - Creating and Scaling Design Systems"
+		- const projectDescription = "I've worked on a bunch of products over the years and most of them had the same issue. As teams grew the UI started to drift. A design system became the only way to keep things clean and predictable."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include ../includes/head
+	body
+		include ../includes/nav
+		#DesignSystems.design-systems
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Author
+								div.font__small-3 Célio Pires
+							li
+								div.font__small-3 Published
+								div.font__small-3 2025
+							li
+								div.font__small-3 Category
+								div.font__small-3 Design Systems
+					h1.font__large-2 Creating and scaling design systems
+					p.font__medium-3
+						| I've worked on a bunch of products over the years and most of them had the same issue. As teams grew the UI started to drift. One team shipped something new, another team updated an old screen, someone copied an old button from a file from 2019… you know how it goes. A design system became the only way to keep things clean and predictable.
+					.picture__center--full-screen
+						img(src='/assets/images/design-systems/creating-and-scaling-design-systems/ds-hero.webp' alt='Design Systems - Creating and Scaling')
+						.caption
+							.font__small-3 Design Systems - Creating and Scaling
+				.container__box
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Why the system was needed
+						.box__body
+							p.font__small-1
+								| Across projects like El Español, Telefónica, Commons or Metallicus the patterns were always the same:
+								br
+								br
+								| • components duplicated in random places
+								br
+								| • design choices changing from team to team
+								br
+								| • engineers rebuilding the same UI again and again
+								br
+								| • reviews taking forever because nothing matched
+								br
+								| • design debt piling up quietly
+								br
+								br
+								| So the system wasn't just a "nice tool". It was the thing that stopped the chaos.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 My role
+						.box__body
+							p.font__small-1
+								| I usually took the lead on defining the structure, building the core components, getting teams aligned, making sure the system didn't die after two months.
+								br
+								br
+								| Honestly half of the job was communication. The other half was Figma.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 How I structured the system
+						.box__body
+							p.font__small-1
+								| The approach changed a bit depending on the product size but the base looked like this.
+	
+					//- Example 1 - Tokens and foundations			
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 1. Tokens and foundations
+							.box__body
+								p.font__small-1
+									| I always started with the basics. Design System principles, spacing, colours, typography, grids, borders.
+									br
+									br
+									| Then the accessibility part came in right away because it’s not something you “add later”. Contrast ratios that actually pass, font sizes that don’t force people to zoom, line heights that stay readable, touch targets that meet standards.
+									br
+									br
+									| If these weren't stable nothing else would work.
+						.paragraph_box--2
+							.image__box.inside_content
+								img(src='/assets/images/design-systems/creating-and-scaling-design-systems/structure-01.webp' alt='Design Systems - Creating and Scaling')
+								//- .caption
+								//- 	.font__small-3 Design Systems - Creating and Scaling
+					
+					//- Example 2 - Core components
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 2. Core components
+							.box__body
+								p.font__small-1
+									| Buttons, inputs, dropdowns, cards, navigation.
+									br
+									br
+									| Clean naming, predictable logic and variants that matched real use cases instead of imaginary ones.
+									| On 
+									a(href="/elespanol.html") El Español
+									|  I even pushed for a BEM-style naming convention which helped designers and engineers speak the same language. It kept components consistent and made the whole system easier to scale across teams fast workflow.
+						.paragraph_box--2
+							.image__box.inside_content
+								img(src='/assets/images/design-systems/creating-and-scaling-design-systems/structure-02.webp' alt='Design Systems - Creating and Scaling')
+								//- .caption
+								//- 	.font__small-3 Design Systems - Creating and Scaling
+
+					//- Example 3 - Patterns
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 3. Patterns
+							.box__body
+								p.font__small-1
+									| For bigger products like Telefónica or Metallicus I added patterns on top.
+									br
+									br
+									| Forms, filters, tables, dashboards.
+									br
+									br
+									| These were the pieces teams used every day so getting them right saved a lot of headaches. I also made sure the patterns weren’t just pretty but actually worked with real data, edge cases and weird states that only show up in production. This is the level where teams start saving time.
+						.paragraph_box--2
+							.image__box.inside_content
+								img(src='/assets/images/design-systems/creating-and-scaling-design-systems/structure-03.webp' alt='Design Systems - Creating and Scaling')
+								//- .caption
+								//- 	.font__small-3 Design Systems - Creating and Scaling
+					
+					//- Example 4 - Documentation
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 4. Documentation
+							.box__body
+							p.font__small-1
+								| For teams like Metallicus and Commons I worked closely with developers to map Figma structure into their world.
+								br
+								br
+								| Even when the company didn't use Storybook the goal was the same: predictable components that engineers could rely on.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 5. Engineering alignment
+							.box__body
+								p.font__small-1
+									| Every component came with clear usage notes.
+									br
+									br
+									| When to use it, when not to use it, behaviour rules, accessibility basics.
+									br
+									br
+									| Some of the most commons tools to keep the documentation updated were:
+									br
+									| • Figma (for 
+									a(href='/bitloops.html') Bitloops
+									| , 
+									a(href='/commons.html') Commons
+									| , 
+									a(href='/sphera.html') Sphera
+									| )
+									br
+									| • Zepelin Docs (for 
+									a(href='/telefonica.html') Telefónica
+									| )
+									br
+									| • Confluence (for Talkdesk)
+									br
+									| • Sketch Cloud (for 
+									a(href='/elespanol.html') El Español
+									| )
+
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Scaling the system
+						.box__body
+							p.font__small-1
+								| Once the first version existed the real work began. Different products needed different plans.
+								br
+								br
+								| • For smaller teams a simple library and a short guide was enough
+								br
+								| • For bigger ones I created a migration plan, support sessions, deprecation process and a feedback loop
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Getting buy-in
+						.box__body
+							p.font__small-1
+								| I showed teams before and after implementing the system how much pain it removed:
+								br
+								br
+								| • fewer inconsistencies
+								br
+								| • faster development
+								br
+								| • shared vocabulary
+								br
+								| • easier onboarding
+								br
+								| • fewer UI bugs
+								br
+								br
+								| Once people realised it actually made their life easier adoption happened on its own.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Rollout
+						.box__body
+							p.font__small-1
+								| Different products needed different plans.
+								br
+								br
+								| • For smaller teams a simple library and a short guide was enough
+								br
+								| • For bigger ones I created a migration plan, support sessions and a feedback loop
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Keeping it alive
+						.box__body
+							p.font__small-1
+								| A design system dies fast if nobody takes care of it.
+								br
+								br
+								| So I added a small routine of reviews:
+								br
+								br
+								| • check new components
+								br
+								| • audit the library
+								br
+								| • clean duplicates
+								br
+								| • refactor when the product changed
+								br
+								br
+								| Nothing fancy. Just consistent care.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Examples from past projects
+						.box__body
+							p.font__small-1
+								| Without showing any private UI here's the type of work I did:
+								br
+								br
+								| • 
+								a(href="/elespanol.html") El Español
+								| : foundations and reusable pieces for a fast newsroom workflow
+								br
+								| • 
+								a(href="/telefonica.html") Telefónica
+								| : scaled the system across multiple products and teams
+								br
+								| • 
+								a(href="/clutch.html") Clutch
+								| : built tokens, core components and the early documentation
+								br
+								| • 
+								a(href="/metallicus.html") Metallicus
+								| : created patterns for complex admin flows and aligned design and engineering so components behaved the same in Figma and in code
+								br
+								| • 
+								a(href="/bitloops.html") Bitloops
+								| : helped structure a system that supported a product with heavy engineering needs
+								br
+								| • 
+								a(href="/sphera.html") Sphera
+								| : cleaned patterns and unified behaviours across different parts of the platform
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Impact
+						.box__body
+							p.font__small-1
+								| The results were pretty consistent:
+								br
+								br
+								| • faster feature development
+								br
+								| • fewer inconsistencies
+								br
+								| • fewer redesigns
+								br
+								| • less engineering time wasted
+								br
+								| • predictable UI
+								br
+								| • smoother onboarding
+								br
+								br
+								| Sometimes the number of UI bugs dropped.
+								br
+								br
+								| Sometimes designers stopped recreating the same stuff every week.
+								br
+								br
+								| Sometimes both.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 What I learned
+						.box__body
+							p.font__small-1
+								| A design system is not just components.
+								br
+								br
+								| It's alignment. It's clarity. It's teams agreeing on what "good" looks like.
+								br
+								br
+								| The structure matters but adoption matters more.
+								br
+								br
+								| If people trust the system everything else is easier: design, code, decisions, releases.
+		include ../includes/footer

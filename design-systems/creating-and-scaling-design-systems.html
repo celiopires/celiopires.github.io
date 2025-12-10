@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J6NQLY7PN6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-J6NQLY7PN6');
+      
+    </script>
+    <!-- GLOBAL-->
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html">
+    <meta http-equiv="content-language" content="en-US">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="max-image-preview:large">
+    <meta name="rating" content="general">
+    <meta rel="canonical" href="https://celiopires.com/design-systems/creating-and-scaling-design-systems">
+    <meta name="author" content="Célio Pires">
+    <link rel="icon" type="image/png" href="https://celiopires.com/assets/images/favicon.png">
+    <title>Célio Pires - Creating and Scaling Design Systems</title>
+    <meta name="description" content="I've worked on a bunch of products over the years and most of them had the same issue. As teams grew the UI started to drift. A design system became the only way to keep things clean and predictable.">
+    <!-- FACEBOOK-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Célio Pires - Creating and Scaling Design Systems">
+    <meta property="og:description" content="I've worked on a bunch of products over the years and most of them had the same issue. As teams grew the UI started to drift. A design system became the only way to keep things clean and predictable.">
+    <meta property="og:image" content="https://celiopires.com/assets/images/about/celio-photo-square.jpg?v=002.002">
+    <!-- Twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Célio Pires - Creating and Scaling Design Systems">
+    <meta name="twitter:description" content="I've worked on a bunch of products over the years and most of them had the same issue. As teams grew the UI started to drift. A design system became the only way to keep things clean and predictable.">
+    <meta name="twitter:image" content="https://celiopires.com/assets/images/about/celio-photo-square.jpg">
+    <meta name="twitter:site" content="@celiows">
+    <!-- Styles and JS-->
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="content-style-type" content="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="/assets/css/styles.css?v=6f09ff73">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="header__nav"> <a class="home font__small-1" href="/">Célio</a>
+          <ol>
+            <li><a class="about__header font__small-2" href="/about.html">About</a></li>
+            <li> 
+              <div class="dropdown"><a class="about__header font__small-2">Projects</a>
+                <ul class="dropdownMenu">
+                  <li><a class="font__small-1" href="/projects.html">View all</a></li>
+                  <li><a class="font__small-1" href="/index.html#selected-projects">Selected projects</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="about__header font__small-2" href="/contact.html">Contact</a></li>
+          </ol>
+        </div>
+      </div>
+    </header>
+    <div class="design-systems" id="DesignSystems"></div>
+    <div class="container">
+      <!-- Intro Header-->
+      <div class="container__intro" id="intro__header">
+        <div class="intro__header--bottom">
+          <div class="role__industry">
+            <ol>
+              <li>
+                <div class="font__small-3">Author</div>
+                <div class="font__small-3">Célio Pires</div>
+              </li>
+              <li>
+                <div class="font__small-3">Published</div>
+                <div class="font__small-3">2025</div>
+              </li>
+              <li>
+                <div class="font__small-3">Category</div>
+                <div class="font__small-3">Design Systems</div>
+              </li>
+            </ol>
+          </div>
+          <h1 class="font__large-2">Creating and scaling design systems</h1>
+          <p class="font__medium-3">I've worked on a bunch of products over the years and most of them had the same issue. As teams grew the UI started to drift. One team shipped something new, another team updated an old screen, someone copied an old button from a file from 2019… you know how it goes. A design system became the only way to keep things clean and predictable.</p>
+          <div class="picture__center--full-screen"><img src="/assets/images/design-systems/creating-and-scaling-design-systems/ds-hero.webp" alt="Design Systems - Creating and Scaling">
+            <div class="caption">
+              <div class="font__small-3">Design Systems - Creating and Scaling</div>
+            </div>
+          </div>
+        </div>
+        <div class="container__box">
+          <div class="paragraph__box--1col">
+            <div class="box__header-small">
+              <h2 class="font__small-2">Why the system was needed</h2>
+            </div>
+            <div class="box__body">
+              <p class="font__small-1">Across projects like El Español, Telefónica, Commons or Metallicus the patterns were always the same:<br><br>• components duplicated in random places<br>• design choices changing from team to team<br>• engineers rebuilding the same UI again and again<br>• reviews taking forever because nothing matched<br>• design debt piling up quietly<br><br>So the system wasn't just a "nice tool". It was the thing that stopped the chaos.</p>
+            </div>
+          </div>
+          <div class="paragraph__box--1col">
+            <div class="box__header-small">
+              <h2 class="font__small-2">My role</h2>
+            </div>
+            <div class="box__body">
+              <p class="font__small-1">I usually took the lead on defining the structure, building the core components, getting teams aligned, making sure the system didn't die after two months.<br><br>Honestly half of the job was communication. The other half was Figma.</p>
+            </div>
+          </div>
+          <div class="paragraph__box--1col">
+            <div class="box__header-small">
+              <h2 class="font__small-2">How I structured the system</h2>
+            </div>
+            <div class="box__body">
+              <p class="font__small-1">The approach changed a bit depending on the product size but the base looked like this.</p>
+            </div>
+          </div>
+          <div class="paragraph__box--2col">
+            <div class="paragraph_box--1">
+              <div class="box__header-small">
+                <h2 class="font__small-2">1. Tokens and foundations</h2>
+              </div>
+              <div class="box__body">
+                <p class="font__small-1">I always started with the basics. Design System principles, spacing, colours, typography, grids, borders.<br><br>Then the accessibility part came in right away because it’s not something you “add later”. Contrast ratios that actually pass, font sizes that don’t force people to zoom, line heights that stay readable, touch targets that meet standards.<br><br>If these weren't stable nothing else would work.</p>
+              </div>
+            </div>
+            <div class="paragraph_box--2">
+              <div class="image__box inside_content"><img src="/assets/images/design-systems/creating-and-scaling-design-systems/structure-01.webp" alt="Design Systems - Creating and Scaling"></div>
+            </div>
+          </div>
+          <div class="paragraph__box--2col">
+            <div class="paragraph_box--1">
+              <div class="box__header-small">
+                <h2 class="font__small-2">2. Core components</h2>
+              </div>
+              <div class="box__body">
+                <p class="font__small-1">Buttons, inputs, dropdowns, cards, navigation.<br><br>Clean naming, predictable logic and variants that matched real use cases instead of imaginary ones.
+                  On <a href="/elespanol.html">El Español</a> I even pushed for a BEM-style naming convention which helped designers and engineers speak the same language. It kept components consistent and made the whole system easier to scale across teams fast workflow.
+                </p>
+              </div>
+            </div>
+            <div class="paragraph_box--2">
+              <div class="image__box inside_content"><img src="/assets/images/design-systems/creating-and-scaling-design-systems/structure-02.webp" alt="Design Systems - Creating and Scaling"></div>
+            </div>
+          </div>
+          <div class="paragraph__box--2col">
+            <div class="paragraph_box--1">
+              <div class="box__header-small">
+                <h2 class="font__small-2">3. Patterns</h2>
+              </div>
+              <div class="box__body">
+                <p class="font__small-1">For bigger products like Telefónica or Metallicus I added patterns on top.<br><br>Forms, filters, tables, dashboards.<br><br>These were the pieces teams used every day so getting them right saved a lot of headaches. I also made sure the patterns weren’t just pretty but actually worked with real data, edge cases and weird states that only show up in production. This is the level where teams start saving time.</p>
+              </div>
+            </div>
+            <div class="paragraph_box--2">
+              <div class="image__box inside_content"><img src="/assets/images/design-systems/creating-and-scaling-design-systems/structure-03.webp" alt="Design Systems - Creating and Scaling"></div>
+            </div>
+          </div>
+          <div class="paragraph__box--2col">
+            <div class="paragraph_box--1">
+              <div class="box__header-small">
+                <h2 class="font__small-2">4. Documentation</h2>
+              </div>
+              <div class="box__body"></div>
+              <p class="font__small-1">For teams like Metallicus and Commons I worked closely with developers to map Figma structure into their world.<br><br>Even when the company didn't use Storybook the goal was the same: predictable components that engineers could rely on.</p>
+            </div>
+            <div class="paragraph_box--2">
+              <div class="box__header-small">
+                <h2 class="font__small-2">5. Engineering alignment</h2>
+              </div>
+              <div class="box__body">
+                <p class="font__small-1">Every component came with clear usage notes.<br><br>When to use it, when not to use it, behaviour rules, accessibility basics.<br><br>Some of the most commons tools to keep the documentation updated were:<br>• Figma (for <a href="/bitloops.html">Bitloops</a>, <a href="/commons.html">Commons</a>, <a href="/sphera.html">Sphera</a>)<br>• Zepelin Docs (for <a href="/telefonica.html">Telefónica</a>)<br>• Confluence (for Talkdesk)<br>• Sketch Cloud (for <a href="/elespanol.html">El Español</a>)</p>
+              </div>
+            </div>
+          </div>
+          <div class="paragraph__box--1col">
+            <div class="box__header-small">
+              <h2 class="font__small-2">Scaling the system</h2>
+            </div>
+            <div class="box__body">
+              <p class="font__small-1">Once the first version existed the real work began. Different products needed different plans.<br><br>• For smaller teams a simple library and a short guide was enough<br>• For bigger ones I created a migration plan, support sessions, deprecation process and a feedback loop</p>
+            </div>
+          </div>
+          <div class="paragraph__box--1col">
+            <div class="box__header-small">
+              <h2 class="font__small-2">Getting buy-in</h2>
+            </div>
+            <div class="box__body">
+              <p class="font__small-1">I showed teams before and after implementing the system how much pain it removed:<br><br>• fewer inconsistencies<br>• faster development<br>• shared vocabulary<br>• easier onboarding<br>• fewer UI bugs<br><br>Once people realised it actually made their life easier adoption happened on its own.</p>
+            </div>
+          </div>
+          <div class="paragraph__box--1col">
+            <div class="box__header-small">
+              <h2 class="font__small-2">Rollout</h2>
+            </div>
+            <div class="box__body">
+              <p class="font__small-1">Different products needed different plans.<br><br>• For smaller teams a simple library and a short guide was enough<br>• For bigger ones I created a migration plan, support sessions and a feedback loop</p>
+            </div>
+          </div>
+          <div class="paragraph__box--1col">
+            <div class="box__header-small">
+              <h2 class="font__small-2">Keeping it alive</h2>
+            </div>
+            <div class="box__body">
+              <p class="font__small-1">A design system dies fast if nobody takes care of it.<br><br>So I added a small routine of reviews:<br><br>• check new components<br>• audit the library<br>• clean duplicates<br>• refactor when the product changed<br><br>Nothing fancy. Just consistent care.</p>
+            </div>
+          </div>
+          <div class="paragraph__box--1col">
+            <div class="box__header-small">
+              <h2 class="font__small-2">Examples from past projects</h2>
+            </div>
+            <div class="box__body">
+              <p class="font__small-1">Without showing any private UI here's the type of work I did:<br><br>• <a href="/elespanol.html">El Español</a>: foundations and reusable pieces for a fast newsroom workflow<br>• <a href="/telefonica.html">Telefónica</a>: scaled the system across multiple products and teams<br>• <a href="/clutch.html">Clutch</a>: built tokens, core components and the early documentation<br>• <a href="/metallicus.html">Metallicus</a>: created patterns for complex admin flows and aligned design and engineering so components behaved the same in Figma and in code<br>• <a href="/bitloops.html">Bitloops</a>: helped structure a system that supported a product with heavy engineering needs<br>• <a href="/sphera.html">Sphera</a>: cleaned patterns and unified behaviours across different parts of the platform</p>
+            </div>
+          </div>
+          <div class="paragraph__box--1col">
+            <div class="box__header-small">
+              <h2 class="font__small-2">Impact</h2>
+            </div>
+            <div class="box__body">
+              <p class="font__small-1">The results were pretty consistent:<br><br>• faster feature development<br>• fewer inconsistencies<br>• fewer redesigns<br>• less engineering time wasted<br>• predictable UI<br>• smoother onboarding<br><br>Sometimes the number of UI bugs dropped.<br><br>Sometimes designers stopped recreating the same stuff every week.<br><br>Sometimes both.</p>
+            </div>
+          </div>
+          <div class="paragraph__box--1col">
+            <div class="box__header-small">
+              <h2 class="font__small-2">What I learned</h2>
+            </div>
+            <div class="box__body">
+              <p class="font__small-1">A design system is not just components.<br><br>It's alignment. It's clarity. It's teams agreeing on what "good" looks like.<br><br>The structure matters but adoption matters more.<br><br>If people trust the system everything else is easier: design, code, decisions, releases.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container__box"> 
+        <div class="goodbye">
+          <ul>
+            <li><a class="font__small-1" target="_blank" href="https://linkedin.com/in/celiopires"><i class="ri-linkedin-fill"> </i>Linkedin</a></li>
+            <li><a class="font__small-1" target="_blank" href="https://twitter.com/celiows"><i class="ri-twitter-fill"></i>X</a></li>
+            <li><a class="font__small-1" target="_blank" href="https://instagram.com/celiows"><i class="ri-instagram-fill"></i>Instagram</a></li>
+            <div class="font__small-3">Copyright © <span id="copyright-year"></span> Célio Pires. All rights reserved</div>
+          </ul>
+        </div>
+      </div>
+      <script src="/assets/js/scripts.js"></script>
+    </footer>
+  </body>
+</html>

@@ -312,6 +312,15 @@
     margin-top: $_int-80;
     margin-bottom: $_int-80;
   }
+  &.inside_content {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: auto;
+    &.caption {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
   img {
     width: 100%;
     display: block;

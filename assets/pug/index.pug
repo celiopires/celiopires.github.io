@@ -40,7 +40,7 @@ html
 							a(href="about.html")
 								.pic
 							.description
-								h2.font__medium-3
+								h2.font__small-1
 									| Hi, I’m Célio.
 									| I’m a Product Designer and Lead who believes that if a user has to think about how to use an app, 
 									| I haven't done my job. I love strict Design Systems but I love solving human problems even more. 
@@ -55,5 +55,29 @@ html
 
 			// Other work
 			include includes/projects/other-work
+
+			// Latest Articles
+			.container__box
+				//- BOX HEADER
+				.box__header
+					h3.font__large-2 Latest Articles
+					p.font__small-1 
+						| Insights and learnings from building design systems across different products and teams.
+				//- BOX BODY
+				.box__body
+					.selected-projects
+						.portfolio-card
+							a(href='design-systems/creating-and-scaling-design-systems.html')
+								.thumbnail
+									img(src="assets/images/design-systems/creating-and-scaling-design-systems/ds-hero.webp", alt="Creating and Scaling Design Systems article")
+								.card
+									.card-details
+										.card-item
+											.card-item-title
+												.font__medium-3 Creating and Scaling Design Systems
+												.font__small-2 Design Systems  ·  Best Practices
+												.font__small-3 2025
+											.card-icon
+												.ri-arrow-right-line
 
 		include includes/footer

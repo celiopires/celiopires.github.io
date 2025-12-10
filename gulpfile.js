@@ -1,6 +1,9 @@
 // gulp
 const gulp = require("gulp");
 const {src, dest, watch} = require("gulp");
+const fs = require("fs");
+const crypto = require("crypto");
+const path = require("path");
 
 const pug = require("gulp-pug");
 
@@ -10,10 +13,29 @@ const sourcemaps = require("gulp-sourcemaps");
 const sitemap = require('gulp-sitemap');
 const save = require('gulp-save');
 
+// Generate CSS version hash
+function getCssVersion() {
+    const cssPath = path.join(__dirname, "assets/css/styles.css");
+    if (fs.existsSync(cssPath)) {
+        const cssContent = fs.readFileSync(cssPath, "utf8");
+        const hash = crypto.createHash("md5").update(cssContent).digest("hex");
+        // Return first 8 characters of hash for shorter version string
+        return hash.substring(0, 8);
+    }
+    // Fallback to timestamp if CSS doesn't exist yet
+    return Date.now().toString(36);
+}
+
 // HTML
 function html() {
-    return src("assets/pug/*.pug")
-    .pipe(pug({pretty: true}))
+    const cssVersion = getCssVersion();
+    return src("assets/pug/**/*.pug")
+    .pipe(pug({
+        pretty: true,
+        locals: {
+            cssVersion: cssVersion
+        }
+    }))
     .pipe(dest("./"))
 }
 
@@ -48,13 +70,13 @@ function css() {
 
 exports.css = css;
 
-// Build task - compiles everything
-const build = gulp.series(html, css, sitemapxml);
+// Build task - compiles everything (CSS first, then HTML, then sitemap)
+const build = gulp.series(css, html, sitemapxml);
 exports.build = build;
 
 // Watch files
 module.exports.default = function () {
-    watch("assets/scss/**/*.scss", css);
+    watch("assets/scss/**/*.scss", gulp.series(css, html));
     watch("assets/pug/**/*.pug", html);
     watch("*.html", sitemapxml);
 }
