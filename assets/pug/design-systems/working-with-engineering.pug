@@ -1,0 +1,163 @@
+doctype html
+html
+	head
+		- const pageSegment = "design-systems/working-with-engineering"
+		- const projectTitle = "Célio Pires - Working with Engineering"
+		- const projectDescription = "Design systems only work when design and engineering move in the same direction. On projects like Bitloops, Clutch and Metallicus I learned that early alignment saves everyone time."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include ../includes/head
+	body
+		include ../includes/nav
+		#DesignSystems.design-systems
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Author
+								div.font__small-3 Célio Pires
+							li
+								div.font__small-3 Published
+								div.font__small-3 2024
+							li
+								div.font__small-3 Category
+								div.font__small-3 Design Systems
+					h1.font__large-2 Working with engineering
+					p.font__medium-3
+						| Design systems only work when design and engineering move in the same direction. On projects like Bitloops, Clutch and Metallicus I learned that early alignment saves everyone time.
+					.picture__center--full-screen
+						img(src='/assets/images/design-systems/working-with-engineers/working-with-engineers.webp' alt='Design Systems - Working with Engineering')
+						.caption
+							.font__small-3 Design Systems - Working with Engineering
+				.container__box
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Early alignment
+						.box__body
+							p.font__small-1
+								| Design systems only work when design and engineering move in the same direction. On projects like 
+								a(href='/bitloops.html') Bitloops
+								| , 
+								a(href='/clutch.html') Clutch
+								|  and 
+								a(href='/metallicus.html') Metallicus
+
+					//- Mapping Figma to code and Component specs
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Mapping Figma to code
+							.box__body
+								p.font__small-1
+									| I usually started by sitting with the engineering leads to map how Figma should behave in code.
+									br
+									br
+									| We aligned on:
+									br
+									| • naming conventions
+									br
+									| • component states
+									br
+									| • constraints and layouts
+									br
+									| • variant structures
+									br
+									br
+									| Nothing glamorous, just clarity. This upfront work meant components translated cleanly from design to code without confusion or rework.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 Component specs
+							.box__body
+								p.font__small-1
+									| Even when teams didn't use Storybook we still made predictable component specs.
+									br
+									br
+									| Every component came with:
+									br
+									| • clear usage guidelines
+									br
+									| • behavior rules
+									br
+									| • edge cases and states
+									br
+									| • accessibility requirements
+									br
+									br
+									| The goal was always the same: engineers could rely on the specs to build without guessing.
+
+					//- Documentation and Process
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Documentation
+							.box__body
+								p.font__small-1
+									| Zeroheight helped with documentation and Jira kept things tidy.
+									br
+									br
+									| Documentation wasn't just about showing components. It was about making sure engineers knew when to use what, how components behaved, and what to do when something didn't fit.
+									br
+									br
+									| Clear docs meant fewer questions, faster implementation, and less back-and-forth.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 Process
+							.box__body
+								p.font__small-1
+									| Jira kept things organized and tracked.
+									br
+									br
+									| We used it to:
+									br
+									| • track component requests
+									br
+									| • manage updates and changes
+									br
+									| • document decisions
+									br
+									| • keep everyone aligned
+									br
+									br
+									| Simple, but it kept the system moving forward without chaos.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Trust and collaboration
+						.box__body
+							p.font__small-1
+								| Engineers always had space to challenge decisions. If something felt heavy or confusing we fixed it together. That's how trust builds.
+								br
+								br
+								| When an engineer said "this doesn't make sense" or "this is too complex" I listened. Sometimes the design needed to change. Sometimes we needed a different approach. The system wasn't just my vision — it was ours.
+								br
+								br
+								| And when engineers trust the system it becomes part of their workflow instead of something they avoid. They start suggesting improvements. They become advocates. They help keep it alive.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 What I learned
+						.box__body
+							p.font__small-1
+								| Design systems only work when design and engineering move in the same direction.
+								br
+								br
+								| Early alignment saves everyone time. Clear specs prevent confusion. Trust makes the system real.
+								br
+								br
+								| When engineers trust the system, everything else is easier: implementation, maintenance, evolution. The system becomes part of how the team works, not something they work around.
+		include ../includes/footer

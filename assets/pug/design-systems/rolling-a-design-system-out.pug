@@ -1,0 +1,174 @@
+doctype html
+html
+	head
+		- const pageSegment = "design-systems/rolling-a-design-system-out"
+		- const projectTitle = "Célio Pires - Rolling a Design System out"
+		- const projectDescription = "Rolling out a system is never \"drop the library and pray\". Each product needed something different."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include ../includes/head
+	body
+		include ../includes/nav
+		#DesignSystems.design-systems
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Author
+								div.font__small-3 Célio Pires
+							li
+								div.font__small-3 Published
+								div.font__small-3 2022
+							li
+								div.font__small-3 Category
+								div.font__small-3 Design Systems
+					h1.font__large-2 Rolling it out
+					p.font__medium-3
+						| Rolling out a system is never "drop the library and pray". Each product needed something different.
+					.picture__center--full-screen
+						img(src='/assets/images/design-systems/rolling-out/rolling-out.webp' alt='Design Systems - Rolling it out')
+						.caption
+							.font__small-3 Design Systems - Rolling it out
+				.container__box
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Different products, different plans
+						.box__body
+							p.font__small-1
+								| Rolling out a system is never "drop the library and pray". Each product needed something different.
+								br
+								br
+								| On smaller projects like 
+								a(href='/clutch.html') Clutch
+								|  a clean Figma library and a short guide was enough.
+								br
+								br
+								| But for bigger ones like 
+								a(href='/telefonica.html') Telefónica
+								| , 
+								a(href='/sphera.html') Sphera
+								|  or 
+								a(href='/commons.html') Commons
+								|  I needed an actual plan.
+
+					//- Smaller projects and Bigger projects
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Smaller projects
+							.box__body
+								p.font__small-1
+									| On smaller projects like 
+									a(href='/clutch.html') Clutch
+									|  a clean Figma library and a short guide was enough.
+									br
+									br
+									| The team was small, the product was focused, and adoption happened naturally. A well-organized library and clear usage guidelines were all that was needed to get everyone on the same page.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 Bigger projects
+							.box__body
+								p.font__small-1
+									| But for bigger ones like 
+									a(href='/telefonica.html') Telefónica
+									| , 
+									a(href='/sphera.html') Sphera
+									|  or 
+									a(href='/commons.html') Commons
+									|  I needed an actual plan.
+									br
+									br
+									| Multiple teams, complex products, and existing patterns meant the rollout needed structure: clear documentation, training sessions, migration tracking, and support.
+
+					//- Documentation and Training
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Documentation
+							.box__body
+								p.font__small-1
+									| Clear docs on Zeroheight. Quick Loom videos. Usage rules. "When to use it", "when not to."
+									br
+									br
+									| Documentation wasn't just a list of components. It included:
+									br
+									| • clear usage guidelines
+									br
+									| • "when to use it" and "when not to"
+									br
+									| • quick video tutorials
+									br
+									| • behavior rules and edge cases
+									br
+									br
+									| When people know exactly how to start they adopt the system without you pushing it.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 Training
+							.box__body
+								p.font__small-1
+									| Then short training sessions so people knew how to migrate screens without breaking flows.
+									br
+									br
+									| These sessions covered:
+									br
+									| • how to use the library
+									br
+									| • migration strategies
+									br
+									| • common pitfalls to avoid
+									br
+									| • how to maintain existing flows
+									br
+									br
+									| Hands-on training meant teams could start using the system immediately without breaking what already worked.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Migration tracking
+						.box__body
+							p.font__small-1
+								| For large migrations everything lived in Jira — what was updated, what was pending and what needed review. It kept the rollout controlled instead of chaotic.
+								br
+								br
+								| Jira tracked:
+								br
+								| • what screens were updated
+								br
+								| • what was still pending
+								br
+								| • what needed review
+								br
+								| • blockers and dependencies
+								br
+								br
+								| This visibility kept everyone aligned and the rollout moving forward without chaos. Teams knew what to work on, what was done, and what was next.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 What I learned
+						.box__body
+							p.font__small-1
+								| Rolling out a system is never "drop the library and pray".
+								br
+								br
+								| Each product needed something different. Smaller teams needed simplicity. Bigger teams needed structure. Clear documentation, training, and tracking made the difference between adoption and abandonment.
+								br
+								br
+								| When people know exactly how to start they adopt the system without you pushing it. The rollout becomes a natural part of their workflow instead of an extra burden.
+		include ../includes/footer

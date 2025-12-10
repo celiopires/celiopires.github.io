@@ -1,0 +1,158 @@
+doctype html
+html
+	head
+		- const pageSegment = "design-systems/keeping-a-design-system-alive"
+		- const projectTitle = "Célio Pires - Keeping a Design System alive"
+		- const projectDescription = "Most design systems die after the first release. Everyone's excited for two weeks and then the product grows and the system stays still. Nothing fancy. Just consistent care."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include ../includes/head
+	body
+		include ../includes/nav
+		#DesignSystems.design-systems
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Author
+								div.font__small-3 Célio Pires
+							li
+								div.font__small-3 Published
+								div.font__small-3 2024
+							li
+								div.font__small-3 Category
+								div.font__small-3 Design Systems
+					h1.font__large-2 Keeping a Design System alive
+					p.font__medium-3
+						| Most design systems die after the first release. Everyone's excited for two weeks and then the product grows and the system stays still. Nothing fancy. Just consistent care.
+					.picture__center--full-screen
+						img(src='/assets/images/design-systems/alive/alive.webp' alt='Design Systems - Keeping a Design System alive')
+						.caption
+							.font__small-3 Design Systems - Keeping a Design System alive
+				.container__box
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 The problem
+						.box__body
+							p.font__small-1
+								| Most design systems die after the first release. Everyone's excited for two weeks and then the product grows and the system stays still.
+								br
+								br
+								| Components get outdated. Patterns drift. New features don't use the system. Teams start building their own versions again. The system becomes a museum piece instead of a working tool.
+								br
+								br
+								| To avoid that I added simple maintenance loops: monthly reviews, new component proposals, cleaning duplicates, quick audits.
+
+					//- Maintenance loops and Examples
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Maintenance loops
+							.box__body
+								p.font__small-1
+									| Simple routines that kept the system relevant:
+									br
+									br
+									| • monthly reviews
+									br
+									| • new component proposals
+									br
+									| • cleaning duplicates
+									br
+									| • quick audits
+									br
+									br
+									| Nothing fancy. Just consistent care. These small, regular check-ins prevented the system from drifting and kept it aligned with how the product actually evolved.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 Examples
+							.box__body
+								p.font__small-1
+									| Different products needed different focus:
+									br
+									br
+									| • At 
+									a(href='/bitloops.html') Bitloops
+									|  this meant syncing design and code often
+									br
+									| • At 
+									a(href='/sphera.html') Sphera
+									|  it meant checking that patterns still matched new dashboards
+									br
+									| • At 
+									a(href='/commons.html') Commons
+									|  it meant updating flows as rules changed
+									br
+									br
+									| Each product had unique needs, but the principle was the same: keep the system in sync with reality.
+
+					//- Tools and Communication
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Tools
+							.box__body
+								p.font__small-1
+									| The right tools made maintenance easier:
+									br
+									br
+									| • Figma branches helped with safe updates
+									br
+									| • Jira kept track of changes
+									br
+									| • Loom updates made communication easy
+									br
+									| • A shared changelog kept everyone aligned
+									br
+									br
+									| These tools weren't fancy, but they made it easy to maintain the system without chaos. Updates were safe, changes were tracked, communication was clear.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 Communication
+							.box__body
+								p.font__small-1
+									| Keeping everyone informed was key:
+									br
+									br
+									| • Loom updates made communication easy
+									br
+									| • A shared changelog kept everyone aligned
+									br
+									| • Regular reviews meant teams knew what was changing
+									br
+									| • Clear documentation prevented confusion
+									br
+									br
+									| When people know what's happening, they trust the system. When they trust it, they use it. When they use it, it stays alive.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 What I learned
+						.box__body
+							p.font__small-1
+								| A system is a small product living inside the big one. If you look after it it stays useful. If you ignore it it disappears.
+								br
+								br
+								| Most design systems die after the first release because nobody takes care of them. The product grows, the system doesn't, and teams drift away.
+								br
+								br
+								| Simple maintenance loops prevent that. Monthly reviews, cleaning duplicates, syncing with code, updating patterns. Nothing fancy. Just consistent care.
+								br
+								br
+								| When you treat the system like a product — with regular updates, clear communication, and ongoing attention — it stays alive. It becomes part of how teams work instead of something they work around.
+		include ../includes/footer

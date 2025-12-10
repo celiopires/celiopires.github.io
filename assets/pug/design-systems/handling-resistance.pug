@@ -1,0 +1,162 @@
+doctype html
+html
+	head
+		- const pageSegment = "design-systems/handling-resistance"
+		- const projectTitle = "Célio Pires - Handling Resistance"
+		- const projectDescription = "There's always a moment where someone says \"this component doesn't fit my team's flow.\" Most resistance is not about the component. It's about trust."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include ../includes/head
+	body
+		include ../includes/nav
+		#DesignSystems.design-systems
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Author
+								div.font__small-3 Célio Pires
+							li
+								div.font__small-3 Published
+								div.font__small-3 2023
+							li
+								div.font__small-3 Category
+								div.font__small-3 Design Systems
+					h1.font__large-2 Handling resistance
+					p.font__medium-3
+						| There's always a moment where someone says "this component doesn't fit my team's flow." Most resistance is not about the component. It's about trust.
+					.picture__center--full-screen
+						img(src='/assets/images/design-systems/resistance/resistance.webp' alt='Design Systems - Handling Resistance')
+						.caption
+							.font__small-3 Design Systems - Handling Resistance
+				.container__box
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 The moment of resistance
+						.box__body
+							p.font__small-1
+								| There's always a moment where someone says "this component doesn't fit my team's flow."
+								br
+								br
+								| It happened at 
+								a(href='/elespanol.html') El Español
+								|  with newsroom modules.
+								br
+								| At 
+								a(href='/commons.html') Commons
+								|  inside admin workflows.
+								br
+								| At 
+								a(href='/metallicus.html') Metallicus
+								|  when inputs became tricky.
+								br
+								br
+								| I never dismissed it. I asked for the real use case. Sometimes we needed a new variant. Sometimes the flow was unusual and the system wasn't wrong, the logic was. Sometimes we just explained the reasoning behind the decision.
+
+					//- Real examples and The approach
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Real examples
+							.box__body
+								p.font__small-1
+									| Resistance showed up in different ways:
+									br
+									br
+									| • At 
+									a(href='/elespanol.html') El Español
+									|  with newsroom modules that didn't match editorial workflows
+									br
+									| • At 
+									a(href='/commons.html') Commons
+									|  inside admin workflows that had unique requirements
+									br
+									| • At 
+									a(href='/metallicus.html') Metallicus
+									|  when inputs became tricky in complex forms
+									br
+									br
+									| Each case was different, but the pattern was the same: someone needed something the system didn't account for.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 The approach
+							.box__body
+								p.font__small-1
+									| I never dismissed it. I asked for the real use case.
+									br
+									br
+									| The response was always:
+									br
+									| • listen first
+									br
+									| • understand the actual need
+									br
+									| • find the solution together
+									br
+									| • explain the reasoning
+									br
+									br
+									| Sometimes we needed a new variant. Sometimes the flow was unusual and the system wasn't wrong, the logic was. Sometimes we just explained the reasoning behind the decision.
+
+					//- Solutions and Trust
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Solutions
+							.box__body
+								p.font__small-1
+									| The fix depended on the problem:
+									br
+									br
+									| • Sometimes we needed a new variant to handle the edge case
+									br
+									| • Sometimes the flow was unusual and the system wasn't wrong, the logic was
+									br
+									| • Sometimes we just explained the reasoning behind the decision
+									br
+									br
+									| Not every request meant changing the system. Sometimes it meant helping people see how it could work for them.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 Trust
+							.box__body
+								p.font__small-1
+									| Most resistance is not about the component. It's about trust.
+									br
+									br
+									| When someone says "this doesn't work" they're often saying "I don't trust this will work for me." The moment you include people in the fix they switch from resisting the system to defending it.
+									br
+									br
+									| They become advocates. They help others. They keep the system alive.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 What I learned
+						.box__body
+							p.font__small-1
+								| There's always a moment where someone says "this component doesn't fit my team's flow."
+								br
+								br
+								| Most resistance is not about the component. It's about trust.
+								br
+								br
+								| The moment you include people in the fix they switch from resisting the system to defending it. When people feel heard and see their needs addressed, they become the system's strongest advocates. They help others understand it. They keep it relevant.
+								br
+								br
+								| Resistance isn't a problem to solve. It's an opportunity to build trust.
+		include ../includes/footer
