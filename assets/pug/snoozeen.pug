@@ -1,0 +1,167 @@
+doctype html
+html
+	head
+		- const pageSegment = "snoozeen"
+		- const projectTitle = "Célio Pires - Snoozeen"
+		- const projectDescription = "Portuguese business administration on auto-pilot."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include includes/head
+	body
+		include includes/nav
+		#Snoozeen.snoozeen
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Role
+								div.font__small-3 Founder & Product Designer
+							li
+								div.font__small-3 Year
+								div.font__small-3 2023
+							li
+								div.font__small-3 Category
+								div.font__small-3 Fintech / SaaS
+					h1.font__extra-large-1 Snoozeen
+					p.font__medium-3
+						| Portuguese business administration on auto-pilot.
+					.picture__center--full-screen
+						img(src='assets/images/thumbnails/snoozeen-thumbnail-1.webp' alt='Snoozeen - Business administration platform')
+						.caption
+							.font__small-3 Snoozeen - Business administration platform
+			.container__box
+				.paragraph__box--2col
+					.paragraph_box--1
+						.box__header-small
+							h2.font__small-2 Context & Vision
+						.box__body
+							p.font__small-1
+								| Snoozeen was designed as a digital-first accounting and company formation platform tailored specifically for the Portuguese market. It aimed to be the operating system for freelancers and startups, replacing archaic paper processes with a streamlined SaaS interface.
+								br
+								br
+								| The Problem: Opening and managing a business in Portugal is notoriously bureaucratic, slow, and opaque. The Goal: To offer a "Business on Auto-Pilot" experience. From incorporating a company in under 48 hours to automating tax declarations, Snoozeen combined modern software with certified accountancy to handle the heavy lifting.
+					.paragraph_box--2
+						.box__header-small
+							h2.font__small-2 My Role
+						.box__body
+							p.font__small-1
+								| Founder & Product Designer
+								br
+								br
+								| Scope: End-to-End Product Strategy, Branding, UX/UI Design, and Go-To-Market planning.
+								br
+								br
+								| Status: Designed and prototyped. (Project currently paused due to external regulatory hurdles).
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 The Challenge (UX Analysis)
+					.box__body
+						p.font__small-1
+							| The "Paperwork" Barrier
+							br
+							br
+							| The Portuguese market suffers from a massive disconnect between modern digital entrepreneurs and legacy government systems.
+							br
+							br
+							| .1 - Startups struggle to navigate VAT rules, Social Security, and quarterly reports
+							br
+							br
+							| .2 - Users never know "where" their documents are in the approval chain
+							br
+							br
+							| .3 - Entrepreneurs usually need separate tools for invoicing, expense tracking, and communicating with their accountant
+							br
+							br
+							| The User Pain Point: "I want to focus on my product, not on deciphering tax codes or driving to government offices."
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 The Solution
+					.box__body
+						p.font__small-1
+							| Strategic Approach
+							br
+							br
+							| I designed Snoozeen as a Service-as-a-Software (SaaS) wrapper around traditional accounting.
+							br
+							br
+							| The strategy was "100% Online, 100% Transparency."
+							br
+							br
+							| I designed flows to promise initial documentation in <48 hours, compared to the industry standard of weeks.
+							br
+							br
+							| Unlike traditional legacy accountants, Snoozeen was designed to support the modern economy, including Cryptocurrency assets, Multi-currency invoicing (USD/EUR) and digital nomad lifestyles.
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 Design Strategy & Process
+					.box__body
+						p.font__small-1
+							strong Phase 1: The "Service" Design
+							br
+							br
+							| Pricing Transparency: I designed a "Fixed Rate" pricing model (Annual Plans) to eliminate the fear of hourly billing. The UI clearly differentiated between "Individual Business" and "General Partnerships" to guide users to the right legal structure.
+							br
+							br
+							| The "Waitlist" Strategy: Designed a pre-launch landing page focused on "Early Adopter" gamification (Badges, Lifetime discounts) to validate demand before building the backend.
+							br
+							br
+							strong Phase 2: The Dashboard (The Product)
+							br
+							br
+							| The dashboard was designed to answer three questions immediately:
+							br
+							br
+							| - How much money have I made? (Invoicing)
+							br
+							| - What do I owe? (Tax Estimation)
+							br
+							| Is my paperwork done? (Compliance Status)
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 Main Features
+					.box__body
+						p.font__small-1
+							| .1 - Company Formation: A guided wizard to open an LTD or Freelance activity in minutes.
+							br
+							br
+							| .2 - Smart Invoicing: A built-in generator that creates legally compliant invoices with multi-language support.
+							br
+							br
+							| .3 - Crypto-Compatible: Native support for invoicing and tracking cryptocurrency assets alongside Fiat.
+							br
+							br
+							| .4 - Expense Automation: A system to track "Continuous Expenses" to ensure tax deductions are maximized.
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 Materials Used (UI & Branding)
+					.box__body
+						p.font__small-1
+							| Brand Identity: The name "Snoozeen" (Snooze + Zen) dictated the aesthetic.
+							br
+							br
+							| Color Palette: Calming teals and trustworthy deep blues. Avoided the "aggressive red" often used in finance to reduce anxiety.
+							br
+							br
+							| Typography: Clean, sans-serif fonts to make dense legal text readable.
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 Reflection
+					.box__body
+						p.font__small-1
+							| Snoozeen represents a deep dive into Fintech UX and Service Design. While the project faced regulatory bureaucracy that stalled its launch, it proved that there is a massive appetite for user-centric financial tools in Southern Europe. It demonstrated my ability to translate complex legal requirements into simple, beautiful user flows.
+		include includes/footer
