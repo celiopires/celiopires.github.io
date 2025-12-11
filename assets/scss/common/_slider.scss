@@ -7,6 +7,13 @@
           mask-image: linear-gradient(transparent, white, white, white, transparent);
   mask-type: luminance;
   mask-mode: alpha;
+  @media all and (max-width: 768px) {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: none;
+            mask-image: none;
+  }
 }
 .slider__words {
   display: inline-block;
@@ -19,57 +26,93 @@
           animation-timing-function: ease-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  -webkit-animation-duration: 10.5s;
+          animation-duration: 10.5s;
+  @media all and (max-width: 768px) {
+    overflow: hidden;
+    text-align: left;
+  }
 }
 .slider__word {
   display: block;
-  line-height: 1.5em;
+  line-height: 1.5;
+  font-weight: $_light;
   text-align: left;
   width: 100%;
   width: fit-content;
+  // background: linear-gradient(to bottom, $_text-primary, $_neutral05);
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  color: $_text-primary; // Fallback for browsers that don't support background-clip
+  white-space: nowrap;
+  @media all and (max-width: 768px) {
+    text-align: left;
+  }
 }
 
 @-webkit-keyframes wordSlider {
   0%,
-    27% {
+    15% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
-  33%,
-    60% {
-    -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+  18%,
+    33% {
+    -webkit-transform: translateY(-16.67%);
+            transform: translateY(-16.67%);
   }
-  66%,
-    93% {
+  36%,
+    51% {
+    -webkit-transform: translateY(-33.33%);
+            transform: translateY(-33.33%);
+  }
+  54%,
+    69% {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  100% {
-    -webkit-transform: translateY(-75%);
-            transform: translateY(-75%);
+  72%,
+    87% {
+    -webkit-transform: translateY(-66.67%);
+            transform: translateY(-66.67%);
+  }
+  90%,
+    100% {
+    -webkit-transform: translateY(-83.33%);
+            transform: translateY(-83.33%);
   }
 }
 
 @keyframes wordSlider {
   0%,
-    27% {
+    15% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
   }
-  33%,
-    60% {
-    -webkit-transform: translateY(-25%);
-            transform: translateY(-25%);
+  18%,
+    33% {
+    -webkit-transform: translateY(-16.67%);
+            transform: translateY(-16.67%);
   }
-  66%,
-    93% {
+  36%,
+    51% {
+    -webkit-transform: translateY(-33.33%);
+            transform: translateY(-33.33%);
+  }
+  54%,
+    69% {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
-  100% {
-    -webkit-transform: translateY(-75%);
-            transform: translateY(-75%);
+  72%,
+    87% {
+    -webkit-transform: translateY(-66.67%);
+            transform: translateY(-66.67%);
+  }
+  90%,
+    100% {
+    -webkit-transform: translateY(-83.33%);
+            transform: translateY(-83.33%);
   }
 }

@@ -27,7 +27,7 @@
     margin: 0 auto $_int-80 auto;
 	}
 	.font__large-1 {
-		margin-bottom: $_int-40;
+		// margin-bottom: $_int-40;
 		text-align: center;
 	}
 	.font__large-2 {
@@ -67,8 +67,36 @@
 
 	// LANDING LEFT ALIGNED
 	&.landing {
+		display: flex;
+		flex-direction: column;
+		gap: $_int-16;
 		position: relative;
 		margin: $_int-80 auto $_int-80 auto;
+
+		@media all and (max-width: 768px) {
+			max-width: 100%;
+			padding: 0 $_int-16;
+			.font__large-1 {
+				font-size: 48px;
+				text-align: left;
+				> .slider {
+					font-size: 36px;
+				}
+			}
+			.quick__overview {
+				align-items: flex-start;
+				.description {
+					padding-right: 0;
+					padding-left: 0;
+					.font__small-1 {
+						text-align: left;
+					}
+					.font__small-3 {
+						justify-content: flex-start;
+					}
+				}
+			}
+		}
 		@media all and (min-width: 768px) {
 			margin: 20vh auto 20vh auto;
 			animation: 0.8s anim-lineUp ease-out forwards;
@@ -95,10 +123,9 @@
 	.quick__overview {
 		display: flex;
 		align-items: center;
-    flex-direction: column;
-		gap: $_int-40;
+    	flex-direction: column;
 		@media all and (min-width: 768px) {
-			gap: $_int-24;
+			gap: $_int-40;
 			flex-direction: row;
 			align-items: flex-start;
 		}
@@ -108,7 +135,9 @@
 			background-image: url("../images/about/celio-photo-circular.png");
 			background-size: 100%;
 			background-repeat: no-repeat;
+			display: none;
 			@media all and (min-width: 768px) {
+				display: block;
 				margin-top: 10px;
 				&:hover {
 					opacity: 0.8;
@@ -118,18 +147,7 @@
 		.description {
 			display: flex;
 			flex-direction: column;
-			gap: $_int-24;
-			padding-right: $_int-16;
-			padding-left: $_int-16;
-			@media all and (min-width: 375px) {
-				padding-right: $_int-40;
-				padding-left: $_int-40;
-			}
-			@media all and (min-width: 768px) {
-				gap: $_int-8;
-				padding-right: $_int-16;
-				padding-left: $_int-16;
-			}
+			gap: $_int-16;
 			.font__medium-3 {
 				@media all and (min-width: 768px) {
 					text-align: left;
