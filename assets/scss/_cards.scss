@@ -93,12 +93,21 @@ body {
 }
 
 .portfolio-card {
+    // Mobile: image left, text right
+    a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: $_int-16;
+    }
+    
     .thumbnail {
         position: relative;
         overflow: hidden;
         border-radius: 24px;
         margin: 0;
         padding: 0;
+        max-width: 160px;
         &::before {
             content: "";
             display: block;
@@ -131,7 +140,59 @@ body {
             outline: 0;
         }
     }
+    
     @media all and (min-width: 768px) {
+        a {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .thumbnail {
+            width: 100%;
+            max-width: 100%;
+        }
+        /*Animation*/
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: transform;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        &:hover {
+            /*Animation*/
+            -webkit-transform: scale(1.010);
+            -ms-transform: scale(1.010);
+            transform: scale(1.010);
+            .card-icon {
+                display: block;
+                color: $_text-primary;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: $_background-secondary;
+                z-index: -1;
+                border-radius: 24px;
+                -webkit-transform: scale(1.08);
+                -ms-transform: scale(1.08);
+                transform: scale(1.08);
+            }
+        }
+    }
+    
+    // Desktop: keep current behavior (same as tablet layout)
+    @media all and (min-width: 1024px) {
+        a {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .thumbnail {
+            width: 100%;
+        }
         /*Animation*/
         -webkit-transition-duration: 0.2s;
         transition-duration: 0.2s;
