@@ -9,74 +9,44 @@ body {
     
     @media all and (min-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
-        gap: $_int-80;
-        
-        // Feature first 4 projects - keep them at full size
-        // & > *:nth-child(1),
-        // & > *:nth-child(2),
-        // & > *:nth-child(3),
-        // & > *:nth-child(4) {
-        //     grid-column: span 1;
-        // }
-        
-        // Shrink projects starting from the 5th
-        // & > *:nth-child(n + 5) {
-        //     grid-column: span 1;
-        // }
+        gap: $_int-40;
     }
-    
-    // Apply shrinking styles to portfolio cards starting from the 5th
-    // & > .portfolio-card:nth-child(n + 5) {
-    //     @media all and (min-width: 768px) {
-    //         a {
-    //             display: flex;
-    //             flex-direction: row;
-    //             align-content: center;
-    //             justify-content: center;
-    //             align-items: center;
-    //             gap: $_int-16;
-    //         }
-    //         .thumbnail {
-    //             display: flex;
-    //             justify-content: center;
-    //             align-items: center;
-    //             align-content: center;
-    //             width: 104px;
-    //             height: 104px;
-    //             flex-shrink: 0;
-    //         }
-    //         .card {
-    //             padding: 0;
-    //         }
-    //         .card .card-details .card-item .card-item-title .font__medium-3 {
-    //             font-size: 18px;
-    //             text-align: left;
-    //         }
-    //         .card .card-details .card-item .card-icon {
-    //             font-size: 13px;
-    //         }
-    //     }
-    // }
 }
 
 // 4-column grid modifier for latest articles
-.selected-projects--grid-4 {
+.selected-projects--grid-3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: $_int-24;
     
     @media all and (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: $_int-32;
     }
     
     @media all and (min-width: 1024px) {
-        grid-template-columns: repeat(4, 1fr);
-        gap: $_int-24;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $_int-40;
     }
     .font__small-1 {
         font-size: 16px;
         font-weight: 700;
+    }
+    
+    // Truncate description to 3 lines
+    .card-item-title .font__small-2 {
+        color: $_text-tertiary;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .portfolio-card:hover {
+        .card-icon {
+            display: none;
+        }
     }
 }
 
