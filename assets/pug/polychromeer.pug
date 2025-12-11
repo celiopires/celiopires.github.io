@@ -1,0 +1,137 @@
+doctype html
+html
+	head
+		- const pageSegment = "polychromeer"
+		- const projectTitle = "Célio Pires - Polychromeer"
+		- const projectDescription = "A design studio I founded in 2022 to offer a leaner alternative to traditional agencies."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include includes/head
+	body
+		include includes/nav
+		#Polychromeer.polychromeer
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Role
+								div.font__small-3 Founder & Principal Designer
+							li
+								div.font__small-3 Year
+								div.font__small-3 2022
+							li
+								div.font__small-3 Category
+								div.font__small-3 Design Studio / Agency
+					h1.font__extra-large-1 Polychromeer
+					p.font__medium-3
+						| A design studio built to eliminate the noise between "Idea" and "Launch."
+					.picture__center--full-screen
+						img(src='assets/images/thumbnails/polychromeer-thumbnail-1.webp' alt='Polychromeer - Design studio website')
+						.caption
+							.font__small-3 Polychromeer - Design studio website
+			.container__box
+				.paragraph__box--2col
+					.paragraph_box--1
+						.box__header-small
+							h2.font__small-2 Context & Vision
+						.box__body
+							p.font__small-1
+								| Polychromeer is a design studio I founded in 2022 to offer a leaner alternative to traditional agencies. After over a decade in the industry, I realized that companies often struggle with bloated processes, endless meetings and "design by committee."
+								br
+								br
+								| The mission is to help companies build without complication. Polychromeer provides direct access to senior design expertise, stripping away the layers of management to deliver high-quality digital products with speed and precision.
+					.paragraph_box--2
+						.box__header-small
+							h2.font__small-2 My Role
+						.box__body
+							p.font__small-1
+								| Founder & Principal Designer
+								br
+								br
+								| Founded: 2022
+								br
+								br
+								| Scope: Creative Direction, Brand Identity, Web Development and Client Management.
+								br
+								br
+								| As a solo founder and full-stack designer, I handled every touchpoint of the business—from defining the service offerings to coding the studio's website itself.
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 The Philosophy
+					.box__body
+						p.font__small-1
+							| The Problem with Traditional Agencies
+							br
+							br
+							| Many startups and SMEs need enterprise-grade design but can't afford the sluggish pace of big firms. They face:
+							br
+							br
+							| .1 - Simple requests turning into month-long projects
+							br
+							br
+							| .2 - The people selling the work aren't the ones doing the work
+							br
+							br
+							| .3 - Fragmented brand experiences across web and product
+							br
+							br
+							| Polychromeer was built on the principle of "Radical Simplicity." The studio is not just a service provider, but a "plug-and-play" product partner. The workflow is designed to be asynchronous, transparent and focused entirely on shipping.
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 Services & Capabilities
+					.box__body
+						p.font__small-1
+							| I utilized my background in Design Systems and Product Strategy to offer a curated suite of services:
+							br
+							br
+							| .1 - Product Design (UX/UI): End-to-end design for SaaS and mobile apps.
+							br
+							br
+							| .2 - Design Systems: Setting up scalable foundations for growing teams (Figma tokenization, component libraries).
+							br
+							br
+							| .3 - Web Architecture: Building performant, responsive marketing sites that convert.
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 Brand & Visual Identity
+					.box__body
+						p.font__small-1
+							| To practice what I preach, the Polychromeer brand itself had to be a masterclass in clarity.
+							br
+							br
+							| I chose a clean, bold aesthetic that emphasizes structure over decoration. The site uses high-contrast typography and ample whitespace to communicate confidence.
+							br
+							br
+							| The Name: "Polychromeer" reflects the spectrum of capabilities—bringing color and life to technical, monochromatic business problems.
+				.picture__center--full-screen
+					img(src='assets/images/thumbnails/polychromeer-thumbnail-2.webp' alt='Polychromeer - Design studio interface')
+					.caption
+						.font__small-3 Polychromeer - Design studio interface
+				.paragraph__box--1col
+					.box__header-small
+						h2.font__small-2 Impact & Growth
+					.box__body
+						p.font__small-1
+							| .1 - Successfully launched and managed multiple client projects autonomously
+							br
+							br
+							| .2 - Proven track record of delivering MVP designs in weeks rather than months
+							br
+							br
+							| .3 - Empowered early-stage companies to secure funding and validate their products through high-fidelity prototyping
+		include includes/footer
