@@ -1,0 +1,156 @@
+doctype html
+html
+	head
+		- const pageSegment = "blog/design-systems-for-humans-and-agents"
+		- const projectTitle = "Célio Pires - Design Systems for Humans and Agents"
+		- const projectDescription = "Your design system now has a second audience. Agents read your tokens, use your components and follow your rules. If they can't understand it, they'll invent their own."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include ../includes/head
+	body
+		include ../includes/nav
+		#DesignSystems.design-systems
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Author
+								div.font__small-3 Célio Pires
+							li
+								div.font__small-3 Published
+								div.font__small-3 2026
+							li
+								div.font__small-3 Category
+								div.font__small-3 Design Systems
+					h1.font__large-2 Design systems for humans and agents
+					p.font__medium-3
+						| Your design system now has a second audience. Agents read your tokens, use your components and follow your rules. If they can't understand it, they'll invent their own.
+				.container__box
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 A new kind of user
+						.box__body
+							p.font__small-1
+								| For years I designed systems for two audiences: designers and engineers. Figma on one side, code on the other, documentation in between.
+								br
+								br
+								| Now there's a third. When an agent builds a screen, it doesn't open Figma or read your docs site. It reads what's in front of it: the token file, the component props, the written rules. Whatever isn't written down doesn't exist for it.
+								br
+								br
+								| The first time I watched an agent build a "card" from scratch next to the card component we already had, I understood. The system wasn't wrong. It just wasn't readable.
+
+					//- One source and Real components
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 One source of truth
+							.box__body
+								p.font__small-1
+									| On
+									a(href='/ensinova') Ensinova
+									|  the tokens live in a machine-readable design spec: colour, type, spacing, radius. People and agents read from the same file.
+									br
+									br
+									| That sounds obvious, but most teams have three versions of their tokens: the Figma one, the code one and the one in someone's head. Humans can live with a bit of drift. They ask a colleague. Agents can't. They pick whichever value they find first.
+									br
+									br
+									| If you want consistent output, there can only be one source.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 Real components, not lookalikes
+							.box__body
+								p.font__small-1
+									| I mirrored the component library into Claude's design environment with its real TypeScript contracts.
+									br
+									br
+									| That one decision changed the quality of everything. AI-generated designs stopped producing things that looked like our buttons. They used our buttons, with the props and variants that actually ship.
+									br
+									br
+									| A mockup built from real components is a step toward production. A mockup built from lookalikes is a translation job someone has to do later.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Write the rules, not just the parts
+						.box__body
+							p.font__small-1
+								| Components tell an agent what exists. Rules tell it when to use what.
+								br
+								br
+								| A good designer knows that a dialog on desktop should become a drawer on mobile. They know both themes need to pass AA contrast. They know the tone of voice is formal Portuguese, with inclusive titles, and the same in three languages. None of that lives in a component. It lives in experience.
+								br
+								br
+								| So I wrote it down:
+								br
+								br
+								| • responsive behaviour as rules, not case-by-case decisions
+								br
+								| • contrast requirements for light and dark themes
+								br
+								| • copy rules for every locale, treated as part of the system
+								br
+								| • the reasoning behind each decision, so it can be applied to cases I didn't predict
+								br
+								br
+								| The surprise: writing for agents made the system better for people too. New contributors don't have to guess either.
+
+					//- Enforcement and Adoption
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Governance that runs itself
+							.box__body
+								p.font__small-1
+									| Design system governance used to mean reviews. Someone checks the work, spots the hardcoded colour, leaves a comment.
+									br
+									br
+									| Now I have a UI-governance agent that enforces the design system on every change, and a shadcn auditor that checks how the component foundations are used. Same standards, every time, without anyone having to remember.
+									br
+									br
+									| That doesn't replace design review. It frees review up for the questions that need a human: is this the right flow, does this feel calm, is this what the user actually needs.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 Adoption, again
+							.box__body
+								p.font__small-1
+									| I've written before about
+									a(href='/blog/driving-adoption-in-design-systems') driving adoption
+									|  and
+									a(href='/blog/handling-resistance') handling resistance
+									| . With people, adoption is about trust. You listen, you include them, they start defending the system.
+									br
+									br
+									| With agents, adoption is about clarity. They don't resist. They just quietly go around you when the system is ambiguous.
+									br
+									br
+									| The fix is the same in both cases: make the right thing the easiest thing to do.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 What I learned
+						.box__body
+							p.font__small-1
+								| A design system was always a way of writing down judgment so other people didn't have to rediscover it. Agents just raised the bar for how clearly you write it down.
+								br
+								br
+								| If an agent can read your system and build something you'd approve, a new designer probably can too. If it can't, the gaps were always there. You just had people quietly filling them in.
+								br
+								br
+								| Design for the reader who can't ask questions. Everyone else benefits.
+			// Latest Articles
+			include ../includes/blog/latest-articles
+		include ../includes/footer

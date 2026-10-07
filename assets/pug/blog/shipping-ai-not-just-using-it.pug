@@ -1,0 +1,174 @@
+doctype html
+html
+	head
+		- const pageSegment = "blog/shipping-ai-not-just-using-it"
+		- const projectTitle = "Célio Pires - Shipping AI, Not Just Using It"
+		- const projectDescription = "Using AI in your own workflow makes you faster. Shipping AI-powered systems makes a whole team better. The difference is where the judgment lives."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include ../includes/head
+	body
+		include ../includes/nav
+		#DesignSystems.design-systems
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Author
+								div.font__small-3 Célio Pires
+							li
+								div.font__small-3 Published
+								div.font__small-3 2026
+							li
+								div.font__small-3 Category
+								div.font__small-3 AI & Design
+					h1.font__large-2 Shipping AI, not just using it
+					p.font__medium-3
+						| Using AI in your own workflow makes you faster. Shipping AI-powered systems makes a whole team better. The difference is where the judgment lives.
+				.container__box
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Two different jobs
+						.box__body
+							p.font__small-1
+								| Most designers I talk to use AI every day. They write prompts, generate variations, summarise research, draft copy. That's useful. It's also personal. When they close the laptop, the value leaves with them.
+								br
+								br
+								| Shipping AI is a different job. You build something other people run. An agent that reviews every change the same way. A research engine that maps context before anyone designs. A connector that lets a customer get real work done from a chat window.
+								br
+								br
+								| The first job is about speed. The second is about systems. And systems are what I've been doing my whole career.
+
+					//- Encode judgment and Write down the rules
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Encode judgment, not prompts
+							.box__body
+								p.font__small-1
+									| A prompt is a request. An agent is a standard.
+									br
+									br
+									| On
+									a(href='/ensinova') Ensinova
+									|  I built a set of specialist agents: a UX reviewer, a UI-governance agent that enforces the design system, a responsive tester that checks every change at four screen widths, and a "dead-ends" agent that hunts for screens with no way forward.
+									br
+									br
+									| None of them are clever on their own. They're useful because each one carries a slice of judgment I used to apply by hand in design reviews. Now it runs every time, whether I'm in the room or not.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 Write down the rules
+							.box__body
+								p.font__small-1
+									| The agents only became useful when I wrote down what I'd learned the hard way.
+									br
+									br
+									| • every incident becomes a rule in the agents' shared memory
+									br
+									| • every decision gets a written spec with the reasoning behind it
+									br
+									| • every request gets acceptance criteria that can actually be graded
+									br
+									br
+									| This is design systems work. Tokens, components and documentation were always a way to encode judgment so other people didn't have to rediscover it. Agents are the same idea, one layer up.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Where trust lives
+						.box__body
+							p.font__small-1
+								| When I shipped the Ensinova MCP connector, school owners could connect their centre to Claude or ChatGPT and ask "who hasn't paid September?" against live data. The hard part wasn't the model. It was deciding where trust lives.
+								br
+								br
+								| A few architectural decisions shaped everything:
+								br
+								br
+								| •
+								b The model is an untrusted client.
+								|  Who you are and which school you belong to come from the login token, never from what the model sends. A prompt can't move a session into another school.
+								br
+								| •
+								b Invisible, not denied.
+								|  Tools are registered per role. A teacher's assistant never even sees financial tools, so it can't reason its way into them.
+								br
+								| •
+								b Wide reads, narrow writes.
+								|  Reads use a read-only database role. Writes go through the product's own API, with the same permission checks as the UI. One source of truth, not two.
+								br
+								| •
+								b Confirmation as interface.
+								|  Every write starts as a preview a human confirms. A retry never creates a student twice.
+								br
+								br
+								| These are design decisions as much as engineering ones. You can't make them well unless you understand the parts underneath: tokens, permissions, tool registration, what the model can and can't see.
+
+					//- Discovery and Invisible
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Discovery as a system
+							.box__body
+								p.font__small-1
+									| Discovery scales when it's a system, not a ritual.
+									br
+									br
+									| Before anything gets designed, a researcher agent maps the request against the codebase, the data model and earlier decisions. A clarity gate sends vague requests back with questions instead of guessing. What comes out is a spec with testable criteria, not a ticket.
+									br
+									br
+									| The same thinking runs the help centre: an engine that captures every documented flow in light and dark mode and regenerates it whenever the UI changes.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 The best tooling is invisible
+							.box__body
+								p.font__small-1
+									| The best design system is the one people use without thinking about it. AI tooling works the same way.
+									br
+									br
+									| A designer shouldn't need to know how the review agent was built to benefit from it. They open a change, the standards are already applied, and the reasoning is written down if they want it.
+									br
+									br
+									| If people have to learn your system before they can use it, you've built a tool for yourself.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Guardrails, not hope
+						.box__body
+							p.font__small-1
+								| Autonomy without limits is just risk.
+								br
+								br
+								| My pipeline can never push code or mark work as done. That's blocked in the instructions and in the tool permissions. Every task ends in "In Review", for a human. A pre-commit hook blocks unsafe data access and leaked secrets.
+								br
+								br
+								| I don't trust the agent to behave. I design the system so it can't misbehave in the ways that matter.
+
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 What I learned
+						.box__body
+							p.font__small-1
+								| AI doesn't replace good judgment. It amplifies the judgment you already have, and only if you write it down.
+								br
+								br
+								| The skills that made me good at design systems turned out to be the skills that matter most here: encoding decisions, designing for people who will never meet you, and caring about adoption as much as the thing itself.
+								br
+								br
+								| Using AI makes you faster. Shipping it makes everyone around you better.
+			// Latest Articles
+			include ../includes/blog/latest-articles
+		include ../includes/footer
