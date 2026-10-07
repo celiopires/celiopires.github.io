@@ -245,7 +245,11 @@ body {
     .card .card-details .card-item .card-icon {
         font-size: 13px;
     }
-    
+    // No case study yet: render as a plain card, no hover/click
+    &.is-static a {
+        cursor: default;
+        pointer-events: none;
+    }
 }
 /* PROJECT CARDS */
 .card {

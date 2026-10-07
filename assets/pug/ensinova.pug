@@ -1,0 +1,269 @@
+doctype html
+html
+	head
+		- const pageSegment = "ensinova"
+		- const projectTitle = "Célio Pires - Ensinova"
+		- const projectDescription = "An AI-native operating system for schools and tutoring centres, with a live MCP connector for Claude and ChatGPT and the agentic design tooling behind it. Designed, built and shipped end to end."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include includes/head
+	body
+		include includes/nav
+		#Ensinova.ensinova
+		.container
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					.role__industry
+						ol
+							li
+								div.font__small-3 Role
+								div.font__small-3 Founder · Product Designer & Design Engineer
+							li
+								div.font__small-3 Year
+								div.font__small-3 2026
+							li
+								div.font__small-3 Category
+								div.font__small-3 AI-Native • SaaS • EdTech
+					h1.font__extra-large-1 Ensinova
+					p.font__medium-3
+						| I replaced WhatsApp groups, spreadsheets and paper attendance books with a calm, autopilot-first platform for schools. I also shipped an AI connector that lets owners run their centre from Claude or ChatGPT.
+					.picture__center--full-screen
+						img(src='assets/images/ensinova/ensinova-01.webp' alt='Ensinova home on desktop and mobile: sessions of the day, occupancy and overdue payments')
+						.caption
+							.font__small-3 Ensinova - The home, on desktop and mobile: what matters today, with no wall of KPIs.
+				.container__box
+					.paragraph__box--2col
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Context & Problem
+							.box__body
+								p.font__small-1
+									| Small schools in Portugal (tutoring centres, after-school clubs, music, dance and sports studios) run on WhatsApp groups, Excel, paper attendance books and screenshots of bank transfers. The owner is often not technical. Teachers are short on time. Parents only ever open things on their phone.
+									br
+									br
+									| The goal: a product an owner sets up once and that then runs itself. Enrolments create payment expectations. Payments generate Multibanco references. Invoices are issued in certified software. Parents are reminded without anyone chasing them.
+						.paragraph_box--2
+							.box__header-small
+								h2.font__small-2 My Role & Scope
+							.box__body
+								p.font__small-1
+									| Founder. I own the whole product: research with real centres, product strategy, brand, design system, UX and UI. I also do the full-stack engineering that ships it.
+									br
+									br
+									| 4,700+ commits in nine months and about 393k lines of TypeScript. Thousands of students use the product today.
+									br
+									br
+									| Stack: Next.js, Postgres (Supabase + Prisma), Stripe, Cloudflare Workers and Durable Objects, Vercel, PostHog and Sentry.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 At a Glance
+						.box__body
+							p.font__small-1
+								| - 122 screens, 88 API routes and 134 data models, behind 64 fine-grained permissions across 5 roles (admin, teacher, collaborator, guardian, student).
+								br
+								br
+								| - About 3,000 automated tests, including parity tests that pin the AI layer to the product’s permission logic.
+								br
+								br
+								| - 3 locales (pt-PT, en-US, es-ES) with written copy rules.
+								br
+								br
+								| - 3 Portuguese payment providers (Multibanco and MB WAY), Stripe subscriptions and certified invoicing through Moloni and TOConline.
+								br
+								br
+								| - An MCP connector live at mcp.ensinova.com with 11 tools, used from Claude and ChatGPT.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Design Principles
+						.box__body
+							p.font__small-1
+								| The brand brief was three words: Calm. Direct. Trustworthy. I wrote down the anti-references just as clearly: no SaaS-cream landing pages, no cartoon cuteness, no KPI walls.
+								br
+								br
+								strong Autopilot first.
+								br
+								| Every screen asks what the owner should never have to do again. The admin defines offers once; enrolments, charges, reminders and invoices follow from them.
+								br
+								br
+								strong Designed for the least technical user.
+								br
+								| Primary users are owners who are often older and not technical. That means WCAG 2.1 AA, a 14px text minimum, 16px inputs (so iOS never zooms), 44px touch targets and no hover-only interactions on iPad.
+								br
+								br
+								strong Status, not dashboards.
+								br
+								| The home page answers “what is happening today and what needs me?”: sessions of the day, occupancy, overdue payments and recent activity. Nothing else.
+					.picture__center--full-screen
+						img(src='assets/images/ensinova/ensinova-02.webp' alt='Ensinova groups board with drag-and-drop members and attendance in one tap')
+						.caption
+							.font__small-3 Ensinova - Groups as the organising model, annotated.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 The Core Product
+						.box__body
+							p.font__small-1
+								strong Groups instead of classes.
+								br
+								| Centres don’t organise around “classes”. They organise around groups of kids who come on certain days. I redesigned the data model around Groups and moved the old Classes model to deprecated, with a migration path, while the product was live.
+								br
+								br
+								strong A money layer that runs itself.
+								br
+								| Three separate flows that owners never have to understand: parents pay the centre (Multibanco references and MB WAY), the centre pays Ensinova (Stripe) and fiscal documents are issued in certified software. Ensinova orchestrates; it never pretends to be what it legally isn’t.
+								br
+								br
+								strong Attendance, calendar and timecards.
+								br
+								| QR check-in, one-tap attendance, recurring sessions with exceptions, staff timecards and an agenda view that teachers actually open.
+								br
+								br
+								strong Privacy by role.
+								br
+								| A teacher sees only their own students. Guardians get a mobile portal with no onboarding. Admins can edit what each role is allowed to do.
+					.picture__center--full-screen
+						img(src='assets/images/ensinova/ensinova-03.webp' alt='Ensinova weekly agenda and daily attendance table')
+						.caption
+							.font__small-3 Ensinova - Agenda and attendance: colour-coded groups and status per session.
+					.picture__center--full-screen
+						img(src='assets/images/ensinova/ensinova-04.webp' alt='Ensinova offers catalogue, Multibanco payment reference and certified invoices')
+						.caption
+							.font__small-3 Ensinova - The autopilot money layer: define offers once; references, receipts and invoices follow.
+					.picture__center--full-screen
+						img(src='assets/images/ensinova/ensinova-10.webp' alt='Ensinova on mobile: owner home, teacher agenda and payment detail')
+						.caption
+							.font__small-3 Ensinova - Owner, teacher and payment flows on mobile.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Shipping AI-Powered Systems
+						.box__body
+							p.font__small-1
+								| Integrating AI into my own workflow was the starting point, not the deliverable. The deliverable is an AI-powered system that customers use: the Ensinova MCP connector. An owner connects Ensinova to Claude or ChatGPT and asks “who hasn’t paid September?” or “add these 12 new students from this list”. The work gets done against live data.
+								br
+								br
+								| The hard part wasn’t the model. It was deciding where trust lives. These are the architectural decisions I made:
+								br
+								br
+								| - The model is an untrusted client. Tenant and role come from the OAuth 2.1 token (PKCE, dynamic client registration, branded login, org picker). They never come from tool arguments, so a prompt can’t move a session into another school.
+								br
+								br
+								| - Invisible, not denied. Tools are registered per role and per plan, every session. A teacher’s assistant never even sees financial or write tools, so it can’t reason its way into them.
+								br
+								br
+								| - Wide reads, narrow writes. Reads go through a separate read-only Postgres role. The worker cannot write, by construction. Writes are proxied to the product’s own API, which re-runs the same permission checks, plan limits and business logic as the UI. There is one source of truth, not two.
+								br
+								br
+								| - Confirmation as interface. Every write starts as a dry-run preview (rows to create, duplicates to skip, plan verdict), is confirmed by a human and commits with an idempotency key. A retry never creates a student twice. Batches are capped at 50 rows. Names match ignoring accents. The system never guesses between two people with the same name.
+								br
+								br
+								| - Pinned by tests. The AI layer’s student-scoping logic is a copy of the app’s, so parity tests fail the build if they ever drift apart.
+								br
+								br
+								| I also designed the next version of the tool catalogue, about 33 tools. It adds a signed confirmation token tied to the exact preview, three friction levels with out-of-chat confirmation for high-risk actions and a prompt-injection threat model for text written by parents. It also takes an explicit stance against a generic “undo”, because an issued invoice can’t be un-issued.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Agentic Design Tooling: Encoding Judgment
+						.box__body
+							p.font__small-1
+								| Building a product this size alone only works if design judgment scales without me in every review. So I encoded it into agents and skills that run the same standards every time.
+								br
+								br
+								strong Specialist agents.
+								br
+								| A UX reviewer, a UI-governance agent that enforces the design system, a shadcn auditor, a responsive tester that checks every change at phone, tablet, laptop and desktop widths, a tech-lead reviewer and a “dead-ends” agent that hunts for screens with no way forward.
+								br
+								br
+								strong An autonomous product pipeline.
+								br
+								| Product requests go in. A reviewed, tested change comes out. A researcher agent maps the context. A clarity gate sends ambiguous requests back with questions instead of guessing. A planner writes gradeable acceptance criteria. After execution, the agent scores itself against every criterion and loops until each one reaches 8/10.
+								br
+								br
+								strong Guardrails, not hope.
+								br
+								| The pipeline can never push code or mark work as done. Both are blocked in the prompt and in the tool permissions. A pre-commit hook blocks unsafe data access and leaked secrets. Every task ends in “In Review”, for a human.
+								br
+								br
+								strong A living rulebook.
+								br
+								| Every incident becomes a rule in the agents’ shared memory, so the same mistake is never made twice. More than 100 written specs and plans give the agents (and any future designer) the reasoning behind each decision.
+					.picture__center--full-screen
+						img(src='assets/images/ensinova/ensinova-07.webp' alt='Agentic pipeline: request, research, clarity check, plan, build, test, design review, human review')
+						.caption
+							.font__small-3 Ensinova - How agents take a request all the way to a reviewed change.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Research & Discovery Engines
+						.box__body
+							p.font__small-1
+								| Discovery scales when it is a system, not a ritual. Raw product requests are researched against the codebase, the data model and earlier decisions before anything is designed. The output is a spec with testable criteria, not a ticket.
+								br
+								br
+								| The same thinking powers the help centre. A manifest-driven Playwright engine captures every documented flow in light and dark mode: 103 screenshots and 8 videos, regenerated whenever the UI changes. It refuses to run against anything except localhost, so a real child’s data can never end up in a public asset. Privacy is a design constraint, enforced in code.
+					.picture__center--full-screen
+						img(src='assets/images/ensinova/ensinova-08.webp' alt='Grid of automatically captured Ensinova help-centre screenshots in light and dark mode')
+						.caption
+							.font__small-3 Ensinova - Help-centre visuals, captured automatically by the documentation engine in both themes.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 A Design System Built for Humans and Agents
+						.box__body
+							p.font__small-1
+								| Tokens live in a machine-readable design spec (an olive primary, warm neutrals, Geist type, a 4/8/16/24/32 spacing scale), so people and agents read from the same source.
+								br
+								br
+								| - 42 primitives built on Radix/shadcn, plus 53 product components with real prop contracts.
+								br
+								br
+								| - Responsive by rule: dialogs on desktop become drawers on mobile.
+								br
+								br
+								| - Light and dark themes, both kept at the AA contrast level.
+								br
+								br
+								| - The component library is mirrored into Claude’s design environment with its real TypeScript contracts, so AI-generated designs use the components that actually ship, not lookalikes.
+								br
+								br
+								| - Copy is part of the system: formal Portuguese, inclusive gendered titles and the same tone in three languages.
+					.picture__center--full-screen
+						img(src='assets/images/ensinova/ensinova-06.webp' alt='Ensinova design system: colour tokens, type scale, spacing, radius and shipped components')
+						.caption
+							.font__small-3 Ensinova - Design system foundations and components, as shipped.
+					.picture__center--full-screen
+						img(src='assets/images/ensinova/ensinova-05.webp' alt='Ensinova groups board in light and dark mode')
+						.caption
+							.font__small-3 Ensinova - One system, two themes.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Brand & Go-to-Market
+						.box__body
+							p.font__small-1
+								| I designed the brand, the landing page, the marketing pages for each kind of centre, the illustrated feature intros and the onboarding. The visual language stays consistent from the first landing page a centre sees to the push notification a parent gets when a payment lands.
+					.picture__center--full-screen
+						img(src='assets/images/ensinova/ensinova-09.webp' alt='Ensinova brand and marketing visuals: notifications, feature illustrations and student card')
+						.caption
+							.font__small-3 Ensinova - Brand, marketing and feature-intro visuals.
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Reflection
+						.box__body
+							p.font__small-1
+								| Ensinova represents the project where I pushed AI the furthest, both inside the product and in the way I build it. It all started with a simple goal: take the chaos out of running a small school.
+								br
+								br
+								| I learned that AI doesn't replace good judgment, it amplifies the judgment you already have. The agents only became truly useful when I wrote down the rules I had learned the hard way over the years, from design reviews to the small details that make an interface feel calm.
+								br
+								br
+								| It also confirmed something I always say: complexity is my job, not the user's. A school owner asking Claude who hasn't paid this month shouldn't have to think about permissions or databases, they should simply get the answer.
+		include includes/footer
