@@ -45,7 +45,8 @@ exports.html = html;
 
 // SITEMAPS
 function sitemapxml() {
-    return gulp.src('*.html', {
+    return gulp.src(['*.html', 'blog/*.html'], {
+        base: './',
         read: false
       })
       .pipe(save('before-sitemap'))
