@@ -463,3 +463,36 @@
   width: 100%;
   background-color: red;
 }
+/* MOTION STAGE: looping 9:16 reels over a photo, matching the case-study images */
+.motion-stage {
+  width: 100%;
+  aspect-ratio: 1440 / 1024;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4%;
+  background: url('/assets/images/ensinova/motion-bg.webp') center / cover no-repeat;
+  @media all and (max-width: 767px) {
+    aspect-ratio: 4 / 5;
+    gap: 2.5%;
+  }
+  // Reels shown in their native 9:16 frame: no device bezel, nothing cropped.
+  .motion-phone {
+    width: 24%;
+    @media all and (max-width: 767px) {
+      width: 30%;
+    }
+    video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+      border-radius: 18px;
+      background: #dfe6d6;
+      box-shadow: 0 40px 70px -40px rgba(20, 20, 10, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.25);
+      @media all and (max-width: 767px) {
+        border-radius: 10px;
+      }
+    }
+  }
+}

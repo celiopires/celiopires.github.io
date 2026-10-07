@@ -13,9 +13,9 @@ const sourcemaps = require("gulp-sourcemaps");
 const sitemap = require('gulp-sitemap');
 const save = require('gulp-save');
 
-// Generate CSS version hash
-function getCssVersion() {
-    const cssPath = path.join(__dirname, "assets/css/styles.css");
+// Generate a version hash for a built asset (cache busting)
+function getFileVersion(relPath) {
+    const cssPath = path.join(__dirname, relPath);
     if (fs.existsSync(cssPath)) {
         const cssContent = fs.readFileSync(cssPath, "utf8");
         const hash = crypto.createHash("md5").update(cssContent).digest("hex");
@@ -28,12 +28,14 @@ function getCssVersion() {
 
 // HTML
 function html() {
-    const cssVersion = getCssVersion();
+    const cssVersion = getFileVersion("assets/css/styles.css");
+    const jsVersion = getFileVersion("assets/js/scripts.js");
     return src("assets/pug/**/*.pug")
     .pipe(pug({
         pretty: true,
         locals: {
-            cssVersion: cssVersion
+            cssVersion: cssVersion,
+            jsVersion: jsVersion
         }
     }))
     .pipe(dest("./"))
@@ -48,7 +50,9 @@ function sitemapxml() {
       })
       .pipe(save('before-sitemap'))
       .pipe(sitemap({
-              siteUrl: 'https://celiopires.com'
+              siteUrl: 'https://celiopires.com',
+              // Serve extensionless URLs; GitHub Pages resolves /page to page.html
+              getLoc: (siteUrl, loc) => loc.replace(/\.html$/, '')
       }))
       .pipe(gulp.dest('./'))
       .pipe(save.restore('before-sitemap')) 

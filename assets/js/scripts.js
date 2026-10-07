@@ -107,3 +107,20 @@ if (copyrightYear) {
     initDropdown();
   }
 })();
+// Motion reels: load and play only while on screen, pause when scrolled away.
+(function() {
+  var videos = document.querySelectorAll('.motion-stage video');
+  if (!videos.length || !('IntersectionObserver' in window)) return;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      var video = entry.target;
+      if (entry.isIntersecting) {
+        var playing = video.play();
+        if (playing && playing.catch) playing.catch(function() {});
+      } else {
+        video.pause();
+      }
+    });
+  }, { threshold: 0.25 });
+  videos.forEach(function(video) { observer.observe(video); });
+})();
