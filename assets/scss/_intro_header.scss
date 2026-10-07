@@ -245,6 +245,101 @@
 		}
 	}
 
+// CASE STUDY HERO - MOBILE
+// Title leads, then the pitch, then the facts, then the picture.
+@media all and (max-width: 767px) {
+	.container .container__intro .intro__header--bottom:not(.landing) {
+		display: flex;
+		flex-direction: column;
+		max-width: none;
+		padding: 0;
+		margin: 0 auto $_int-40 auto;
+
+		.font__extra-large-1 {
+			order: 1;
+			margin-top: $_int-40;
+			margin-bottom: $_int-16;
+			text-align: left;
+			font-size: 48px;
+			line-height: 1;
+			letter-spacing: -0.025em;
+			text-wrap: balance;
+		}
+		.font__medium-3 {
+			order: 2;
+			margin-bottom: $_int-32;
+			text-align: left;
+			font-size: 19px;
+			line-height: 1.5;
+			font-weight: $_regular;
+			color: $_text-secondary;
+			text-wrap: pretty;
+		}
+		.role__industry {
+			order: 3;
+			margin-bottom: $_int-32;
+			ol {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: $_int-16 $_int-24;
+				padding: $_int-16 0 0 0;
+				border-top: 1px solid $_neutral07;
+				li {
+					flex-direction: column;
+					gap: $_int-4;
+					padding: 0;
+					border: 0;
+					&:first-child {
+						grid-column: 1 / -1;
+					}
+					> div:first-child {
+						font-size: 11px;
+						line-height: 16px;
+						font-weight: $_bold;
+						letter-spacing: 0.08em;
+						color: $_text-tertiary;
+					}
+					> div:last-child {
+						font-size: 15px;
+						line-height: 22px;
+						color: $_text-primary;
+					}
+				}
+			}
+		}
+		.role__industry:empty {
+			display: none;
+		}
+		.picture__center--small,
+		.picture__center--full-screen {
+			order: 4;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	// Round the image, not the wrapper, so captions sit clean below it
+	.picture__center--full-screen {
+		border-radius: 0;
+		overflow: visible;
+		gap: 0;
+		> img {
+			border-radius: 16px;
+		}
+		.caption {
+			align-self: stretch;
+			margin-top: $_int-12;
+			padding: 0;
+			text-align: left;
+			.font__small-3 {
+				font-size: 13px;
+				line-height: 19px;
+				mix-blend-mode: normal;
+			}
+		}
+	}
+}
+
 // HEADER FULL WIDTH
 .container .container__full-width {
 	position: relative;

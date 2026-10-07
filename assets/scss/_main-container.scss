@@ -496,3 +496,40 @@
     }
   }
 }
+
+// MOBILE READING RHYTHM
+// Align copy to the hero's edge and bring body text to a comfortable reading size.
+@media all and (max-width: 767px) {
+  .container .container__box {
+    margin-bottom: $_int-60;
+    .box__header,
+    .box__header-small,
+    .box__body {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .box__header-small {
+      padding-bottom: $_int-16;
+      .font__small-2 {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 0.08em;
+      }
+    }
+    .box__body p.font__small-1 {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: $_int-32;
+    }
+    .paragraph__box--1col,
+    .paragraph__box--2col {
+      border-top-width: 1px;
+      border-top-color: $_neutral07;
+      padding-top: $_int-32;
+    }
+    .paragraph__box--2col {
+      padding-bottom: 0;
+      gap: 0;
+    }
+  }
+}
