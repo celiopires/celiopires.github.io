@@ -4,6 +4,11 @@ html
 		- const pageSegment = "blog/working-with-engineering"
 		- const projectTitle = "Célio Pires - Working with Engineering"
 		- const projectDescription = "Design systems only work when design and engineering move in the same direction. On projects like Bitloops, Clutch and Metallicus I learned that early alignment saves everyone time."
+		//- ARTICLE META (og:type + BlogPosting JSON-LD)
+		- const ogType = "article"
+		- const articleHeadline = projectTitle.replace("Célio Pires - ", "")
+		- const datePublished = "2024"
+		- const articleSection = "Design Systems"
 		//- CANONICAL
 		- const pageCanonical = `https://celiopires.com/${pageSegment}`
 		//- GLOBAL META TAGS

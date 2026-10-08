@@ -4,6 +4,11 @@ html
 		- const pageSegment = "blog/handling-resistance"
 		- const projectTitle = "Célio Pires - Handling Resistance"
 		- const projectDescription = "There's always a moment where someone says \"this component doesn't fit my team's flow.\" Most resistance is not about the component. It's about trust."
+		//- ARTICLE META (og:type + BlogPosting JSON-LD)
+		- const ogType = "article"
+		- const articleHeadline = projectTitle.replace("Célio Pires - ", "")
+		- const datePublished = "2023"
+		- const articleSection = "Design Systems"
 		//- CANONICAL
 		- const pageCanonical = `https://celiopires.com/${pageSegment}`
 		//- GLOBAL META TAGS

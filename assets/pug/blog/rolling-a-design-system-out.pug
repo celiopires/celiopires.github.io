@@ -4,6 +4,11 @@ html
 		- const pageSegment = "blog/rolling-a-design-system-out"
 		- const projectTitle = "Célio Pires - Rolling a Design System out"
 		- const projectDescription = "Rolling out a system is never \"drop the library and pray\". Each product needed something different."
+		//- ARTICLE META (og:type + BlogPosting JSON-LD)
+		- const ogType = "article"
+		- const articleHeadline = projectTitle.replace("Célio Pires - ", "")
+		- const datePublished = "2022"
+		- const articleSection = "Design Systems"
 		//- CANONICAL
 		- const pageCanonical = `https://celiopires.com/${pageSegment}`
 		//- GLOBAL META TAGS

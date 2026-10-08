@@ -4,6 +4,11 @@ html
 		- const pageSegment = "blog/driving-adoption-in-design-systems"
 		- const projectTitle = "Célio Pires - Driving Adoption in Design Systems"
 		- const projectDescription = "Building a design system is one thing. Getting people to actually use it is another. Across projects like El Español, Telefónica, Commons, and Metallicus I saw the same pattern: great components, zero adoption, and chaos creeping back in."
+		//- ARTICLE META (og:type + BlogPosting JSON-LD)
+		- const ogType = "article"
+		- const articleHeadline = projectTitle.replace("Célio Pires - ", "")
+		- const datePublished = "2025"
+		- const articleSection = "Design Systems"
 		//- CANONICAL
 		- const pageCanonical = `https://celiopires.com/${pageSegment}`
 		//- GLOBAL META TAGS

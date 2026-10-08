@@ -4,6 +4,11 @@ html
 		- const pageSegment = "blog/keeping-a-design-system-alive"
 		- const projectTitle = "Célio Pires - Keeping a Design System alive"
 		- const projectDescription = "Most design systems die after the first release. Everyone's excited for two weeks and then the product grows and the system stays still. Nothing fancy. Just consistent care."
+		//- ARTICLE META (og:type + BlogPosting JSON-LD)
+		- const ogType = "article"
+		- const articleHeadline = projectTitle.replace("Célio Pires - ", "")
+		- const datePublished = "2024"
+		- const articleSection = "Design Systems"
 		//- CANONICAL
 		- const pageCanonical = `https://celiopires.com/${pageSegment}`
 		//- GLOBAL META TAGS

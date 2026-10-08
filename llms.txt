@@ -1,0 +1,48 @@
+# Célio Pires
+
+> Célio Pires is a Product Designer and Design Lead, born and raised in Portugal, who designs AI-native products, agentic design tooling and scalable design systems. He has worked on the web since the 1990s and is available for design system, AI product and design leadership work. Contact: celio.r.pires@gmail.com
+
+Célio's focus areas:
+
+- **Design systems**: creating, auditing and rescuing design systems, including tokens, components, governance and adoption (Telefónica, El Español, Metallicus, Clutch).
+- **Design systems for humans and agents**: making tokens, components and rules machine-readable so AI coding agents build with real components.
+- **AI-native product design**: MCP connectors for Claude and ChatGPT, agent and chat UX, explainable AI recommendations (Ensinova, Sphera).
+- **Agentic design tooling**: review agents, skills, research and QA pipelines that encode design judgment.
+- **Product design and design leadership** in complex domains: AI, SaaS, education, telecom, media, ecommerce, fintech and Web3.
+
+## Hire
+
+- [Work with me](https://celiopires.com/work-with-me): services, engagement models and FAQ
+- [Contact](https://celiopires.com/contact): email and social links
+- [About](https://celiopires.com/about): background, design philosophy ("Don't Make Me Think") and experience with AI and blockchain
+
+## Case studies
+
+- [Ensinova](https://celiopires.com/ensinova): An AI-native operating system for schools and tutoring centres, with a live MCP connector for Claude and ChatGPT and the agentic design tooling behind it. Designed, built and shipped end to end.
+- [Sphera](https://celiopires.com/sphera): Turning complex customer data into actionable ecommerce revenue using AI.
+- [Telefónica](https://celiopires.com/telefonica): Orchestrating design system consistency at scale for a global telco.
+- [El Español](https://celiopires.com/elespanol): Building the design infrastructure for Spain's leading digital-native news platform.
+- [Metallicus](https://celiopires.com/metallicus): Building the compliant bridge between traditional finance and the Web3 economy.
+- [Bitloops](https://celiopires.com/bitloops): A co-pilot that bridges the gap between Figma and production-ready React code.
+- [Clutch](https://celiopires.com/clutch): A visual builder powered by atomic design principles.
+- [Commons](https://celiopires.com/commons): A voice-first collaboration platform for distributed professional teams.
+- [All projects](https://celiopires.com/projects)
+
+## Articles
+
+- [Design systems for humans and agents](https://celiopires.com/blog/design-systems-for-humans-and-agents): Agents read your tokens, use your components and follow your rules. If they can't understand your design system, they'll invent their own.
+- [Shipping AI, not just using it](https://celiopires.com/blog/shipping-ai-not-just-using-it): Using AI makes you faster; shipping AI-powered systems makes a whole team better.
+- [Creating and scaling design systems](https://celiopires.com/blog/creating-and-scaling-design-systems): Why UI drifts as teams grow and how a design system keeps it predictable.
+- [Driving adoption in design systems](https://celiopires.com/blog/driving-adoption-in-design-systems): Great components, zero adoption, and how to fix it.
+- [Keeping a design system alive](https://celiopires.com/blog/keeping-a-design-system-alive): Why most design systems die after the first release.
+- [Working with engineering](https://celiopires.com/blog/working-with-engineering): Early design and engineering alignment saves everyone time.
+- [Handling resistance](https://celiopires.com/blog/handling-resistance): Most resistance to a design system is about trust, not components.
+- [Rolling a design system out](https://celiopires.com/blog/rolling-a-design-system-out): Each product needs a different rollout plan.
+
+## Optional
+
+- [Snoozeen](https://celiopires.com/snoozeen): Portuguese business administration on auto-pilot.
+- [Polychromeer](https://celiopires.com/polychromeer): A design studio Célio founded in 2022 as a leaner alternative to traditional agencies.
+- [Observador](https://celiopires.com/observador): Design for a Portuguese online news product.
+- [Taglicious](https://celiopires.com/taglicious): A project funded by the Google News Initiative.
+- [LinkedIn](https://linkedin.com/in/celiopires)

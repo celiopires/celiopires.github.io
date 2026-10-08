@@ -4,6 +4,11 @@ html
 		- const pageSegment = "blog/design-systems-for-humans-and-agents"
 		- const projectTitle = "Célio Pires - Design Systems for Humans and Agents"
 		- const projectDescription = "Your design system now has a second audience. Agents read your tokens, use your components and follow your rules. If they can't understand it, they'll invent their own."
+		//- ARTICLE META (og:type + BlogPosting JSON-LD)
+		- const ogType = "article"
+		- const articleHeadline = projectTitle.replace("Célio Pires - ", "")
+		- const datePublished = "2026"
+		- const articleSection = "Design Systems"
 		//- CANONICAL
 		- const pageCanonical = `https://celiopires.com/${pageSegment}`
 		//- GLOBAL META TAGS

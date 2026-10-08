@@ -1,0 +1,137 @@
+doctype html
+html
+	head
+		- const pageSegment = "work-with-me"
+		- const projectTitle = "Célio Pires - Work with me"
+		- const projectDescription = "Hire Célio Pires, Product Designer and Design Lead, for design systems, design systems that AI agents can use, AI-native product design, MCP connectors and agentic design tooling."
+		//- CANONICAL
+		- const pageCanonical = `https://celiopires.com/${pageSegment}`
+		//- STRUCTURED DATA: services offered + FAQ
+		- const serviceNames = ["Design systems", "Design systems for humans and agents", "AI-native product design", "Agentic design tooling", "Product design and design leadership"]
+		- const faqs = [["What does a design system engagement with you look like?", "It usually starts with an audit: what exists in Figma, what exists in code, and where the two have drifted apart. From there we agree on one source of truth for tokens, a component set that matches what actually ships, written rules for when to use what, and a plan to drive adoption across teams."], ["Can you design an MCP connector or AI agent experience for my product?", "Yes. I designed and built a live MCP connector for Ensinova that lets school owners run their business from Claude or ChatGPT, with safety enforced by the server rather than by the prompt. I can help you decide what your product should expose to AI assistants, design the conversational flows, and make sure risky actions stay under control."], ["How do I make my design system usable by AI coding agents?", "Agents only know what is written down. Keep one machine-readable source of truth for tokens, give agents your real components with their actual props and variants instead of lookalikes, and write down the rules a senior designer carries in their head: responsive behaviour, contrast requirements, copy and tone. Then let a governance agent check every change against those rules."], ["What industries have you worked in?", "AI and SaaS, education, telecommunications (Telefónica), digital news and media (El Español, Observador), ecommerce, fintech and Web3 (Metallicus), and developer tools (Bitloops, Clutch)."], ["How do we start?", "Send me an email at celio.r.pires@gmail.com with a few lines about your product, your team and what you need. I will reply with a few questions and a suggestion for the next step."]]
+		- const pageSchema = [{"@type": "ProfessionalService", "@id": pageCanonical + "#service", "name": "Célio Pires - Product Design and Design Systems", "url": pageCanonical, "provider": {"@id": "https://celiopires.com/#person"}, "founder": {"@id": "https://celiopires.com/#person"}, "areaServed": "Worldwide", "email": "celio.r.pires@gmail.com", "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Services", "itemListElement": serviceNames.map(name => ({"@type": "Offer", "itemOffered": {"@type": "Service", "name": name, "provider": {"@id": "https://celiopires.com/#person"}}}))}}, {"@type": "FAQPage", "@id": pageCanonical + "#faq", "mainEntity": faqs.map(([q, a]) => ({"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}))}]
+		//- GLOBAL META TAGS
+		- const pageTitle = projectTitle
+		- const description = projectDescription
+		- const image = "defaultImage"
+		//- FACEBOOK META TAGS
+		- const facebookTitle = projectTitle
+		- const facebookDescription = projectDescription
+		- const facebookImage = "defaultFacebookImage"
+		//- TWITTER META TAGS
+		- const twitterTitle = projectTitle
+		- const twitterDescription = projectDescription
+		- const twitterImage = "defaultTwitterImage"
+		include includes/head
+	body
+		include includes/nav
+		.container
+			// Hero Path
+			.hero-path
+				.hero-path-wrapper
+					// ?xml version="1.0" encoding="UTF-8"?
+					svg(width='100%' height='100%' viewBox='0 0 1440 1020' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink')
+						title Path 2
+						g(stroke-width='0.3' fill='none' fill-rule='evenodd')
+							g#Layout(transform='translate(0.000000, -85.000000)' stroke='#979797')
+								path#Path-2(d='M350.2899,-7.9445803 C366.793245,8.10819645 387.075262,11.4125901 409.878738,14.6681695 C504.527377,28.1808534 712.8547,47.7567992 839.503432,81.8277439 C871.828919,90.5239217 935.075719,107.93756 967.111889,129.340846 C987.758596,143.13486 993.04846,147.922924 1009.73385,166.439798 C1024.43559,182.755287 1050.69352,209.005648 1046.09562,235.331164 C1044.46156,244.687048 1022.85186,251.346808 1019.84962,252.046461 C977.517987,261.911579 912.40554,266.996889 869.248121,256.92005 C858.41042,254.389552 827.038624,245.75016 829.112684,227.409388 C830.241955,217.423319 844.703563,212.911088 852.123277,211.349362 C876.655691,206.185701 886.513738,205.652309 909.114428,205.527969 C1010.12339,204.972259 1068.33426,207.562121 1165.99878,234.517924 C1189.741,241.070874 1248.15196,265.915116 1246.56803,297.470883 C1245.98592,309.067924 1232.22717,317.275042 1224.54035,322.353684 C1202.22388,337.098053 1175.30297,351.605876 1150.94506,363.308211 C1037.54837,417.787703 907.227287,421.883438 784.887645,437.482711 C690.768565,449.483766 596.667871,461.684559 502.722652,474.985357 C459.186424,481.149232 415.7708,488.196361 372.475553,495.872166 C249.534234,517.668406 125.405249,548.756265 7.97440768,591.395676 C-94.297502,628.530844 -194.41054,669.97637 -276.952091,742.038129')
+			// Intro Header
+			#intro__header.container__intro
+				.intro__header--bottom
+					h1.font__extra-large-1 Work with me
+					p.font__medium-3
+						| I help product teams design AI-native products and the design systems behind them.
+						|  From an MCP connector to a design system that agents can read, I take complex technology and make it feel obvious.
+				.container__box
+					.paragraph__box--2col#design-systems
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Design systems
+						.paragraph_box--2
+							.box__body
+								p.font__small-1
+									| Creating, auditing and rescuing design systems: tokens, components, documentation, governance and, most importantly, adoption. I've built design infrastructure for global and fast-moving teams like 
+									a(class="link__external", href="telefonica") Telefónica
+									| , 
+									a(class="link__external", href="elespanol") El Español
+									|  and 
+									a(class="link__external", href="metallicus") Metallicus
+									| .
+					.paragraph__box--2col#agent-ready
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Design systems for humans and agents
+						.paragraph_box--2
+							.box__body
+								p.font__small-1
+									| Your design system now has a second audience. I make tokens, components and rules machine-readable, so coding agents build with your real components instead of inventing their own. Read more in 
+									a(class="link__external", href="blog/design-systems-for-humans-and-agents") Design systems for humans and agents
+									| .
+					.paragraph__box--2col#ai-products
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 AI-native product design
+						.paragraph_box--2
+							.box__body
+								p.font__small-1
+									| Designing products where AI does real work: MCP connectors for Claude and ChatGPT, agent and chat experiences, and AI recommendations people can understand and trust. See 
+									a(class="link__external", href="ensinova") Ensinova
+									|  and 
+									a(class="link__external", href="sphera") Sphera
+									| .
+					.paragraph__box--2col#agentic-tooling
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Agentic design tooling
+						.paragraph_box--2
+							.box__body
+								p.font__small-1
+									| Review agents, skills, research and QA pipelines that encode your team's design judgment into reusable systems, so quality doesn't depend on who is in the room. See 
+									a(class="link__external", href="blog/shipping-ai-not-just-using-it") Shipping AI, not just using it
+									| .
+					.paragraph__box--2col#product-design
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Product design and design leadership
+						.paragraph_box--2
+							.box__body
+								p.font__small-1
+									| End-to-end product design for complex domains, from discovery to shipped UI, and hands-on leadership for design teams that are growing faster than their process. See 
+									a(class="link__external", href="projects") all projects
+									| .
+					.paragraph__box--2col#engagements
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 How we can work together
+						.paragraph_box--2
+							.box__body
+								p.font__small-1
+									b Focused projects:
+									|  a scoped piece of work with a clear outcome, like a design system audit, an MCP connector or a new product flow.
+									br
+									br
+									b Advisory:
+									|  ongoing, part-time support for your design and product team on design systems, AI products and design operations.
+					.paragraph__box--2col#faq
+						.paragraph_box--1
+							.box__header-small
+								h2.font__small-2 Frequently asked questions
+						.paragraph_box--2
+							.box__body
+								each faq in faqs
+									h3.font__small-1
+										b= faq[0]
+									p.font__small-1= faq[1]
+									br
+					.paragraph__box--1col
+						.box__header-small
+							h2.font__small-2 Let's talk
+						.box__body
+							p.font__small-1
+								| Tell me about your product and what you need. Drop me an 
+								a(class="link__external", href="mailto:celio.r.pires@gmail.com", target="_blank", rel="noopener noreferrer") email
+								|  or message me on
+								a(class="link__external", href="https://linkedin.com/in/celiopires", target="_blank", rel="noopener noreferrer")  LinkedIn
+								| .
+			include includes/blog/latest-articles
+		include includes/footer

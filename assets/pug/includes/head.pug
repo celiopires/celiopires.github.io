@@ -22,8 +22,8 @@ meta(name="robots" content="max-image-preview:large")
 meta(name="rating" content="general")
 
 //- CANONICAL
-- const canonicalUrl = (canonical === "defaultCanonical") ? "https://celiopires.com/" : pageCanonical
-meta(rel="canonical", href=canonicalUrl)
+- const canonicalUrl = (typeof pageCanonical !== "undefined") ? pageCanonical : "https://celiopires.com/"
+link(rel="canonical" href=canonicalUrl)
 
 
 meta(name="author" content="Célio Pires")
@@ -40,13 +40,19 @@ case pageTitle
 //- GLOBAL PAGE DESCRIPTION
 case description
 	when "defaultDescription"
-		- const defaultDescription="Product designer passionate about technology and surely growing an obsession for creating, scaling and maintaining design systems." 
+		- const defaultDescription="Célio Pires is a Product Designer and Design Lead who designs AI-native products, agentic design tooling and scalable design systems. Available for design system, AI product and design leadership work." 
 		meta(name="description" content=defaultDescription)
 	default
 		meta(name="description" content=description)
 
 // FACEBOOK
-meta(property="og:type" content="website")
+- const ogTypeValue = (typeof ogType !== "undefined") ? ogType : "website"
+meta(property="og:type" content=ogTypeValue)
+meta(property="og:url" content=canonicalUrl)
+meta(property="og:site_name" content="Célio Pires")
+if ogTypeValue === "article"
+	meta(property="article:author" content="https://celiopires.com/about")
+	meta(property="article:published_time" content=datePublished)
 
 //- FACEBOOK PAGE TITLE
 case facebookTitle
@@ -59,7 +65,7 @@ case facebookTitle
 //- FACEBOOK PAGE DESCRIPTION
 case facebookDescription
 	when "defaultFacebookDescription"
-		- const defaultFacebookDescription="Product designer passionate about technology and surely growing an obsession for creating, scaling and maintaining design systems." 
+		- const defaultFacebookDescription="Célio Pires is a Product Designer and Design Lead who designs AI-native products, agentic design tooling and scalable design systems. Available for design system, AI product and design leadership work." 
 		meta(property="og:description" content=defaultFacebookDescription)
 	default
 		meta(property="og:description" content=facebookDescription)
@@ -85,7 +91,7 @@ case twitterTitle
 //- TWITTER PAGE DESCRIPTION
 case twitterDescription
 	when "defaultTwitterDescription"
-		- const defaultTwitterDescription="Product designer passionate about technology and surely growing an obsession for creating, scaling and maintaining design systems." 
+		- const defaultTwitterDescription="Célio Pires is a Product Designer and Design Lead who designs AI-native products, agentic design tooling and scalable design systems. Available for design system, AI product and design leadership work." 
 		meta(name="twitter:description" content=defaultTwitterDescription)
 	default
 		meta(name="twitter:description" content=twitterDescription)
@@ -99,6 +105,18 @@ case twitterImage
 		meta(name="twitter:image" content=twitterImage)
 
 meta(name="twitter:site" content="@celiows")
+
+//- STRUCTURED DATA (JSON-LD)
+//- Every page describes the site and its author. Pages can add more nodes via `pageSchema` (array);
+//- articles (ogType "article") get a BlogPosting node built from their own meta.
+- const siteUrl = "https://celiopires.com/"
+- const personId = siteUrl + "#person"
+- const schemaGraph = [{"@type": "WebSite", "@id": siteUrl + "#website", "url": siteUrl, "name": "Célio Pires", "inLanguage": "en", "publisher": {"@id": personId}}, {"@type": "Person", "@id": personId, "name": "Célio Pires", "url": siteUrl, "image": "https://celiopires.com/assets/images/about/celio-photo-square.jpg", "jobTitle": "Product Designer and Design Lead", "description": "Product Designer and Design Lead who designs AI-native products, agentic design tooling and scalable design systems. Available for design system, AI product and design leadership engagements.", "email": "mailto:celio.r.pires@gmail.com", "nationality": {"@type": "Country", "name": "Portugal"}, "knowsLanguage": ["English", "Portuguese", "Spanish"], "knowsAbout": ["Product design", "UX design", "Design systems", "Design tokens", "Design system adoption", "AI-native product design", "Agentic design tooling", "Model Context Protocol (MCP)", "AI agent UX", "Explainable AI", "Web3 and blockchain UX", "Design leadership"], "sameAs": ["https://linkedin.com/in/celiopires", "https://x.com/celiows", "https://instagram.com/celiows", "https://github.com/celiopires"]}]
+if ogTypeValue === "article"
+	- schemaGraph.push({"@type": "BlogPosting", "@id": canonicalUrl + "#article", "mainEntityOfPage": canonicalUrl, "url": canonicalUrl, "headline": articleHeadline, "description": description, "datePublished": datePublished, "dateModified": (typeof dateModified !== "undefined") ? dateModified : datePublished, "author": {"@id": personId}, "publisher": {"@id": personId}, "image": "https://celiopires.com/assets/images/about/celio-photo-square.jpg", "articleSection": (typeof articleSection !== "undefined") ? articleSection : "Design Systems", "inLanguage": "en", "isPartOf": {"@id": siteUrl + "#website"}})
+if typeof pageSchema !== "undefined"
+	- schemaGraph.push(...pageSchema)
+script(type="application/ld+json")!= JSON.stringify({"@context": "https://schema.org", "@graph": schemaGraph}).replace(/</g, "\\u003c")
 
 // Styles and JS
 meta(http-equiv="content-script-type" content="text/javascript")
